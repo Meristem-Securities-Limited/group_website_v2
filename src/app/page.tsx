@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <section className="bg-white py-28 bg-[url(/hero-bg.png)] px-4">
-        <div className="container mx-auto">
+        <div className="container mx-auto pt-20">
           <div className="text-left">
             <h1 className="lg:text-7xl md:text-5xl text-white text-5xl max-w-2xl font-medium leading-tight mb-8">
               Building pathways to wealth that last
