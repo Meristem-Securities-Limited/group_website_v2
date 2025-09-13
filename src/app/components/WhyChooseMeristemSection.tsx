@@ -43,14 +43,14 @@ const features = [
 
 const WhyChooseMeristem = () => {
   return (
-    <section className="py-16 px-0 md:px-12 lg:px-20 bg-white">
-      <div className="container mx-auto">
+    <section className="py-16 px-0 bg-white">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">Why Choose Meristem</h2>
-          <p className="mt-2 text-gray-600">To advance the financial wellbeing of our clients</p>
+          <h2 className="text-3xl md:text-4xl font-semibold">Why Choose Meristem</h2>
+          <p className="mt-2">To advance the financial wellbeing of our clients</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border rounded-lg overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-gray-200 rounded-lg overflow-hidden">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -60,7 +60,7 @@ const WhyChooseMeristem = () => {
                 alt={feature.title}
                 className="text-green-700 text-4xl mb-4"
               />
-              <h3 className="lg:text-2xl text-xl font-semibold text-gray-900">{feature.title}</h3>
+              <h3 className="lg:text-2xl text-xl font-semibold">{feature.title}</h3>
               <p className="mt-2 text-gray-600 text-base leading-relaxed">{feature.description}</p>
             </div>
           ))}

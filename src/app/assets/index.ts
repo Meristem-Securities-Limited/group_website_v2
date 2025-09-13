@@ -5,7 +5,7 @@ import WhatsappLogo from "./whatsapp-logo.svg";
 import MailIcon from "./mail-icon.svg";
 import XIcon from "./x-icon.svg";
 import FacebookLogo from "./facebook.svg";
-import FooteBanner from "./footer-banner.png";
+// import FooteBanner from "./footer-banner.png";
 import MeritradeMockUp from "./meritrade-mockup.png";
 import HouseDisplay from "./house-display.png";
 import WealthBuddyMockup from "./wealthbuddy-mockup.png";
@@ -13,6 +13,9 @@ import HappyFamily from "./happy-family.png";
 import BarChart from "./bar-chart.svg";
 import BubbleChart from "./bubble-chart.svg";
 import CheckDouble from "./check-double.svg";
+import Preview1 from "./preview-1.png";
+import Preview2 from "./preview-2.png";
+import Preview3 from "./preview-3.png";
 
 export {
   Logo,
@@ -21,7 +24,7 @@ export {
   XIcon,
   MailIcon,
   FacebookLogo,
-  FooteBanner,
+  //   FooteBanner,
   WhiteLogo,
   MeritradeMockUp,
   HouseDisplay,
@@ -30,4 +33,7 @@ export {
   BarChart,
   BubbleChart,
   CheckDouble,
+  Preview1,
+  Preview2,
+  Preview3,
 };

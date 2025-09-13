@@ -65,7 +65,7 @@ export default function ProductsSection() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+            <h2 className="text-3xl md:text-5xl font-semibold text-[#154D34]">
               Our product and services
             </h2>
             <p className="text-gray-600 mt-3 max-w-2xl">
@@ -77,12 +77,12 @@ export default function ProductsSection() {
           <div className="flex gap-3 mt-6 md:mt-0">
             <button
               onClick={() => scroll("left")}
-              className="p-3 bg-green-900 text-white rounded-md hover:bg-green-800 transition">
+              className="p-3 bg-green-900 text-white rounded-md hover:bg-[#154D34] transition">
               <ArrowLeft size={20} />
             </button>
             <button
               onClick={() => scroll("right")}
-              className="p-3 bg-green-900 text-white rounded-md hover:bg-green-800 transition">
+              className="p-3 bg-green-900 text-white rounded-md hover:bg-[#154D34] transition">
               <ArrowRight size={20} />
             </button>
           </div>
@@ -104,7 +104,7 @@ export default function ProductsSection() {
 
               <div className="flex flex-col flex-1 py-5 gap-9">
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-gray-900">{product.title}</h3>
+                  <h3 className="text-lg font-semibold text-[#154D34]">{product.title}</h3>
                   <p className="text-gray-600 text-base leading-relaxed font-normal">
                     {product.description}
                   </p>

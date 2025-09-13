@@ -24,8 +24,8 @@ const MeristemTimeline = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-emerald-800 via-emerald-700 to-emerald-900 relative overflow-hidden">
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-28">
+    <section className="bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 relative overflow-hidden">
+      <div className="relative z-10 container mx-auto px-4 py-28">
         <div className="mb-16 lg:mb-20">
           <h3 className="text-white text-sm font-medium tracking-wider uppercase mb-6">
             A LEGACY OF FINANCIAL EXCELLENCE
@@ -39,7 +39,7 @@ const MeristemTimeline = () => {
             </p>
             <a
               href="#"
-              className="inline-flex gap-3 items-center bg-white text-emerald-800 px-6 py-3 font-semibold hover:bg-gray-100 transition-colors">
+              className="inline-flex gap-3 items-center bg-white text-green-800 px-6 py-3 font-semibold hover:bg-gray-100 transition-colors">
               <ArrowRight size={24} />
               LEARN MORE ABOUT MERISTEM
             </a>
@@ -53,17 +53,19 @@ const MeristemTimeline = () => {
               <div
                 key={index}
                 className="relative">
-                <div className="hidden lg:block absolute -top-2 left-0 w-4 h-4 bg-white rounded-full border-4 border-emerald-700"></div>
+                <div className="hidden lg:block absolute -top-2 left-0 w-4 h-4 bg-green-900 rounded-full border-1 border-white">
+                  <div className="flex items-center justify-center w-full h-full">
+                    <div className="w-1 h-1 bg-green-900 rounded-full border-2 border-white"></div>
+                  </div>
+                </div>
 
                 <div className="lg:hidden flex items-center mb-4">
-                  <div className="w-4 h-4 bg-white rounded-full border-4 border-emerald-700 mr-4"></div>
+                  <div className="w-4 h-4 bg-white rounded-full border-4 border-[#1bc076] mr-4"></div>
                   <div className="flex-1 h-px bg-white/30"></div>
                 </div>
 
                 <div className="lg:pt-12">
-                  <h2 className="text-white text-4xl lg:text-4xl font-semibold mb-4">
-                    {item.year}
-                  </h2>
+                  <h2 className="text-white text-2xl lg:text-4xl font-medium mb-4">{item.year}</h2>
                   <h3 className="text-white text-xl lg:text-2xl font-medium mb-4">{item.title}</h3>
                   <p className="text-white/90 text-base lg:text-lg leading-relaxed">
                     {item.description}

@@ -1,33 +1,33 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { VideoThumbnail } from "../assets";
+import { Preview1, Preview2, Preview3, VideoThumbnail } from "../assets";
 
 const researchData = [
   {
     category: "Market Updates",
     title: "Daily Market Update – 7th May 2025",
     date: "August 25, 2025",
-    img: "https://via.placeholder.com/400x200/4CAF50/FFFFFF?text=Market",
+    img: Preview1,
   },
   {
     category: "Economic Reports",
     title: "Macroeconomic Update – GDP Report – Q4-2024",
     date: "August 25, 2025",
-    img: "https://via.placeholder.com/400x200/FF9800/FFFFFF?text=Economic",
+    img: Preview2,
   },
   {
     category: "Equity Research Report",
     title: "Banking Sector Update – Beyond the Forbearance Era",
     date: "August 25, 2025",
-    img: "https://via.placeholder.com/400x200/FFC107/000000?text=Equity",
+    img: Preview3,
   },
 ];
 
 const ResearchSection = () => {
   return (
-    <section className="lg:py-30 py-20 px-6 md:px-12 lg:px-0 bg-white">
-      <div className="container mx-auto">
+    <section className="lg:py-30 py-20 bg-white">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-between gap-8 items-center mb-12">
           <div>
             <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 lg:leading-13 leading-10 max-w-xl">
@@ -52,15 +52,17 @@ const ResearchSection = () => {
             <div
               key={index}
               className="bg-gray-50 border border-gray-200 flex flex-col justify-between">
-              <div className="p-6 flex flex-col gap-3">
-                <p className="text-sm text-gray-500 mb-2">{item.category}</p>
-                <h3 className="text-xl font-semibold text-black mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-500 mb-4">{item.date}</p>
+              <div className="p-6 flex flex-col justify-between h-auto mdLh-full gap-5">
+                <div className="space-y-5">
+                  <p className="text-sm text-gray-500 mb-2">{item.category}</p>
+                  <h3 className="text-xl font-semibold text-black mb-2">{item.title}</h3>
+                  <p className="text-sm text-gray-500 mb-4">{item.date}</p>
+                </div>
                 <div>
                   <a
                     href="#"
-                    className="flex items-center gap-3 text-green-900 font-medium text-sm">
-                    <div className="bg-green-900 p-2">
+                    className="flex items-center gap-3 text-[#154D34] font-medium text-sm">
+                    <div className="bg-[#154D34] p-2">
                       <ArrowRight
                         size={14}
                         color="white"
@@ -72,9 +74,9 @@ const ResearchSection = () => {
               </div>
 
               <Image
-                src={VideoThumbnail}
+                src={item.img}
                 alt={item.title}
-                className="w-full h-60 object-cover"
+                className="w-full h-70 object-cover"
                 priority
               />
             </div>
