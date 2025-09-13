@@ -32,10 +32,10 @@ const MeristemTimeline = () => {
           </h3>
           <div className="max-w-4xl">
             <p className="text-white text-xl lg:text-2xl leading-relaxed mb-8">
-              Since 2003, Meristem has stood at the forefront of Nigeria's financial markets. With
-              subsidiaries spanning wealth management, stockbroking, capital markets, trusteeship,
-              probate, and non-bank finance, we deliver solutions that empower individuals,
-              institutions, and enterprises.
+              Since 2003, Meristem has stood at the forefront of Nigeria&apos;s financial markets.
+              With subsidiaries spanning wealth management, stockbroking, capital markets,
+              trusteeship, probate, and non-bank finance, we deliver solutions that empower
+              individuals, institutions, and enterprises.
             </p>
             <a
               href="#"

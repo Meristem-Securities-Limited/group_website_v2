@@ -49,7 +49,7 @@ const products = [
 ];
 
 export default function ProductsSection() {
-  const scrollRef = useRef<any>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: string) => {
     if (scrollRef.current) {

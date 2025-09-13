@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { Preview1, Preview2, Preview3, VideoThumbnail } from "../assets";
+import { Preview1, Preview2, Preview3 } from "../assets";
 
 const researchData = [
   {
