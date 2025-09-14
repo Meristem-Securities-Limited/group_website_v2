@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
             {/* <div className="space-y-7 mt-5"> */}
             {/* <div className="space-y-4">
-                <p className="text-sm font-medium text-gray-300 pb-3">
+                <p className="text-sm font-medium text-gray-200 pb-3">
                   For complaints and enquiries, contact us at
                 </p>
               </div> */}
@@ -69,7 +69,7 @@ export default function Footer() {
                       <Link
                         aria-label={item?.title}
                         href={item.url}>
-                        <span className="font-medium text-sm cursor-pointer text-gray-300">
+                        <span className="font-medium text-sm cursor-pointer text-gray-200">
                           {item.title}
                         </span>
                       </Link>
@@ -82,37 +82,37 @@ export default function Footer() {
           <div className="items-center space-y-9">
             <div className="space-y-2">
               <h4 className="font-bold text-white">CONTACT</h4>
-              <p className="text-gray-300 text-sm font-medium">+23408179441026</p>
+              <p className="text-gray-200 text-sm font-medium">+23408179441026</p>
             </div>
             <div className="space-y-2">
               <h4 className="font-bold text-white uppercase">Email Address</h4>
-              <p className="text-gray-300 text-sm font-medium">meritrade@meristemng.com</p>
+              <p className="text-gray-200 text-sm font-medium">meritrade@meristemng.com</p>
             </div>
           </div>
           <div className="items-center space-y-9">
             <div className="space-y-2">
               <h4 className="font-bold text-white uppercase">Head Office Address</h4>
-              <p className="text-gray-300 text-sm font-medium">
+              <p className="text-gray-200 text-sm font-medium">
                 20A Gerrard Road, Ikoyi 106104, Lagos, Nigeria.
               </p>
             </div>
             <div className="space-y-3">
               <h4 className="font-bold text-white uppercase">Port Harcourt Branch</h4>
-              <p className="text-gray-300 text-sm font-medium">
+              <p className="text-gray-200 text-sm font-medium">
                 1 Opobo Crescent, Opposite Aladumo Schools, GRA Junction, Port Harcourt, Rivers
                 State, Nigeria. (09031864718)
               </p>
             </div>
             <div className="space-y-3">
               <h4 className="font-bold text-white uppercase">Abuja Branch</h4>
-              <p className="text-gray-300 text-sm font-medium">
+              <p className="text-gray-200 text-sm font-medium">
                 4th Floor, Elizade Towers, Plot 596 Cadastral Zone A.O, Independent Avenue, FCT,
                 Abuja, Nigeria. (09090755550)
               </p>
             </div>
             <div className="items-center">
               <h6 className="font-bold pb-4 uppercase">Socials</h6>
-              <div className="flex flex-wrap gap-y-4 lg:space-x-9 md:space-x-4 space-x-6 text-gray-300 items-center">
+              <div className="flex flex-wrap gap-y-4 lg:space-x-9 md:space-x-4 space-x-6 text-gray-200 items-center">
                 {[
                   {
                     href: "https://x.com/MeristemNigeria",
