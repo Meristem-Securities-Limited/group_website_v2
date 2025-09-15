@@ -7,7 +7,7 @@ import WhyChooseMeristem from "./components/WhyChooseMeristemSection";
 export default function Home() {
   return (
     <>
-      <section className="bg-white bg-[url(/hero-banner12.webp)] bg-no-repeat bg-cover bg-center min-h-screen flex items-center">
+      <section className="bg-white bg-[url(/hero-banner.webp)] bg-no-repeat bg-cover bg-center min-h-screen flex items-center">
         <div className="container mx-auto lg:pt-52 pt-40 px-4">
           <div className="text-left">
             <h1 className="lg:text-7xl md:text-5xl text-white text-5xl max-w-2xl font-medium leading-tight mb-8">
