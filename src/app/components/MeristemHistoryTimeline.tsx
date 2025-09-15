@@ -24,7 +24,7 @@ const MeristemTimeline = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 relative overflow-hidden -mt-10">
+    <section className="bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 relative overflow-hidden lg:-mt-10">
       <div className="relative z-10 container mx-auto px-4 py-28">
         <div className="mb-16 lg:mb-20">
           <h3 className="text-white text-sm font-medium tracking-wider uppercase mb-6">
