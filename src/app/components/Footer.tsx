@@ -9,7 +9,7 @@ import { Facebook, Instagram } from "iconsax-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-green-900/80 text-white">
+    <footer className="w-full bg-[#154D34] text-white">
       <div className="container px-4 w-full mx-auto pt-25">
         <div className="lg:pt-0 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-x-8 lg:gap-x-10 gap-y-10">
           <div className="w-full">
