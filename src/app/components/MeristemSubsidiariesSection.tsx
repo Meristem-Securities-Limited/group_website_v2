@@ -64,11 +64,13 @@ export default function MeristemSubsidiaries() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               viewport={{ once: true }}
               className="flex items-center justify-between py-8 border-b border-gray-200 group hover:bg-gray-50 transition-colors duration-200 cursor-pointer">
-              <div className="flex items-start gap-8">
-                <span className="text-gray-600 text-lg font-medium min-w-[3rem]">
-                  {subsidiary.number}
-                </span>
-                <div className="flex flex-col">
+              <div className="flex items-start lg:gap-17 gap-6">
+                <div>
+                  <span className="text-gray-600 text-lg font-medium min-w-[3rem]">
+                    {subsidiary.number}
+                  </span>
+                </div>
+                <div className="flex flex-col gap-3">
                   <h3 className="text-base md:text-2xl font-semibold text-gray-900 mb-2">
                     {subsidiary.name}
                   </h3>

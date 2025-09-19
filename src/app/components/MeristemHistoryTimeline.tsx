@@ -50,7 +50,7 @@ const MeristemTimeline = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
           viewport={{ once: true }}>
-          <div className="p-10 bg-[#154D34] w-auto">
+          <div className="lg:p-10 p-4 bg-[#154D34] w-auto">
             <motion.h3
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -75,9 +75,9 @@ const MeristemTimeline = () => {
               <a
                 href="#"
                 className="inline-flex items-center gap-3 text-white pr-3 hover:text-green-900 font-semibold hover:bg-white transition-colors">
-                <div className="p-3 bg-white">
+                <div className="lg:p-3 p-2 bg-white">
                   <ArrowRight
-                    size={24}
+                    size={20}
                     color="#154D34"
                   />
                 </div>
@@ -89,7 +89,7 @@ const MeristemTimeline = () => {
 
         {/* Timeline */}
         <motion.div
-          className="relative py-20 px-10 bg-[#154D34]"
+          className="relative py-20 lg:px-10 px-4 bg-[#154D34]"
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}

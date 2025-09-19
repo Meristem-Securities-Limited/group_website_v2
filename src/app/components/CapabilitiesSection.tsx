@@ -129,7 +129,7 @@ export default function CapabilitiesSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.3 }}
-              className="flex-shrink-0 w-[360px] hover:bg-green-50 hover:scale-105 p-4 sm:w-[320px] md:w-[398px] relative flex flex-col">
+              className="flex-shrink-0 hover:bg-green-50 hover:scale-105 lg:p-4 md:w-[320px] lg:w-[398px] pr-3 md:pr-0 max-w-full relative flex flex-col">
               <div className="flex flex-col flex-1 py-5 gap-9">
                 <div className="space-y-3">
                   <h3 className="text-lg font-semibold text-primary-green">{product.title}</h3>

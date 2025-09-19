@@ -14,6 +14,7 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const navbarRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const productPlatforms = [
     { name: "Wealthbuddy", link: "#" },
@@ -30,6 +31,10 @@ const Navbar = () => {
     const handleClickOutside = (event: MouseEvent) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
         setActiveDropdown(null); // close dropdowns
+      }
+
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setLoginDropdownOpen(false); // close dropdowns
       }
     };
 
@@ -173,7 +178,9 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden lg:flex items-center space-x-4">
+          <div
+            ref={dropdownRef}
+            className="hidden lg:flex items-center space-x-4">
             <button
               className={`flex items-center px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
                 isScrolled
@@ -185,7 +192,10 @@ const Navbar = () => {
             </button>
 
             <button
-              onClick={() => setLoginDropdownOpen(!loginDropdownOpen)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setLoginDropdownOpen(!loginDropdownOpen);
+              }}
               className="flex items-center text-green-900 bg-white px-4 py-2 text-sm font-semibold  transition-colors duration-200">
               LOGIN
               <ChevronDown
@@ -453,7 +463,9 @@ const Navbar = () => {
               </button>
 
               {loginDropdownOpen && (
-                <div className="mt-2 pl-6 space-y-2 border-l-2 border-gray-200">
+                <div
+                  ref={dropdownRef}
+                  className="mt-2 pl-6 space-y-2 border-l-2 border-gray-200">
                   {productPlatforms.map((platform, index) => (
                     <a
                       key={index}

@@ -108,7 +108,7 @@ export default function ProductsSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="flex-shrink-0 w-[360px] sm:w-[320px] md:w-[398px] relative flex flex-col">
+              className="flex-shrink-0 md:w-[360px] w-full lg:w-[398px] relative flex flex-col">
               <div className="w-full bg-[#154D3433] flex items-center justify-center overflow-hidden">
                 <Image
                   src={product.img}
