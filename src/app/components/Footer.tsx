@@ -9,7 +9,7 @@ import { Facebook, Instagram } from "iconsax-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#154D34] text-white">
+    <footer className="w-full bg-[#154D34] text-white bg-[url(/bg-banner.png)] bg-no-repeat bg-top bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 relative overflow-hidden">
       <div className="container px-4 w-full mx-auto pt-25">
         <div className="lg:pt-0 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-x-8 lg:gap-x-10 gap-y-10">
           <div className="w-full">
@@ -178,10 +178,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-
-      {/* <div className="lg:h-110 h-50 w-full">
-        <div className="bg-[url('/footer-banner.png')] opacity-60 bg-no-repeat lg:bg-cover bg-contain bg-bottom h-full w-full"></div>
-      </div> */}
     </footer>
   );
 }

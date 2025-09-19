@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Menu, X, Search, User } from "lucide-react";
 import Link from "next/link";
@@ -8,28 +8,80 @@ import Image from "next/image";
 import { Logo, WhiteLogo } from "../assets";
 
 const Navbar = () => {
+  const [loginDropdownOpen, setLoginDropdownOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
+  const navbarRef = useRef<HTMLDivElement>(null);
+
+  const productPlatforms = [
+    { name: "Wealthbuddy", link: "#" },
+    { name: "MeriTrade", link: "#" },
+    { name: "MORE", link: "#" },
+    { name: "Attend", link: "#" },
+    { name: "MAPP", link: "#" },
+  ];
+
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
+        setActiveDropdown(null); // close dropdowns
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+
   const handleDropdownToggle = (dropdown: string) =>
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
 
   const subsidiaries = [
-    { title: "Meristem Stockbrokers Limited", subtitle: "Buy & Sell Stocks" },
-    { title: "Meristem Registrars and Probate Limited", subtitle: "Asset Transfer Redefined" },
-    { title: "Meristem Wealth Limited", subtitle: "Grow Wealth By Investing" },
-    { title: "Meristem Family Office Limited", subtitle: "Plan Your Legacy" },
-    { title: "Meristem Capital Limited", subtitle: "Grow Your Business" },
-    { title: "Meristem Finance Limited", subtitle: "Grow Your Business" },
-    { title: "Meristem Trustees Limited", subtitle: "Plan Your Legacy" },
+    {
+      number: "01",
+      title: "Meristem Stockbrokers Limited",
+      subTitle: "Equities trading and Brokerage services with a difference",
+    },
+    {
+      number: "02",
+      title: "Meristem Registrars and Probate Limited",
+      subTitle: "Redefining Shareholder Management And Probate Services",
+    },
+    {
+      number: "03",
+      title: "Meristem Wealth Management Limited",
+      subTitle: "Tailored strategies for wealth creation and preservation",
+    },
+    {
+      number: "04",
+      title: "Meristem Family Office Limited",
+      subTitle: "Preserve the legacy. Protect the future.",
+    },
+    {
+      number: "05",
+      title: "Meristem Capital Limited",
+      subTitle: "Raising capital. Realising potential. Reshaping businesses.",
+    },
+    {
+      number: "06",
+      title: "Meristem Finance Limited",
+      subTitle: "Financing Solutions Tailored to You",
+    },
+    {
+      number: "07",
+      title: "Meristem Trustees Limited",
+      subTitle: "Leave the Things You Love for Those You Love",
+    },
   ];
 
   const aboutUsItems = [
@@ -52,19 +104,19 @@ const Navbar = () => {
     "Corporate Finance",
   ];
 
-  // Dynamic styles
   const isScrolled = scrollY >= 20;
   const navbarBg = isScrolled
-    ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-emerald-100"
+    ? "bg-white backdrop-blur-md shadow-lg border-b border-emerald-100"
     : "bg-transparent";
 
   return (
     <motion.nav
+      ref={navbarRef}
       className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-500 ${navbarBg}`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}>
-      <div className="container mx-auto py-9 px-4">
+      <div className="container mx-auto py-7 px-4">
         <div className="flex justify-between items-center">
           <Link
             href="/"
@@ -110,6 +162,15 @@ const Navbar = () => {
               }`}>
               CAREER
             </Link>
+            <Link
+              href="#"
+              className={`px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
+                isScrolled
+                  ? "text-green-900 hover:text-emerald-700"
+                  : "text-white hover:text-green-200"
+              }`}>
+              LEARN
+            </Link>
           </div>
 
           <div className="hidden lg:flex items-center space-x-4">
@@ -123,15 +184,40 @@ const Navbar = () => {
               SEARCH
             </button>
 
-            <button className="flex items-center text-green-900 bg-white px-4 py-2 text-sm font-semibold  transition-colors duration-200">
+            <button
+              onClick={() => setLoginDropdownOpen(!loginDropdownOpen)}
+              className="flex items-center text-green-900 bg-white px-4 py-2 text-sm font-semibold  transition-colors duration-200">
               LOGIN
-              <ChevronDown className="ml-1 h-3 w-3" />
+              <ChevronDown
+                className={`ml-1 h-3 w-3 transition-transform duration-200 ${
+                  loginDropdownOpen ? "rotate-180" : ""
+                }`}
+              />
             </button>
+
+            {loginDropdownOpen && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="absolute right-30 top-20 w-56 bg-white shadow-lg rounded-xl border border-gray-200 z-50">
+                <div className="py-2">
+                  {productPlatforms.map((platform, index) => (
+                    <Link
+                      key={index}
+                      href={platform.link}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-green-900 transition-colors duration-200">
+                      {platform.name}
+                    </Link>
+                  ))}
+                </div>
+              </motion.div>
+            )}
           </div>
 
           <motion.button
             onClick={toggleMobileMenu}
-            className={`lg:hidden rounded-lg flex items-center justify-center transition-colors duration-300 ${
+            className={`lg:hidden flex items-center justify-center transition-colors duration-300 ${
               isScrolled ? "text-green-900 hover:bg-emerald-50" : "text-white hover:bg-white/20"
             }`}
             whileHover={{ scale: 1.1 }}
@@ -150,7 +236,6 @@ const Navbar = () => {
           </motion.button>
         </div>
 
-        {/* Desktop Dropdowns */}
         {activeDropdown && (
           <motion.div
             className="hidden lg:block absolute top-full left-0 right-0 bg-white shadow-lg z-50 border-t"
@@ -160,7 +245,7 @@ const Navbar = () => {
             {activeDropdown === "subsidiaries" && (
               <div className="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-gray-500 text-sm font-semibold mb-6 tracking-wide">
+                  <h3 className="text-gray-400 text-sm font-semibold mb-6 tracking-wide">
                     SUBSIDIARIES
                   </h3>
                   <div className="grid grid-cols-2 gap-6">
@@ -171,12 +256,12 @@ const Navbar = () => {
                         <h4 className="text-gray-900 font-semibold group-hover:text-green-800 transition-colors duration-200">
                           {item.title}
                         </h4>
-                        <p className="text-gray-500 text-sm mt-1">{item.subtitle}</p>
+                        <p className="text-gray-500 text-sm mt-1">{item.subTitle}</p>
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 text-lg font-semibold">
+                <div className="bg-gray-100 flex items-center justify-center text-gray-600 text-lg font-semibold">
                   PRODUCT ADS
                 </div>
               </div>
@@ -185,7 +270,7 @@ const Navbar = () => {
             {activeDropdown === "about" && (
               <div className="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-gray-500 text-sm font-semibold mb-6 tracking-wide">
+                  <h3 className="text-gray-400 text-sm font-semibold mb-6 tracking-wide">
                     ABOUT US
                   </h3>
                   <div className="grid grid-cols-2 gap-4">
@@ -199,7 +284,7 @@ const Navbar = () => {
                     ))}
                   </div>
                 </div>
-                <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 text-lg font-semibold">
+                <div className="bg-gray-100 flex items-center justify-center text-gray-600 text-lg font-semibold">
                   PRODUCT ADS
                 </div>
               </div>
@@ -222,7 +307,7 @@ const Navbar = () => {
                     ))}
                   </div>
                 </div>
-                <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 text-lg font-semibold">
+                <div className="bg-gray-100 flex items-center justify-center text-gray-600 text-lg font-semibold">
                   PRODUCT ADS
                 </div>
               </div>
@@ -230,7 +315,6 @@ const Navbar = () => {
           </motion.div>
         )}
 
-        {/* Mobile Menu */}
         <motion.div
           className={`lg:hidden overflow-hidden ${
             isScrolled ? "bg-white/95" : "bg-black/70"
@@ -244,7 +328,6 @@ const Navbar = () => {
           }}
           transition={{ duration: 0.3 }}>
           <div className="p-4 space-y-3">
-            {/* SUBSIDIARIES */}
             <div>
               <motion.button
                 onClick={() => handleDropdownToggle("subsidiaries")}
@@ -269,14 +352,12 @@ const Navbar = () => {
                       key={index}
                       className="cursor-pointer">
                       <h4 className="text-gray-900 font-semibold text-sm">{item.title}</h4>
-                      <p className="text-gray-500 text-xs mt-1">{item.subtitle}</p>
+                      <p className="text-gray-500 text-xs mt-1">{item.subTitle}</p>
                     </div>
                   ))}
                 </div>
               )}
             </div>
-
-            {/* ABOUT US */}
             <div>
               <motion.button
                 onClick={() => handleDropdownToggle("about")}
@@ -308,7 +389,6 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* OUR PRODUCTS */}
             <div>
               <motion.button
                 onClick={() => handleDropdownToggle("products")}
@@ -340,7 +420,6 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* CAREER */}
             <Link
               href="#"
               className={`block w-full text-left py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
@@ -348,18 +427,43 @@ const Navbar = () => {
               }`}>
               CAREER
             </Link>
+            <Link
+              href="#"
+              className={`block w-full text-left py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
+                isScrolled ? "text-green-800 hover:bg-emerald-50" : "text-white hover:bg-white/20"
+              }`}>
+              LEARN
+            </Link>
 
-            {/* ACTIONS */}
             <div className="pt-4 border-t border-gray-200 space-y-3">
               <button className="flex items-center w-full text-gray-700 hover:text-green-800 py-2 text-base font-semibold transition-colors duration-200">
                 <Search className="h-4 w-4 mr-2" />
                 SEARCH
               </button>
-              <button className="w-full bg-green-700 text-white px-4 py-3 text-base font-semibold hover:bg-green-800 transition-colors duration-200 flex items-center justify-center">
+              <button
+                onClick={() => setLoginDropdownOpen(!loginDropdownOpen)}
+                className="w-full bg-green-700 text-white px-4 py-3 text-base font-semibold hover:bg-green-800 transition-colors duration-200 flex items-center justify-center">
                 <User className="h-4 w-4 mr-2" />
                 LOGIN
-                <ChevronDown className="ml-2 h-3 w-3" />
+                <ChevronDown
+                  className={`ml-2 h-3 w-3 transition-transform ${
+                    loginDropdownOpen ? "rotate-180" : ""
+                  }`}
+                />
               </button>
+
+              {loginDropdownOpen && (
+                <div className="mt-2 pl-6 space-y-2 border-l-2 border-gray-200">
+                  {productPlatforms.map((platform, index) => (
+                    <a
+                      key={index}
+                      href={platform.link}
+                      className="block text-gray-700 hover:text-green-800 py-1 text-sm">
+                      {platform.name}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </motion.div>

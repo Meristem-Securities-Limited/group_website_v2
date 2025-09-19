@@ -1,8 +1,10 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { Preview1, Preview2, Preview3 } from "../assets";
-
+import { motion } from "framer-motion";
 const researchData = [
   {
     category: "Market Updates",
@@ -28,37 +30,60 @@ const ResearchSection = () => {
   return (
     <section className="lg:py-30 py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row justify-between gap-8 items-center mb-12">
-          <div>
-            <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 lg:leading-13 leading-10 max-w-xl">
+        {/* Header Row */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex flex-col lg:flex-row justify-between gap-8 items-center mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}>
+            <h2 className="text-3xl md:text-5xl font-semibold text-primary-green lg:leading-13 leading-10 max-w-xl">
               Research that guides smarter decisions
             </h2>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-start max-w-md">
-            <p className="text-gray-600 mb-6 max-w-lg">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="flex flex-col items-start max-w-md">
+            <p className="text-primary-green mb-6 max-w-lg">
               Our group of subsidiaries brings together specialized expertise across the financial
               spectrum, helping individuals, institutions, and businesses achieve their goals.
             </p>
             <a
               href="#"
-              className="border border-green-800 text-green-800 font-semibold px-6 py-2 hover:bg-green-700 hover:text-white transition">
+              className="border border-primary-green text-primary-green font-semibold px-6 py-2 hover:bg-primary-green hover:text-white transition">
               MERISTEM RESEARCH
             </a>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          </motion.div>
+        </motion.div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-15">
           {researchData.map((item, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-gray-50 border border-gray-200 flex flex-col justify-between">
-              <div className="p-6 flex flex-col justify-between h-auto mdLh-full gap-5">
-                <div className="space-y-5">
-                  <p className="text-sm text-gray-500 mb-2">{item.category}</p>
-                  <h3 className="text-xl font-semibold text-black mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-500 mb-4">{item.date}</p>
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="bg-gray-50 border border-gray-200 flex flex-col">
+              {/* Content */}
+              <div className="p-6 flex flex-col flex-1">
+                <div className="space-y-2 flex-1">
+                  <p className="text-sm text-gray-500">{item.category}</p>
+                  <h3 className="text-xl font-semibold text-black">{item.title}</h3>
+                  <p className="text-sm text-gray-500">{item.date}</p>
                 </div>
-                <div>
+
+                <div className="mt-auto pt-10">
                   <a
                     href="#"
                     className="flex items-center gap-3 text-[#154D34] font-medium text-sm">
@@ -76,10 +101,10 @@ const ResearchSection = () => {
               <Image
                 src={item.img}
                 alt={item.title}
-                className="w-full h-70 object-cover"
+                className="w-full lg:h-55 h-40 object-cover"
                 priority
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

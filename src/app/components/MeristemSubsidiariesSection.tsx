@@ -1,53 +1,68 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function MeristemSubsidiaries() {
   const subsidiaries = [
     {
       number: "01",
       name: "Meristem Stockbrokers Limited",
-      description: "Buy & sell stocks",
+      description: "Equities trading and Brokerage services with a difference",
     },
     {
       number: "02",
       name: "Meristem Registrars and Probate Limited",
-      description: "Asset transfer redefined",
+      description: "Redefining Shareholder Management And Probate Services",
     },
     {
       number: "03",
-      name: "Meristem Wealth Limited",
-      description: "Grow wealth by investing",
+      name: "Meristem Wealth Management Limited",
+      description: "Tailored strategies for wealth creation and preservation",
     },
     {
       number: "04",
       name: "Meristem Family Office Limited",
-      description: "Plan your legacy",
+      description: "Preserve the legacy. Protect the future.",
     },
     {
       number: "05",
       name: "Meristem Capital Limited",
-      description: "Grow your business",
+      description: "Raising capital. Realising potential. Reshaping businesses.",
     },
     {
       number: "06",
       name: "Meristem Finance Limited",
-      description: "Grow your business",
+      description: "Financing Solutions Tailored to You",
     },
     {
       number: "07",
       name: "Meristem Trustees Limited",
-      description: "Plan your legacy",
+      description: "Leave the Things You Love for Those You Love",
     },
   ];
 
   return (
     <section className="bg-white">
       <div className="container mx-auto px-4 py-16 bg-white">
-        <h2 className="text-2xl font-normal text-gray-900 mb-12">Our Subsidiaries</h2>
+        <div className="pb-6">
+          <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">
+            Our Subsidiaries
+          </h2>
+          <p className="text-gray-600 mt-3 max-w-2xl">
+            Provides premium financial services that help you grow and preserve your wealth through
+            expert market analysis and personalized investment strategies.
+          </p>
+        </div>
 
-        <div className="space-y-0">
+        <div className="space-y-0 mt-5">
           {subsidiaries.map((subsidiary, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, x: 100 }} // start off-screen to the right
+              whileInView={{ opacity: 1, x: 0 }} // slide in when visible
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              viewport={{ once: true }}
               className="flex items-center justify-between py-8 border-b border-gray-200 group hover:bg-gray-50 transition-colors duration-200 cursor-pointer">
               <div className="flex items-start gap-8">
                 <span className="text-gray-600 text-lg font-medium min-w-[3rem]">
@@ -62,7 +77,7 @@ export default function MeristemSubsidiaries() {
               </div>
 
               <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors duration-200 flex-shrink-0" />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
