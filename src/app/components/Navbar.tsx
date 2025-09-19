@@ -17,11 +17,35 @@ const Navbar = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const productPlatforms = [
-    { name: "Wealthbuddy", link: "#" },
-    { name: "MeriTrade", link: "#" },
-    { name: "MORE", link: "#" },
-    { name: "Attend", link: "#" },
-    { name: "MAPP", link: "#" },
+    {
+      name: "Wealthbuddy",
+      link: "#",
+      subText:
+        "Invest easily in Mutual Funds, Treasury Bills, Commercial Papers, Bonds and more—tailored to grow your money",
+    },
+    {
+      name: "MeriTrade",
+      link: "#",
+      subText:
+        "Buy and sell Nigerian stocks seamlessly, giving you full control of your investments.",
+    },
+    {
+      name: "MORE",
+      link: "#",
+      subText:
+        "Learn directly from industry experts and gain practical knowledge to grow as an entrepreneur and investor.",
+    },
+    {
+      name: "Attend",
+      link: "#",
+      subText: "Join AGMs stress-free—register, mark attendance, and vote all in one app.",
+    },
+    // {
+    //   name: "MAPP",
+    //   link: "#",
+    //   subText:
+    //     "Invest easily in Mutual Funds, Treasury Bills, Commercial Papers, Bonds and more—tailored to grow your money",
+    // },
   ];
 
   useEffect(() => {
@@ -181,7 +205,7 @@ const Navbar = () => {
           <div
             ref={dropdownRef}
             className="hidden lg:flex items-center space-x-4">
-            <button
+            {/* <button
               className={`flex items-center px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
                 isScrolled
                   ? "text-green-900 hover:text-emerald-700"
@@ -189,7 +213,7 @@ const Navbar = () => {
               }`}>
               <Search className="h-4 w-4 mr-1" />
               SEARCH
-            </button>
+            </button> */}
 
             <button
               onClick={(e) => {
@@ -197,7 +221,7 @@ const Navbar = () => {
                 setLoginDropdownOpen(!loginDropdownOpen);
               }}
               className="flex items-center text-green-900 bg-white px-4 py-2 text-sm font-semibold  transition-colors duration-200">
-              LOGIN
+              CLIENT LOGIN
               <ChevronDown
                 className={`ml-1 h-3 w-3 transition-transform duration-200 ${
                   loginDropdownOpen ? "rotate-180" : ""
@@ -210,14 +234,15 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
-                className="absolute right-30 top-20 w-56 bg-white shadow-lg rounded-xl border border-gray-200 z-50">
-                <div className="py-2">
+                className="absolute right-40 top-20 w-58 bg-white shadow-lg rounded-xl border border-gray-200 z-50">
+                <div className="py-2 divide-y divide-gray-300">
                   {productPlatforms.map((platform, index) => (
                     <Link
                       key={index}
                       href={platform.link}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-green-900 transition-colors duration-200">
-                      {platform.name}
+                      <span className="block">{platform.name}</span>
+                      {/* <span>{platform.subText}</span> */}
                     </Link>
                   ))}
                 </div>
@@ -446,15 +471,15 @@ const Navbar = () => {
             </Link>
 
             <div className="pt-4 border-t border-gray-200 space-y-3">
-              <button className="flex items-center w-full text-gray-700 hover:text-green-800 py-2 text-base font-semibold transition-colors duration-200">
+              {/* <button className="flex items-center w-full text-gray-700 hover:text-green-800 py-2 text-base font-semibold transition-colors duration-200">
                 <Search className="h-4 w-4 mr-2" />
                 SEARCH
-              </button>
+              </button> */}
               <button
                 onClick={() => setLoginDropdownOpen(!loginDropdownOpen)}
                 className="w-full bg-green-700 text-white px-4 py-3 text-base font-semibold hover:bg-green-800 transition-colors duration-200 flex items-center justify-center">
                 <User className="h-4 w-4 mr-2" />
-                LOGIN
+                CLIENT LOGIN
                 <ChevronDown
                   className={`ml-2 h-3 w-3 transition-transform ${
                     loginDropdownOpen ? "rotate-180" : ""
@@ -465,7 +490,7 @@ const Navbar = () => {
               {loginDropdownOpen && (
                 <div
                   ref={dropdownRef}
-                  className="mt-2 pl-6 space-y-2 border-l-2 border-gray-200">
+                  className="mt-2 pl-6 space-y-2 divide-y divide-gray-300 border-l-2 border-gray-200">
                   {productPlatforms.map((platform, index) => (
                     <a
                       key={index}

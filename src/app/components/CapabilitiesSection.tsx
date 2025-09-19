@@ -69,7 +69,7 @@ export default function CapabilitiesSection() {
   };
 
   return (
-    <section className="bg-white lg:py-28 py-19">
+    <section className="bg-white py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 60 }}

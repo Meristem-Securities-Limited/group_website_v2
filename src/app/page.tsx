@@ -58,8 +58,8 @@ export default function Home() {
         </div>
       </section>
       <CapabilitiesSection />
-      <MeristemTimeline />
       <ProductsSection />
+      <MeristemTimeline />
       <MeristemSubsidiaries />
       <WhyChooseMeristem />
       <ResearchSection />

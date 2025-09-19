@@ -28,7 +28,7 @@ const MeristemTimeline = () => {
 
   return (
     <section className="bg-[#154D34] bg-[url(/bg-banner.png)] bg-no-repeat bg-cover bg-center bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 relative overflow-hidden">
-      <div className="relative z-10 container mx-auto py-28 px-4">
+      <div className="relative z-10 container mx-auto py-20 px-4">
         {/* Header */}
         <motion.div
           className="pb-6 mb-9"

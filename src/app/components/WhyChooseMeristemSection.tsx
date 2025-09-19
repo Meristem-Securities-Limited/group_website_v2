@@ -64,7 +64,7 @@ const WhyChooseMeristem = () => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-2">
-            To advance the financial wellbeing of our clients
+            We exist to advance the financial wellbeing of our clients
           </motion.p>
         </div>
 

@@ -62,7 +62,7 @@ export default function ProductsSection() {
   };
 
   return (
-    <section className="bg-white lg:py-28 py-19">
+    <section className="bg-white py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-12">
           {/* Header Text */}
