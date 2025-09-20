@@ -1,10 +1,21 @@
 "use client";
 
 import React from "react";
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import toast, { Toaster } from "react-hot-toast";
+interface ContactFormInputs {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
+interface ApiResponse {
+  error?: boolean;
+  message: string;
+}
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -22,25 +33,25 @@ const validationSchema = Yup.object({
       return words.length >= 10;
     })
     .test("max-words", "Message must not exceed 100 words", (value) => {
-      if (!value) return true; // allow empty to be caught by required
+      if (!value) return true;
       const words = value.trim().split(/\s+/);
       return words.length <= 100;
     }),
 });
 
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
     setError,
-  } = useForm({
+  } = useForm<ContactFormInputs>({
     resolver: yupResolver(validationSchema),
     mode: "onBlur",
   });
 
-  const onSubmit = async (data: any) => {
+  const onSubmit: SubmitHandler<ContactFormInputs> = async (data) => {
     try {
       const response = await fetch(
         "https://equitymandateapi-y2zn4.ondigitalocean.app/api/submit-form",
@@ -53,7 +64,7 @@ const ContactForm = () => {
         }
       );
 
-      const result = await response.json();
+      const result: ApiResponse = await response.json();
 
       if (response.ok) {
         reset();
@@ -67,7 +78,8 @@ const ContactForm = () => {
         toast.error(result.message || "Failed to send message. Please try again.");
         return { success: false };
       }
-    } catch (error: any) {
+    } catch (error) {
+      console.log(error);
       setError("root.serverError", {
         type: "server",
         message: "Sorry, there was an error sending your message. Please try again.",
@@ -82,7 +94,8 @@ const ContactForm = () => {
       <div className="space-y-2 mb-9">
         <h3 className="text-2xl font-bold text-gray-900">How Can We Assist You?</h3>
         <p>
-          Your satisfaction is our priority. let's make sure you have the best experience with us.
+          Your satisfaction is our priority. Let&apos;s make sure you have the best experience with
+          us.
         </p>
       </div>
       <Toaster
