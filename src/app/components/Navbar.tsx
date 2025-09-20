@@ -19,25 +19,25 @@ const Navbar = () => {
   const productPlatforms = [
     {
       name: "Wealthbuddy",
-      link: "#",
+      link: "#wealthbuddy-login",
       subText:
         "Invest easily in Mutual Funds, Treasury Bills, Commercial Papers, Bonds and more—tailored to grow your money",
     },
     {
       name: "MeriTrade",
-      link: "#",
+      link: "#meritrade-login",
       subText:
         "Buy and sell Nigerian stocks seamlessly, giving you full control of your investments.",
     },
     {
       name: "MORE",
-      link: "#",
+      link: "#more-login",
       subText:
         "Learn directly from industry experts and gain practical knowledge to grow as an entrepreneur and investor.",
     },
     {
       name: "Attend",
-      link: "#",
+      link: "#attend-login",
       subText: "Join AGMs stress-free—register, mark attendance, and vote all in one app.",
     },
     // {
@@ -48,17 +48,50 @@ const Navbar = () => {
     // },
   ];
 
+  // useEffect(() => {
+  //   const handleScroll = () => setScrollY(window.scrollY);
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   const handleClickOutside = (event: MouseEvent) => {
+  //     if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
+  //       setActiveDropdown(null); // close dropdowns
+  //     }
+
+  //     if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+  //       const targetElement = event.target as HTMLElement;
+  //       console.log(dropdownRef.current);
+  //       console.log(targetElement);
+  //       // setLoginDropdownOpen(false);
+  //     }
+  //   };
+
+  //   document.addEventListener("mousedown", handleClickOutside);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, []);
+
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
 
     const handleClickOutside = (event: MouseEvent) => {
+      // Handle navbar dropdowns
       if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
-        setActiveDropdown(null); // close dropdowns
+        setActiveDropdown(null);
       }
 
+      // Handle login dropdown
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setLoginDropdownOpen(false); // close dropdowns
+        const target = event.target as HTMLElement;
+
+        if (target.id === "client-login-btn") {
+          setLoginDropdownOpen((prev) => !prev);
+        } else {
+          setLoginDropdownOpen(false); // close normally
+        }
       }
     };
 
@@ -216,6 +249,7 @@ const Navbar = () => {
             </button> */}
 
             <button
+              id="client-login-btn"
               onClick={(e) => {
                 e.stopPropagation();
                 setLoginDropdownOpen(!loginDropdownOpen);
@@ -234,15 +268,15 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
-                className="absolute right-40 top-20 w-58 bg-white shadow-lg rounded-xl border border-gray-200 z-50">
-                <div className="py-2 divide-y divide-gray-300">
+                className="absolute right-40 top-20 max-w-88 bg-white shadow-lg rounded-xl border border-gray-200 z-50">
+                <div className="py-2 divide-y divide-gray-500">
                   {productPlatforms.map((platform, index) => (
                     <Link
                       key={index}
                       href={platform.link}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-emerald-50 hover:text-green-900 transition-colors duration-200">
-                      <span className="block">{platform.name}</span>
-                      {/* <span>{platform.subText}</span> */}
+                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-emerald-800 hover:text-white transition-colors duration-200">
+                      <span className="block font-bold text-base">{platform.name}</span>
+                      <span>{platform.subText}</span>
                     </Link>
                   ))}
                 </div>

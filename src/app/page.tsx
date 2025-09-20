@@ -1,6 +1,7 @@
 "use client";
 
 import CapabilitiesSection from "./components/CapabilitiesSection";
+import MeristemContactSection from "./components/ContactSection";
 import MeristemTimeline from "./components/MeristemHistoryTimeline";
 import MeristemSubsidiaries from "./components/MeristemSubsidiariesSection";
 import ProductsSection from "./components/ProductsSection";
@@ -63,6 +64,7 @@ export default function Home() {
       <MeristemSubsidiaries />
       <WhyChooseMeristem />
       <ResearchSection />
+      <MeristemContactSection />
     </>
   );
 }

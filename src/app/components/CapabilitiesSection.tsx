@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { HappyFamily, HouseDisplay, MeritradeMockUp, WealthBuddyMockup } from "../assets";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const products = [
   {
@@ -58,7 +59,7 @@ const products = [
 
 export default function CapabilitiesSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
-
+  const navigate = useRouter();
   const scroll = (direction: string) => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
@@ -69,14 +70,14 @@ export default function CapabilitiesSection() {
   };
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white pt-17 pb-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-12">
+          className="flex flex-col md:flex-row md:items-start md:justify-between mb-10 gap-12">
           <div>
             <motion.h2
               initial={{ opacity: 0, y: 60 }}
@@ -122,14 +123,14 @@ export default function CapabilitiesSection() {
           ref={scrollRef}
           className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth mt-17">
           {products.map((product, index) => (
-            <motion.a
-              href={product.link}
+            <motion.div
+              onClick={() => navigate.push(product.link)}
               key={product.id}
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.3 }}
-              className="flex-shrink-0 hover:bg-green-50 hover:scale-105 lg:p-4 md:w-[320px] lg:w-[398px] pr-3 md:pr-0 max-w-full relative flex flex-col">
+              className="flex-shrink-0 cursor-pointer hover:bg-green-50 hover:scale-105 lg:p-4 md:w-[320px] lg:w-[398px] pr-3 md:pr-0 max-w-full relative flex flex-col">
               <div className="flex flex-col flex-1 py-5 gap-9">
                 <div className="space-y-3">
                   <h3 className="text-lg font-semibold text-primary-green">{product.title}</h3>
@@ -154,7 +155,7 @@ export default function CapabilitiesSection() {
                   </div>
                 </div>
               </div>
-            </motion.a>
+            </motion.div>
           ))}
         </div>
       </div>
