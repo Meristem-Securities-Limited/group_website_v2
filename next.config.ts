@@ -13,8 +13,18 @@ const nextConfig: NextConfig = {
         hostname: "www.meritrade.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "meristemng.com",
+        pathname: "/**",
+      },
     ],
-    domains: ["www.meritrade.com", "www.res.cloudinary.com"],
+    domains: ["www.meritrade.com", "www.res.cloudinary.com", "www.meristemng.com"],
   },
 };
 

@@ -15,11 +15,41 @@ import CheckDouble from "./check-double.svg";
 import Preview1 from "./preview-1.png";
 import Preview2 from "./preview-2.png";
 import Preview3 from "./preview-3.png";
+import GroupPicture from "./group-of-people-talking.webp";
+import GroupMeetings from "./group-meetings.webp";
+import Damilola from "./Damilola Hassan.jpg";
+import Sulaimon from "./Sulaiman Adedokun.jpg";
+import Bashir from "./Bashir Saheed.jpg";
+import Salawu from "./Rasaki Salawu.jpg";
+import Funmilola from "./Funmilola Adekola-Daramola.jpg";
+import Ojenike from "./Kemi Ojenike.jpg";
+import Ifeoma from "./Ifeoma Anyanwu.jpg";
+import Nkechinyelu from "./Nkechinyelu Okoye.jpg";
+import Okiemute from "./Okiemute Sagua.jpg";
+import Taiwo from "./Taiwo Yusuf.jpg";
+import Temitope from "./Temitope Oludimu.jpg";
+import Mubo from "./Mubo Olasoko.jpg";
+import Kemi from "./Kemi Ojenike.jpg";
 
 export {
+  Bashir,
+  Salawu,
+  Sulaimon,
+  Funmilola,
+  Ojenike,
+  Nkechinyelu,
+  Taiwo,
+  Temitope,
+  Mubo,
+  Kemi,
+  Okiemute,
+  Ifeoma,
+  Damilola,
   Logo,
+  GroupPicture,
   VideoThumbnail,
   WhatsappLogo,
+  GroupMeetings,
   XIcon,
   MailIcon,
   FacebookLogo,

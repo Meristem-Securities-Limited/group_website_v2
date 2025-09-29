@@ -52,14 +52,17 @@ export default function Footer() {
               {
                 title: "Our Policies",
                 items: [
-                  { title: "Complaint Management Framework", url: "/" },
-                  { title: "Data Privacy Policy", url: "#" },
+                  {
+                    title: "Complaint Management Framework",
+                    url: "https://meristemng.com/documents/complaint-management-framework.pdf",
+                  },
+                  { title: "Data Privacy Policy", url: "https://meristemng.com/privacy-policy" },
                 ],
               },
               {
                 title: "Company",
                 items: [
-                  { title: "About Us", url: "#" },
+                  { title: "About Us", url: "/about-us" },
                   { title: "Our Platforms", url: "#products" },
                   { title: "Our Capabilities", url: "#" },
                   { title: "Our Subsidiaries", url: "#" },
@@ -68,8 +71,8 @@ export default function Footer() {
               {
                 title: "Quick Links",
                 items: [
-                  { title: "Simple Will Form", url: "#products" },
-                  { title: "Events", url: "#" },
+                  { title: "Simple Will Form", url: "http://simplewill.meristemtrustees.com/" },
+                  { title: "Events", url: "https://meristemng.com/events" },
                   { title: "Blogs", url: "#" },
                   { title: "Career", url: "#" },
                   { title: "Learn", url: "#" },

@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <>
-      <section className="bg-[#154D34] bg-[url(/hero-banner.webp)] bg-no-repeat bg-cover bg-center flex items-center">
+      <section className="bg-[#154D34] bg-[url(/group-small-businessmen-standing-coins.jpg)] bg-no-repeat bg-cover bg-center flex items-center">
         <div className="container mx-auto lg:pt-52 pt-40 pb-18 px-4">
           <motion.div
             initial={{ opacity: 0, x: 100 }} // start off to the right
@@ -25,8 +25,8 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="lg:text-7xl md:text-5xl text-white text-5xl max-w-2xl font-medium leading-tight mb-8">
-              Building pathways to wealth that last
+              className="lg:text-7xl md:text-5xl text-white text-5xl max-w-5xl font-medium leading-tight mb-8">
+              Building Pathways to Wealth that last to Advance Your Financial Wellbeing With Us
             </motion.h1>
 
             <motion.p
