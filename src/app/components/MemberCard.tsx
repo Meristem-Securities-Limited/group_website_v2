@@ -1,14 +1,25 @@
+import { StaticImageData } from "next/image";
 import { GroupMeetings } from "../assets";
 import ImageWithFallback from "./ImageWithFallback";
 
-const MemberCard = ({ member }: any) => (
+const MemberCard = ({
+  member,
+}: {
+  member: {
+    image: string | StaticImageData;
+    name: string;
+    role: string;
+    description?: string;
+    slug?: string;
+  };
+}) => (
   <div className="cursor-pointer group-hover:scale-105 group hover:scale-105 relative transition-all duration-300 border border-gray-700/50 hover:border-blue-500/30">
     <div className="text-center flex flex-col h-full">
       <div className="w-full h-70 max-h-70 min-h-70">
         <ImageWithFallback
           width={200}
           height={200}
-          src={member?.image}
+          src={member?.image as string}
           fallback={GroupMeetings}
           alt={member?.name || ""}
           className="w-full h-full object-cover object-top"

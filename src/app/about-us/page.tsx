@@ -413,15 +413,17 @@ const MeristemHomepage = () => {
             <div>
               <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 mb-6">Who we are</h2>
               <p className="text-lg text-gray-600 mb-9 leading-relaxed">
-                With a legacy spanning over two decades, we've established ourselves as the trusted
-                financial services partner for individuals and corporations in Nigeria and globally.
+                With a legacy spanning over two decades, we&apos;ve established ourselves as the
+                trusted financial services partner for individuals and corporations in Nigeria and
+                globally.
               </p>
 
               <p className="text-lg text-gray-600 leading-relaxed">
                 Our success is built on exceptional customer service, unparalleled financial
                 expertise, and a distinctive workplace culture fostering a team of high-achieving
-                professionals. Remaining true to our founding promise, 'Let's grow wealth for you,'
-                we continue to deliver on our commitment to helping our clients thrive financially.
+                professionals. Remaining true to our founding promise, Let&apos;s grow wealth for
+                you, we continue to deliver on our commitment to helping our clients thrive
+                financially.
               </p>
 
               <div className="w-full h-58 mt-9 relative">
