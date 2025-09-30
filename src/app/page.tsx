@@ -26,7 +26,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               viewport={{ once: true }}
               className="lg:text-7xl md:text-5xl text-white text-5xl max-w-5xl font-medium leading-tight mb-8">
-              Building Pathways to Wealth that last to Advance Your Financial Wellbeing With Us
+              Advance Your Financial Wellbeing With Us.
             </motion.h1>
 
             <motion.p
