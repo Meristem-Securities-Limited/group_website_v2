@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-export default function OutCoreValuesSection() {
+export default function OurCoreValuesSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   return (
     <section className="py-20 bg-gray-50">
