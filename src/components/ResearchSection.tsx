@@ -3,7 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { Preview1, Preview2, Preview3 } from "../assets";
+import { Preview1, Preview2, Preview3 } from "../app/assets";
 import { motion } from "framer-motion";
 const researchData = [
   {

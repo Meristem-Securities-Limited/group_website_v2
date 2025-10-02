@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import { WhiteLogo } from "../assets";
+import { WhiteLogo } from "../app/assets";
 import { BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { Facebook, Instagram } from "iconsax-react";
 

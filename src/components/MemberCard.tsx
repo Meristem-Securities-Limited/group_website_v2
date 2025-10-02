@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { GroupMeetings } from "../assets";
+import { GroupMeetings } from "../app/assets";
 import ImageWithFallback from "./ImageWithFallback";
 
 const MemberCard = ({

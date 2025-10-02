@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { BarChart, BubbleChart, CheckDouble } from "../assets";
+import { BarChart, BubbleChart, CheckDouble } from "../app/assets";
 import Image from "next/image";
 import { motion } from "framer-motion";
 

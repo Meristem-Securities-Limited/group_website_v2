@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ChevronDown, Menu, X, User } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Logo, WhiteLogo } from "../assets";
+import { Logo, WhiteLogo } from "../app/assets";
 
 const Navbar = () => {
   const [loginDropdownOpen, setLoginDropdownOpen] = useState(false);

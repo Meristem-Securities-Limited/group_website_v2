@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { HappyFamily, HouseDisplay, MeritradeMockUp, WealthBuddyMockup } from "../assets";
+import { HappyFamily, HouseDisplay, MeritradeMockUp, WealthBuddyMockup } from "../app/assets";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
