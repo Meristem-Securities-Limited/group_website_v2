@@ -1,12 +1,12 @@
 "use client";
 
-import CapabilitiesSection from "./components/CapabilitiesSection";
-import MeristemContactSection from "./components/ContactSection";
-import MeristemTimeline from "./components/MeristemHistoryTimeline";
-import MeristemSubsidiaries from "./components/MeristemSubsidiariesSection";
-import ProductsSection from "./components/ProductsSection";
-import ResearchSection from "./components/ResearchSection";
-import WhyChooseMeristem from "./components/WhyChooseMeristemSection";
+import CapabilitiesSection from "../components/CapabilitiesSection";
+import MeristemContactSection from "../components/ContactSection";
+import MeristemTimeline from "../components/MeristemHistoryTimeline";
+import MeristemSubsidiaries from "../components/MeristemSubsidiariesSection";
+import ProductsSection from "../components/ProductsSection";
+import ResearchSection from "../components/ResearchSection";
+import WhyChooseMeristem from "../components/WhyChooseMeristemSection";
 import { motion } from "framer-motion";
 
 export default function Home() {
