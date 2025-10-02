@@ -335,5 +335,5 @@ export default function ExecutiveProfile({ params }: Props) {
     return notFound();
   }
 
-  return <ProfilePage member={executive} />;
+  return <ProfilePage executive={executive} />;
 }

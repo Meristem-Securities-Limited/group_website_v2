@@ -1,9 +1,13 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function ProfilePage({ member: executive }: { member: any }) {
+export default function ProfilePage({
+  executive,
+}: {
+  executive: { name: string; role: string; image: string | StaticImageData; description: string };
+}) {
   return (
     <section className="bg-white">
       <div className="relative">
