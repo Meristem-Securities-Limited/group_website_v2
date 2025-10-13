@@ -35,7 +35,7 @@ const products = [
     id: 4,
     title: "Registrars & Probate Services",
     description:
-      "Manage share registration and estate administration with Meristem Registrars and Probate Services Limited (MRPSL). We provide automated share registration solutions that ensure accuracy, efficiency, and regulatory compliance for public offers, private placements, and bond issues. Through our Probate Management Services, we simplify estate administration, from asset gathering to letters of administration, grant of probate, and share transmission, ensuring a seamless transition of wealth with confidentiality and professionalism.",
+      "Simplify share registration and estate administration with MRPSL. We ensure efficiency, compliance, and confidentiality in managing shareholder records and transferring wealth seamlessly.",
     img: HouseDisplay,
     link: "#fixed-income",
   },
