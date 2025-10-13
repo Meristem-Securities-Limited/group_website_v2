@@ -71,7 +71,7 @@ export default function ProductsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">Our Platform</h2>
+            <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">Our Platforms</h2>
             <p className="text-gray-600 mt-3 max-w-2xl text-lg md:text-base">
               Provides premium financial services that help you grow and preserve your wealth
               through expert market analysis and personalized investment strategies.
