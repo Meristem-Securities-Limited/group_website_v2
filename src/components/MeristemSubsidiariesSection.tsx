@@ -8,7 +8,7 @@ export default function MeristemSubsidiaries() {
     {
       number: "01",
       name: "Meristem Stockbrokers Limited",
-      description: "is a wholly owned subsidiary of Meristem Securities Limited (MSL) and a licensed Trading License Holder (TLH) of the Nigerian Exchange (NGX), regulated by the Securities and Exchange Commission (SEC). MSBL is a leading brokerage and research firm serving clients across Africa, Europe, the Middle East, and the USA. It has consistently ranked among the top 10 brokerage firms in Nigeria since 2008 and made history in 2014 by executing the largest single trade on the NGX. The firm also pioneered online real-time stock trading in Nigeria with the launch of its digital platform, Meritrade.",
+      description: "Equities trading and Brokerage services with a difference",
     },
     {
       number: "02",
