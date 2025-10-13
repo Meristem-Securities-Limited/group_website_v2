@@ -241,9 +241,9 @@ She holds both Bachelor’s and Master’s degrees in Biochemistry from the Univ
         </div>`,
   },
   {
-    slug: "tope-oludimu",
+    slug: "temitope-oludimu",
     image: Temitope,
-    name: "Tope Oludimu",
+    name: "Temitope Oludimu",
     role: "Chief Operating Officer, Meristem Stockbrokers Limited",
     description: `<div class="executive-info">
           <p class="my-6">
