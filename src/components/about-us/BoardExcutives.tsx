@@ -18,7 +18,7 @@ const executiveMembers = [
     image: "https://meristemng.com/storage//assets/images/OLUSEGUN%20OLUSANYA.jpg",
   },
   {
-    name: "‘Laitan Onolaja (OFR)",
+    name: "Laitan Onolaja (OFR)",
     role: "Director",
     image: "https://meristemng.com/storage//assets/images/Laitan%20Onolaja.jpg",
   },
