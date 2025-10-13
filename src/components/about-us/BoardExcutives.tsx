@@ -86,9 +86,9 @@ export default function BoardExecutiveSection() {
           <motion.div
             variants={itemVariantsRight}
             className="text-left mb-12">
-            <h2 className="text-4xl font-bold text-black mb-4">Executive Management</h2>
+            <h2 className="text-4xl font-bold text-black mb-4">Board of Directors</h2>
             <p className="text-left text-lg mx-auto">
-              Our executive leadership team driving strategic vision and operational excellence
+              Distinguished professionals providing strategic oversight and governance
             </p>
           </motion.div>
 
@@ -113,9 +113,9 @@ export default function BoardExecutiveSection() {
           <motion.div
             variants={itemVariantsRight}
             className="text-left mb-12">
-            <h2 className="text-4xl font-bold text-black mb-4">Board of Directors</h2>
+            <h2 className="text-4xl font-bold text-black mb-4">Executive Management</h2>
             <p className="text-left text-lg mx-auto">
-              Distinguished professionals providing strategic oversight and governance
+              Our executive leadership team driving strategic vision and operational excellence
             </p>
           </motion.div>
 
