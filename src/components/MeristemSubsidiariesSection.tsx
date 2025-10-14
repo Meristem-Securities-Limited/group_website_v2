@@ -13,7 +13,7 @@ export default function MeristemSubsidiaries() {
     },
     {
       number: "02",
-      name: "Meristem Registrars and Probate Limited",
+      name: "Meristem Registrars and Probate Services Limited",
       description: "Redefining Shareholder Management And Probate Services",
       link: "https://registrars.meristemng.com",
     },
