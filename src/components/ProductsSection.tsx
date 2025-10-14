@@ -11,42 +11,34 @@ const products = [
     id: 1,
     title: "Meritrade",
     description:
-      "Trade equities and bonds in real time from anywhere. Our secure online platform puts the Nigerian Stock Exchange and beyond at your fingertips.",
+      "Trade equities in real time from anywhere. Our secure online platform puts the Nigerian Stock Exchange and beyond at your fingertips.",
     img: MeritradeMockUp,
-    link: "#",
+    link: "https://meritrade.com",
   },
   {
     id: 2,
-    title: "Real Estate",
+    title: "Wealthbuddy",
     description:
-      "Buy or sell premium properties through a secure platform backed by Meristem. Access curated listings, seamless transactions, and expert support — all in one place.",
-    img: HouseDisplay,
-    link: "#",
+      "Invest effortlessly in mutual funds, commercial papers, savings, bonds, and treasury bills. Grow your wealth through curated investment options built around your goals.",
+    img: WealthBuddyMockup,
+    link: "https://wealthbuddy.ng",
   },
   {
     id: 3,
-    title: "Wealthbuddy",
+    title: "Real Estate",
     description:
       "Save and invest smarter with flexible plans built around your goals. WealthBuddy helps you grow your money effortlessly while keeping it accessible.",
-    img: WealthBuddyMockup,
-    link: "#",
+    img: HouseDisplay,
+    link: "https://realestate.meristemng.com",
   },
   {
     id: 4,
-    title: "MAPP",
+    title: "MORE (Meristem Orientation for Rising Entrepreneurs)",
     description:
-      "Mapp is designed to simplify the complexities of wealth management and wealth transfer, providing you with the tools needed to organize, track and transfer your assets effortlessly.",
+      "Learn the essentials of investing and entrepreneurship through engaging content and expert-led sessions designed to empower the next generation of wealth creators.",
     img: HappyFamily,
-    link: "#",
-  },
-  {
-    id: 5,
-    title: "MeriAssitant",
-    description:
-      "Mapp is designed to simplify the complexities of wealth management and wealth transfer, providing you with the tools needed to organize, track and transfer your assets effortlessly.",
-    img: MeritradeMockUp,
-    link: "#",
-  },
+    link: "https://app.more.meristemng.com",
+  }
 ];
 
 export default function ProductsSection() {
@@ -71,10 +63,9 @@ export default function ProductsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">Our Platform</h2>
+            <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">Our Platforms</h2>
             <p className="text-gray-600 mt-3 max-w-2xl text-lg md:text-base">
-              Provides premium financial services that help you grow and preserve your wealth
-              through expert market analysis and personalized investment strategies.
+              Experience Meristem’s suite of digital platforms designed to simplify investing, trading, real estate management, and financial education, empowering you to grow, manage, and sustain wealth anytime, anywhere.
             </p>
           </motion.div>
 

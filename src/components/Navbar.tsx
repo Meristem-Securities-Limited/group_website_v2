@@ -216,22 +216,22 @@ const Navbar = () => {
             ))}
 
             <Link
-              href="#"
+              href="https://careers.meristemng.com"
               className={`px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
                 isScrolled
                   ? "text-green-900 hover:text-emerald-700"
                   : "text-white hover:text-green-200"
               }`}>
-              CAREER
+              CAREERS
             </Link>
             <Link
-              href="#"
+              href="https://blog.meristemng.com"
               className={`px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
                 isScrolled
                   ? "text-green-900 hover:text-emerald-700"
                   : "text-white hover:text-green-200"
               }`}>
-              LEARN
+              BLOG
             </Link>
           </div>
 

@@ -11,7 +11,7 @@ const products = [
     id: 1,
     title: "Stockbroking (Meritrade)",
     description:
-      "Buy and sell equities and bonds in real time through Meristem’s online trading platform. Access market research, monitor portfolios, and execute trades seamlessly.",
+      "Buy and sell equities in real time through Meristem’s online trading platform. Access market research, monitor portfolios, and execute trades seamlessly.",
     img: MeritradeMockUp,
     link: "#stockbroking",
   },
@@ -19,39 +19,47 @@ const products = [
     id: 2,
     title: "Mutual Funds",
     description:
-      "Invest in professionally managed mutual funds across equities, fixed income, and money market instruments designed to meet diverse financial goals.",
+      "Invest in professionally managed mutual funds spanning equities, fixed income, and money market instruments, expertly structured to help you achieve your short and long-term financial goals.",
     img: WealthBuddyMockup,
     link: "#mutual-funds",
   },
   {
     id: 3,
-    title: "Fixed Income & Bonds",
+    title: "Loans and Leases",
     description:
-      "Secure stable returns with treasury bills, bonds, and fixed income portfolios, tailored to investors seeking predictable and low-risk income streams.",
+      "Access tailored financing solutions for personal and business needs. We offer flexible loan options and asset leasing services designed to support growth and financial stability.",
+    img: WealthBuddyMockup,
+    link: "#mutual-funds",
+  },
+  {
+    id: 4,
+    title: "Registrars & Probate Services",
+    description:
+      "Simplify share registration and estate administration with MRPSL. We ensure efficiency, compliance, and confidentiality in managing shareholder records and transferring wealth seamlessly.",
     img: HouseDisplay,
     link: "#fixed-income",
   },
   {
-    id: 4,
-    title: "Dollar Investments",
+    id: 5,
+    title: "Trusteeship",
     description:
-      "Preserve and grow wealth in foreign currency through products like the Meristem Dollar Fund and Structured Dollar Portfolios, offering global exposure and stability.",
+      "Safeguard and transfer wealth seamlessly with Meristem Trustees Limited, licensed by the SEC to provide professional trust solutions. Our services include Wills, Living Trusts, Education Trusts, and Corporate Trusts, as well as the Meristem Diaspora Trust for Nigerians abroad.",
     img: HappyFamily,
     link: "#dollar-investments",
   },
   {
-    id: 5,
-    title: "Real Estate-Backed Portfolios",
+    id: 6,
+    title: "Family Office",
     description:
-      "Diversify your investment with secure real estate opportunities — including Real Estate Advantage and Ethical Portfolios backed by physical assets.",
+      "Preserve and grow your family’s legacy with Meristem Family Office. We provide personalized wealth management and succession planning solutions including Legacy Planning, Investment Management, Business Advisory, Philanthropy, Family Governance, and Health & Longevity Planning.",
     img: MeritradeMockUp,
     link: "#real-estate",
   },
   {
-    id: 6,
-    title: "Advisory & Wealth Management",
+    id: 7,
+    title: "Investment Banking",
     description:
-      "Comprehensive wealth management, financial advisory, retirement planning, and estate succession services to help preserve and transfer wealth effectively.",
+      "Providing bespoke corporate finance and advisory solutions, including debt and equity offerings, M&A, and commercial papers to help businesses optimize growth and capital structure.",
     img: WealthBuddyMockup,
     link: "#wealth-management",
   },
@@ -94,8 +102,7 @@ export default function CapabilitiesSection() {
               transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
               viewport={{ once: true }}
               className="text-gray-600 mt-3 max-w-2xl">
-              Provides premium financial services that help you grow and preserve your wealth
-              through expert market analysis and personalized investment strategies.
+              We provide premium financial services designed to help you grow, manage, and preserve your wealth through expert market insights and personalized investment strategies.
             </motion.p>
           </div>
 

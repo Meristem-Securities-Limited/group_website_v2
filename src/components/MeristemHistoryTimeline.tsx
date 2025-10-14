@@ -67,10 +67,7 @@ const MeristemTimeline = () => {
               transition={{ duration: 0.7, delay: 0.3 }}
               viewport={{ once: true }}>
               <p className="text-white text-base lg:text-lg  leading-relaxed mb-8">
-                Since 2003, Meristem has stood at the forefront of Nigeria&apos;s financial markets.
-                With subsidiaries spanning wealth management, stockbroking, capital markets,
-                trusteeship, probate, and non-bank finance, we deliver solutions that empower
-                individuals, institutions, and enterprises.
+                Founded in 2003 (originally as Great Africa Securities before rebranding in 2005), Meristem is a leading capital markets conglomerate in Nigeria. With seven subsidiaries, Meristem offers a comprehensive suite of financial services including stockbroking, wealth & asset management, investment banking, trusteeship & estate planning, registrars & probate services, lease & loan financing, and capital market advisory. Regulated by the Securities and Exchange Commission, we are committed to creating, preserving, and transferring wealth for individuals, institutions, and enterprises.
               </p>
               <a
                 href="#"
