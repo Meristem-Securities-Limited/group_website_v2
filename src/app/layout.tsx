@@ -44,15 +44,20 @@ export const metadata: Metadata = {
     title: "Meristem Securities Limited",
     description:
       "Discover Meristem Securities Limited – Nigeria’s trusted partner for investment, wealth management, securities trading, and financial advisory services.",
-    images: ["https://www.meristemng.com/og-image.jpg"], // replace with actual OG image
+    images: ["https://www.meristemng.com/og-image.jpg"],
   },
   alternates: {
     canonical: "https://www.meristemng.com",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon/logo.jpg",
     shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    apple: "/favicon/apple-touch-icon.png",
+    other: [
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32" },
+      { url: "/favicon/logo.jpg", sizes: "96x96" },
+    ],
   },
 };
 
