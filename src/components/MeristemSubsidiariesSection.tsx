@@ -9,36 +9,43 @@ export default function MeristemSubsidiaries() {
       number: "01",
       name: "Meristem Stockbrokers Limited",
       description: "Equities trading and Brokerage services with a difference",
+      link: "https://stockbroking.meristemng.com",
     },
     {
       number: "02",
       name: "Meristem Registrars and Probate Limited",
       description: "Redefining Shareholder Management And Probate Services",
+      link: "https://registrars.meristemng.com",
     },
     {
       number: "03",
       name: "Meristem Wealth Management Limited",
       description: "Tailored strategies for wealth creation and preservation",
+      link: "https://meristemwealth.com/",
     },
     {
       number: "04",
       name: "Meristem Family Office Limited",
       description: "Preserve the legacy. Protect the future.",
+      link: "https://familyoffice.meristemng.com",
     },
     {
       number: "05",
       name: "Meristem Capital Limited",
       description: "Raising capital. Realising potential. Reshaping businesses.",
+      link: "https://capital.meristemng.com",
     },
     {
       number: "06",
       name: "Meristem Finance Limited",
       description: "Financing Solutions Tailored to You",
+      link: "https://finance.meristemng.com",
     },
     {
       number: "07",
       name: "Meristem Trustees Limited",
       description: "Leave the Things You Love for Those You Love",
+      link: "https://trustees.meristemng.com",
     },
   ];
 
@@ -57,9 +64,10 @@ export default function MeristemSubsidiaries() {
 
         <div className="space-y-0 mt-5">
           {subsidiaries.map((subsidiary, index) => (
-            <motion.div
+            <motion.a
+              href={subsidiary.link}
               key={index}
-              initial={{ opacity: 0, x: 100 }} // start off-screen to the right
+              initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }} // slide in when visible
               transition={{ duration: 0.6, delay: index * 0.15 }}
               viewport={{ once: true }}
@@ -79,7 +87,7 @@ export default function MeristemSubsidiaries() {
               </div>
 
               <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors duration-200 flex-shrink-0" />
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>

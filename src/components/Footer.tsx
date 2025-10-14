@@ -27,6 +27,34 @@ export default function Footer() {
                 />
               </Link>
             </div>
+            <div className="flex flex-1 flex-col gap-10">
+              <div className="space-y-3 flex-1">
+                <h4 className="font-bold text-white uppercase">Head Office Address</h4>
+                <p className="text-gray-200 text-sm font-medium">
+                  20A Gerrard Road, Ikoyi 106104, Lagos, Nigeria.
+                </p>
+              </div>
+              <div className="space-y-3 flex-1">
+                <h4 className="font-bold text-white uppercase">Lagos Branch</h4>
+                <p className="text-gray-200 text-sm font-medium">
+                  213 Herbert Macaulay Wy, Yaba, Lagos 101245, Lagos (09031864718)
+                </p>
+              </div>
+              <div className="space-y-3 flex-1">
+                <h4 className="font-bold text-white uppercase">Port Harcourt Branch</h4>
+                <p className="text-gray-200 text-sm font-medium">
+                  1 Opobo Crescent, Opposite Aladumo Schools, GRA Junction, Port Harcourt, Rivers
+                  State, Nigeria. (09031864718)
+                </p>
+              </div>
+              <div className="space-y-3 flex-1">
+                <h4 className="font-bold text-white uppercase">Abuja Branch</h4>
+                <p className="text-gray-200 text-sm font-medium">
+                  4th Floor, Elizade Towers, Plot 596 Cadastral Zone A.O, Independent Avenue, FCT,
+                  Abuja, Nigeria. (09090755550)
+                </p>
+              </div>
+            </div>
             {/* <div className="space-y-7 mt-5"> */}
             {/* <div className="space-y-4">
                 <p className="text-sm font-medium text-gray-200 pb-3">
@@ -40,7 +68,7 @@ export default function Footer() {
               {
                 title: "Meristem’s Subsidiaries",
                 items: [
-                  { title: "Meristem Wealth", url: "https://meristemwealth.com/" },
+                  { title: "Meristem Wealth Management", url: "https://meristemwealth.com/" },
                   { title: "Meristem Stockbrokers", url: "https://stockbroking.meristemng.com" },
                   { title: "Meristem Registrar", url: "https://registrars.meristemng.com" },
                   { title: "Meristem Trustees", url: "https://trustees.meristemng.com" },
@@ -100,45 +128,17 @@ export default function Footer() {
                 </div>
               </div>
             ))}
-            <div className="items-center space-y-9">
-              <div className="space-y-2">
-                <h4 className="font-bold text-white">CONTACT</h4>
-                <p className="text-gray-200 text-sm font-medium">+23408179441026</p>
-              </div>
-              <div className="space-y-2">
-                <h4 className="font-bold text-white uppercase">Email Address</h4>
-                <p className="text-gray-200 text-sm font-medium">contact@meristemng.com</p>
-              </div>
-            </div>
           </div>
         </div>
         <div className="flex lg:flex-row flex-col lg:gap-19 gap-9 w-full lg:pt-20 pt-10">
-          <div className="flex flex-1 lg:flex-row flex-col gap-10">
-            <div className="space-y-3 flex-1">
-              <h4 className="font-bold text-white uppercase">Head Office Address</h4>
-              <p className="text-gray-200 text-sm font-medium">
-                20A Gerrard Road, Ikoyi 106104, Lagos, Nigeria.
-              </p>
+          <div className="flex space-x-9">
+            <div className="space-y-2">
+              <h4 className="font-bold text-white">CONTACT</h4>
+              <p className="text-gray-200 text-sm font-medium">+23408179441026</p>
             </div>
-            <div className="space-y-3 flex-1">
-              <h4 className="font-bold text-white uppercase">Lagos Branch</h4>
-              <p className="text-gray-200 text-sm font-medium">
-                213 Herbert Macaulay Wy, Yaba, Lagos 101245, Lagos (09031864718)
-              </p>
-            </div>
-            <div className="space-y-3 flex-1">
-              <h4 className="font-bold text-white uppercase">Port Harcourt Branch</h4>
-              <p className="text-gray-200 text-sm font-medium">
-                1 Opobo Crescent, Opposite Aladumo Schools, GRA Junction, Port Harcourt, Rivers
-                State, Nigeria. (09031864718)
-              </p>
-            </div>
-            <div className="space-y-3 flex-1">
-              <h4 className="font-bold text-white uppercase">Abuja Branch</h4>
-              <p className="text-gray-200 text-sm font-medium">
-                4th Floor, Elizade Towers, Plot 596 Cadastral Zone A.O, Independent Avenue, FCT,
-                Abuja, Nigeria. (09090755550)
-              </p>
+            <div className="space-y-2">
+              <h4 className="font-bold text-white uppercase">Email Address</h4>
+              <p className="text-gray-200 text-sm font-medium">contact@meristemng.com</p>
             </div>
           </div>
           <div className="w-auto items-center">
