@@ -1,7 +1,47 @@
+"use client";
+
 import React from "react";
 import { Users, TrendingUp, Sparkles } from "lucide-react";
+import { motion, Variants } from "framer-motion";
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (custom: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: custom * 0.2, duration: 0.6, ease: "easeOut" },
+  }),
+};
 
 export default function CultureSection() {
+  const cards = [
+    {
+      title: "Client-Centric",
+      icon: <Users className="w-6 h-6 text-white" />,
+      description:
+        "Every decision, strategy, and innovation is designed with your best interests at the forefront.",
+      points: [
+        "Personalized service approach",
+        "Responsive communication",
+        "Long-term relationship building",
+      ],
+    },
+    {
+      title: "High-Performance",
+      icon: <TrendingUp className="w-6 h-6 text-white" />,
+      description:
+        "Excellence is not just a goal; it's our standard. We continuously raise the bar in service delivery.",
+      points: ["Results-driven strategies", "Continuous improvement", "Measurable outcomes"],
+    },
+    {
+      title: "Passionate People",
+      icon: <Sparkles className="w-6 h-6 text-white" />,
+      description:
+        "Our greatest asset is our team—dedicated professionals with genuine zest for helping you succeed.",
+      points: ["Expert financial advisors", "Collaborative team culture", "Driven by purpose"],
+    },
+  ];
+
   return (
     <section className="bg-white py-24 px-6">
       <div className="container mx-auto px-4">
@@ -13,81 +53,34 @@ export default function CultureSection() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white p-8 shadow-lg border-2 border-emerald-700/40 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="w-14 h-14 bg-gradient-to-br from-emerald-700 to-emerald-900 flex items-center justify-center mb-6 shadow-lg">
-              <Users className="w-6 h-6 text-white" />
-            </div>
-            <h3 className="text-2xl font-bold text-emerald-900 mb-4">Client-Centric</h3>
-            <p className="text-emerald-800 leading-relaxed mb-4">
-              Every decision, strategy, and innovation is designed with your best interests at the
-              forefront.
-            </p>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-emerald-900 rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-emerald-900">Personalized service approach</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-emerald-900 rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-emerald-900">Responsive communication</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-emerald-900 rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-emerald-900">Long-term relationship building</span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-white p-8 shadow-lg border-2 border-emerald-700/40 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="w-14 h-14 bg-gradient-to-br from-emerald-700 to-emerald-900 flex items-center justify-center mb-6 shadow-lg">
-              <TrendingUp className="w-6 h-6 text-white" />
-            </div>
-            <h3 className="text-2xl font-bold text-emerald-900 mb-4">High-Performance</h3>
-            <p className="text-emerald-800 leading-relaxed mb-4">
-              Excellence is not just a goal; it's our standard. We continuously raise the bar in
-              service delivery.
-            </p>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-emerald-900 rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-emerald-900">Results-driven strategies</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-emerald-900 rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-emerald-900">Continuous improvement</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-emerald-900 rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-emerald-900">Measurable outcomes</span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-white p-8 shadow-lg border-2 border-emerald-700/40 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="w-14 h-14 bg-gradient-to-br from-emerald-700 to-emerald-900 flex items-center justify-center mb-6 shadow-lg">
-              <Sparkles className="w-6 h-6 text-white" />
-            </div>
-            <h3 className="text-2xl font-bold text-emerald-900 mb-4">Passionate People</h3>
-            <p className="text-emerald-800 leading-relaxed mb-4">
-              Our greatest asset is our team—dedicated professionals with genuine zest for helping
-              you succeed.
-            </p>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-emerald-900 rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-emerald-900">Expert financial advisors</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-emerald-900 rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-emerald-900">Collaborative team culture</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-emerald-900 rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-emerald-900">Driven by purpose</span>
-              </li>
-            </ul>
-          </div>
+          {cards.map((card, index) => (
+            <motion.div
+              key={card.title}
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={cardVariants}
+              className="bg-white p-8 shadow-lg border-2 border-emerald-700/40 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-14 h-14 bg-gradient-to-br from-emerald-700 to-emerald-900 flex items-center justify-center mb-6 shadow-lg">
+                {card.icon}
+              </div>
+              <h3 className="text-2xl font-bold text-emerald-900 mb-4">{card.title}</h3>
+              <p className="text-emerald-800 leading-relaxed mb-4">{card.description}</p>
+              <ul className="space-y-2">
+                {card.points.map((point) => (
+                  <li
+                    key={point}
+                    className="flex items-start gap-2">
+                    <span className="w-2 h-2 bg-emerald-900 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-emerald-900">{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
         </div>
+
         <div className="bg-[#154D34] text-white bg-[url(/bg-banner.png)] lg:bg-no-repeat bg-repeat bg-center bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 p-18 mt-19 text-center">
           <p className="text-white text-xl lg:text-2xl leading-relaxed font-medium mb-6">
             "Our culture creates an environment where excellence thrives, innovation flourishes, and
