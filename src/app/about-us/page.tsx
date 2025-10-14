@@ -9,12 +9,14 @@ import MissionSection from "@/components/about-us/MissionSection";
 import PhilosophySection from "@/components/about-us/PhilosophySection";
 import PromiseSection from "@/components/about-us/PromiseSection";
 import VisionSection from "@/components/about-us/VisionSection";
+import AboutTimelineSection from "@/components/about-us/AboutTimelineSection";
 
 const MeristemHomepage = () => {
   return (
     <div className="min-h-screen bg-white">
       <AboutUsHeroSection />
       <WhoWeAreSection />
+      <AboutTimelineSection />
       <OurCoreValuesSection />
       <CultureSection />
       <VisionSection />

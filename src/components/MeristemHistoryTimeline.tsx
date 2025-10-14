@@ -10,19 +10,19 @@ const MeristemTimeline = () => {
       year: "2003",
       title: "Foundations of Growth",
       description:
-        "The journey began in 2003 with the incorporation of Great Africa Securities Limited, a spinoff from Great Africa Trust. Starting with a small but determined team, the firm set out with a bold vision — to redefine client service in Nigeria’s stockbroking industry. Its focus on quality research and exceptional service quickly set it apart, laying the groundwork for future expansion and the need for a distinct identity.",
+        "Meristem Securities Limited is established to provide world-class stockbroking and investment services in Nigeria.",
     },
     {
       year: "2005",
       title: "A New Identity",
       description:
-        "In 2005, the firm rebranded as Meristem Securities Limited. The name, inspired by the biological term meristem — the growth tissue in plants — symbolized continuous renewal and upward progress. Along with a fresh logo and brand identity, the rebrand reflected a clear mission: to help clients grow, preserve, and transfer wealth across generations. It marked the start of a new chapter in the company’s evolution",
+        "Launch of our Research Unit, setting a benchmark for market intelligence and forecasting accuracy.",
     },
     {
       year: "2008",
       title: "Expansion Into Wealth Management",
       description:
-        "Building on the outcomes of a pivotal 2007 strategy session, the firm launched an asset management subsidiary with a clear point of difference — offering more personalized services to Nigeria’s growing middle class. The new unit was designed to match investment options to individual risk profiles and help clients grow wealth sustainably over time. Born out of strategic foresight and propelled by rapid changes in the investment landscape, this marked a major step in diversifying beyond stockbroking into broader wealth management.",
+        "Creation of Meristem Wealth Management to offer bespoke portfolio and retirement planning solutions.",
     },
   ];
 
@@ -77,7 +77,7 @@ const MeristemTimeline = () => {
                 enterprises.
               </p>
               <a
-                href="#"
+                href="/about-us"
                 className="inline-flex items-center gap-3 text-white pr-3 hover:text-green-900 font-semibold hover:bg-white transition-colors">
                 <div className="lg:p-3 p-2 bg-white">
                   <ArrowRight

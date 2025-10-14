@@ -94,9 +94,9 @@ export default function PromiseSection() {
             </p>
 
             <p className="text-lg text-emerald-900 leading-relaxed font-medium">
-              Every interaction is designed to add value. Whether you're exploring new investment
-              avenues or reviewing your portfolio, we ensure that you have the insights and support
-              you need to take decisive action.
+              Every interaction is designed to add value. Whether you&apos;re exploring new
+              investment avenues or reviewing your portfolio, we ensure that you have the insights
+              and support you need to take decisive action.
             </p>
 
             <p className="text-lg text-emerald-900 leading-relaxed font-medium">
@@ -107,8 +107,8 @@ export default function PromiseSection() {
 
             <div className="bg-emerald-50 p-8 border-l-4 border-emerald-800">
               <p className="text-lg text-emerald-800 leading-relaxed italic">
-                "We are a friendly company with up-to-date market information to grow wealth in good
-                time and in an atmosphere of transparency "
+                &lsquo;We are a friendly company with up-to-date market information to grow wealth
+                in good time and in an atmosphere of transparency&lsquo;
               </p>
             </div>
           </motion.div>
