@@ -27,7 +27,7 @@ export default function Footer() {
                 />
               </Link>
             </div>
-            <div className="flex flex-1 flex-col gap-10">
+            <div className="flex flex-1 flex-col gap-10 mt-10">
               <div className="space-y-3 flex-1">
                 <h4 className="font-bold text-white uppercase">Head Office Address</h4>
                 <p className="text-gray-200 text-sm font-medium">
@@ -63,7 +63,7 @@ export default function Footer() {
               </div> */}
             {/* </div> */}
           </div>
-          <div className="w-full lg:pt-0 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-x-8 lg:gap-x-10 gap-y-10">
+          <div className="w-full lg:pt-0 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-x-8 lg:gap-x-10 gap-y-10">
             {[
               {
                 title: "Meristem’s Subsidiaries",

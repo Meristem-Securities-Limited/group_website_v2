@@ -15,37 +15,37 @@ export default function OurCoreValuesSection() {
               image: "./clientocracy.jpg",
               title: "Clientocracy",
               content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "Government by a particular set of people or according to a particular principle. Where client is king and rules. It’s easier to keep them happy than make new ones",
             },
             {
               image: "./esprit-de-corp.jpg",
               title: "Esprit de corp",
               content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "Team work means feelings of loyalty towards one another; we believe in people helping people because team work makes the dream work and our ability to work together towards a goal makes us stand out and win.",
             },
             {
               image: "./professional-bg.jpg",
               title: "Professionalism and Integrity",
               content:
-                "We believe passionately in what we do and never compromise on our standards and values.We believe passionately in what we do and never compromise on our standards and values.",
+                "Focuses on the competence or skill that is expected of a professional. This is based on several factors including how you dress, poise, the attitude you have and how you interact with others. Integrity is doing the right thing even if nobody is watching",
             },
             {
               image: "./ownership.jpg",
               title: "Ownership",
               content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "Taking ownership is about taking initiative. We take ownership when we believe taking action is not someone else’s responsibility",
             },
             {
               image: "./einstein.jpg",
               title: "Einstein",
               content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "Being innovative, breaking from the norm and leading the way into new growth paths.",
             },
             {
               image: "./meristar-delight.jpg",
               title: "Meristar-delight",
               content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "The success of every organization rests on its people. We possess the right dose of humor and do know how to have fun. living CEPEOM gives the opportunity to fully engage our work and bring out the fun and weird side of it.",
             },
           ].map((value, index) => (
             <div
