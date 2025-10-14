@@ -154,7 +154,7 @@ const timelineData = [
 
 export default function TimelineSection() {
   return (
-    <section className="py-24 px-6 bg-[#154D34] text-white bg-[url(/bg-banner.png)] lg:bg-no-repeat bg-contain min-h-screen bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900">
+    <section className="py-24 px-6 bg-[#154D34] text-white bg-[url(/bg-banner.png)] lg:bg-no-repeat bg-cover min-h-screen bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900">
       <div className="container mx-auto lg:px-4">
         <div className="">
           <motion.div
