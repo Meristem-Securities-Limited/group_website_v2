@@ -26,8 +26,7 @@ html {
 
 body {
   background: var(--background, #ffffff);
-  color: var(--foreground, #154d34);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "roobert", Helvetica, sans-serif;
   overflow-x: hidden;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;

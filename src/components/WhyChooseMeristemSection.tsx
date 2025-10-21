@@ -87,7 +87,9 @@ const WhyChooseMeristem = () => {
                 alt={feature.title}
                 className="text-green-700 text-4xl mb-4"
               />
-              <h3 className="lg:text-2xl text-xl font-semibold">{feature.title}</h3>
+              <h3 className="lg:text-2xl text-xl font-semibold text-emerald-900">
+                {feature.title}
+              </h3>
               <p className="mt-2 text-gray-600 text-base leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}

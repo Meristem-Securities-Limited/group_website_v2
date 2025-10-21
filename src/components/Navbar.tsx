@@ -160,13 +160,86 @@ const Navbar = () => {
   ];
 
   const ourProductsItems = [
-    { title: "Stockbroking", sectionId: "who-we-are", children: ["Stock Trading", "Share/Dividend Tracking & Recovery", "Meristem Business Associate"] },
-    { title: "Wealth Management", sectionId: "our-history", children: ["Asset/Portfolio Management", "Mutual Funds", "Real Estate", "Fixed Term Investment","Nigerian Treasury Bills", "Bond Investments", "Meri-Dollar Investment", "Retirement Planning", "Succession Planning" ] },
-    { title: "Trusteeship", sectionId: "core-values", children: ["Corporate Trust", "Private Trust", "Public Trust"] },
-    { title: "Finance", sectionId: "culture", children: ["Meristem Finance Lease", "Local Purchase Order (LPO) Financing", "Cash Backed Facility", "Equity Backed Facility", "Invoice Discounting", "Working Capital Loan", "Bridge Financing"] },
-    { title: "Registrar and Probate", sectionId: "vision", children: ["Share Registration Services", "Right Issue Services", "AGM/EGM Administration", "Public Offer Services", "Bond Register Administration", "Probate Services"] },
-    { title: "Family Office", sectionId: "mission", children: ["Family Governance Advisory", "Legacy Planning", "Investment Advisory", "Philanthropy", "Health and Longevity Plan", "Legacy Documentation Service"] },
-    { title: "Investment Advisory", sectionId: "philosophy", children: ["Debt Capital Market Services", "Equity Capital Market Services", "Financial Advisory", "Business Advisory"] },
+    {
+      title: "Stockbroking",
+      sectionId: "who-we-are",
+      children: [
+        { title: "Stock Trading", link: "#" },
+        { title: "Share/Dividend Tracking & Recovery", link: "#" },
+        { title: "Meristem Business Associate", link: "#" },
+      ],
+    },
+    {
+      title: "Wealth Management",
+      sectionId: "our-history",
+      children: [
+        { title: "Asset/Portfolio Management", link: "www" },
+        { title: "Mutual Funds", link: "#" },
+        { title: "Real Estate", link: "#" },
+        { title: "Fixed Term Investment", link: "#" },
+        { title: "Nigerian Treasury Bills", link: "#" },
+        { title: "Bond Investments", link: "#" },
+        { title: "Meri-Dollar Investment", link: "#" },
+        { title: "Retirement Planning", link: "#" },
+        { title: "Succession Planning", link: "#" },
+      ],
+    },
+    {
+      title: "Trusteeship",
+      sectionId: "core-values",
+      children: [
+        { title: "Corporate Trust", link: "#" },
+        { title: "Private Trust", link: "#" },
+        { title: "Public Trust", link: "#" },
+      ],
+    },
+    {
+      title: "Finance",
+      sectionId: "culture",
+      children: [
+        { title: "Meristem Finance Lease", link: "#" },
+        { title: "Local Purchase Order (LPO) Financing", link: "#" },
+        { title: "Cash Backed Facility", link: "#" },
+        { title: "Equity Backed Facility", link: "#" },
+        { title: "Invoice Discounting", link: "#" },
+        { title: "Working Capital Loan", link: "#" },
+        { title: "Bridge Financing", link: "#" },
+      ],
+    },
+    {
+      title: "Registrar and Probate",
+      sectionId: "vision",
+      children: [
+        { title: "Share Registration Services", link: "#" },
+        { title: "Right Issue Services", link: "#" },
+        { title: "AGM/EGM Administration", link: "#" },
+        { title: "Public Offer Services", link: "#" },
+        { title: "Bond Register Administration", link: "#" },
+        { title: "Probate Services", link: "#" },
+      ],
+    },
+    {
+      title: "Family Office",
+      sectionId: "mission",
+      children: [
+        { title: "Family Governance Advisory", link: "#" },
+        { title: "Legacy Planning", link: "#" },
+        { title: "Investment Advisory", link: "#" },
+        { title: "Philanthropy", link: "#" },
+        { title: "Health and Longevity Plan", link: "#" },
+        { title: "Legacy Documentation Service", link: "#" },
+      ],
+    },
+    {
+      title: "Investment Advisory",
+      sectionId: "philosophy",
+      children: [
+        { title: "Debt Capital Market Services", link: "#" },
+        { title: "Equity Capital Market Services", link: "#" },
+        { title: "Financial Advisory", link: "#" },
+        { title: "Business Advisory", link: "#" },
+      ],
+    },
   ];
 
   const isScrolled = scrollY >= 20;
@@ -363,38 +436,34 @@ const Navbar = () => {
             )}
 
             {activeDropdown === "products" && (
-              <div className="container mx-auto px-6 py-8 gap-8">
-                <div>
-                  <h3 className="text-gray-500 text-sm font-semibold mb-6 tracking-wide">
-                    OUR PRODUCTS
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 pb-10">
-                    {ourProductsItems.map((item, i) => (
-                      <div
-                        key={i}
-                        className="space-y-2">
-                        <h3 className="text-lg font-semibold text-emerald-900 hover:text-green-700 transition-colors duration-200">
-                          <Link href={`#${item.sectionId}`}>{item.title}</Link>
-                        </h3>
+              <div className="container mx-auto px-6 py-10">
+                <h3 className="text-gray-500 text-sm font-semibold mb-8 tracking-wide uppercase">
+                  Our Products
+                </h3>
 
-                        <ul className="space-y-1 ml-3">
-                          {item.children.map((child, j) => (
-                            <li key={j}>
-                              <Link
-                                href={child}
-                                className="text-gray-700 hover:text-green-800 text-sm transition-colors duration-200">
-                                {child}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-10">
+                  {ourProductsItems.map((item, i) => (
+                    <div
+                      key={i}
+                      className="space-y-3">
+                      <h4 className="text-lg font-semibold text-emerald-900 transition-colors duration-200">
+                        {item.title}
+                      </h4>
+
+                      <ul className="space-y-2 list-inside">
+                        {item.children.map((child: any, j) => (
+                          <li key={j}>
+                            <Link
+                              href={child.link}
+                              className="block text-gray-700 hover:text-blue-800 text-sm transition-colors duration-200">
+                              {child.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
-                {/* <div className="bg-gray-100 flex items-center justify-center text-gray-600 text-lg font-semibold">
-                  PRODUCT ADS
-                </div> */}
               </div>
             )}
           </motion.div>
@@ -505,9 +574,9 @@ const Navbar = () => {
                         {item.children.map((child, j) => (
                           <li key={j}>
                             <Link
-                              href="#"
+                              href={child.link}
                               className="text-gray-700 hover:text-green-800 text-sm transition-colors duration-200">
-                              {child}
+                              {child.title}
                             </Link>
                           </li>
                         ))}
