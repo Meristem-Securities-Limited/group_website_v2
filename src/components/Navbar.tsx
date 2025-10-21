@@ -160,13 +160,13 @@ const Navbar = () => {
   ];
 
   const ourProductsItems = [
-    { title: "Who we are", sectionId: "who-we-are", children: ["example", "exmple"] },
-    { title: "Our History", sectionId: "our-history", children: ["example", "exmple"] },
-    { title: "Our Core Values", sectionId: "core-values", children: ["example", "exmple"] },
-    { title: "Our Culture", sectionId: "culture", children: ["example", "exmple"] },
-    { title: "Our Vision", sectionId: "vision", children: ["example", "exmple"] },
-    { title: "Our Mission", sectionId: "mission", children: ["example", "exmple"] },
-    { title: "Our Philosophy", sectionId: "philosophy", children: ["example", "exmple"] },
+    { title: "Stockbroking", sectionId: "who-we-are", children: ["example", "exmple"] },
+    { title: "WealthManagement", sectionId: "our-history", children: ["example", "exmple"] },
+    { title: "Trusteeship", sectionId: "core-values", children: ["example", "exmple"] },
+    { title: "Finance", sectionId: "culture", children: ["example", "exmple"] },
+    { title: "Registrar and Probate", sectionId: "vision", children: ["example", "exmple"] },
+    { title: "Family Office", sectionId: "mission", children: ["example", "exmple"] },
+    { title: "Investment Advisory", sectionId: "philosophy", children: ["example", "exmple"] },
   ];
 
   const isScrolled = scrollY >= 20;
