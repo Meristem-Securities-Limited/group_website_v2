@@ -160,8 +160,8 @@ const Navbar = () => {
   ];
 
   const ourProductsItems = [
-    { title: "Stockbroking", sectionId: "who-we-are", children: ["Stock Trading", "Share/Dividend Tracking & Recovery", "Meristem Business Associate", "Retirement Planning", "Succession Planning"] },
-    { title: "Wealth Management", sectionId: "our-history", children: ["Asset/Portfolio Management", "Mutual Funds", "Real Estate", "Fixed Term Investment","Nigerian Treasury Bills", "Bond Investments", "Meri-Dollar Investment" ] },
+    { title: "Stockbroking", sectionId: "who-we-are", children: ["Stock Trading", "Share/Dividend Tracking & Recovery", "Meristem Business Associate"] },
+    { title: "Wealth Management", sectionId: "our-history", children: ["Asset/Portfolio Management", "Mutual Funds", "Real Estate", "Fixed Term Investment","Nigerian Treasury Bills", "Bond Investments", "Meri-Dollar Investment", "Retirement Planning", "Succession Planning" ] },
     { title: "Trusteeship", sectionId: "core-values", children: ["Corporate Trust", "Private Trust", "Public Trust"] },
     { title: "Finance", sectionId: "culture", children: ["Meristem Finance Lease", "Local Purchase Order (LPO) Financing", "Cash Backed Facility", "Equity Backed Facility", "Invoice Discounting", "Working Capital Loan", "Bridge Financing"] },
     { title: "Registrar and Probate", sectionId: "vision", children: ["Share Registration Services", "Right Issue Services", "AGM/EGM Administration", "Public Offer Services", "Bond Register Administration", "Probate Services"] },
