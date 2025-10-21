@@ -160,13 +160,13 @@ const Navbar = () => {
   ];
 
   const ourProductsItems = [
-    { title: "Stockbroking", sectionId: "who-we-are", children: ["example", "exmple"] },
-    { title: "WealthManagement", sectionId: "our-history", children: ["example", "exmple"] },
-    { title: "Trusteeship", sectionId: "core-values", children: ["example", "exmple"] },
-    { title: "Finance", sectionId: "culture", children: ["example", "exmple"] },
-    { title: "Registrar and Probate", sectionId: "vision", children: ["example", "exmple"] },
-    { title: "Family Office", sectionId: "mission", children: ["example", "exmple"] },
-    { title: "Investment Advisory", sectionId: "philosophy", children: ["example", "exmple"] },
+    { title: "Stockbroking", sectionId: "who-we-are", children: ["Stock Trading", "Share/Dividend Tracking & Recovery", "Meristem Business Associate", "Retirement Planning", "Succession Planning"] },
+    { title: "Wealth Management", sectionId: "our-history", children: ["Asset/Portfolio Management", "Mutual Funds", "Real Estate", "Fixed Term Investment","Nigerian Treasury Bills", "Bond Investments", "Meri-Dollar Investment" ] },
+    { title: "Trusteeship", sectionId: "core-values", children: ["Corporate Trust", "Private Trust", "Public Trust"] },
+    { title: "Finance", sectionId: "culture", children: ["Meristem Finance Lease", "Local Purchase Order (LPO) Financing", "Cash Backed Facility", "Equity Backed Facility", "Invoice Discounting", "Working Capital Loan", "Bridge Financing"] },
+    { title: "Registrar and Probate", sectionId: "vision", children: ["Share Registration Services", "Right Issue Services", "AGM/EGM Administration", "Public Offer Services", "Bond Register Administration", "Probate Services"] },
+    { title: "Family Office", sectionId: "mission", children: ["Family Governance Advisory", "Legacy Planning", "Investment Advisory", "Philanthropy", "Health and Longevity Plan", "Legacy Documentation Service"] },
+    { title: "Investment Advisory", sectionId: "philosophy", children: ["Debt Capital Market Services", "Equity Capital Market Services", "Financial Advisory", "Business Advisory"] },
   ];
 
   const isScrolled = scrollY >= 20;
