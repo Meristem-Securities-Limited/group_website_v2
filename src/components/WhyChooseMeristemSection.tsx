@@ -7,6 +7,12 @@ import { motion } from "framer-motion";
 
 const features = [
   {
+    title: "Personalised Wealth Strategies",
+    description:
+      "No two clients are alike. We take the time to understand your goals and design bespoke strategies that align with your aspirations.",
+    icon: CheckDouble,
+  },
+  {
     title: "Trusted Expertise",
     description:
       "Decades of financial experience and deep market insights ensure your decisions are guided by seasoned professionals.",
@@ -31,15 +37,9 @@ const features = [
     icon: BarChart,
   },
   {
-    title: "Secure & Transparent",
+    title: "Proven Track Record",
     description:
-      "Your investments are protected by robust security measures and regulatory compliance, giving you confidence at every step.",
-    icon: CheckDouble,
-  },
-  {
-    title: "Trusted Expertise",
-    description:
-      "Decades of financial experience and deep market insights ensure your decisions are guided by seasoned professionals.",
+      "Our legacy is built on results. Year after year, clients trust us because we deliver consistent performance and measurable impact.",
     icon: BarChart,
   },
 ];
