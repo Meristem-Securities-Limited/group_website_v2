@@ -18,9 +18,9 @@ export default function VisionSection() {
   return (
     <section
       id="vision"
-      className="relative overflow-hidden bg-white py-24 px-6">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-40 items-start">
+      className="relative overflow-hidden bg-white lg:py-24 py-10 px-4">
+      <div className="container mx-auto">
+        <div className="grid lg:grid-cols-2 lg:gap-40 gap-20 items-start">
           <motion.div
             className=""
             variants={slideInVariant}

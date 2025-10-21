@@ -51,7 +51,7 @@ export default function MeristemSubsidiaries() {
 
   return (
     <section className="bg-white">
-      <div className="container mx-auto px-4 py-20 bg-white">
+      <div className="container mx-auto px-6 py-20 bg-white">
         <div className="pb-6">
           <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">
             Our Subsidiaries

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Meristem Securities Limited",
     images: [
       {
-        url: "https://www.meristemng.com/logo.jpg",
+        url: "https://www.meristemng.com/favicon/logo.jpg",
         width: 1200,
         height: 630,
         alt: "Meristem Securities Limited",
@@ -44,19 +44,19 @@ export const metadata: Metadata = {
     title: "Meristem Securities Limited",
     description:
       "Discover Meristem Securities Limited – Nigeria’s trusted partner for investment, wealth management, securities trading, and financial advisory services.",
-    images: ["https://www.meristemng.com/logo.jpg"],
+    images: ["https://www.meristemng.com/favicon/logo.jpg"],
   },
   alternates: {
     canonical: "https://www.meristemng.com",
   },
   icons: {
-    icon: "./favicon/logo.jpg",
-    shortcut: "./favicon.ico",
-    apple: "./favicon/apple-touch-icon.png",
+    icon: "/favicon/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon/apple-touch-icon.png",
     other: [
-      { url: "./favicon/favicon-16x16.png", sizes: "16x16" },
-      { url: "./favicon/favicon-32x32.png", sizes: "32x32" },
-      { url: "./favicon/logo.jpg", sizes: "96x96" },
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32" },
+      { url: "/favicon/logo.jpg", sizes: "96x96" },
     ],
   },
 };

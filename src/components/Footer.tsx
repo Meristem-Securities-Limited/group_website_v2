@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="relative w-full bg-[#154D34] text-white bg-[url(/bg-banner.png)] lg:bg-no-repeat bg-repeat bg-center bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 overflow-hidden">
       <div className="absolute inset-0 bg-emerald-900/60 z-0"></div>
-      <div className="relative z-10 container px-4 w-full mx-auto pt-25">
+      <div className="relative z-10 container px-6 w-full mx-auto pt-25">
         <div className="flex lg:flex-row flex-col lg:gap-29 gap-9">
           <div className="w-auto">
             <div className="w-50 h-20 -mt-10 mb-4 relative">
@@ -28,9 +28,7 @@ export default function Footer() {
               </Link>
             </div>
             <div className="space-y-3">
-              <p className="text-sm font-medium text-gray-300">
-                For complaints, you can contact on
-              </p>
+              <p className="text-sm font-medium text-gray-50">For complaints, you can contact on</p>
               <div className="w-full py-2 space-y-2">
                 <span className="font-bold text-white block">WhatsApp: +234 813 405 9788</span>
                 <span className="font-bold text-white block">Telephone: 080063747836</span>
@@ -65,15 +63,8 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            {/* <div className="space-y-7 mt-5"> */}
-            {/* <div className="space-y-4">
-                <p className="text-sm font-medium text-gray-200 pb-3">
-                  For complaints and enquiries, contact us at
-                </p>
-              </div> */}
-            {/* </div> */}
           </div>
-          <div className="w-full lg:pt-0 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-x-8 lg:gap-x-10 gap-y-10">
+          <div className="w-full lg:pt-0 grid grid-cols-1 md:grid-cols-1 xl:grid-cols-4 gap-8 lg:gap-x-10 gap-y-10">
             {[
               {
                 title: "Meristem Subsidiaries",
@@ -121,7 +112,7 @@ export default function Footer() {
             ].map((section, idx) => (
               <div
                 key={idx}
-                className="space-y-6">
+                className="space-y-6 w-full">
                 <h5 className="text-white font-bold uppercase">{section.title}</h5>
                 <div>
                   <ul className="space-y-5">

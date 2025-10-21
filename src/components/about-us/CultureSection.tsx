@@ -45,8 +45,8 @@ export default function CultureSection() {
   return (
     <section
       id="culture"
-      className="bg-white py-24 px-6">
-      <div className="container mx-auto px-4">
+      className="bg-white py-24 px-4">
+      <div className="container mx-auto">
         <div className="text-left mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-emerald-900 mb-6">Our Culture</h2>
           <p className="text-base text-gray-900 mx-auto">

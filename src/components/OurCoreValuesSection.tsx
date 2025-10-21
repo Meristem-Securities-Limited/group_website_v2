@@ -45,7 +45,9 @@ export default function OurCoreValuesSection() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section
+      id="core-values"
+      className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-semibold text-emerald-900 mb-12">
           Our Core Values
@@ -109,7 +111,7 @@ export default function OurCoreValuesSection() {
           {values.map((value, index) => (
             <div
               key={index}
-              className="relative rounded-2xl overflow-hidden shadow-md"
+              className="relative overflow-hidden shadow-md"
               style={{
                 backgroundImage: `url(${value.image})`,
                 backgroundSize: "cover",

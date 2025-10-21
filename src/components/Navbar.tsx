@@ -48,31 +48,6 @@ const Navbar = () => {
     // },
   ];
 
-  // useEffect(() => {
-  //   const handleScroll = () => setScrollY(window.scrollY);
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   const handleClickOutside = (event: MouseEvent) => {
-  //     if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
-  //       setActiveDropdown(null); // close dropdowns
-  //     }
-
-  //     if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-  //       const targetElement = event.target as HTMLElement;
-  //       console.log(dropdownRef.current);
-  //       console.log(targetElement);
-  //       // setLoginDropdownOpen(false);
-  //     }
-  //   };
-
-  //   document.addEventListener("mousedown", handleClickOutside);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   };
-  // }, []);
-
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
@@ -147,16 +122,16 @@ const Navbar = () => {
   ];
 
   const aboutUsItems = [
-    { title: "Who we are", sectionId: "who-we-are" },
-    { title: "Our History", sectionId: "our-history" },
-    { title: "Our Core Values", sectionId: "core-values" },
-    { title: "Our Culture", sectionId: "culture" },
-    { title: "Our Vision", sectionId: "vision" },
-    { title: "Our Mission", sectionId: "mission" },
-    { title: "Our Philosophy", sectionId: "philosophy" },
-    { title: "Our Promise", sectionId: "promise" },
-    { title: "Board of Directors", sectionId: "borad-of-directors" },
-    { title: "Executive Management", sectionId: "executive-management" },
+    { title: "Who we are", link: "/about-us#who-we-are" },
+    { title: "Our History", link: "/about-us#our-history" },
+    { title: "Our Core Values", link: "/about-us#core-values" },
+    { title: "Our Culture", link: "/about-us#culture" },
+    { title: "Our Vision", link: "/about-us#vision" },
+    { title: "Our Mission", link: "/about-us#mission" },
+    { title: "Our Philosophy", link: "/about-us#philosophy" },
+    { title: "Our Promise", link: "/about-us#promise" },
+    { title: "Board of Directors", link: "/about-us#board-of-directors" },
+    { title: "Executive Management", link: "/about-us#executive-management" },
   ];
 
   const ourProductsItems = [
@@ -314,16 +289,6 @@ const Navbar = () => {
           <div
             ref={dropdownRef}
             className="hidden lg:flex items-center space-x-4">
-            {/* <button
-              className={`flex items-center px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
-                isScrolled
-                  ? "text-green-900 hover:text-emerald-700"
-                  : "text-white hover:text-green-200"
-              }`}>
-              <Search className="h-4 w-4 mr-1" />
-              SEARCH
-            </button> */}
-
             <button
               id="client-login-btn"
               onClick={(e) => {
@@ -422,21 +387,22 @@ const Navbar = () => {
                     {aboutUsItems.map((item, i) => (
                       <Link
                         key={i}
-                        href={item.title}
+                        onClick={() => {
+                          setActiveDropdown(null);
+                          setLoginDropdownOpen(false);
+                        }}
+                        href={item.link}
                         className="text-gray-700 hover:text-green-800 py-2 transition-colors duration-200">
                         {item.title}
                       </Link>
                     ))}
                   </div>
                 </div>
-                <div className="bg-gray-100 flex items-center justify-center text-gray-600 text-lg font-semibold">
-                  PRODUCT ADS
-                </div>
               </div>
             )}
 
             {activeDropdown === "products" && (
-              <div className="container mx-auto px-6 py-10">
+              <div className="container mx-auto px-6 py-10 overflow-y-scroll">
                 <h3 className="text-gray-500 text-sm font-semibold mb-8 tracking-wide uppercase">
                   Our Products
                 </h3>
@@ -454,6 +420,10 @@ const Navbar = () => {
                         {item.children.map((child: any, j) => (
                           <li key={j}>
                             <Link
+                              onClick={() => {
+                                setActiveDropdown(null);
+                                setLoginDropdownOpen(false);
+                              }}
                               href={child.link}
                               className="block text-gray-700 hover:text-blue-800 text-sm transition-colors duration-200">
                               {child.title}
@@ -470,11 +440,7 @@ const Navbar = () => {
         )}
 
         <motion.div
-          className={`lg:hidden overflow-hidden ${
-            isScrolled ? "bg-white/95" : "bg-black/70"
-          } backdrop-blur-md rounded-xl border mt-4 ${
-            isScrolled ? "border-emerald-100" : "border-white/20"
-          }`}
+          className={`lg:hidden bg-white backdrop-blur-md rounded-xl border mt-4 border-emerald-1000`}
           initial={{ height: 0, opacity: 0 }}
           animate={{
             height: isMobileMenuOpen ? "auto" : 0,
@@ -485,9 +451,7 @@ const Navbar = () => {
             <div>
               <motion.button
                 onClick={() => handleDropdownToggle("subsidiaries")}
-                className={`flex items-center justify-between w-full py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                  isScrolled ? "text-green-800 hover:bg-emerald-50" : "text-white hover:bg-white/20"
-                }`}
+                className={`flex items-center justify-between w-full py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 text-green-800 hover:bg-emerald-50`}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.05 }}
@@ -532,12 +496,17 @@ const Navbar = () => {
               {activeDropdown === "about" && (
                 <div className="mt-3 pl-4 space-y-2 border-l-2 border-gray-200">
                   {aboutUsItems.map((item, index) => (
-                    <a
+                    <Link
+                      onClick={() => {
+                        setActiveDropdown(null);
+                        setLoginDropdownOpen(false);
+                        toggleMobileMenu();
+                      }}
                       key={index}
-                      href={item.sectionId}
+                      href={item.link}
                       className="block text-gray-700 hover:text-green-800 py-1 text-sm">
                       {item.title}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -561,19 +530,24 @@ const Navbar = () => {
                 />
               </motion.button>
               {activeDropdown === "products" && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="overflow-y-auto max-h-[60vh] mt-3 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                   {ourProductsItems.map((item, i) => (
                     <div
                       key={i}
                       className="space-y-2">
-                      <h3 className="text-lg font-semibold text-emerald-900 hover:text-green-700 transition-colors duration-200">
-                        <Link href={`#${item.sectionId}`}>{item.title}</Link>
+                      <h3 className="text-sm font-bold text-emerald-900 hover:text-green-700 transition-colors duration-200">
+                        {item.title}
                       </h3>
 
                       <ul className="space-y-1 ml-3">
                         {item.children.map((child, j) => (
                           <li key={j}>
                             <Link
+                              onClick={() => {
+                                setActiveDropdown(null);
+                                setLoginDropdownOpen(false);
+                                toggleMobileMenu();
+                              }}
                               href={child.link}
                               className="text-gray-700 hover:text-green-800 text-sm transition-colors duration-200">
                               {child.title}

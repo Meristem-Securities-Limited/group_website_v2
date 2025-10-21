@@ -88,16 +88,15 @@ const itemVariantsUp = {
 
 export default function BoardExecutiveSection() {
   return (
-    <section
-      id="board"
-      className="bg-gray-50 text-black py-20">
+    <div className="bg-gray-50 text-black">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Executive Management */}
-        <motion.div
+        <motion.section
+          id="board-of-directors"
           initial="hidden"
           animate="show"
           variants={containerVariants}
-          className="mb-20">
+          className="mb-10 pt-24">
           <motion.div
             variants={itemVariantsRight}
             className="text-left mb-12">
@@ -120,16 +119,17 @@ export default function BoardExecutiveSection() {
               </motion.div>
             ))}
           </motion.div>
-        </motion.div>
+        </motion.section>
 
         {/* Board of Directors */}
-        <motion.div
+        <motion.section
+          id="executive-management"
           initial="hidden"
           animate="show"
           variants={containerVariants}>
           <motion.div
             variants={itemVariantsRight}
-            className="text-left mb-12">
+            className="text-left mb-12 pt-24">
             <h2 className="text-4xl font-bold text-black mb-4">Executive Management</h2>
             <p className="text-left text-lg mx-auto">
               Our executive leadership team driving strategic vision and operational excellence
@@ -149,8 +149,8 @@ export default function BoardExecutiveSection() {
               </motion.div>
             ))}
           </motion.div>
-        </motion.div>
+        </motion.section>
       </div>
-    </section>
+    </div>
   );
 }

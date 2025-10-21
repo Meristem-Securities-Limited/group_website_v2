@@ -18,17 +18,16 @@ export default function PromiseSection() {
   return (
     <section
       id="promise"
-      className="bg-white py-24 px-6">
-      <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-30 items-start">
-          {/* Icons and values */}
+      className="bg-white lg:py-20 px-6">
+      <div className="container mx-auto">
+        <div className="grid lg:grid-cols-2 lg:gap-30 gap-20 items-start">
           <motion.div
-            className="order-1 lg:order-2"
+            className="order-2 lg:order-2"
             variants={slideInRight}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}>
-            <div className="px-20 py-12 bg-[#154D34] text-white bg-[url(/bg-banner.png)] lg:bg-no-repeat bg-repeat bg-center bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 shadow-xl">
+            <div className="lg:px-20 px-10 py-12 bg-[#154D34] text-white bg-[url(/bg-banner.png)] lg:bg-no-repeat bg-repeat bg-center bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 shadow-xl">
               <div className="space-y-8">
                 {[
                   {
@@ -54,7 +53,7 @@ export default function PromiseSection() {
                 ].map((item, index) => (
                   <motion.div
                     key={index}
-                    className="flex items-start gap-4 p-6 bg-white shadow-sm"
+                    className="lg:flex-row flex flex-col items-start gap-5 p-5 bg-white shadow-sm"
                     variants={slideInLeft}
                     initial="hidden"
                     whileInView="visible"
@@ -65,7 +64,7 @@ export default function PromiseSection() {
                     </div>
                     <div>
                       <h4 className="font-bold text-emerald-900 mb-2">{item.title}</h4>
-                      <p className="text-emerald-700">{item.desc}</p>
+                      <p className="text-emerald-800">{item.desc}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -74,12 +73,12 @@ export default function PromiseSection() {
           </motion.div>
 
           <motion.div
-            className="order-2 lg:order-1 space-y-6"
+            className="order-1 lg:order-1 space-y-6"
             variants={slideInLeft}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}>
-            <h2 className="text-2xl lg:text-5xl font-bold text-emerald-900 leading-tight">
+            <h2 className="text-3xl lg:text-5xl font-bold text-emerald-900 leading-tight">
               Our Promise
             </h2>
 

@@ -60,8 +60,8 @@ export default function MissionSection() {
   return (
     <section
       id="mission"
-      className="bg-emerald-50/30 py-24 px-6 overflow-hidden">
-      <div className="container mx-auto px-4">
+      className="bg-emerald-50/30 py-24 px-5 overflow-hidden">
+      <div className="container mx-auto">
         {/* Animated text section */}
         <motion.div
           className="text-left mb-16"
@@ -90,8 +90,8 @@ export default function MissionSection() {
               key={card.title}
               variants={cardVariants}
               whileHover={{ scale: 1.03 }}
-              className="bg-white p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-emerald-100 rounded-2xl">
-              <div className="w-14 h-14 bg-emerald-900 flex items-center justify-center mb-6 rounded-lg">
+              className="bg-white p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-emerald-100 ">
+              <div className="w-14 h-14 bg-emerald-900 flex items-center justify-center mb-6">
                 {card.icon}
               </div>
               <h3 className="text-xl font-bold text-emerald-900 mb-3">{card.title}</h3>

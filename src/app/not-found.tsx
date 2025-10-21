@@ -73,7 +73,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
             href="/"
-            className="group relative px-8 py-4 bg-white font-semibold text-emerald-900 overflow-hidden transition-all duration-300 hover:scale-105 rounded-lg">
+            className="group relative px-8 py-4 bg-white font-semibold text-emerald-900 overflow-hidden transition-all duration-300 hover:scale-105">
             <span className="relative z-10 flex items-center gap-2">
               <Home className="w-5 h-5" />
               Back to Home
@@ -82,7 +82,7 @@ export default function NotFound() {
 
           <button
             onClick={() => router.back()}
-            className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 flex items-center gap-2 rounded-lg">
+            className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 flex items-center gap-2">
             <ArrowLeft className="w-5 h-5" />
             Go Back
           </button>
