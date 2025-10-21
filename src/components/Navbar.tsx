@@ -251,6 +251,16 @@ const Navbar = () => {
             />
           </Link>
 
+          <Link
+              href="https://meristemng.com"
+              className={`px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
+                isScrolled
+                  ? "text-green-900 hover:text-emerald-700"
+                  : "text-white hover:text-green-200"
+              }`}>
+              Home
+            </Link>
+
           <div className="hidden lg:flex items-center space-x-8">
             {["subsidiaries", "about", "products"].map((menu) => (
               <div
