@@ -9,43 +9,27 @@ import { Adejumoke, Ahmed, GMD, Ify, Mubo2, Ohis, Oyebamiji, Reginald } from "@/
 
 const executiveMembers = [
   {
-    name: "DR. REGINALD CHIKA STANLEY FNIM",
+    name: "DR. REGINALD CHIKA STANLEY",
     role: "Chairman",
     image: Reginald,
   },
   {
-    name: "TAIWO ADE-OJO",
-    role: "Vice Chairman",
-    image: "",
-  },
-
-  {
-    name: "Sulaiman Adedokun, CFA",
+    name: "SULAIMAN ADEDOKUN, CFA",
     role: "Group Managing Director",
     image: GMD,
   },
   {
-    name: "UMAR SHUAIB AHMED",
-    role: "Director",
-    image: Ahmed,
-  },
-  {
-    name: "OHIS OHIWEREI",
-    role: "Director",
-    image: Ohis,
-  },
-  // {
-  //   name: "FEYI OLUSANYA, CFA",
-  //   role: "Director",
-  //   image: "",
-  // },
-  {
-    name: "ADEJUMOKE AWOLUMATE, FCA, FCS",
+    name: "ADEJUMOKE AWOLUMATE",
     role: "Director",
     image: Adejumoke,
   },
   {
-    name: "EMMANUEL ADEYEYE OYEBANJI, S.A.N. FCIArb.",
+    name: "AMINA MAINA",
+    role: "Director",
+    image: "",
+  },
+  {
+    name: "EMMANUEL ADEYEYE OYEBANJI, S.A.N",
     role: "Director",
     image: Oyebamiji,
   },
@@ -55,16 +39,35 @@ const executiveMembers = [
     image: Ify,
   },
   {
-    name: "AMINA MAINA",
-    role: "Director",
-    image: "",
-  },
-
-  {
-    name: "Mubo Olasoko",
+    name: "MUBO OLASOKO",
     role: "Deputy, Group Managing Director",
     image: Mubo2,
   },
+  {
+    name: "OHIS OHIWEREI",
+    role: "Director",
+    image: Ohis,
+  },
+  {
+    name: "TAIWO ADE-OJO",
+    role: "Director",
+    image: "",
+  },
+  {
+    name: "UMAR SHUAIB AHMED",
+    role: "Director",
+    image: Ahmed,
+  },
+  
+  // {
+  //   name: "FEYI OLUSANYA, CFA",
+  //   role: "Director",
+  //   image: "",
+  // },
+  
+  
+  
+
 ];
 
 const containerVariants = {
