@@ -90,58 +90,6 @@ const MeristemTimeline = () => {
             </motion.div>
           </div>
         </motion.div>
-
-        {/* Timeline */}
-        <motion.div
-          className="relative py-20 lg:px-10 px-4 bg-[#154D34]"
-          initial={{ opacity: 0, y: 80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}>
-          <div className="relative">
-            <div className="hidden lg:block absolute -top-8 left-0 right-0 h-px bg-white/30 mt-8"></div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-              {timelineData.map((item, index) => (
-                <motion.div
-                  key={index}
-                  className="relative"
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.2,
-                    ease: "easeOut",
-                  }}
-                  viewport={{ once: true }}>
-                  {/* Timeline bullet */}
-                  <div className="hidden lg:block absolute -top-2 left-0 w-6 h-6 bg-green-900 rounded-full border-1 border-white">
-                    <div className="flex items-center justify-center w-full h-full">
-                      <div className="w-1 h-1 bg-green-900 rounded-full border-2 border-white"></div>
-                    </div>
-                  </div>
-
-                  <div className="lg:hidden flex items-center mb-4">
-                    <div className="w-4 h-4 bg-white rounded-full border-4 border-[#1bc076] mr-4"></div>
-                    <div className="flex-1 h-px bg-white/30"></div>
-                  </div>
-
-                  <div className="lg:pt-12">
-                    <h2 className="text-white text-2xl lg:text-4xl font-medium mb-4">
-                      {item.year}
-                    </h2>
-                    <h3 className="text-white text-xl lg:text-2xl font-medium mb-4">
-                      {item.title}
-                    </h3>
-                    <p className="text-white/90 text-base lg:text-lg leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

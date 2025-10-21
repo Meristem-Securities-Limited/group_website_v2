@@ -116,8 +116,8 @@ const Navbar = () => {
     },
     {
       number: "02",
-      title: "Meristem Registrars and Probate Limited",
-      subTitle: "Redefining Shareholder Management And Probate Services",
+      title: "Meristem Registrars and Probate Services Limited",
+      subTitle: "Redefining Shareholder Management and Probate Services",
     },
     {
       number: "03",
@@ -137,33 +137,36 @@ const Navbar = () => {
     {
       number: "06",
       title: "Meristem Finance Limited",
-      subTitle: "Financing Solutions Tailored to You",
+      subTitle: "Financing solutions tailored to you",
     },
     {
       number: "07",
       title: "Meristem Trustees Limited",
-      subTitle: "Leave the Things You Love for Those You Love",
+      subTitle: "Leave the things you love for those you love",
     },
   ];
 
   const aboutUsItems = [
-    "Our History",
-    "Leadership Team",
-    "Board of Directors",
-    "Corporate Governance",
-    "Awards & Recognition",
-    "Sustainability",
-    "Investor Relations",
+    { title: "Who we are", sectionId: "who-we-are" },
+    { title: "Our History", sectionId: "our-history" },
+    { title: "Our Core Values", sectionId: "core-values" },
+    { title: "Our Culture", sectionId: "culture" },
+    { title: "Our Vision", sectionId: "vision" },
+    { title: "Our Mission", sectionId: "mission" },
+    { title: "Our Philosophy", sectionId: "philosophy" },
+    { title: "Our Promise", sectionId: "promise" },
+    { title: "Board of Directors", sectionId: "borad-of-directors" },
+    { title: "Executive Management", sectionId: "executive-management" },
   ];
 
   const ourProductsItems = [
-    "Investment Banking",
-    "Asset Management",
-    "Stockbroking Services",
-    "Wealth Management",
-    "Trust Services",
-    "Registration Services",
-    "Corporate Finance",
+    { title: "Who we are", sectionId: "who-we-are", children: ["example", "exmple"] },
+    { title: "Our History", sectionId: "our-history", children: ["example", "exmple"] },
+    { title: "Our Core Values", sectionId: "core-values", children: ["example", "exmple"] },
+    { title: "Our Culture", sectionId: "culture", children: ["example", "exmple"] },
+    { title: "Our Vision", sectionId: "vision", children: ["example", "exmple"] },
+    { title: "Our Mission", sectionId: "mission", children: ["example", "exmple"] },
+    { title: "Our Philosophy", sectionId: "philosophy", children: ["example", "exmple"] },
   ];
 
   const isScrolled = scrollY >= 20;
@@ -307,7 +310,7 @@ const Navbar = () => {
 
         {activeDropdown && (
           <motion.div
-            className="hidden lg:block absolute top-full left-0 right-0 bg-white shadow-lg z-50 border-t"
+            className="hidden lg:block absolute w-full top-full left-0 right-0 bg-white shadow-lg z-50 border-t"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}>
@@ -344,12 +347,12 @@ const Navbar = () => {
                   </h3>
                   <div className="grid grid-cols-2 gap-4">
                     {aboutUsItems.map((item, i) => (
-                      <a
+                      <Link
                         key={i}
-                        href="#"
+                        href={item.title}
                         className="text-gray-700 hover:text-green-800 py-2 transition-colors duration-200">
-                        {item}
-                      </a>
+                        {item.title}
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -360,25 +363,38 @@ const Navbar = () => {
             )}
 
             {activeDropdown === "products" && (
-              <div className="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="container mx-auto px-6 py-8 gap-8">
                 <div>
                   <h3 className="text-gray-500 text-sm font-semibold mb-6 tracking-wide">
                     OUR PRODUCTS
                   </h3>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 pb-10">
                     {ourProductsItems.map((item, i) => (
-                      <Link
+                      <div
                         key={i}
-                        href="#"
-                        className="text-gray-700 hover:text-green-800 py-2 transition-colors duration-200">
-                        {item}
-                      </Link>
+                        className="space-y-2">
+                        <h3 className="text-lg font-semibold text-emerald-900 hover:text-green-700 transition-colors duration-200">
+                          <Link href={`#${item.sectionId}`}>{item.title}</Link>
+                        </h3>
+
+                        <ul className="space-y-1 ml-3">
+                          {item.children.map((child, j) => (
+                            <li key={j}>
+                              <Link
+                                href={child}
+                                className="text-gray-700 hover:text-green-800 text-sm transition-colors duration-200">
+                                {child}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     ))}
                   </div>
                 </div>
-                <div className="bg-gray-100 flex items-center justify-center text-gray-600 text-lg font-semibold">
+                {/* <div className="bg-gray-100 flex items-center justify-center text-gray-600 text-lg font-semibold">
                   PRODUCT ADS
-                </div>
+                </div> */}
               </div>
             )}
           </motion.div>
@@ -449,9 +465,9 @@ const Navbar = () => {
                   {aboutUsItems.map((item, index) => (
                     <a
                       key={index}
-                      href="#"
+                      href={item.sectionId}
                       className="block text-gray-700 hover:text-green-800 py-1 text-sm">
-                      {item}
+                      {item.title}
                     </a>
                   ))}
                 </div>
@@ -476,14 +492,27 @@ const Navbar = () => {
                 />
               </motion.button>
               {activeDropdown === "products" && (
-                <div className="mt-3 pl-4 space-y-2 border-l-2 border-gray-200">
-                  {ourProductsItems.map((item, index) => (
-                    <a
-                      key={index}
-                      href="#"
-                      className="block text-gray-700 hover:text-green-800 py-1 text-sm">
-                      {item}
-                    </a>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                  {ourProductsItems.map((item, i) => (
+                    <div
+                      key={i}
+                      className="space-y-2">
+                      <h3 className="text-lg font-semibold text-emerald-900 hover:text-green-700 transition-colors duration-200">
+                        <Link href={`#${item.sectionId}`}>{item.title}</Link>
+                      </h3>
+
+                      <ul className="space-y-1 ml-3">
+                        {item.children.map((child, j) => (
+                          <li key={j}>
+                            <Link
+                              href="#"
+                              className="text-gray-700 hover:text-green-800 text-sm transition-colors duration-200">
+                              {child}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ))}
                 </div>
               )}

@@ -31,24 +31,26 @@ export default function CultureSection() {
       icon: <TrendingUp className="w-6 h-6 text-white" />,
       description:
         "Excellence is not just a goal; it's our standard. We continuously raise the bar in service delivery.",
-      points: ["Results-driven strategies", "Continuous improvement", "Measurable outcomes"],
+      points: ["Result-driven strategies", "Continuous improvement", "Measurable outcomes"],
     },
     {
       title: "Passionate People",
       icon: <Sparkles className="w-6 h-6 text-white" />,
       description:
-        "Our greatest asset is our team—dedicated professionals with genuine zest for helping you succeed.",
+        "Our greatest asset is our team of dedicated professionals with genuine zest for helping you succeed.",
       points: ["Expert financial advisors", "Collaborative team culture", "Driven by purpose"],
     },
   ];
 
   return (
-    <section className="bg-white py-24 px-6">
+    <section
+      id="culture"
+      className="bg-white py-24 px-6">
       <div className="container mx-auto px-4">
         <div className="text-left mb-16">
-          <h2 className="text-2xl lg:text-4xl font-bold text-emerald-900 mb-6">Our Culture</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-emerald-900 mb-6">Our Culture</h2>
           <p className="text-base text-gray-900 mx-auto">
-            A Client-Centric, High-Performance organization driven by the zest of its people
+            A client-centric, high-performance organisation driven by the zest of its people.
           </p>
         </div>
 
@@ -92,7 +94,7 @@ export default function CultureSection() {
               <div className="text-emerald-800">Years Experience</div>
             </div>
             <div className="bg-gray-50 backdrop-blur-sm p-7">
-              <div className="text-3xl font-bold text-emerald-800 mb-1">40000+</div>
+              <div className="text-3xl font-bold text-emerald-800 mb-1">50,000+</div>
               <div className="text-emerald-800">Happy Clients</div>
             </div>
             <div className="bg-gray-50 backdrop-blur-sm px-10 py-7">

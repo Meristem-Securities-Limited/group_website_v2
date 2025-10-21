@@ -16,7 +16,9 @@ export default function VisionSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white py-24 px-6">
+    <section
+      id="vision"
+      className="relative overflow-hidden bg-white py-24 px-6">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-40 items-start">
           <motion.div
@@ -25,7 +27,7 @@ export default function VisionSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}>
-            <h1 className="text-3xl lg:text-4xl font-bold text-emerald-900 leading-tight">
+            <h1 className="text-3xl lg:text-5xl font-bold text-emerald-900 leading-tight">
               Our Vision
             </h1>
             <p className="text-base text-emerald-800 leading-relaxed">
@@ -88,16 +90,16 @@ export default function VisionSection() {
             <div className="relative bg-white rounded-3xl shadow-xl p-8 border-2 border-emerald-900">
               <div className="space-y-6">
                 <div className="bg-emerald-50/30 p-6 border border-emerald-100">
-                  <div className="text-4xl font-bold text-emerald-800 mb-2">188B+</div>
+                  <div className="text-4xl font-bold text-emerald-800 mb-2">600B+</div>
                   <div className="text-emerald-900">Assets Under Management (NGN)</div>
                 </div>
                 <div className="bg-emerald-50/30 p-6 border border-emerald-100">
-                  <div className="text-4xl font-bold text-emerald-800 mb-2">2003</div>
-                  <div className="text-emerald-900">Founded as Great Africa Securities</div>
+                  <div className="text-4xl font-bold text-emerald-800 mb-2">3 Locations</div>
+                  <div className="text-emerald-900">Located in Lagos, Rivers, FCT</div>
                 </div>
                 <div className="bg-emerald-50/30 p-6 border border-emerald-100">
                   <div className="text-4xl font-bold text-emerald-800 mb-2">7</div>
-                  <div className="text-emerald-900">Specialized Subsidiaries</div>
+                  <div className="text-emerald-900">Specialised Subsidiaries</div>
                 </div>
               </div>
             </div>

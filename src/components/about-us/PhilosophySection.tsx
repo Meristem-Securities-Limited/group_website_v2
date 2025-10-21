@@ -10,7 +10,9 @@ export default function PhilosophySection() {
   };
 
   return (
-    <section className="bg-white py-24 px-6">
+    <section
+      id="philosophy"
+      className="bg-white py-24 px-6">
       <div className="container mx-auto">
         <motion.div
           className="text-left mb-16"
@@ -19,9 +21,9 @@ export default function PhilosophySection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}>
           <h2 className="text-2xl lg:text-4xl font-bold text-green-900 mb-4">Our Philosophy</h2>
-          <p className="text-lg text-emerald-900 leading-relaxed mb-10 max-w-3xl font-medium">
+          <p className="text-lg text-emerald-900 leading-relaxed mb-10 w-full font-medium">
             Guided by our belief that our success depends entirely on the extent to which our
-            clients&apos; objectives are met
+            clients&apos; objectives are met;
           </p>
         </motion.div>
 
@@ -70,8 +72,8 @@ export default function PhilosophySection() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}>
             <p className="text-white text-xl lg:text-2xl leading-relaxed font-medium mb-6">
-              &lsquo;This philosophy of empathy and partnership is at the heart of everything we do,
-              &lsquo;
+              &lsquo;This philosophy of empathy and partnership is at the heart of everything we
+              do,&lsquo;
             </p>
           </motion.div>
         </div>

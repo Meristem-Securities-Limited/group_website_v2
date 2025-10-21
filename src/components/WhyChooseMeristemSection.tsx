@@ -54,7 +54,7 @@ const WhyChooseMeristem = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-semibold">
+            className="text-3xl md:text-5xl font-semibold text-emerald-900">
             Why Choose Meristem
           </motion.h2>
 
@@ -63,7 +63,7 @@ const WhyChooseMeristem = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-2">
+            className="mt-2 text-gray-600">
             We exist to advance the financial wellbeing of our clients
           </motion.p>
         </div>

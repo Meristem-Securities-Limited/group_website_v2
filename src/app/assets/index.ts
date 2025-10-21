@@ -30,9 +30,27 @@ import Taiwo from "./Taiwo Yusuf.jpg";
 import Temitope from "./Temitope Oludimu.jpg";
 import Mubo from "./Mubo Olasoko.jpg";
 import Kemi from "./Kemi Ojenike.jpg";
+import Reginald from "./REGINALD.jpg";
+import Ify from "./ADE-OJO.jpg";
+import GMD from "./Sulaimon-Adedokun.jpg";
+import Adejumoke from "./ADEJUMOKE.jpg";
+import Ohis from "./OHIWEREI.jpg";
+import Ahmed from "./AHMED.jpg";
+import Mubo2 from "./Mubo.jpg";
+import Oyebamiji from "./OYEBAMIJI.jpg";
+import MORE from "./more.jpg";
 
 export {
+  Mubo2,
+  MORE,
+  Oyebamiji,
+  Ohis,
+  Ahmed,
+  Reginald,
+  Adejumoke,
+  Ify,
   Bashir,
+  GMD,
   Salawu,
   Sulaimon,
   Funmilola,

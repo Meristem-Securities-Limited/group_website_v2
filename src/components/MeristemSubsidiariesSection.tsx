@@ -8,13 +8,13 @@ export default function MeristemSubsidiaries() {
     {
       number: "01",
       name: "Meristem Stockbrokers Limited",
-      description: "Equities trading and Brokerage services with a difference",
+      description: "Equities trading and brokerage services with a difference",
       link: "https://stockbroking.meristemng.com",
     },
     {
       number: "02",
       name: "Meristem Registrars and Probate Services Limited",
-      description: "Redefining Shareholder Management And Probate Services",
+      description: "Redefining Shareholder Management and Probate Services",
       link: "https://registrars.meristemng.com",
     },
     {
@@ -38,27 +38,27 @@ export default function MeristemSubsidiaries() {
     {
       number: "06",
       name: "Meristem Finance Limited",
-      description: "Financing Solutions Tailored to You",
+      description: "Financing solutions tailored to you.",
       link: "https://finance.meristemng.com",
     },
     {
       number: "07",
       name: "Meristem Trustees Limited",
-      description: "Leave the Things You Love for Those You Love",
+      description: "Leave the things you love for those you love.",
       link: "https://trustees.meristemng.com",
     },
   ];
 
   return (
     <section className="bg-white">
-      <div className="container mx-auto px-4 py-16 bg-white">
+      <div className="container mx-auto px-4 py-20 bg-white">
         <div className="pb-6">
           <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">
             Our Subsidiaries
           </h2>
           <p className="text-gray-600 mt-3 max-w-2xl">
-            Provides premium financial services that help you grow and preserve your wealth through
-            expert market analysis and personalized investment strategies.
+            Provide premium financial services that help you grow and preserve your wealth through
+            expert market analysis and personalised investment strategies.
           </p>
         </div>
 
@@ -71,22 +71,22 @@ export default function MeristemSubsidiaries() {
               whileInView={{ opacity: 1, x: 0 }} // slide in when visible
               transition={{ duration: 0.6, delay: index * 0.15 }}
               viewport={{ once: true }}
-              className="flex items-center justify-between py-8 border-b border-gray-200 group hover:bg-gray-50 transition-colors duration-200 cursor-pointer">
+              className="flex items-center justify-between py-8 border-b border-gray-300 group hover:bg-emerald-50 transition-colors duration-200 cursor-pointer">
               <div className="flex items-start lg:gap-17 gap-6">
                 <div>
-                  <span className="text-gray-600 text-lg font-medium min-w-[3rem]">
+                  <span className="text-emerald-600 text-lg font-medium min-w-[3rem]">
                     {subsidiary.number}
                   </span>
                 </div>
                 <div className="flex flex-col gap-3">
-                  <h3 className="text-base md:text-2xl font-semibold text-gray-900 mb-2">
+                  <h3 className="text-base md:text-2xl font-semibold text-emerald-900 mb-2">
                     {subsidiary.name}
                   </h3>
                   <p className="text-gray-600 text-sm">{subsidiary.description}</p>
                 </div>
               </div>
 
-              <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors duration-200 flex-shrink-0" />
+              <ArrowRight className="w-5 h-5 text-emerald-800 group-hover:text-emerald-600 transition-colors duration-200 flex-shrink-0" />
             </motion.a>
           ))}
         </div>

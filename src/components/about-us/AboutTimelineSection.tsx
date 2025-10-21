@@ -7,13 +7,13 @@
 //     year: "2003",
 //     title: "Foundations of Growth",
 //     description:
-//       "The journey began in 2003 with the incorporation of Great Africa Securities Limited, a spinoff from Great Africa Trust. Starting with a small but determined team, the firm set out with a bold vision — to redefine client service in Nigeria’s stockbroking industry. Its focus on quality research and exceptional service quickly set it apart, laying the groundwork for future expansion and the need for a distinct identity.",
+//       "The journey began in 2003 with the incorporation of Great Africa Securities Limited, a spinoff from Great Africa Trust. Starting with a small but determined team, the firm set out with a bold vision to redefine client service in Nigeria’s stockbroking industry. Its focus on quality research and exceptional service quickly set it apart, laying the groundwork for future expansion and the need for a distinct identity.",
 //   },
 //   {
 //     year: "2005",
 //     title: "A New Identity",
 //     description:
-//       "In 2005, the firm rebranded as Meristem Securities Limited. The name, inspired by the biological term meristem — the growth tissue in plants — symbolized continuous renewal and upward progress. Along with a fresh logo and brand identity, the rebrand reflected a clear mission: to help clients grow, preserve, and transfer wealth across generations. It marked the start of a new chapter in the company’s evolution.",
+//       "In 2005, the firm rebranded as Meristem Securities Limited. The name, inspired by the biological term meristem the growth tissue in plants symbolized continuous renewal and upward progress. Along with a fresh logo and brand identity, the rebrand reflected a clear mission: to help clients grow, preserve, and transfer wealth across generations. It marked the start of a new chapter in the company’s evolution.",
 //   },
 //   {
 //     year: "2006",
@@ -25,7 +25,7 @@
 //     year: "2008",
 //     title: "Wealth Management",
 //     description:
-//       "Building on the outcomes of a pivotal 2007 strategy session, the firm launched an asset management subsidiary with a clear point of difference — offering more personalized services to Nigeria’s growing middle class. The new unit matched investment options to individual risk profiles and helped clients grow wealth sustainably over time.",
+//       "Building on the outcomes of a pivotal 2007 strategy session, the firm launched an asset management subsidiary with a clear point of difference offering more personalized services to Nigeria’s growing middle class. The new unit matched investment options to individual risk profiles and helped clients grow wealth sustainably over time.",
 //   },
 //   {
 //     year: "2014",
@@ -118,25 +118,25 @@ const timelineData = [
     year: "2003",
     title: "Foundations of Growth",
     description:
-      "The journey began in 2003 with the incorporation of Great Africa Securities Limited, a spinoff from Great Africa Trust. Starting with a small but determined team, the firm set out with a bold vision — to redefine client service in Nigeria’s stockbroking industry. Its focus on quality research and exceptional service quickly set it apart, laying the groundwork for future expansion and the need for a distinct identity.",
+      "The journey began in 2003 with the incorporation of Great Africa Securities Limited, a spinoff from Great Africa Trust. Starting with a small but determined team, the firm set out with a bold vision to redefine client service in Nigeria’s stockbroking industry. Its focus on quality research and exceptional service quickly set it apart, laying the groundwork for future expansion and the need for a distinct identity.",
   },
   {
     year: "2005",
     title: "A New Identity",
     description:
-      "In 2005, the firm rebranded as Meristem Securities Limited. The name, inspired by the biological term meristem — the growth tissue in plants — symbolized continuous renewal and upward progress. Along with a fresh logo and brand identity, the rebrand reflected a clear mission: to help clients grow, preserve, and transfer wealth across generations.",
+      "In 2005, the firm rebranded as Meristem Securities Limited. The name, inspired by the biological term meristem; the growth tissue in plants symbolised continuous renewal and upward progress. Along with a fresh logo and brand identity, the rebrand reflected a clear mission: to help clients grow, preserve, and transfer wealth across generations.",
   },
   {
     year: "2006",
     title: "Expansion to Norman Williams Street",
     description:
-      "By Q4 2006, the team moved into a new office complex at 124 Norman Williams Street, Ikoyi. The business had grown from six staff to over twenty across stockbroking, registrars, and issuing house services. With its bright, airy ambience and Meristem’s vision and values on display for all to see, Meristem’s new home foreshadowed things to come.",
+      "By Q4 2006, the team moved into a new office complex at 124 Norman Williams Street, Ikoyi. The business had grown from six staff to over twenty across stockbroking, registrars, and issuing house services. With its bright airy ambience and Meristem’s vision and values on display for all to see, Meristem’s new home foreshadowed things to come.",
   },
   {
     year: "2008",
     title: "Wealth Management",
     description:
-      "Building on the outcomes of a pivotal 2007 strategy session, the firm launched an asset management subsidiary with a clear point of difference — offering more personalized services to Nigeria’s growing middle class. The new unit matched investment options to individual risk profiles and helped clients grow wealth sustainably over time.",
+      "Building on the outcomes of a pivotal 2007 strategy session, the firm launched an asset management subsidiary with a clear point of difference offering more personalized services to Nigeria’s growing middle class. The new unit matched investment options to individual risk profiles and helped clients grow wealth sustainably over time.",
   },
   {
     year: "2014",
@@ -145,7 +145,7 @@ const timelineData = [
       "After nearly five years in development, Meritrade was launched on the floor of the Nigerian Stock Exchange on March 5, 2014, becoming the first online trading platform in the history of the Nigerian Stock market. Jointly developed by the investment advisory team and homegrown software developers, Meritrade empowered investors to trade on the go.",
   },
   {
-    year: "2023",
+    year: "2022",
     title: "20A Gerrard Road HQ",
     description:
       "After two years of construction and unavoidable delays due to COVID-19, the new Meristem headquarters at 20A Gerrard Road, Ikoyi, was completed. Standing over 20 meters tall, the building is a bold symbol of growth, resilience, and our journey of two decades.",
@@ -154,7 +154,9 @@ const timelineData = [
 
 export default function TimelineSection() {
   return (
-    <section className="py-24 px-6 bg-[#154D34] text-white bg-[url(/bg-banner.png)] lg:bg-no-repeat bg-cover min-h-screen bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900">
+    <section
+      id="our-history"
+      className="py-24 px-6 bg-[#154D34] text-white bg-[url(/bg-banner.png)] lg:bg-no-repeat bg-cover min-h-screen bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900">
       <div className="container mx-auto lg:px-4">
         <div className="">
           <motion.div
@@ -163,11 +165,13 @@ export default function TimelineSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}>
-            <h2 className="text-3xl md:text-5xl font-bold text-white">Our History</h2>
-            <p className="text-white mt-5 max-w-2xl">
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white">
+              Over the years...
+            </h2>
+            {/* <p className="text-white mt-5 max-w-2xl">
               Provides premium financial services that help you grow and preserve your wealth
               through expert market analysis and personalized investment strategies.
-            </p>
+            </p> */}
           </motion.div>
           <motion.div
             className="relative container mx-auto lg:px-12 mt-20"
@@ -217,7 +221,7 @@ export default function TimelineSection() {
 
                   {/* Content Card */}
                   <motion.div
-                    className={`mt-6 lg:mt-0 w-full lg:w-5/12 bg-[#fefefe] border border-red-100 rounded-2xl p-6 shadow-md ${
+                    className={`mt-6 lg:mt-0 w-full lg:w-5/12 bg-[#fefefe] border border-red-100 p-6 shadow-md ${
                       index % 2 === 0 ? "lg:ml-auto" : "lg:mr-auto"
                     }`}
                     initial={{ opacity: 0, scale: 0.9 }}

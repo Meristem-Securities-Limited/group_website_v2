@@ -1,72 +1,103 @@
 "use client";
 
-import React from "react";
-import { Heart, TrendingUp, Sparkles, Lightbulb } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 
-const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: (custom: number) => ({
+// Animation variants
+const textVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
     opacity: 1,
     y: 0,
-    transition: { delay: custom * 0.2, duration: 0.6, ease: "easeOut" },
-  }),
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
 };
 
-export default function MissionSection() {
-  const cards = [
-    {
-      icon: <Lightbulb className="w-6 h-6 text-white" />,
-      title: "Knowledge",
-      description: "Deep expertise and market intelligence to guide your financial decisions",
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.3,
     },
-    {
-      icon: <TrendingUp className="w-6 h-6 text-white" />,
-      title: "Information",
-      description: "Up-to-date market insights and data-driven strategies for optimal outcomes",
-    },
-    {
-      icon: <Heart className="w-6 h-6 text-white" />,
-      title: "Dedication",
-      description: "Unwavering commitment to your financial success and long-term goals",
-    },
-    {
-      icon: <Sparkles className="w-6 h-6 text-white" />,
-      title: "Creativity",
-      description: "Innovative solutions tailored to meet your unique financial needs",
-    },
-  ];
+  },
+};
 
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 50, scale: 0.95 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+// Sample cards (replace with your data)
+const cards = [
+  {
+    icon: <span className="text-white text-2xl font-bold">💡</span>,
+    title: "Innovation",
+    description: "We innovate to create solutions that drive growth and sustainability.",
+  },
+  {
+    icon: <span className="text-white text-2xl font-bold">🤝</span>,
+    title: "Integrity",
+    description: "Integrity is the foundation of our operations and client relationships.",
+  },
+  {
+    icon: <span className="text-white text-2xl font-bold">🌍</span>,
+    title: "Sustainability",
+    description: "Committed to practices that ensure long-term environmental and social impact.",
+  },
+  {
+    icon: <span className="text-white text-2xl font-bold">📈</span>,
+    title: "Growth",
+    description: "Dedicated to helping clients and stakeholders grow through reliable service.",
+  },
+];
+
+export default function MissionSection() {
   return (
-    <section className="bg-emerald-50/30 py-24 px-6">
+    <section
+      id="mission"
+      className="bg-emerald-50/30 py-24 px-6 overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-left mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-emerald-900 mb-6">Our Mission</h2>
+        {/* Animated text section */}
+        <motion.div
+          className="text-left mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={textVariants}>
+          <h2 className="text-3xl lg:text-5xl font-bold text-emerald-900 mb-6">Our Mission</h2>
           <p className="text-lg text-emerald-900 max-w-4xl leading-relaxed">
             Bonding with our clients to understand and meet their needs, through knowledge,
-            information, dedication and creativity of our people while satisfying all stakeholders
-            in the environment in which we operate
+            information, dedication, and creativity of our people while satisfying all stakeholders
+            and the environment in which we operate.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-19">
+        {/* Animated cards grid */}
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-19"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}>
           {cards.map((card, index) => (
             <motion.div
               key={card.title}
-              custom={index}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
               variants={cardVariants}
-              className="bg-white p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-emerald-100">
-              <div className="w-14 h-14 bg-emerald-900 flex items-center justify-center mb-6">
+              whileHover={{ scale: 1.03 }}
+              className="bg-white p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-emerald-100 rounded-2xl">
+              <div className="w-14 h-14 bg-emerald-900 flex items-center justify-center mb-6 rounded-lg">
                 {card.icon}
               </div>
               <h3 className="text-xl font-bold text-emerald-900 mb-3">{card.title}</h3>
               <p className="text-emerald-800 leading-relaxed">{card.description}</p>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -16,7 +16,9 @@ export default function PromiseSection() {
   };
 
   return (
-    <section className="bg-white py-24 px-6">
+    <section
+      id="promise"
+      className="bg-white py-24 px-6">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-30 items-start">
           {/* Icons and values */}
@@ -32,7 +34,7 @@ export default function PromiseSection() {
                   {
                     icon: <Handshake className="w-6 h-6 text-emerald-700" />,
                     title: "Friendly Approach",
-                    desc: "A warm, approachable team that treats you like family. We prioritize your comfort and ensure every interaction is personal, respectful, and supportive.",
+                    desc: "A warm, approachable team that treats you like family. We prioritise your comfort and ensure every interaction is personal, respectful, and supportive.",
                   },
                   {
                     icon: <TrendingUp className="w-6 h-6 text-emerald-700" />,
@@ -42,7 +44,7 @@ export default function PromiseSection() {
                   {
                     icon: <Sparkles className="w-6 h-6 text-emerald-700" />,
                     title: "Wealth Growth",
-                    desc: "Strategic planning focused on growing and preserving your wealth sustainably. We combine expertise with foresight to maximize long-term returns.",
+                    desc: "Strategic planning focused on growing and preserving your wealth sustainably. We combine expertise with foresight to maximise long-term returns.",
                   },
                   {
                     icon: <Shield className="w-6 h-6 text-emerald-700" />,
@@ -77,13 +79,20 @@ export default function PromiseSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}>
-            <h2 className="text-2xl lg:text-4xl font-bold text-emerald-900 leading-tight">
+            <h2 className="text-2xl lg:text-5xl font-bold text-emerald-900 leading-tight">
               Our Promise
             </h2>
 
+            <div className="bg-emerald-50 p-8 border-l-4 border-emerald-800">
+              <p className="text-lg text-emerald-800 leading-relaxed italic">
+                &lsquo;We are a friendly company with up-to-date market information to grow wealth
+                in good time and in an atmosphere of transparency&lsquo;
+              </p>
+            </div>
+
             <p className="text-lg text-emerald-900 leading-relaxed font-medium">
               We are committed to building lasting relationships through a friendly approach,
-              precise market intelligence, and strategic wealth growth — all delivered in an
+              precise market intelligence, and strategic wealth growth all delivered in an
               atmosphere of complete transparency.
             </p>
 
@@ -104,13 +113,6 @@ export default function PromiseSection() {
               continuously monitor market trends and refine our strategies so that you can benefit
               from timely opportunities and avoid unnecessary risks.
             </p>
-
-            <div className="bg-emerald-50 p-8 border-l-4 border-emerald-800">
-              <p className="text-lg text-emerald-800 leading-relaxed italic">
-                &lsquo;We are a friendly company with up-to-date market information to grow wealth
-                in good time and in an atmosphere of transparency&lsquo;
-              </p>
-            </div>
           </motion.div>
         </div>
       </div>

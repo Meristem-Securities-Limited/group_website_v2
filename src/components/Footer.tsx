@@ -27,7 +27,17 @@ export default function Footer() {
                 />
               </Link>
             </div>
-            <div className="flex flex-1 flex-col gap-10 mt-10">
+            <div className="space-y-3">
+              <p className="text-sm font-medium text-gray-300">
+                For complaints, you can contact on
+              </p>
+              <div className="w-full py-2 space-y-2">
+                <span className="font-bold text-white block">WhatsApp: +234 813 405 9788</span>
+                <span className="font-bold text-white block">Telephone: 080063747836</span>
+                <span className="font-bold text-white block">Email: contact@meristemng.com</span>
+              </div>
+            </div>
+            <div className="flex flex-1 flex-col gap-6 mt-5">
               <div className="space-y-3 flex-1">
                 <h4 className="font-bold text-white uppercase">Head Office Address</h4>
                 <p className="text-gray-200 text-sm font-medium">
@@ -37,21 +47,21 @@ export default function Footer() {
               <div className="space-y-3 flex-1">
                 <h4 className="font-bold text-white uppercase">Lagos Branch</h4>
                 <p className="text-gray-200 text-sm font-medium">
-                  213 Herbert Macaulay Wy, Yaba, Lagos 101245, Lagos (09031864718)
+                  213 Herbert Macaulay Way, Yaba, Lagos 101245, Lagos
                 </p>
               </div>
               <div className="space-y-3 flex-1">
                 <h4 className="font-bold text-white uppercase">Port Harcourt Branch</h4>
                 <p className="text-gray-200 text-sm font-medium">
                   1 Opobo Crescent, Opposite Aladumo Schools, GRA Junction, Port Harcourt, Rivers
-                  State, Nigeria. (09031864718)
+                  State, Nigeria. (07080647497)
                 </p>
               </div>
               <div className="space-y-3 flex-1">
                 <h4 className="font-bold text-white uppercase">Abuja Branch</h4>
                 <p className="text-gray-200 text-sm font-medium">
                   4th Floor, Elizade Towers, Plot 596 Cadastral Zone A.O, Independent Avenue, FCT,
-                  Abuja, Nigeria. (09090755550)
+                  Abuja, Nigeria. (07080647498)
                 </p>
               </div>
             </div>
@@ -66,11 +76,14 @@ export default function Footer() {
           <div className="w-full lg:pt-0 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-x-8 lg:gap-x-10 gap-y-10">
             {[
               {
-                title: "Meristem’s Subsidiaries",
+                title: "Meristem Subsidiaries",
                 items: [
                   { title: "Meristem Wealth Management", url: "https://meristemwealth.com/" },
                   { title: "Meristem Stockbrokers", url: "https://stockbroking.meristemng.com" },
-                  { title: "Meristem Registrar", url: "https://registrars.meristemng.com" },
+                  {
+                    title: "Meristem Registrar and Probate Services",
+                    url: "https://registrars.meristemng.com",
+                  },
                   { title: "Meristem Trustees", url: "https://trustees.meristemng.com" },
                   { title: "Meristem Family Office", url: "https://familyoffice.meristemng.com" },
                   { title: "Meristem Finance", url: "https://finance.meristemng.com" },
@@ -93,7 +106,6 @@ export default function Footer() {
                   { title: "About Us", url: "/about-us" },
                   { title: "Our Platforms", url: "#products" },
                   { title: "Our Capabilities", url: "#" },
-                  { title: "Our Subsidiaries", url: "#" },
                 ],
               },
               {
@@ -128,19 +140,79 @@ export default function Footer() {
                 </div>
               </div>
             ))}
+            <div className="w-full col-span-4 items-center">
+              <h6 className="font-bold pb-4 uppercase">Socials</h6>
+              <div className="flex flex-wrap gap-y-4 lg:space-x-9 md:space-x-4 space-x-6 text-gray-200 items-center">
+                {[
+                  {
+                    href: "https://x.com/MeristemNigeria",
+                    icon: (
+                      <BsTwitterX
+                        size={23}
+                        color="white"
+                      />
+                    ),
+                    title: "X (Formerly Twitter)",
+                  },
+                  {
+                    href: "https://www.instagram.com/meristemng/",
+                    icon: (
+                      <Instagram
+                        size={30}
+                        color="white"
+                      />
+                    ),
+                    title: "Instagram",
+                  },
+                  {
+                    href: "https://web.facebook.com/MeristemNigeria/",
+                    icon: (
+                      <Facebook
+                        size={30}
+                        color="white"
+                        variant="Bold"
+                      />
+                    ),
+                    title: "Facebook",
+                  },
+                  {
+                    href: "https://www.linkedin.com/company/meristem-securities-limited/?originalSubdomain=ngx",
+                    icon: (
+                      <BsLinkedin
+                        size={27}
+                        color="white"
+                        className="font-bold"
+                      />
+                    ),
+                    title: "LinkedIn",
+                  },
+                ].map(({ href, icon, title }, i) => (
+                  <a
+                    key={i}
+                    href={href}
+                    aria-label={title}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex text-xs lg:text-sm items-center font-medium gap-1">
+                    {icon}
+                    {/* {title} */}
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col lg:gap-19 gap-9 w-full lg:pt-20 pt-10">
-          <div className="flex space-x-9">
+        {/* <div className="flex lg:flex-row flex-col lg:gap-19 gap-9 w-full lg:pt-20 pt-10">
+          {/* <div className="flex space-x-9">
             <div className="space-y-2">
               <h4 className="font-bold text-white">CONTACT</h4>
-              <p className="text-gray-200 text-sm font-medium">+23408179441026</p>
+              <p className="text-gray-200 text-sm font-medium">+</p>
             </div>
             <div className="space-y-2">
               <h4 className="font-bold text-white uppercase">Email Address</h4>
               <p className="text-gray-200 text-sm font-medium">contact@meristemng.com</p>
             </div>
-          </div>
+          </div> 
           <div className="w-auto items-center">
             <h6 className="font-bold pb-4 uppercase">Socials</h6>
             <div className="flex flex-wrap gap-y-4 lg:space-x-9 md:space-x-4 space-x-6 text-gray-200 items-center">
@@ -196,12 +268,12 @@ export default function Footer() {
                   rel="noreferrer"
                   className="flex text-xs lg:text-sm items-center font-medium gap-1">
                   {icon}
-                  {/* {title} */}
+                  {/* {title} 
                 </a>
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="flex lg:flex-row gap-9 flex-col justify-center items-center py-19 mt-4">
           <p className="text-sm lg:text-base font-medium text-center">
             &copy; {new Date().getFullYear()} Meristem Securities Limited. All Rights Reserved

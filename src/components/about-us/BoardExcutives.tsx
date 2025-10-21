@@ -3,54 +3,67 @@
 import React from "react";
 import { motion } from "framer-motion";
 import MemberCard from "@/components/MemberCard";
-import { boardMembers } from "@/app/board-members/[slug]/page";
+import { boardMembers } from "@/app/executive-members/[slug]/page";
 import Link from "next/link";
+import { Adejumoke, Ahmed, GMD, Ify, Mubo2, Ohis, Oyebamiji, Reginald } from "@/app/assets";
 
 const executiveMembers = [
   {
-    name: "AVM Ishaya Shekarri (RTD), OON, Mni",
+    name: "DR. REGINALD CHIKA STANLEY FNIM",
     role: "Chairman",
-    image: "https://meristemng.com/storage//assets/images/AVM,%20ISHAYA%20SHEKARRI.jpg",
+    image: Reginald,
   },
   {
-    name: "Olusegun Olusanya",
+    name: "TAIWO ADE-OJO",
     role: "Vice Chairman",
-    image: "https://meristemng.com/storage//assets/images/OLUSEGUN%20OLUSANYA.jpg",
+    image: "",
   },
-  {
-    name: "Laitan Onolaja (OFR)",
-    role: "Director",
-    image: "https://meristemng.com/storage//assets/images/Laitan%20Onolaja.jpg",
-  },
-  {
-    name: "Christopher Attah",
-    role: "Director",
-    image: "https://meristemng.com/storage//assets/images/Christopher%20Attah.jpg",
-  },
-  {
-    name: "Chief Michael Ade-Ojo (OON)",
-    role: "Director",
-    image: "https://meristemng.com/storage//assets/images/CHIEF%20SYLVERIUS%20I.%20C.%20OKOLI.jpg",
-  },
-  {
-    name: "Yakubu Abubakar",
-    role: "Director",
-    image: "https://meristemng.com/storage//assets/images/DSC02549%20copy%20(24).jpg",
-  },
-  {
-    name: "Chief Michael Ade-Ojo (OON)",
-    role: "Director",
-    image: "https://meristemng.com/storage//assets/images/Michael%20Ade-Ojo.png",
-  },
-  {
-    name: "Wole Abegunde",
-    role: "Director",
-    image: "https://meristemng.com/storage//assets/images/olu%20-%20Copy.png",
-  },
+
   {
     name: "Sulaiman Adedokun, CFA",
     role: "Group Managing Director",
-    image: "https://meristemng.com/storage//assets/images/DSC02549%20copy%20(2).jpg",
+    image: GMD,
+  },
+  {
+    name: "UMAR SHUAIB AHMED",
+    role: "Director",
+    image: Ahmed,
+  },
+  {
+    name: "OHIS OHIWEREI",
+    role: "Director",
+    image: Ohis,
+  },
+  // {
+  //   name: "FEYI OLUSANYA, CFA",
+  //   role: "Director",
+  //   image: "",
+  // },
+  {
+    name: "ADEJUMOKE AWOLUMATE, FCA, FCS",
+    role: "Director",
+    image: Adejumoke,
+  },
+  {
+    name: "EMMANUEL ADEYEYE OYEBANJI, S.A.N. FCIArb.",
+    role: "Director",
+    image: Oyebamiji,
+  },
+  {
+    name: "IFY OKOLI-WATSON",
+    role: "Director",
+    image: Ify,
+  },
+  {
+    name: "AMINA MAINA",
+    role: "Director",
+    image: "",
+  },
+
+  {
+    name: "Mubo Olasoko",
+    role: "Deputy, Group Managing Director",
+    image: Mubo2,
   },
 ];
 
@@ -75,7 +88,9 @@ const itemVariantsUp = {
 
 export default function BoardExecutiveSection() {
   return (
-    <div className="bg-gray-50 text-black py-20">
+    <section
+      id="board"
+      className="bg-gray-50 text-black py-20">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Executive Management */}
         <motion.div
@@ -86,8 +101,10 @@ export default function BoardExecutiveSection() {
           <motion.div
             variants={itemVariantsRight}
             className="text-left mb-12">
-            <h2 className="text-4xl font-bold text-black mb-4">Board of Directors</h2>
-            <p className="text-left text-lg mx-auto">
+            <h2 className="text-4xl lg:text-5xl font-bold text-emerald-900 mb-4">
+              Board of Directors
+            </h2>
+            <p className="text-left text-lg mx-auto text-emerald-900">
               Distinguished professionals providing strategic oversight and governance
             </p>
           </motion.div>
@@ -126,7 +143,7 @@ export default function BoardExecutiveSection() {
               <motion.div
                 key={index}
                 variants={itemVariantsUp}>
-                <Link href={`/board-members/${member.slug}`}>
+                <Link href={`/executive-members/${member.slug}`}>
                   <MemberCard member={member} />
                 </Link>
               </motion.div>
@@ -134,6 +151,6 @@ export default function BoardExecutiveSection() {
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

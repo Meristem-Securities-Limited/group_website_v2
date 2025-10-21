@@ -33,9 +33,9 @@ const products = [
   },
   {
     id: 4,
-    title: "Registrars & Probate Services",
+    title: "Probate Services",
     description:
-      "Simplify share registration and estate administration with MRPSL. We ensure efficiency, compliance, and confidentiality in managing shareholder records and transferring wealth seamlessly.",
+      "We deliver structured and transparent estate administration, ensuring that every process, from asset gathering to transfer, is handled efficiently, securely, and in full compliance.",
     img: HouseDisplay,
     link: "#fixed-income",
   },
@@ -43,7 +43,7 @@ const products = [
     id: 5,
     title: "Trusteeship",
     description:
-      "Safeguard and transfer wealth seamlessly with Meristem Trustees Limited, licensed by the SEC to provide professional trust solutions. Our services include Wills, Living Trusts, Education Trusts, and Corporate Trusts, as well as the Meristem Diaspora Trust for Nigerians abroad.",
+      "Safeguard and transfer wealth seamlessly with Meristem Trustees Limited. Our services include Wills, Living Trusts, Education Trusts, and Corporate Trusts, as well as the Diaspora Trust for Nigerians living abroad.",
     img: HappyFamily,
     link: "#dollar-investments",
   },
@@ -51,7 +51,7 @@ const products = [
     id: 6,
     title: "Family Office",
     description:
-      "Preserve and grow your family’s legacy with Meristem Family Office. We provide personalized wealth management and succession planning solutions including Legacy Planning, Investment Management, Business Advisory, Philanthropy, Family Governance, and Health & Longevity Planning.",
+      "Provides personalised wealth management and succession planning solutions. including Legacy Planning, Investment Management, Business Advisory, Philanthropy, Family Governance, and Health & Longevity Planning.",
     img: MeritradeMockUp,
     link: "#real-estate",
   },
@@ -59,7 +59,7 @@ const products = [
     id: 7,
     title: "Investment Banking",
     description:
-      "Providing bespoke corporate finance and advisory solutions, including debt and equity offerings, M&A, and commercial papers to help businesses optimize growth and capital structure.",
+      "We provide tailored financial advisory and capital-raising solutions that help businesses unlock growth opportunities. From mergers and acquisitions to debt and equity financing, we deliver strategic insights with precision, confidentiality, and excellence.",
     img: WealthBuddyMockup,
     link: "#wealth-management",
   },
@@ -78,7 +78,9 @@ export default function CapabilitiesSection() {
   };
 
   return (
-    <section className="bg-white pt-17 pb-20">
+    <section
+      id="capabilities"
+      className="bg-white lg:pt-30 pt-20 pb-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -102,7 +104,8 @@ export default function CapabilitiesSection() {
               transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
               viewport={{ once: true }}
               className="text-gray-600 mt-3 max-w-2xl">
-              We provide premium financial services designed to help you grow, manage, and preserve your wealth through expert market insights and personalized investment strategies.
+              We provide premium financial services designed to help you grow, manage, and preserve
+              your wealth through expert market insights and personalised investment strategies.
             </motion.p>
           </div>
 
@@ -130,7 +133,8 @@ export default function CapabilitiesSection() {
           ref={scrollRef}
           className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth mt-17">
           {products.map((product, index) => (
-            <motion.div
+            <motion.a
+              href={product?.link}
               onClick={() => navigate.push(product.link)}
               key={product.id}
               initial={{ opacity: 0, x: 60 }}
@@ -162,7 +166,7 @@ export default function CapabilitiesSection() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>

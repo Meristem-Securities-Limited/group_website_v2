@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { HappyFamily, HouseDisplay, MeritradeMockUp, WealthBuddyMockup } from "../app/assets";
+import { HappyFamily, HouseDisplay, MeritradeMockUp, MORE, WealthBuddyMockup } from "../app/assets";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -27,8 +27,16 @@ const products = [
     id: 3,
     title: "Real Estate",
     description:
-      "Save and invest smarter with flexible plans built around your goals. WealthBuddy helps you grow your money effortlessly while keeping it accessible.",
+      "Explore, invest, and manage real estate seamlessly. We provide access to premium property opportunities and professional management that keeps your assets performing at their best.",
     img: HouseDisplay,
+    link: "https://realestate.meristemng.com",
+  },
+  {
+    id: 5,
+    title: "Simple Will",
+    description:
+      "Create a Simple Will to clearly state how your assets should be managed even when you are not here. It’s quick, secure, and gives you confidence that your wishes will be respected.",
+    img: HappyFamily,
     link: "https://realestate.meristemng.com",
   },
   {
@@ -36,9 +44,9 @@ const products = [
     title: "MORE (Meristem Orientation for Rising Entrepreneurs)",
     description:
       "Learn the essentials of investing and entrepreneurship through engaging content and expert-led sessions designed to empower the next generation of wealth creators.",
-    img: HappyFamily,
+    img: MORE,
     link: "https://app.more.meristemng.com",
-  }
+  },
 ];
 
 export default function ProductsSection() {
@@ -65,7 +73,9 @@ export default function ProductsSection() {
             transition={{ duration: 0.6 }}>
             <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">Our Platforms</h2>
             <p className="text-gray-600 mt-3 max-w-2xl text-lg md:text-base">
-              Experience Meristem’s suite of digital platforms designed to simplify investing, trading, real estate management, and financial education, empowering you to grow, manage, and sustain wealth anytime, anywhere.
+              Explore Meristem’s innovative platforms designed to simplify how you invest, trade,
+              and manage assets. From real estate to financial learning, we make it effortless to
+              grow and sustain wealth on your own terms.
             </p>
           </motion.div>
 

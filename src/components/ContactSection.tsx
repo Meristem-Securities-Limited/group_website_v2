@@ -92,7 +92,7 @@ const ContactForm: React.FC = () => {
   return (
     <div className="bg-white rounded-2xl shadow-xl p-8 h-full">
       <div className="space-y-2 mb-9">
-        <h3 className="text-2xl font-bold text-gray-900">How Can We Assist You?</h3>
+        <h3 className="text-4xl font-bold text-emerald-900">Contact Us</h3>
         <p>
           Your satisfaction is our priority. Let&apos;s make sure you have the best experience with
           us.
@@ -186,7 +186,7 @@ const ContactForm: React.FC = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-primary-green text-white py-3 px-6 rounded-lg font-semibold hover:bg-emerald-800 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+          className="w-full bg-primary-green text-white py-3 px-6 font-semibold hover:bg-emerald-800 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
       </form>
@@ -210,6 +210,19 @@ const MeristemContactSection = () => {
               Securities Limited is ready to connect with you and support your goals. Reach out
               today and let’s start a meaningful conversation about your financial future.
             </p>
+
+            {/* Google Map Goes Here */}
+            {/* Google Map Embed */}
+            <div className="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg border border-emerald-900">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.527795847617!2d3.4384132758932204!3d6.454604893536882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2f787d07f3%3A0xf3c10f69e84f90de!2sMeristem%20Securities%20Limited!5e0!3m2!1sen!2sng!4v1761057092600!5m2!1sen!2sng"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
 
           {/* Right Form */}
