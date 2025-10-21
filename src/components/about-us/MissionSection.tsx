@@ -86,6 +86,7 @@ export default function MissionSection() {
           viewport={{ once: true, amount: 0.2 }}>
           {cards.map((card, index) => (
             <motion.div
+              id={index.toString()}
               key={card.title}
               variants={cardVariants}
               whileHover={{ scale: 1.03 }}

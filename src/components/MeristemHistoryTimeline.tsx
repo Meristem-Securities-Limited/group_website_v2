@@ -5,26 +5,26 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const MeristemTimeline = () => {
-  const timelineData = [
-    {
-      year: "2003",
-      title: "Foundations of Growth",
-      description:
-        "Meristem Securities Limited is established to provide world-class stockbroking and investment services in Nigeria.",
-    },
-    {
-      year: "2005",
-      title: "A New Identity",
-      description:
-        "Launch of our Research Unit, setting a benchmark for market intelligence and forecasting accuracy.",
-    },
-    {
-      year: "2008",
-      title: "Expansion Into Wealth Management",
-      description:
-        "Creation of Meristem Wealth Management to offer bespoke portfolio and retirement planning solutions.",
-    },
-  ];
+  // const timelineData = [
+  //   {
+  //     year: "2003",
+  //     title: "Foundations of Growth",
+  //     description:
+  //       "Meristem Securities Limited is established to provide world-class stockbroking and investment services in Nigeria.",
+  //   },
+  //   {
+  //     year: "2005",
+  //     title: "A New Identity",
+  //     description:
+  //       "Launch of our Research Unit, setting a benchmark for market intelligence and forecasting accuracy.",
+  //   },
+  //   {
+  //     year: "2008",
+  //     title: "Expansion Into Wealth Management",
+  //     description:
+  //       "Creation of Meristem Wealth Management to offer bespoke portfolio and retirement planning solutions.",
+  //   },
+  // ];
 
   return (
     <section className="bg-[#154D34] bg-[url(/bg-banner.png)] bg-no-repeat bg-cover bg-center bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 relative overflow-hidden">

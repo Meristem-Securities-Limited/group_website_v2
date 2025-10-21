@@ -2,26 +2,31 @@
 
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { Home, Search, ArrowLeft } from "lucide-react";
+import { Home, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 export default function NotFound() {
   const router = useRouter();
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = (e: any) => {
+    setIsClient(true); // confirm we're on client side
+
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePos({ x: e.clientX, y: e.clientY });
     };
+
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  const glowX = (mousePos.x / window.innerWidth) * 100;
-  const glowY = (mousePos.y / window.innerHeight) * 100;
+  // Default values for SSR safety
+  const glowX = isClient ? (mousePos.x / window.innerWidth) * 100 : 50;
+  const glowY = isClient ? (mousePos.y / window.innerHeight) * 100 : 50;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br flex items-center justify-center p-4 overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-emerald-950 flex items-center justify-center p-4 overflow-hidden relative">
       {/* Animated background glow */}
       <div
         className="absolute inset-0 opacity-30 transition-all duration-300"
@@ -67,29 +72,24 @@ export default function NotFound() {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
-            href={"/"}
-            className="group relative px-8 py-4 bg-gradient-to-r bg-white font-semibold text-emerald-900 overflow-hidden transition-all duration-300 hover:scale-105">
+            href="/"
+            className="group relative px-8 py-4 bg-white font-semibold text-emerald-900 overflow-hidden transition-all duration-300 hover:scale-105 rounded-lg">
             <span className="relative z-10 flex items-center gap-2">
               <Home className="w-5 h-5" />
               Back to Home
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </Link>
 
           <button
             onClick={() => router.back()}
-            className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 flex items-center gap-2">
+            className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 flex items-center gap-2 rounded-lg">
             <ArrowLeft className="w-5 h-5" />
             Go Back
           </button>
         </div>
-
-        {/* <div className="mt-12 flex items-center justify-center gap-2 text-emerald-400 text-sm">
-          <Search className="w-4 h-4" />
-          <span>Try searching for what you need</span>
-        </div> */}
       </div>
 
+      {/* Background glows */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
       <div
         className="absolute bottom-20 right-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"
