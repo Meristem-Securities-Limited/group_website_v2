@@ -1,5 +1,5 @@
-import Logo from "./logo.png";
-import WhiteLogo from "./meristem-logo.png";
+import Logo from "./meristem logo 1.png";
+import WhiteLogo from "./meristem logos 2.png";
 import VideoThumbnail from "./video-thumbnail.png";
 import WhatsappLogo from "./whatsapp-logo.svg";
 import MailIcon from "./mail-icon.svg";
