@@ -1,19 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
+import AlertModal from "./AlertModal";
 interface ContactFormInputs {
   name: string;
   email: string;
   phone: string;
-  message: string;
-}
-
-interface ApiResponse {
-  error?: boolean;
   message: string;
 }
 
@@ -40,6 +36,9 @@ const validationSchema = Yup.object({
 });
 
 const ContactForm: React.FC = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
+  const [modalType, setModalType] = useState<"success" | "error">("success");
   const {
     register,
     handleSubmit,
@@ -53,39 +52,30 @@ const ContactForm: React.FC = () => {
 
   const onSubmit: SubmitHandler<ContactFormInputs> = async (data) => {
     try {
-      const response = await fetch(
-        "https://equitymandateapi-y2zn4.ondigitalocean.app/api/submit-form",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ ...data, type: "MWML" }),
-        }
-      );
-
-      const result: ApiResponse = await response.json();
-
-      if (response.ok) {
-        reset();
-        toast.success(result.message || "Your message has been sent successfully!");
-        return { success: true };
-      } else {
-        setError("root.serverError", {
-          type: "server",
-          message: result.message || "Sorry, there was an error sending your message.",
-        });
-        toast.error(result.message || "Failed to send message. Please try again.");
-        return { success: false };
-      }
-    } catch (error) {
-      console.log(error);
-      setError("root.serverError", {
-        type: "server",
-        message: "Sorry, there was an error sending your message. Please try again.",
+      const res = await fetch("https://equitymandateapi-y2zn4.ondigitalocean.app/api/submit-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, type: "MWML" }),
       });
-      toast.error("Failed to send message. Please try again.");
-      return { success: false };
+
+      const result = await res.json();
+
+      if (res.ok) {
+        reset();
+        setModalType("success");
+        setModalMessage("Your message has been sent successfully!");
+        setModalOpen(true);
+      } else {
+        setModalType("error");
+        setModalMessage(result.message || "Failed to send message. Please try again.");
+        setModalOpen(true);
+        setError("root.serverError", { message: result.message });
+      }
+    } catch (err) {
+      setModalType("error");
+      setModalMessage("Something went wrong. Please try again.");
+      setModalOpen(true);
+      setError("root.serverError", { message: "Something went wrong." });
     }
   };
 
@@ -190,6 +180,13 @@ const ContactForm: React.FC = () => {
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
       </form>
+
+      <AlertModal
+        isOpen={modalOpen}
+        message={modalMessage}
+        type={modalType}
+        onClose={() => setModalOpen(false)}
+      />
     </div>
   );
 };
