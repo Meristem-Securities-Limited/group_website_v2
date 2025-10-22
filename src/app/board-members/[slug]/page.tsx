@@ -21,7 +21,7 @@ export const executiveMembers = [
   {
     slug: "reginald-stanley",
     image: Reginald,
-    name: "Dr. Reginald Chika Stanley",
+    name: "Dr. Reginald Chika Stanley, MFR",
     role: "Chairman",
     description: `<p>
     Dr. Reginald Chika Stanley is vast in all sectors of the Oil and Gas Industry, with a proven track record in management in Nigeria and abroad. 
@@ -68,7 +68,7 @@ export const executiveMembers = [
     slug: "ade-ojotaiwo",
     image: GroupMeetings,
     name: "Ade-Ojo Taiwo",
-    role: "Vice Chairman",
+    role: "Director",
     description: `<p>
     Since June 2021, Mr. Ade-Ojo has been the Managing Director of Elizade Nigeria Limited, where he develops and executes the organization’s business strategies to attain set goals and objectives while providing strategic advice to the Board of Directors.</p>
     <br>
@@ -152,96 +152,47 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
 
             </div>`,
   },
-  // {
-  //   slug: "feyi-olusanya",
-  //   image: GroupMeetings,
-  //   name: "Feyi Olusanya, CFA",
-  //   role: "Director",
-  //   description: `<div class="executive-info">
-  //   <p>
-  //     Feyi Olusanya is a well-grounded investment banker with depth in corporate finance, strategy development and execution, organizational change management, and project management, spanning close to two decades.
-  //   </p>
-
-  //   <p>
-  //     Between 1999 and 2003, Feyi garnered cognate experience at <strong>Accenture (formerly Andersen Consulting)</strong> and at <strong>ARM Investment Managers</strong> as a Financial Analyst (2005–2006).
-  //   </p>
-
-  //   <p>
-  //     A pioneer banker for <strong>ABSA Group (formerly Barclays Africa Group)</strong> in Nigeria since 2011, he has focused on transaction origination and client relationship management for corporate and investment banking clients.
-  //     Feyi was actively involved in defining and executing the Corporate and Investment Banking Strategy for Nigeria.
-  //   </p>
-
-  //   <p>
-  //     He served as a <strong>Board Member of CFA Society Nigeria (2012–2014)</strong> and as <strong>Chief Representative Officer</strong> of <strong>ABSA Capital Representative Office Nigeria Limited</strong> between July 2011 and December 2016.
-  //   </p>
-
-  //   <p>
-  //     Feyi assumed the role of <strong>Managing Director, ABSA Capital Markets Nigeria Limited</strong> (formerly Barclays Securities Nigeria Limited, part of Barclays Africa) in 2017.
-  //     He was instrumental in developing the strategy that led to the establishment of a local investment banking business in Nigeria and continues to drive growth across domestic and international <strong>DCM, ECM, M&A,</strong> and <strong>Loan Capital Market</strong> transactions.
-  //   </p>
-
-  //   <p>
-  //     He has served as <strong>Director and Chief Representative Officer</strong> of <strong>ABSA Capital Representative Office Nigeria Limited</strong> and as <strong>Director, ABSA Securities Nigeria Limited</strong> since 2014 and 2017, respectively.
-  //   </p>
-
-  //   <p>
-  //     Between 2007 and 2009, Feyi was the <strong>Board Chairman of Freedom Funds</strong>, an NGO that provides economic support to the underprivileged.
-  //   </p>
-  // </div>`,
-  // },
-
   {
-    slug: "ify-okol-watson",
-    image: Ify,
-    name: "Ify Okoli-Watson",
-    role: "Director",
-    description: `<p>
-     Ify Okoli-Watson is an England and Wales-qualified Solicitor (admitted in 1994) who has held commercial roles including Chief of Staff to the CEO of an International Investment Bank. She specializes in Employment Law, Conduct Risk Compliance and Strategy Execution, with a proven track record of managing diverse teams and senior stakeholders across multiple jurisdictions. She also has in-depth experience of the news, media and the financial services industries.</p>
-      <br>
-      <p>Effective, 2021 to date Ify has been the Associate General Counsel to Facebook, London, UK with the responsibility of providing global employment law counsel and strategic legal advice on international labour and employment legal matters to support the company’s goals.
-      </p> <br>
-      <p>
-      Between 2018-2011, she was the Global Employment Law Counsel for Reuters news and media providing centrally coordinated legal support on a range of matters in over 200 jurisdictions to ensure a consistent, commercial and cost-effective approach that is aligned with local laws and practices.
-      </p> <br>
-      <p>
-      Her career has also seen her emerge as Director, Head: Conduct Risk Compliance EME Barclays Bank Plc (Oct 2016-Nov 2018) London, responsible for managing Conduct Risk and providing strategic direction to the Investment Bank in collaboration with Product Advisory Compliance, Group Compliance and Front Office teams.
-      </p> <br>
-      <p>
-      She was Chief of Staff /Head: Rest of Africa Integration and Enablement Johannesburg, South Africa Barclays Africa (Oct 2014 – Sept 2016), providing support to the Chief Executive Officer, Barclays Africa (Retail & Business Banking) covering operations in 11 countries across Africa with over 8000 employees.
-      </p> <br>
-      <p>She is International Corporate Co-Chair of the American Bar Association, Labour and Employment Law Committee and Social Media Committee Co-Chair with interest in long distance running – marathons.</p> <br>
-      `,
-  },
-  {
-    slug: "emmanuel-oyebanji",
-    image: Oyebamiji,
-    name: "Emmanuel Adeyeye Oyebanji, SAN, FCIArb",
+    slug: "adejumoke-awolumate",
+    image: Adejumoke,
+    name: "Adejumoke Awolumate",
     role: "Director",
     description: `<div class="executive-info">
     <p>
-      Mr. E. A. Oyebanji, SAN, is a dynamic, resourceful, and corporate legal practitioner with over 38 years post-call experience in insolvency practice, asset management, maritime & admiralty law practice/procedure, and oil & gas.
+      Jumoke is a highly motivated and technically competent individual with strong leadership and excellent people skills. 
+      She is ambitious, goal-oriented, and visionary.
     </p> <br>
+
     <p>
-      He handles contentious and non-contentious legal matters and always adopts business-oriented, fresh, and imaginative but pragmatic approaches to legal issues — based on a foundation of technical excellence in law and a depth of commercial experience.
+      She has over 25 years of cross-functional experience spanning finance, investments, strategy, audit, and administration. 
+      She is a <strong>Fellow of the Institute of Chartered Accountants of Nigeria (ICAN)</strong>, an <strong>Associate Stockbroker</strong>, and an <strong>Authorized Dealing Clerk</strong> of the Nigerian Stock Exchange.
     </p> <br>
+
     <p>
-      E. A. Oyebanji is an arbitrator par excellence and has been appointed as arbitrator over several arbitration proceedings. He has also consulted for several governmental and non-governmental organizations, such as the Nigerian Communication Commission on fixed wireless telephone projects, and has acted as solicitor in the AOS-ORWELL Merger Agreement — one of the biggest rental service company transactions in Nigeria, valued at over $250 million.
+      Jumoke began her professional career in 1995 as an Auditor, and seven years later, she joined <strong>Meristem Securities Group</strong> in January 2007.
     </p> <br>
+
     <p>
-      He is a registered insolvency practitioner with the Corporate Affairs Commission (CAC) and has acted as Company Secretary to Orwell International Oil and Gas Limited, Private Network Nigeria Limited, and ABM Global Services Limited.
+      Over a period of 12 years, she served in various capacities, including <strong>Head, Asset Management</strong> at Meristem Wealth Management Limited and <strong>Head, Group Strategy and Shared Services</strong>. 
+      She left Meristem Group in 2018 as the <strong>Managing Director of Meristem Capital Limited</strong>, a wholly owned subsidiary of Meristem Securities Limited.
     </p> <br>
+
     <p>
-      He has been appointed at various times as Receiver/Manager by Bank of Industry, First Bank of Nigeria Limited, First City Monument Bank, and Access Bank, among others.
+      After leaving Meristem, she joined <strong>Integrated Dairies Limited</strong> as the <strong>Chief Operating Officer (COO)</strong>, a role she continues to hold. 
+      Her primary mandate includes driving change management, corporate transformation, and institutionalization.
     </p> <br>
+
     <p>
-      Oyebanji was conferred with the rank of <strong>Senior Advocate of Nigeria (SAN)</strong> in 2019 and also became a Fellow of the Institute of Chartered Arbitrators of Nigeria the same year. He is a member of both the Nigerian Bar Association and the Institute of Chartered Arbitrators of Nigeria.
+      Jumoke sits on the boards of several organizations in a non-executive capacity across various industries, including finance, investment, capital markets, and agro-allied businesses.
     </p> <br>
+
     <p>
-      He has served as a Member, Board of Trustees of Alethia University, Ago-Iwoye, Ogun State since 2023.
+      She enjoys travelling, dancing, listening to music, and reading. 
+      Jumoke is an ardent team player with a strong sense of collective responsibility.
     </p> <br>
   </div>`,
   },
-  {
+   {
     slug: "amina-maina",
     image: GroupMeetings,
     name: "Amina Maina",
@@ -280,6 +231,98 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
     </p> <br>
   </div>`,
   },
+  
+  // {
+  //   slug: "feyi-olusanya",
+  //   image: GroupMeetings,
+  //   name: "Feyi Olusanya, CFA",
+  //   role: "Director",
+  //   description: `<div class="executive-info">
+  //   <p>
+  //     Feyi Olusanya is a well-grounded investment banker with depth in corporate finance, strategy development and execution, organizational change management, and project management, spanning close to two decades.
+  //   </p>
+
+  //   <p>
+  //     Between 1999 and 2003, Feyi garnered cognate experience at <strong>Accenture (formerly Andersen Consulting)</strong> and at <strong>ARM Investment Managers</strong> as a Financial Analyst (2005–2006).
+  //   </p>
+
+  //   <p>
+  //     A pioneer banker for <strong>ABSA Group (formerly Barclays Africa Group)</strong> in Nigeria since 2011, he has focused on transaction origination and client relationship management for corporate and investment banking clients.
+  //     Feyi was actively involved in defining and executing the Corporate and Investment Banking Strategy for Nigeria.
+  //   </p>
+
+  //   <p>
+  //     He served as a <strong>Board Member of CFA Society Nigeria (2012–2014)</strong> and as <strong>Chief Representative Officer</strong> of <strong>ABSA Capital Representative Office Nigeria Limited</strong> between July 2011 and December 2016.
+  //   </p>
+
+  //   <p>
+  //     Feyi assumed the role of <strong>Managing Director, ABSA Capital Markets Nigeria Limited</strong> (formerly Barclays Securities Nigeria Limited, part of Barclays Africa) in 2017.
+  //     He was instrumental in developing the strategy that led to the establishment of a local investment banking business in Nigeria and continues to drive growth across domestic and international <strong>DCM, ECM, M&A,</strong> and <strong>Loan Capital Market</strong> transactions.
+  //   </p>
+
+  //   <p>
+  //     He has served as <strong>Director and Chief Representative Officer</strong> of <strong>ABSA Capital Representative Office Nigeria Limited</strong> and as <strong>Director, ABSA Securities Nigeria Limited</strong> since 2014 and 2017, respectively.
+  //   </p>
+
+  //   <p>
+  //     Between 2007 and 2009, Feyi was the <strong>Board Chairman of Freedom Funds</strong>, an NGO that provides economic support to the underprivileged.
+  //   </p>
+  // </div>`,
+  // },
+
+   {
+    slug: "emmanuel-oyebanji",
+    image: Oyebamiji,
+    name: "Emmanuel Adeyeye Oyebanji, SAN, FCIArb",
+    role: "Director",
+    description: `<div class="executive-info">
+    <p>
+      Mr. E. A. Oyebanji, SAN, is a dynamic, resourceful, and corporate legal practitioner with over 38 years post-call experience in insolvency practice, asset management, maritime & admiralty law practice/procedure, and oil & gas.
+    </p> <br>
+    <p>
+      He handles contentious and non-contentious legal matters and always adopts business-oriented, fresh, and imaginative but pragmatic approaches to legal issues — based on a foundation of technical excellence in law and a depth of commercial experience.
+    </p> <br>
+    <p>
+      E. A. Oyebanji is an arbitrator par excellence and has been appointed as arbitrator over several arbitration proceedings. He has also consulted for several governmental and non-governmental organizations, such as the Nigerian Communication Commission on fixed wireless telephone projects, and has acted as solicitor in the AOS-ORWELL Merger Agreement — one of the biggest rental service company transactions in Nigeria, valued at over $250 million.
+    </p> <br>
+    <p>
+      He is a registered insolvency practitioner with the Corporate Affairs Commission (CAC) and has acted as Company Secretary to Orwell International Oil and Gas Limited, Private Network Nigeria Limited, and ABM Global Services Limited.
+    </p> <br>
+    <p>
+      He has been appointed at various times as Receiver/Manager by Bank of Industry, First Bank of Nigeria Limited, First City Monument Bank, and Access Bank, among others.
+    </p> <br>
+    <p>
+      Oyebanji was conferred with the rank of <strong>Senior Advocate of Nigeria (SAN)</strong> in 2019 and also became a Fellow of the Institute of Chartered Arbitrators of Nigeria the same year. He is a member of both the Nigerian Bar Association and the Institute of Chartered Arbitrators of Nigeria.
+    </p> <br>
+    <p>
+      He has served as a Member, Board of Trustees of Alethia University, Ago-Iwoye, Ogun State since 2023.
+    </p> <br>
+  </div>`,
+  },
+  {
+    slug: "ify-okol-watson",
+    image: Ify,
+    name: "Ify Okoli-Watson",
+    role: "Director",
+    description: `<p>
+     Ify Okoli-Watson is an England and Wales-qualified Solicitor (admitted in 1994) who has held commercial roles including Chief of Staff to the CEO of an International Investment Bank. She specializes in Employment Law, Conduct Risk Compliance and Strategy Execution, with a proven track record of managing diverse teams and senior stakeholders across multiple jurisdictions. She also has in-depth experience of the news, media and the financial services industries.</p>
+      <br>
+      <p>Effective, 2021 to date Ify has been the Associate General Counsel to Facebook, London, UK with the responsibility of providing global employment law counsel and strategic legal advice on international labour and employment legal matters to support the company’s goals.
+      </p> <br>
+      <p>
+      Between 2018-2011, she was the Global Employment Law Counsel for Reuters news and media providing centrally coordinated legal support on a range of matters in over 200 jurisdictions to ensure a consistent, commercial and cost-effective approach that is aligned with local laws and practices.
+      </p> <br>
+      <p>
+      Her career has also seen her emerge as Director, Head: Conduct Risk Compliance EME Barclays Bank Plc (Oct 2016-Nov 2018) London, responsible for managing Conduct Risk and providing strategic direction to the Investment Bank in collaboration with Product Advisory Compliance, Group Compliance and Front Office teams.
+      </p> <br>
+      <p>
+      She was Chief of Staff /Head: Rest of Africa Integration and Enablement Johannesburg, South Africa Barclays Africa (Oct 2014 – Sept 2016), providing support to the Chief Executive Officer, Barclays Africa (Retail & Business Banking) covering operations in 11 countries across Africa with over 8000 employees.
+      </p> <br>
+      <p>She is International Corporate Co-Chair of the American Bar Association, Labour and Employment Law Committee and Social Media Committee Co-Chair with interest in long distance running – marathons.</p> <br>
+      `,
+  },
+ 
+ 
   {
     slug: "ohis-ohiwerei",
     image: Ohis,
@@ -364,46 +407,7 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
     </p> <br>
   </div>`,
   },
-  {
-    slug: "adejumoke-awolumate",
-    image: Adejumoke,
-    name: "Adejumoke Awolumate",
-    role: "Director",
-    description: `<div class="executive-info">
-    <p>
-      Jumoke is a highly motivated and technically competent individual with strong leadership and excellent people skills. 
-      She is ambitious, goal-oriented, and visionary.
-    </p> <br>
-
-    <p>
-      She has over 25 years of cross-functional experience spanning finance, investments, strategy, audit, and administration. 
-      She is a <strong>Fellow of the Institute of Chartered Accountants of Nigeria (ICAN)</strong>, an <strong>Associate Stockbroker</strong>, and an <strong>Authorized Dealing Clerk</strong> of the Nigerian Stock Exchange.
-    </p> <br>
-
-    <p>
-      Jumoke began her professional career in 1995 as an Auditor, and seven years later, she joined <strong>Meristem Securities Group</strong> in January 2007.
-    </p> <br>
-
-    <p>
-      Over a period of 12 years, she served in various capacities, including <strong>Head, Asset Management</strong> at Meristem Wealth Management Limited and <strong>Head, Group Strategy and Shared Services</strong>. 
-      She left Meristem Group in 2018 as the <strong>Managing Director of Meristem Capital Limited</strong>, a wholly owned subsidiary of Meristem Securities Limited.
-    </p> <br>
-
-    <p>
-      After leaving Meristem, she joined <strong>Integrated Dairies Limited</strong> as the <strong>Chief Operating Officer (COO)</strong>, a role she continues to hold. 
-      Her primary mandate includes driving change management, corporate transformation, and institutionalization.
-    </p> <br>
-
-    <p>
-      Jumoke sits on the boards of several organizations in a non-executive capacity across various industries, including finance, investment, capital markets, and agro-allied businesses.
-    </p> <br>
-
-    <p>
-      She enjoys travelling, dancing, listening to music, and reading. 
-      Jumoke is an ardent team player with a strong sense of collective responsibility.
-    </p> <br>
-  </div>`,
-  },
+  
 ];
 
 export default function ExecutiveProfile({ params }: Props) {
