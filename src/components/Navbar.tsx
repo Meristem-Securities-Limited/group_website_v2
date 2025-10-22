@@ -86,38 +86,45 @@ const Navbar = () => {
   const subsidiaries = [
     {
       number: "01",
-      title: "Meristem Stockbrokers Limited",
-      subTitle: "Equities trading and Brokerage services with a difference",
+      name: "Meristem Stockbrokers Limited",
+      description: "Equities trading and brokerage services with a difference",
+      link: "https://stockbroking.meristemng.com",
     },
     {
       number: "02",
-      title: "Meristem Registrars and Probate Services Limited",
-      subTitle: "Redefining Shareholder Management and Probate Services",
+      name: "Meristem Registrars and Probate Services Limited",
+      description: "Redefining Shareholder Management and Probate Services",
+      link: "https://registrars.meristemng.com",
     },
     {
       number: "03",
-      title: "Meristem Wealth Management Limited",
-      subTitle: "Tailored strategies for wealth creation and preservation",
+      name: "Meristem Wealth Management Limited",
+      description: "Tailored strategies for wealth creation and preservation",
+      link: "https://meristemwealth.com/",
     },
     {
       number: "04",
-      title: "Meristem Family Office Limited",
-      subTitle: "Preserve the legacy. Protect the future.",
+      name: "Meristem Family Office Limited",
+      description: "Preserve the legacy. Protect the future.",
+      link: "https://familyoffice.meristemng.com",
     },
     {
       number: "05",
-      title: "Meristem Capital Limited",
-      subTitle: "Raising capital. Realising potential. Reshaping businesses.",
+      name: "Meristem Capital Limited",
+      description: "Raising capital. Realising potential. Reshaping businesses.",
+      link: "https://capital.meristemng.com",
     },
     {
       number: "06",
-      title: "Meristem Finance Limited",
-      subTitle: "Financing solutions tailored to you",
+      name: "Meristem Finance Limited",
+      description: "Financing solutions tailored to you.",
+      link: "https://finance.meristemng.com",
     },
     {
       number: "07",
-      title: "Meristem Trustees Limited",
-      subTitle: "Leave the things you love for those you love",
+      name: "Meristem Trustees Limited",
+      description: "Leave the things you love for those you love.",
+      link: "https://trustees.meristemng.com",
     },
   ];
 
@@ -139,8 +146,14 @@ const Navbar = () => {
       title: "Stockbroking",
       sectionId: "who-we-are",
       children: [
-        { title: "Meristem Business Associate", link: "https://stockbroking.meristemng.com/meristem-stockbrokers-limited/services/business-associate" },
-        { title: "Share/Dividend Tracking & Recovery", link: "https://stockbroking.meristemng.com/meristem-stockbrokers-limited/services/dividend-tracking" },
+        {
+          title: "Meristem Business Associate",
+          link: "https://stockbroking.meristemng.com/meristem-stockbrokers-limited/services/business-associate",
+        },
+        {
+          title: "Share/Dividend Tracking & Recovery",
+          link: "https://stockbroking.meristemng.com/meristem-stockbrokers-limited/services/dividend-tracking",
+        },
         { title: "Stock Trading", link: "https://app.meritrade.com/auth/register" },
       ],
     },
@@ -148,54 +161,112 @@ const Navbar = () => {
       title: "Wealth Management",
       sectionId: "our-history",
       children: [
-        { title: "Asset/Portfolio Management", link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/portfolio-management" },
-        { title: "Bond Investments", link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/fixed-income-dealing" },
+        {
+          title: "Asset/Portfolio Management",
+          link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/portfolio-management",
+        },
+        {
+          title: "Bond Investments",
+          link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/fixed-income-dealing",
+        },
         { title: "Fixed Term Investment", link: "https://wealthbuddy.ng/fixed-deposits" },
         { title: "Meri-Dollar Investment", link: "https://wealthbuddy.ng/fixed-deposits" },
         { title: "Mutual Funds", link: "https://wealthbuddy.ng/mutual-funds" },
         { title: "Nigerian Treasury Bills", link: "https://wealthbuddy.ng/discounted-instruments" },
-        { title: "Real Estate", link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/real-estate" },
-        { title: "Retirement Planning", link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/retirement-planning" },
-        { title: "Succession Planning", link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/succession-planning" },
+        {
+          title: "Real Estate",
+          link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/real-estate",
+        },
+        {
+          title: "Retirement Planning",
+          link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/retirement-planning",
+        },
+        {
+          title: "Succession Planning",
+          link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/succession-planning",
+        },
       ],
     },
     {
       title: "Trusteeship",
       sectionId: "core-values",
       children: [
-        { title: "Corporate Trust", link: "https://trustees.meristemng.com/meristem-trustees-limited/services/corporate-trust" },
-        { title: "Private Trust", link: "https://trustees.meristemng.com/meristem-trustees-limited/services/private-trust" },
-        { title: "Public Trust", link: "https://trustees.meristemng.com/meristem-trustees-limited/services/public-trust" },
+        {
+          title: "Corporate Trust",
+          link: "https://trustees.meristemng.com/meristem-trustees-limited/services/corporate-trust",
+        },
+        {
+          title: "Private Trust",
+          link: "https://trustees.meristemng.com/meristem-trustees-limited/services/private-trust",
+        },
+        {
+          title: "Public Trust",
+          link: "https://trustees.meristemng.com/meristem-trustees-limited/services/public-trust",
+        },
       ],
     },
     {
       title: "Finance",
       sectionId: "culture",
       children: [
-        { title: "Bridge Financing", link: "https://finance.meristemng.com/meristem-finance-limited/services/bridge-financing" },
-        { title: "Cash Backed Facility", link: "https://finance.meristemng.com/meristem-finance-limited/services/consumer-loan/cash-backed-facility" },
-        { title: "Equity Backed Facility", link: "https://finance.meristemng.com/meristem-finance-limited/services/consumer-loan/equity-backed-facility" },
-        { title: "Invoice Discounting", link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/invoice-discounting" },
-        { title: "Local Purchase Order (LPO) Financing", link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/local-purchase-order" },
-        { title: "Meristem Finance Lease", link: "https://finance.meristemng.com/meristem-finance-limited/services/meristem-finance-lease" },
-        { title: "Working Capital Loan", link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/working-capital-loan" },
-        
+        {
+          title: "Bridge Financing",
+          link: "https://finance.meristemng.com/meristem-finance-limited/services/bridge-financing",
+        },
+        {
+          title: "Cash Backed Facility",
+          link: "https://finance.meristemng.com/meristem-finance-limited/services/consumer-loan/cash-backed-facility",
+        },
+        {
+          title: "Equity Backed Facility",
+          link: "https://finance.meristemng.com/meristem-finance-limited/services/consumer-loan/equity-backed-facility",
+        },
+        {
+          title: "Invoice Discounting",
+          link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/invoice-discounting",
+        },
+        {
+          title: "Local Purchase Order (LPO) Financing",
+          link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/local-purchase-order",
+        },
+        {
+          title: "Meristem Finance Lease",
+          link: "https://finance.meristemng.com/meristem-finance-limited/services/meristem-finance-lease",
+        },
+        {
+          title: "Working Capital Loan",
+          link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/working-capital-loan",
+        },
       ],
     },
     {
       title: "Registrar and Probate",
       sectionId: "vision",
       children: [
-        { title: "AGM/EGM Administration", link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/agm-egm-administration" },
-        { title: "Bond Register Administration", link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited#products-and-services" },
-        { title: "Probate Services", link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/probate-services" },
-        { title: "Public Offer Services", link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited#products-and-services" },
-        { title: "Right Issue Services", link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/rights-issue" },
-        { title: "Share Registration Services", link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/share-registration" },
-        
-        
-        
-        
+        {
+          title: "AGM/EGM Administration",
+          link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/agm-egm-administration",
+        },
+        {
+          title: "Bond Register Administration",
+          link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited#products-and-services",
+        },
+        {
+          title: "Probate Services",
+          link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/probate-services",
+        },
+        {
+          title: "Public Offer Services",
+          link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited#products-and-services",
+        },
+        {
+          title: "Right Issue Services",
+          link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/rights-issue",
+        },
+        {
+          title: "Share Registration Services",
+          link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/share-registration",
+        },
       ],
     },
     {
@@ -208,18 +279,28 @@ const Navbar = () => {
         { title: "Legacy Documentation Service", link: "https://familyoffice.meristemng.com" },
         { title: "Legacy Planning", link: "https://familyoffice.meristemng.com" },
         { title: "Philanthropy", link: "https://familyoffice.meristemng.com" },
-        
       ],
     },
     {
       title: "Investment Advisory",
       sectionId: "philosophy",
       children: [
-        { title: "Business Advisory", link: "https://capital.meristemng.com/meristem-capital-limited/business-advisory" },
-        { title: "Debt Capital Market Services", link: "https://capital.meristemng.com/meristem-capital-limited/debt-capital-market" },
-        { title: "Equity Capital Market Services", link: "https://capital.meristemng.com/meristem-capital-limited/equity-capital-market" },
-        { title: "Financial Advisory", link: "https://capital.meristemng.com/meristem-capital-limited/financial-advisory" },
-        
+        {
+          title: "Business Advisory",
+          link: "https://capital.meristemng.com/meristem-capital-limited/business-advisory",
+        },
+        {
+          title: "Debt Capital Market Services",
+          link: "https://capital.meristemng.com/meristem-capital-limited/debt-capital-market",
+        },
+        {
+          title: "Equity Capital Market Services",
+          link: "https://capital.meristemng.com/meristem-capital-limited/equity-capital-market",
+        },
+        {
+          title: "Financial Advisory",
+          link: "https://capital.meristemng.com/meristem-capital-limited/financial-advisory",
+        },
       ],
     },
   ];
@@ -247,21 +328,20 @@ const Navbar = () => {
               width={160}
               height={50}
               priority
-              className="object-contain"
+              className="object-contain w-auto h-auto"
             />
           </Link>
 
-          <Link
-              href="https://meristemng.com"
+          <div className="hidden lg:flex items-center space-x-8">
+            <Link
+              href="/"
               className={`px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
                 isScrolled
                   ? "text-green-900 hover:text-emerald-700"
                   : "text-white hover:text-green-200"
               }`}>
-              Home
+              HOME
             </Link>
-
-          <div className="hidden lg:flex items-center space-x-8">
             {["subsidiaries", "about", "products"].map((menu) => (
               <div
                 key={menu}
@@ -345,7 +425,7 @@ const Navbar = () => {
           <motion.button
             onClick={toggleMobileMenu}
             className={`lg:hidden flex items-center justify-center transition-colors duration-300 ${
-              isScrolled ? "text-green-900 hover:bg-emerald-50" : "text-white hover:bg-white/20"
+              isScrolled ? "text-green-900 hover:bg-emerald-50" : "text-green-900 hover:bg-white/20"
             }`}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}>
@@ -377,14 +457,15 @@ const Navbar = () => {
                   </h3>
                   <div className="grid grid-cols-2 gap-6">
                     {subsidiaries.map((item, i) => (
-                      <div
+                      <a
                         key={i}
+                        href={item.link}
                         className="cursor-pointer group">
                         <h4 className="text-gray-900 font-semibold group-hover:text-green-800 transition-colors duration-200">
-                          {item.title}
+                          {item.name}
                         </h4>
-                        <p className="text-gray-500 text-sm mt-1">{item.subTitle}</p>
-                      </div>
+                        <p className="text-gray-500 text-sm mt-1">{item.description}</p>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -483,12 +564,13 @@ const Navbar = () => {
               {activeDropdown === "subsidiaries" && (
                 <div className="mt-3 pl-4 space-y-3 border-l-2 border-gray-200">
                   {subsidiaries.map((item, index) => (
-                    <div
+                    <a
+                      href={item.link}
                       key={index}
                       className="cursor-pointer">
-                      <h4 className="text-gray-900 font-semibold text-sm">{item.title}</h4>
-                      <p className="text-gray-500 text-xs mt-1">{item.subTitle}</p>
-                    </div>
+                      <h4 className="text-gray-900 font-semibold text-sm">{item.name}</h4>
+                      <p className="text-gray-500 text-xs mt-1">{item.description}</p>
+                    </a>
                   ))}
                 </div>
               )}
@@ -497,7 +579,9 @@ const Navbar = () => {
               <motion.button
                 onClick={() => handleDropdownToggle("about")}
                 className={`flex items-center justify-between w-full py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                  isScrolled ? "text-green-800 hover:bg-emerald-50" : "text-white hover:bg-white/20"
+                  isScrolled
+                    ? "text-green-800 hover:bg-emerald-50"
+                    : "text-green-800 hover:bg-white/20"
                 }`}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -533,7 +617,9 @@ const Navbar = () => {
               <motion.button
                 onClick={() => handleDropdownToggle("products")}
                 className={`flex items-center justify-between w-full py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                  isScrolled ? "text-green-800 hover:bg-emerald-50" : "text-white hover:bg-white/20"
+                  isScrolled
+                    ? "text-green-800 hover:bg-emerald-50"
+                    : "text-green-900 hover:bg-white/20"
                 }`}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -579,19 +665,30 @@ const Navbar = () => {
             </div>
 
             <Link
-              href="#"
+              href="https://careers.meristemng.com"
               className={`block w-full text-left py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                isScrolled ? "text-green-800 hover:bg-emerald-50" : "text-white hover:bg-white/20"
+                isScrolled
+                  ? "text-green-800 hover:bg-emerald-50"
+                  : "text-green-900 hover:bg-white/20"
               }`}>
-              CAREER
+              CAREERS
             </Link>
             <Link
+              href="https://blog.meristemng.com"
+              className={`block w-full text-left py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
+                isScrolled
+                  ? "text-green-800 hover:bg-emerald-50"
+                  : "text-green-900 hover:bg-white/20"
+              }`}>
+              BLOG
+            </Link>
+            {/* <Link
               href="#"
               className={`block w-full text-left py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                isScrolled ? "text-green-800 hover:bg-emerald-50" : "text-white hover:bg-white/20"
+                isScrolled ? "text-green-800 hover:bg-emerald-50" : "text-green-900 hover:bg-white/20"
               }`}>
               LEARN
-            </Link>
+            </Link> */}
 
             <div className="pt-4 border-t border-gray-200 space-y-3">
               {/* <button className="flex items-center w-full text-gray-700 hover:text-green-800 py-2 text-base font-semibold transition-colors duration-200">

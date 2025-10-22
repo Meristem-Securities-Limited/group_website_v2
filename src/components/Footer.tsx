@@ -95,18 +95,18 @@ export default function Footer() {
                 title: "Company",
                 items: [
                   { title: "About Us", url: "/about-us" },
-                  { title: "Our Platforms", url: "#products" },
-                  { title: "Our Capabilities", url: "#" },
+                  { title: "Our Platforms", url: "/#products" },
+                  { title: "Our Capabilities", url: "/#capabilities" },
                 ],
               },
               {
                 title: "Quick Links",
                 items: [
-                  { title: "Simple Will Form", url: "http://simplewill.meristemtrustees.com/" },
-                  { title: "Events", url: "https://meristemng.com/events" },
-                  { title: "Blogs", url: "#" },
-                  { title: "Career", url: "#" },
-                  { title: "Learn", url: "#" },
+                  { title: "Simple Will Form", url: "http://meristemtrustees.com/simple-will/" },
+                  // { title: "Events", url: "https://meristemng.com/events" },
+                  { title: "Blog", url: "https://blog.meristemng.com" },
+                  { title: "Careers", url: "https://careers.meristemng.com" },
+                  // { title: "Learn", url: "#" },
                 ],
               },
             ].map((section, idx) => (

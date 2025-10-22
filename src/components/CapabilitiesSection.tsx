@@ -152,9 +152,7 @@ export default function CapabilitiesSection() {
 
                 <div className="mt-auto">
                   <div className="w-auto">
-                    <a
-                      href={product.link}
-                      className="flex items-center gap-2 text-primary-green font-semibold">
+                    <span className="flex items-center gap-2 text-primary-green font-semibold">
                       <div className="p-2 bg-primary-green text-white">
                         <ArrowRight
                           size={16}
@@ -162,7 +160,7 @@ export default function CapabilitiesSection() {
                         />
                       </div>
                       LEARN MORE
-                    </a>
+                    </span>
                   </div>
                 </div>
               </div>

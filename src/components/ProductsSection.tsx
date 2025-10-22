@@ -2,7 +2,14 @@
 
 import React, { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { HappyFamily, HouseDisplay, MeritradeMockUp, MORE, WealthBuddyMockup } from "../app/assets";
+import {
+  HappyFamily,
+  HouseDisplay,
+  MeritradeMockUp,
+  MORE,
+  SimpleWill,
+  WealthBuddyMockup,
+} from "../app/assets";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -36,8 +43,8 @@ const products = [
     title: "Simple Will",
     description:
       "Create a Simple Will to clearly state how your assets should be managed even when you are not here. It’s quick, secure, and gives you confidence that your wishes will be respected.",
-    img: HappyFamily,
-    link: "https://realestate.meristemng.com",
+    img: SimpleWill,
+    link: "http://meristemtrustees.com/simple-will/",
   },
   {
     id: 4,
@@ -62,7 +69,9 @@ export default function ProductsSection() {
   };
 
   return (
-    <section className="bg-white py-20">
+    <section
+      id="products"
+      className="bg-white py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-12">
           {/* Header Text */}
@@ -110,11 +119,11 @@ export default function ProductsSection() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="flex-shrink-0 md:w-[360px] w-full lg:w-[398px] relative flex flex-col">
-              <div className="w-full bg-[#154D3433] flex items-center justify-center overflow-hidden">
+              <div className="w-full bg-[#154D3433] min-h-[200px] flex items-center justify-center overflow-hidden">
                 <Image
                   src={product.img}
                   alt={product.title}
-                  className="w-full h-full object-cover"
+                  className="w-full max-h-[400px] min-h-[400px] h-full object-cover"
                 />
               </div>
 

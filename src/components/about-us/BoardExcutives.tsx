@@ -58,16 +58,12 @@ const executiveMembers = [
     role: "Director",
     image: Ahmed,
   },
-  
+
   // {
   //   name: "FEYI OLUSANYA, CFA",
   //   role: "Director",
   //   image: "",
   // },
-  
-  
-  
-
 ];
 
 const containerVariants = {

@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <>
-      <section className="relative bg-[#154D34] bg-[url(/hero-bg-banner.png)] bg-no-repeat bg-cover bg-center min-h-screen flex items-center">
+      <section className="relative bg-[#154D34] bg-[url(/hero-banner.png)] bg-no-repeat bg-cover bg-center min-h-screen flex items-center">
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/30"></div>
 

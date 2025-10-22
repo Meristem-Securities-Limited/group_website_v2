@@ -78,7 +78,7 @@ const WhyChooseMeristem = () => {
                 x: typeof window !== "undefined" && window.innerWidth >= 1024 ? 60 : 0, // slide from right on desktop
                 y: typeof window !== "undefined" && window.innerWidth < 1024 ? 40 : 0, // slide from bottom on mobile
               }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              whileInView={{ opacity: "1", x: 0, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="flex flex-col items-start p-6 border border-gray-200">

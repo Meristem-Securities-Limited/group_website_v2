@@ -90,7 +90,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-8 h-full">
+    <div className="bg-white shadow-xl p-8 h-full">
       <div className="space-y-2 mb-9">
         <h3 className="text-4xl font-bold text-emerald-900">Contact Us</h3>
         <p>
@@ -213,7 +213,7 @@ const MeristemContactSection = () => {
 
             {/* Google Map Goes Here */}
             {/* Google Map Embed */}
-            <div className="w-full h-120 md:h-120 rounded-2xl overflow-hidden border border-emerald-900 shadow-2xl">
+            <div className="w-full h-120 md:h-120 overflow-hidden border border-emerald-900 shadow-2xl">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.527795847617!2d3.4384132758932204!3d6.454604893536882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2f787d07f3%3A0xf3c10f69e84f90de!2sMeristem%20Securities%20Limited!5e0!3m2!1sen!2sng!4v1761057092600!5m2!1sen!2sng"
                 width="100%"

@@ -39,9 +39,11 @@ import Ahmed from "./AHMED.jpg";
 import Mubo2 from "./Mubo.jpg";
 import Oyebamiji from "./OYEBAMIJI.jpg";
 import MORE from "./more.jpg";
+import SimpleWill from "./legal-document-signing.jpg";
 
 export {
   Mubo2,
+  SimpleWill,
   MORE,
   Oyebamiji,
   Ohis,
