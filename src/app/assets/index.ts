@@ -30,7 +30,7 @@ import Taiwo from "./Taiwo Yusuf.jpg";
 import Temitope from "./Temitope Oludimu.jpg";
 import Mubo from "./Mubo Olasoko.jpg";
 import Kemi from "./Kemi Ojenike.jpg";
-import Reginald from "./REGINALD.jpg";
+import Reginald from "./Reginald-01-crop.png";
 import Ify from "./ADE-OJO.jpg";
 import GMD from "./Sulaimon-Adedokun.jpg";
 import Adejumoke from "./ADEJUMOKE.jpg";
