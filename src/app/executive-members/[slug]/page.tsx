@@ -121,7 +121,7 @@ Beyond finance, she is a certified Family Finance Coach and Counsellor, holding 
     slug: "bashir-saheed",
     image: Bashir,
     name: "Saheed Bashir",
-    role: "Managing Director/CEO, Meristem Stockbrokers Limited",
+    role: "Managing Director, Meristem Stockbrokers Limited",
     description: `<div class="executive-info">
           <p class="mb-6">
           With about 2 decades of invaluable experience in the capital markets, Saheed is a highly accomplished professional in the field. He holds a Master of Business Administration (MBA) from Lagos Business School, Pan Atlantic University, a bachelor’s degree in economics from Obafemi Awolowo University, Ile-Ife, Osun State, and a National Diploma in Statistics from The Polytechnic, Ibadan.
@@ -209,98 +209,98 @@ With a deep understanding of wealth structuring, estate planning, and family gov
           </p>
         </div>`,
   },
-  {
-    slug: "funmilola-adekola-daramola",
-    image: Funmilola,
-    name: "Funmilola Adekola-Daramola",
-    role: "Head, Wealth Advisory, Meristem Wealth Management Limited",
-    description: `<div class="executive-info">
-          <p class="my-6">
-          Funmilola Adekola Daramola is a seasoned Private Wealth Manager and Investment Advisor with over 17 years of experience across banking, capital markets, and wealth management. She specializes in delivering strategic financial advice and tailored solutions to high-net-worth individuals (HNWIs) and institutions.
+ // {
+ //   slug: "funmilola-adekola-daramola",
+ //   image: Funmilola,
+  //  name: "Funmilola Adekola-Daramola",
+ //   role: "Head, Wealth Advisory, Meristem Wealth Management Limited",
+ //   description: `<div class="executive-info">
+ //         <p class="my-6">
+ //         Funmilola Adekola Daramola is a seasoned Private Wealth Manager and Investment Advisor with over 17 years of experience across banking, capital markets, and wealth management. She specializes in delivering strategic financial advice and tailored solutions to high-net-worth individuals (HNWIs) and institutions.
          
         
-        </p>
+  //      </p>
           
-          <p class="my-6">
-          As Head of Wealth Advisory Services at Meristem Wealth Management, Funmilola leads a team of experienced advisors in curating personalized strategies that align with clients’ financial objectives.
-She holds both Bachelor’s and Master’s degrees in Biochemistry from the University of Ibadan, and has bolstered her expertise with certifications including:
+  //        <p class="my-6">
+   //       As Head of Wealth Advisory Services at Meristem Wealth Management, Funmilola leads a team of experienced advisors in curating personalized strategies that align with clients’ financial objectives.
+//She holds both Bachelor’s and Master’s degrees in Biochemistry from the University of Ibadan, and has bolstered her expertise with certifications including:
 
-          </p>
-<ul class="my-6 list-disc list-inside">
-            <li>Member, Chartered Institute of Stockbrokers (CIS, Nigeria)</li>
-            <li>Affiliate Member, Association of Chartered Certified Accountants (ACCA)</li>
+//          </p>
+//<ul class="my-6 list-disc list-inside">
+    //        <li>Member, Chartered Institute of Stockbrokers (CIS, Nigeria)</li>
+    //        <li>Affiliate Member, Association of Chartered Certified Accountants (ACCA)</li>
             
-          </ul>
-          <p class="my-6">
-          Funmilola’s strong analytical skills, market insight, and client-centric approach have earned her a reputation as a trusted financial expert dedicated to helping clients grow and preserve wealth.
-          </p>
+   //       </ul>
+   //       <p class="my-6">
+   //       Funmilola’s strong analytical skills, market insight, and client-centric approach have earned her a reputation as a trusted financial expert dedicated to helping clients grow and preserve wealth.
+   //       </p>
 
-          <p class="my-6">
-          Outside of work, she enjoys reading, cooking, and personal development. She is also a Talent Member of Meristem Securities, reflecting her commitment to leadership and mentorship within the organization
-          </p>
-        </div>`,
-  },
-  {
-    slug: "temitope-oludimu",
-    image: Temitope,
-    name: "Temitope Oludimu",
-    role: "Chief Operating Officer, Meristem Stockbrokers Limited",
-    description: `<div class="executive-info">
-          <p class="my-6">
-          Temitope Oludimu is a seasoned investment professional with over 14 years of experience in the financial markets. She brings deep expertise in relationship management, business development, investment advisory, and capital markets. As Chief Operating Officer at Meristem Stockbrokers, she drives business growth, enhances client investment strategies, and leads her team to deliver exceptional portfolio management solutions.
-               </p>
+    //      <p class="my-6">
+   //       Outside of work, she enjoys reading, cooking, and personal development. She is also a Talent Member of Meristem Securities, reflecting her commitment to leadership and mentorship within the organization
+  //        </p>
+  //      </div>`,
+//  },
+ // {
+ //   slug: "temitope-oludimu",
+ //   image: Temitope,
+ //   name: "Temitope Oludimu",
+//    role: "Chief Operating Officer, Meristem Stockbrokers Limited",
+ //   description: `<div class="executive-info">
+  //        <p class="my-6">
+  //        Temitope Oludimu is a seasoned investment professional with over 14 years of experience in the financial markets. She brings deep expertise in relationship management, business development, investment advisory, and capital markets. As Chief Operating Officer at Meristem Stockbrokers, she drives business growth, enhances client investment strategies, and leads her team to deliver exceptional portfolio management solutions.
+   //            </p>
          
 
-          <p class="my-6">She holds a B.Sc. in Computer Science from Ladoke Akintola University of Technology, an Executive MBA from Lagos Business School, and has completed The Authentic Leader Development course at Harvard Business School, Boston.</p>
+    //      <p class="my-6">She holds a B.Sc. in Computer Science from Ladoke Akintola University of Technology, an Executive MBA from Lagos Business School, and has completed The Authentic Leader Development course at Harvard Business School, Boston.</p>
             
           
-          <p class="my-6">
-          Temitope is a certified financial expert and holds several industry accreditations:
+     //     <p class="my-6">
+     //     Temitope is a certified financial expert and holds several industry accreditations:
           
-        </p>
-        <ul class="my-6 list-disc list-inside">
-            <li>Associate Member, Chartered Institute of Stockbrokers (CIS, Nigeria)</li>
-            <li>Authorized Dealing Clerk, Nigerian Exchange Group (NGX)</li>
-            <li>Associate Member, Chartered Institute for Securities &amp; Investment (CISI, UK)</li>
-          </ul>
-          <p class="my-6">
-          Known for her strategic mindset and passion for client success, she remains a key force in shaping the future of Meristem Stockbrokers and the broader investment landscape in Nigeria.
+     //   </p>
+   //     <ul class="my-6 list-disc list-inside">
+    //        <li>Associate Member, Chartered Institute of Stockbrokers (CIS, Nigeria)</li>
+  //         <li>Authorized Dealing Clerk, Nigerian Exchange Group (NGX)</li>
+    //        <li>Associate Member, Chartered Institute for Securities &amp; Investment (CISI, UK)</li>
+    //      </ul>
+    //      <p class="my-6">
+    //      Known for her strategic mindset and passion for client success, she remains a key force in shaping the future of Meristem Stockbrokers and the broader investment landscape in Nigeria.
          
-          </p>
-          <p class="my-6">Outside the office, Temitope is family-oriented and enjoys exploring new destinations around the world.</p>
-        </div>`,
-  },
-  {
-    slug: "ifeoma-anyawu",
-    image: Ifeoma,
-    name: "Ifeoma Anyanwu",
-    role: "Head, Group Business Development, Meristem Securities Limited",
-    description: `<div class="executive-info">
-         <p class="my-6">Ifeoma Anyanwu is a seasoned business development executive and growth strategist with over a decade of experience in financial services, investment strategy, and client engagement. As Head of Group Business Development at Meristem Securities, she leads initiatives that drive revenue growth, deepen market presence, and deliver innovative wealth solutions for high-net-worth individuals, institutions, and retail investors.</p>
-         <p class="my-6">Her journey at Meristem from Customer Service Officer to a key leadership role speaks to her deep, cross-functional expertise spanning wealth management, stockbroking, trust services, asset management, and corporate finance. She plays a pivotal role in aligning business objectives across all subsidiaries, including Meristem Wealth, Meristem Trustees, Meristem Registrars, and Meristem Stockbrokers.</p>
-         <p class="my-6">With a background in Agricultural Economics and a Master’s in Economics, Ifeoma brings a data-driven mindset to investment advisory and strategy development. She is known for translating complex financial concepts into actionable insights, nurturing long-term client relationships, and unlocking high-impact opportunities.</p>
-         <p class="my-6">Ifeoma is passionate about financial inclusion, investment innovation, and the economic empowerment of women and emerging markets values that continue to shape her leadership at Meristem.</p>
-<p></p>
-        </div>`,
-  },
-  {
-    slug: "okiemute-sagua",
-    image: Okiemute,
-    name: "Okiemute Sagua",
-    role: "Treasurer, Meristem Wealth Management Limited",
-    description: `<div class="executive-info">
-          <p class="my-6">
-          Okiemute Kimberly Sagua is the Head of Treasury at Meristem Wealth Management Limited, bringing over 18 years of expertise in the financial services industry. She has a proven track record in Treasury Management, Portfolio Management, Correspondent Banking, Asset and Liability Management (ALM), Internal Control, and Audit.
-          <br><br>Before joining Meristem Wealth Management Limited in June 2021, she served as a Currencies and Securities Dealer and ALM Manager at Zenith Bank Plc, where she played a key role in optimizing financial operations and risk management strategies.    </p>
+     //     </p>
+     //     <p class="my-6">Outside the office, Temitope is family-oriented and enjoys exploring new destinations around the world.</p>
+    //    </div>`,
+  //},
+  //{
+  //  slug: "ifeoma-anyawu",
+  //  image: Ifeoma,
+  //  name: "Ifeoma Anyanwu",
+  //  role: "Head, Group Business Development, Meristem Securities Limited",
+  //  description: `<div class="executive-info">
+  //       <p class="my-6">Ifeoma Anyanwu is a seasoned business development executive and growth strategist with over a decade of experience in financial services, investment strategy, and client engagement. As Head of Group Business Development at Meristem Securities, she leads initiatives that drive revenue growth, deepen market presence, and deliver innovative wealth solutions for high-net-worth individuals, institutions, and retail investors.</p>
+   //      <p class="my-6">Her journey at Meristem from Customer Service Officer to a key leadership role speaks to her deep, cross-functional expertise spanning wealth management, stockbroking, trust services, asset management, and corporate finance. She plays a pivotal role in aligning business objectives across all subsidiaries, including Meristem Wealth, Meristem Trustees, Meristem Registrars, and Meristem Stockbrokers.</p>
+   //      <p class="my-6">With a background in Agricultural Economics and a Master’s in Economics, Ifeoma brings a data-driven mindset to investment advisory and strategy development. She is known for translating complex financial concepts into actionable insights, nurturing long-term client relationships, and unlocking high-impact opportunities.</p>
+   //      <p class="my-6">Ifeoma is passionate about financial inclusion, investment innovation, and the economic empowerment of women and emerging markets values that continue to shape her leadership at Meristem.</p>
+//<p></p>
+  //      </div>`,
+ // },
+ // {
+ //   slug: "okiemute-sagua",
+ //   image: Okiemute,
+  //  name: "Okiemute Sagua",
+ //   role: "Treasurer, Meristem Wealth Management Limited",
+  //  description: `<div class="executive-info">
+  //        <p class="my-6">
+  //        Okiemute Kimberly Sagua is the Head of Treasury at Meristem Wealth Management Limited, bringing over 18 years of expertise in the financial services industry. She has a proven track record in Treasury Management, Portfolio Management, Correspondent Banking, Asset and Liability Management (ALM), Internal Control, and Audit.
+   //       <br><br>Before joining Meristem Wealth Management Limited in June 2021, she served as a Currencies and Securities Dealer and ALM Manager at Zenith Bank Plc, where she played a key role in optimizing financial operations and risk management strategies.    </p>
          
-          <p class="my-6">
-          Okiemute holds a B.Sc. in Accounting from the University of Lagos and is a certified member of both the Association of Chartered Certified Accountants (ACCA) and the Institute of Chartered Accountants of Nigeria (ICAN).
-          </p>
+   //       <p class="my-6">
+   //       Okiemute holds a B.Sc. in Accounting from the University of Lagos and is a certified member of both the Association of Chartered Certified Accountants (ACCA) and the Institute of Chartered Accountants of Nigeria (ICAN).
+    //      </p>
 
-          <p class="my-6">With her deep expertise in treasury operations, financial risk management, and investment strategies, she continues to drive excellence in liquidity management, asset optimization, and wealth preservation at Meristem Wealth Management Limited</p>
+     //     <p class="my-6">With her deep expertise in treasury operations, financial risk management, and investment strategies, she continues to drive excellence in liquidity management, asset optimization, and wealth preservation at Meristem Wealth Management Limited</p>
          
-        </div>`,
-  },
+    //    </div>`,
+  //},
   {
     slug: "nkechinyelu-okoye",
     image: Nkechinyelu,
