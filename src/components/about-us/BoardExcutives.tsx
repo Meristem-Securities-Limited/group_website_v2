@@ -9,7 +9,7 @@ import { Adejumoke, Ahmed, GMD, Ify, Mubo2, Ohis, Oyebamiji, Reginald } from "@/
 
 const executiveMembers = [
   {
-    name: "DR. REGINALD CHIKA STANLEY",
+    name: "DR. REGINALD CHIKA STANLEY, MFR",
     role: "Chairman",
     image: Reginald,
   },
@@ -17,6 +17,11 @@ const executiveMembers = [
     name: "SULAIMAN ADEDOKUN, CFA",
     role: "Group Managing Director",
     image: GMD,
+  },
+   {
+    name: "MUBO OLASOKO",
+    role: "Deputy, Group Managing Director",
+    image: Mubo2,
   },
   {
     name: "ADEJUMOKE AWOLUMATE",
@@ -37,11 +42,6 @@ const executiveMembers = [
     name: "IFY OKOLI-WATSON",
     role: "Director",
     image: Ify,
-  },
-  {
-    name: "MUBO OLASOKO",
-    role: "Deputy, Group Managing Director",
-    image: Mubo2,
   },
   {
     name: "OHIS OHIWEREI",
