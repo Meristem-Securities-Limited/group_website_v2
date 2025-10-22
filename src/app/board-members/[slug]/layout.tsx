@@ -1,5 +1,5 @@
-import { boardMembers } from "@/app/executive-members/[slug]/page";
 import type { Metadata } from "next";
+import { executiveMembers } from "./page";
 
 interface Props {
   params: { slug: string };
@@ -7,7 +7,7 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = params;
-  const executive = boardMembers.find((exec) => exec.slug === slug);
+  const executive = executiveMembers.find((exec) => exec.slug === slug);
 
   if (!executive) {
     return {

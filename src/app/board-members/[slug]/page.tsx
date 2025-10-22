@@ -88,41 +88,69 @@ export const executiveMembers = [
     name: "Sulaiman Adedokun, CFA",
     role: "Group Managing Director",
     description: `<p>
-      Sulaiman Adedokun, CFA, is a highly accomplished financial expert with over 20 years of experience in investment banking, asset management, and capital markets. 
-      He is the Group Managing Director (GMD) of Meristem Securities Limited, a leading investment firm in Nigeria.</p>
-      <br>
-     <p> Prior to this, he served as Deputy Group Managing Director for over a decade and was the Managing Director of Meristem Wealth Management Limited since August 2008.
-      </p> <br>
-      <p>
-     <p> Sulaiman holds a B.Sc. in Banking and Finance from Olabisi Onabanjo University (Second-Class Upper) and an HND in Accounting (Distinction) from Ondo State Polytechnic. 
-      He completed the General Management Program at Harvard Business School in 2011.
-      </p> <br>
-      <ul class="list-disc list-inside">
-        <li>Chartered Financial Analyst (CFA)</li>
-        <li>Associate Chartered Accountant (ACA)</li>
-        <li>Fellow, Chartered Institute of Stockbrokers</li>
-        <li>Associate Member, Chartered Institute of Taxation</li>
-      </ul>
-      <p>
-      He is the Board Chairman of Trans-Nationwide Express Plc, Leky Mills Limited, and Carnation Registrars Limited, and a Director at AfriGlobal Insurance Brokers.
-      </p> <br>`,
+          Sulaiman Adedokun, CFA, is a highly accomplished financial expert with over 20 years of experience in investment banking, asset management, and capital markets. He is the Group Managing Director (GMD) of Meristem Securities Limited, a leading investment firm in Nigeria, a position he assumed in January 2025. 
+          Prior to this, he served as Deputy Group Managing Director for over a decade and has been the Managing Director of Meristem Wealth Management Limited since August 2008.
+
+          <br><br>Sulaiman holds a Bachelor of Science in Banking and Finance from Olabisi Onabanjo University, where he graduated with a Second-Class Upper. His academic foundation in accounting was established at Ondo State Polytechnic, earning a Higher National Diploma (HND) with Distinction.
+To enhance his leadership expertise, he completed the General Management Program at Harvard Business School in 2011.
+
+<br><br>As a Chartered Financial Analyst (CFA) since 2013, Sulaiman is recognized for his deep expertise in wealth management, portfolio strategy, and investment strategies. He is also:
+
+          </p><ul class="list-disc list-inside">
+            <li>An Associate Chartered Accountant (ACA) since 1998</li>
+            <li>A Dealing Clerk on the Nigerian Stock Exchange</li>
+            <li>A Fellow of the Chartered Institute of Stockbrokers</li>
+            <li>An Associate Member of the Chartered Institute of Taxation</li>
+          </ul><p class="mt-9">
+          Sulaiman Adedokun plays a pivotal role in corporate governance and financial strategy across various industries. He is the Board Chairman of Trans-Nationwide Express Plc, Leky Mills Limited, and Carnation Registrars Limited (formerly Mainstreet Registrars Limited) and serves as a Director on the Board of AfriGlobal Insurance Brokers, contributing to growth and innovation in Nigeria’s financial and corporate sectors.
+With an extensive background in capital markets, financial advisory, and risk management, Sulaiman continues to shape Nigeria’s investment landscape. His leadership at Meristem Securities Limited has been instrumental in driving wealth creation, investment planning, and capital market development.
+Outside of his professional endeavours, Sulaiman enjoys golf, reading, and traveling.
+          </p>`,
   },
   {
     slug: "mubo-olasoko",
     image: Mubo2,
     name: "Mubo Olasoko",
     role: "Deputy Group Managing Director",
-    description: `<p>
-      Mubo Olasoko is a dynamic leader and financial expert with over 20 years of experience in the financial services industry. 
-      As Managing Director of Meristem Finance Limited and Meristem Registrars & Probate Services, she has led strategic transformations and client-focused innovations.
-      </p> <br>
-      <p>
-      She has been instrumental in establishing Meristem’s Probate Subsidiary and expanding access to finance through strategic loan and lease solutions. 
-      A Fellow of the Institute of Capital Market Registrars, she also holds memberships in the Chartered Institute of Stockbrokers and the Nigerian Stock Exchange.
-      </p> <br>
-      <p>
-      Mubo has completed executive programs at Harvard Business School, The Wharton School, London Business School, and Columbia University.
-      </p> <br>`,
+    description: `<div class="executive-info">
+          <p class="mb-3">
+          Mubo Olasoko is a dynamic leader, culture driver, and financial expert, bringing over 20 years of experience in the financial services industry. As the Managing Director of Meristem Finance Limited, a leading loan and lease subsidiary, and Meristem Registrars and Probate Subsidiary, she has played a pivotal role in business transformation, client-focused innovation, and organizational culture development.
+          </p>
+
+          <p class="mb-3">
+          Her remarkable achievements include:
+          </p><ul class="list-disc list-inside">
+            <li>Establishing the Probate Subsidiary to serve an underserved market in Nigeria, ensuring seamless asset transfer and wealth preservation.</li>
+            <li>Driving business growth in Meristem Finance, expanding access to strategic loan and lease financing solutions for individuals and businesses.</li>
+            <li>Championing a unique organizational culture at Meristem by mentoring and developing culture ambassadors.</li>
+            
+          </ul>
+               <p></p>
+
+               <p class="my-3">
+               A graduate of the Arts, Mubo’s leadership blends operational excellence, with creativity, financial acumen, and strategic management to fuel sustainable growth. 
+                <br><br>
+               Her professional credentials reflect her commitment to excellence:
+               </p><ul class="list-disc list-inside">
+                <li>Associate Member, Chartered Institute of Stockbrokers (CIS, Nigeria)</li>
+                <li>Authorized Dealing Clerk, Nigerian Stock Exchange</li>
+                <li>Fellow, Institute of Capital Market Registrars</li>
+               </ul>
+               <p></p>
+               <p class="mt-3">
+               She has further enhanced her expertise through Executive Management training at some of the world’s most prestigious institutions, including:
+               </p><ul class="list-disc list-inside">
+                <li>Harvard Business School</li>
+                <li>The Wharton School</li>
+                <li>London Business School</li>
+                <li>Columbia University</li>
+               </ul>
+               <p></p>
+          <p class="mt-3">
+          Beyond her professional achievements, Mubo is a passionate traveller, food enthusiast, and people connector, reflecting her vibrant and inspiring personality. Through her visionary leadership, Meristem Finance Limited continues to redefine financial solutions, empowering clients with innovative loan and lease services tailored for long-term wealth creation.
+          </p>
+
+            </div>`,
   },
   // {
   //   slug: "feyi-olusanya",
