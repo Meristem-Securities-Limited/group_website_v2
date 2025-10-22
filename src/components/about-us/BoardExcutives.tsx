@@ -3,68 +3,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import MemberCard from "@/components/MemberCard";
-import { boardMembers } from "@/app/executive-members/[slug]/page";
 import Link from "next/link";
-import { Adejumoke, Ahmed, GMD, Ify, Mubo2, Ohis, Oyebamiji, Reginald } from "@/app/assets";
-
-const executiveMembers = [
-  {
-    name: "DR. REGINALD CHIKA STANLEY, MFR",
-    role: "Chairman",
-    image: Reginald,
-  },
-  {
-    name: "SULAIMAN ADEDOKUN, CFA",
-    role: "Group Managing Director",
-    image: GMD,
-  },
-   {
-    name: "MUBO OLASOKO",
-    role: "Deputy, Group Managing Director",
-    image: Mubo2,
-  },
-  {
-    name: "ADEJUMOKE AWOLUMATE",
-    role: "Director",
-    image: Adejumoke,
-  },
-  {
-    name: "AMINA MAINA",
-    role: "Director",
-    image: "",
-  },
-  {
-    name: "EMMANUEL ADEYEYE OYEBANJI, S.A.N",
-    role: "Director",
-    image: Oyebamiji,
-  },
-  {
-    name: "IFY OKOLI-WATSON",
-    role: "Director",
-    image: Ify,
-  },
-  {
-    name: "OHIS OHIWEREI",
-    role: "Director",
-    image: Ohis,
-  },
-  {
-    name: "TAIWO ADE-OJO",
-    role: "Director",
-    image: "",
-  },
-  {
-    name: "UMAR SHUAIB AHMED",
-    role: "Director",
-    image: Ahmed,
-  },
-
-  // {
-  //   name: "FEYI OLUSANYA, CFA",
-  //   role: "Director",
-  //   image: "",
-  // },
-];
+import { executiveMembers } from "@/app/board-members/[slug]/page";
+import { boardMembers } from "@/app/executive-members/[slug]/page";
 
 const containerVariants = {
   hidden: {},
@@ -114,7 +55,9 @@ export default function BoardExecutiveSection() {
               <motion.div
                 key={index}
                 variants={itemVariantsUp}>
-                <MemberCard member={member} />
+                <Link href={`/board-members/${member.slug}`}>
+                  <MemberCard member={member} />
+                </Link>
               </motion.div>
             ))}
           </motion.div>

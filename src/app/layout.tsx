@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.meristemng.com"),
+  metadataBase: new URL("https://meristemgroupweb.netlify.app"),
   title: {
     default: "Meristem Securities Limited",
     template: "%s | Meristem Securities Limited",
@@ -25,14 +25,14 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    url: "https://www.meristemng.com",
+    url: "https://meristemgroupweb.netlify.app",
     title: "Meristem Securities Limited",
     description:
       "Trusted leader in investment and financial services in Nigeria. Explore wealth management, securities trading, and innovative investment solutions with Meristem Securities Limited.",
     siteName: "Meristem Securities Limited",
     images: [
       {
-        url: "https://www.meristemng.com/favicon/logo.jpg",
+        url: "https://meristemgroupweb.netlify.app/favicon/logo.png",
         width: 1200,
         height: 630,
         alt: "Meristem Securities Limited",
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     title: "Meristem Securities Limited",
     description:
       "Discover Meristem Securities Limited – Nigeria’s trusted partner for investment, wealth management, securities trading, and financial advisory services.",
-    images: ["https://www.meristemng.com/favicon/logo.jpg"],
+    images: ["https://meristemgroupweb.netlify.app/favicon/logo.png"],
   },
   alternates: {
-    canonical: "https://www.meristemng.com",
+    canonical: "https://meristemgroupweb.netlify.app",
   },
   icons: {
     icon: "/favicon/favicon.ico",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     other: [
       { url: "/favicon/favicon-16x16.png", sizes: "16x16" },
       { url: "/favicon/favicon-32x32.png", sizes: "32x32" },
-      { url: "/favicon/logo.jpg", sizes: "96x96" },
+      { url: "/favicon/logo.png", sizes: "96x96" },
     ],
   },
 };

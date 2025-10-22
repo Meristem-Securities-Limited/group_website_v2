@@ -1,5 +1,5 @@
+import { boardMembers } from "@/app/executive-members/[slug]/page";
 import type { Metadata } from "next";
-import { boardMembers } from "./page";
 
 interface Props {
   params: { slug: string };
@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       executive.name,
       executive.role,
       "Meristem Securities Limited",
-      "executive team",
-      "Executive directors",
+      "board members",
+      "board of directors",
       "financial services leadership",
       "investment company Nigeria",
     ],
