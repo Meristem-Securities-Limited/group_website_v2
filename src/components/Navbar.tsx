@@ -510,22 +510,24 @@ const Navbar = () => {
                     <div
                       key={i}
                       className="space-y-3">
-                      <h4 className="text-lg font-semibold text-emerald-900 transition-colors duration-200">
+                      <h4 className="text-base font-semibold text-emerald-900 transition-colors duration-200">
                         {item.title}
                       </h4>
 
                       <ul className="space-y-2 list-inside">
                         {item.children.map((child: any, j) => (
-                          <li key={j}>
-                            <Link
-                              onClick={() => {
-                                setActiveDropdown(null);
-                                setLoginDropdownOpen(false);
-                              }}
-                              href={child.link}
-                              className="block text-gray-700 hover:text-blue-800 text-sm transition-colors duration-200">
-                              {child.title}
-                            </Link>
+                          <li
+                            className="block text-gray-600 text-sm transition-colors duration-200"
+                            onClick={() => {
+                              setActiveDropdown(null);
+                              setLoginDropdownOpen(false);
+                            }}
+                            key={j}>
+                            {/* <Link
+                              href={child.link} */}
+                            {/* className="block text-gray-700 hover:text-blue-800 text-sm transition-colors duration-200"> */}
+                            {child.title}
+                            {/* </Link> */}
                           </li>
                         ))}
                       </ul>
