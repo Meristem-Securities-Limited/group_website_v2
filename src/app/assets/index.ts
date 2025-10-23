@@ -40,9 +40,17 @@ import Mubo2 from "./Mubo.jpg";
 import Oyebamiji from "./OYEBAMIJI.jpg";
 import MORE from "./more.jpg";
 import SimpleWill from "./legal-document-signing.jpg";
+import GooglePlay from "./google-play.png";
+import AppleStore from "./apple-store.png";
+import WealthbuddyApp from "./wealthbuddy-app.png";
+import MeritradeApp from "./meritrade-app.png";
 
 export {
   Mubo2,
+  MeritradeApp,
+  WealthbuddyApp,
+  AppleStore,
+  GooglePlay,
   SimpleWill,
   MORE,
   Oyebamiji,
