@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://meristemgroupweb.netlify.app"),
@@ -75,6 +76,33 @@ const roobert = localFont({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <noscript
+        dangerouslySetInnerHTML={{
+          __html: `
+              <iframe 
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5BP7JR4M"
+                height="0" width="0" 
+                style="display:none;visibility:hidden">
+              </iframe>
+            `,
+        }}
+      />
+      <Script
+        id="tawk-script"
+        strategy="afterInteractive">
+        {`
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function() {
+              var s1 = document.createElement("script"),
+                  s0 = document.getElementsByTagName("script")[0];
+              s1.async = true;
+              s1.src = "https://embed.tawk.to/5b87b97cf31d0f771d8448e4/default";
+              s1.charset = "UTF-8";
+              s1.setAttribute("crossorigin", "*");
+              s0.parentNode.insertBefore(s1, s0);
+            })();
+          `}
+      </Script>
       <body className={`${roobert.className} antialiased`}>
         <Navbar />
         {children}
