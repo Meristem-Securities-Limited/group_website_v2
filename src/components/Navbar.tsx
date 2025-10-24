@@ -398,7 +398,7 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
-                className="absolute right-40 top-20 max-w-88 bg-white shadow-lg rounded-xl border border-gray-200 z-50">
+                className="absolute right-40 top-20 max-w-88 bg-white shadow-lg rounded-xl border border-gray-200 z-[1000]">
                 <div className="py-2 divide-y divide-gray-500">
                   {productPlatforms.map((platform, index) => (
                     <a
@@ -438,7 +438,7 @@ const Navbar = () => {
 
         {activeDropdown && (
           <motion.div
-            className="hidden lg:block absolute w-full top-full left-0 right-0 bg-white shadow-lg z-50 border-t"
+            className="hidden lg:block absolute w-full top-full left-0 right-0 bg-white shadow-lg z-10 border-t"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}>
@@ -703,7 +703,7 @@ const Navbar = () => {
               {loginDropdownOpen && (
                 <div
                   ref={dropdownRef}
-                  className="mt-2 pl-6 space-y-2 divide-y divide-gray-300 border-l-2 border-gray-200">
+                  className="mt-2 pl-6 space-y-2 z-[1000] divide-y divide-gray-300 border-l-2 border-gray-200">
                   {productPlatforms.map((platform, index) => (
                     <a
                       key={index}
