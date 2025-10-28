@@ -514,11 +514,11 @@ const Navbar = () => {
                               setLoginDropdownOpen(false);
                             }}
                             key={j}>
-                            {/* <Link
-                              href={child.link} */}
-                            {/* className="block text-gray-700 hover:text-blue-800 text-sm transition-colors duration-200"> */}
-                            {child.title}
-                            {/* </Link> */}
+                            <Link
+                              href={child.link}
+                              className="block text-gray-700 hover:text-blue-800 text-sm transition-colors duration-200">
+                              {child.title}
+                            </Link>
                           </li>
                         ))}
                       </ul>
