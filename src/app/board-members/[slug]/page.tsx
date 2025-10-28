@@ -66,24 +66,6 @@ export const executiveMembers = [
   </p><br>`,
   },
   {
-    slug: "ade-ojotaiwo",
-    image: AdeOjo,
-    name: "Ade-Ojo Taiwo",
-    role: "Director",
-    description: `<p>
-    Since June 2021, Mr. Ade-Ojo has been the Managing Director of Elizade Nigeria Limited, where he develops and executes the organization’s business strategies to attain set goals and objectives while providing strategic advice to the Board of Directors.</p>
-    <br>
-    <p>He also oversees the organization’s financial performance and investments. A result-oriented team player, committed to excellence, focused goal-getter with vast experience in procurement.</p>
-    <br>
-    <p>Prior to 2021, he was the Executive Director (Operations) of Elizade from March 2019 – May 2021. As the Executive Director, Operations, he was responsible for business strategy planning and execution and also drove the daily operations of the organization strategically from both operational and financial perspectives.</p>
-    <br>
-    <p>Between 2007 and 2019, he was Head of Procurement for Elizade Nigeria Limited, during which he managed procurement budgets and market surveys to enable Management make informed decisions.</p>
-    <br>
-    <p>Prior to joining Elizade in 2007, he worked in the Local Government and Chieftaincy Affairs Office of the Deputy Governor as an Account Officer.</p>
-  </p><br>`,
-  },
-
-  {
     slug: "sulaimon-adedokun",
     image: GMD,
     name: "Sulaiman Adedokun, CFA",
@@ -363,6 +345,23 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
       He is also highly skilled in structured financial transactions, treasury management, risk management, and process re-engineering.
     </p> <br>
   </div>`,
+  },
+  {
+    slug: "ade-ojotaiwo",
+    image: AdeOjo,
+    name: "Taiwo Ade-Ojo",
+    role: "Director",
+    description: `<p>
+    Since June 2021, Mr. Ade-Ojo has been the Managing Director of Elizade Nigeria Limited, where he develops and executes the organization’s business strategies to attain set goals and objectives while providing strategic advice to the Board of Directors.</p>
+    <br>
+    <p>He also oversees the organization’s financial performance and investments. A result-oriented team player, committed to excellence, focused goal-getter with vast experience in procurement.</p>
+    <br>
+    <p>Prior to 2021, he was the Executive Director (Operations) of Elizade from March 2019 – May 2021. As the Executive Director, Operations, he was responsible for business strategy planning and execution and also drove the daily operations of the organization strategically from both operational and financial perspectives.</p>
+    <br>
+    <p>Between 2007 and 2019, he was Head of Procurement for Elizade Nigeria Limited, during which he managed procurement budgets and market surveys to enable Management make informed decisions.</p>
+    <br>
+    <p>Prior to joining Elizade in 2007, he worked in the Local Government and Chieftaincy Affairs Office of the Deputy Governor as an Account Officer.</p>
+  </p><br>`,
   },
   {
     slug: "umar-ahmed",
