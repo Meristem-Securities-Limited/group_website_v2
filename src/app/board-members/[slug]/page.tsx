@@ -8,7 +8,6 @@ import {
   Ahmed,
   Amina,
   GMD,
-  GroupMeetings,
   Ify,
   Mubo2,
   Ohis,
@@ -70,7 +69,7 @@ export const executiveMembers = [
     slug: "ade-ojotaiwo",
     image: AdeOjo,
     name: "Ade-Ojo Taiwo",
-    role: "Director",
+    role: "Vice Chairman",
     description: `<p>
     Since June 2021, Mr. Ade-Ojo has been the Managing Director of Elizade Nigeria Limited, where he develops and executes the organization’s business strategies to attain set goals and objectives while providing strategic advice to the Board of Directors.</p>
     <br>
