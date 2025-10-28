@@ -4,7 +4,9 @@ import React from "react";
 
 import {
   Adejumoke,
+  AdeOjo,
   Ahmed,
+  Amina,
   GMD,
   GroupMeetings,
   Ify,
@@ -66,7 +68,7 @@ export const executiveMembers = [
   },
   {
     slug: "ade-ojotaiwo",
-    image: GroupMeetings,
+    image: AdeOjo,
     name: "Ade-Ojo Taiwo",
     role: "Director",
     description: `<p>
@@ -192,9 +194,9 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
     </p> <br>
   </div>`,
   },
-   {
+  {
     slug: "amina-maina",
-    image: GroupMeetings,
+    image: Amina,
     name: "Amina Maina",
     role: "Director",
     description: `<div class="executive-info">
@@ -231,7 +233,7 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
     </p> <br>
   </div>`,
   },
-  
+
   // {
   //   slug: "feyi-olusanya",
   //   image: GroupMeetings,
@@ -270,7 +272,7 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
   // </div>`,
   // },
 
-   {
+  {
     slug: "emmanuel-oyebanji",
     image: Oyebamiji,
     name: "Emmanuel Adeyeye Oyebanji, SAN, FCIArb",
@@ -321,8 +323,7 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
       <p>She is International Corporate Co-Chair of the American Bar Association, Labour and Employment Law Committee and Social Media Committee Co-Chair with interest in long distance running – marathons.</p> <br>
       `,
   },
- 
- 
+
   {
     slug: "ohis-ohiwerei",
     image: Ohis,
@@ -407,7 +408,6 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
     </p> <br>
   </div>`,
   },
-  
 ];
 
 export default function ExecutiveProfile({ params }: Props) {

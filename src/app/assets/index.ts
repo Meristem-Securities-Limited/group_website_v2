@@ -44,6 +44,8 @@ import GooglePlay from "./google-play.png";
 import AppleStore from "./apple-store.png";
 import WealthbuddyApp from "./wealthbuddy-app.png";
 import MeritradeApp from "./meritrade-app.png";
+import AdeOjo from "./ADE_OJO.jpg";
+import Amina from "./Amina.jpg";
 
 export {
   Mubo2,
@@ -52,12 +54,14 @@ export {
   AppleStore,
   GooglePlay,
   SimpleWill,
+  Amina,
   MORE,
   Oyebamiji,
   Ohis,
   Ahmed,
   Reginald,
   Adejumoke,
+  AdeOjo,
   Ify,
   Bashir,
   GMD,
