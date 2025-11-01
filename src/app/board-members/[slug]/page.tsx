@@ -7,7 +7,7 @@ import {
   AdeOjo,
   Ahmed,
   Amina,
-  GMD,
+  Sulaiman,
   Ify,
   Mubo2,
   Ohis,
@@ -66,8 +66,8 @@ export const executiveMembers = [
   </p><br>`,
   },
   {
-    slug: "sulaimon-adedokun",
-    image: GMD,
+    slug: "sulaiman-adedokun",
+    image: Sulaiman,
     name: "Sulaiman Adedokun, CFA",
     role: "Group Managing Director",
     description: `<p>
