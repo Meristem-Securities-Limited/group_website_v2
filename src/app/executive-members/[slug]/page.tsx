@@ -12,7 +12,7 @@ import {
   Ojenike,
   Okiemute,
   Salawu,
-  Sulaimon,
+  Sulaiman,
   Taiwo,
   Temitope,
 } from "@/app/assets";
@@ -22,8 +22,8 @@ interface Props {
 
 export const boardMembers = [
   {
-    slug: "sulaimon-adedokun",
-    image: Sulaimon,
+    slug: "sulaiman-adedokun",
+    image: Sulaiman,
     name: "Sulaiman Adedokun, CFA",
     role: "Group Managing Director",
     description: `<p>
