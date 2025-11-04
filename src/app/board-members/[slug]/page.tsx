@@ -252,7 +252,6 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
   //   </p>
   // </div>`,
   // },
-
   {
     slug: "emmanuel-oyebanji",
     image: Oyebamiji,

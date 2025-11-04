@@ -18,7 +18,7 @@ import Preview3 from "./preview-3.png";
 import GroupPicture from "./group-of-people-talking.webp";
 import GroupMeetings from "./group-meetings.webp";
 import Damilola from "./Damilola Hassan.jpg";
-import Sulaimon from "./Sulaiman Adedokun.jpg";
+import Sulaiman from "./Sulaiman Adedokun.jpg";
 import Bashir from "./Bashir Saheed.jpg";
 import Salawu from "./Rasaki Salawu.jpg";
 import Funmilola from "./Funmilola Adekola-Daramola.jpg";
@@ -32,7 +32,7 @@ import Mubo from "./Mubo Olasoko.jpg";
 import Kemi from "./Kemi Ojenike.jpg";
 import Reginald from "./Reginald-01-crop.png";
 import Ify from "./ADE-OJO.jpg";
-import GMD from "./Sulaimon-Adedokun.jpg";
+import GMD from "./Sulaiman-Adedokun.jpg";
 import Adejumoke from "./ADEJUMOKE.jpg";
 import Ohis from "./OHIWEREI.jpg";
 import Ahmed from "./AHMED.jpg";
@@ -66,7 +66,7 @@ export {
   Bashir,
   GMD,
   Salawu,
-  Sulaimon,
+  Sulaiman,
   Funmilola,
   Ojenike,
   Nkechinyelu,
