@@ -80,9 +80,9 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-white shadow-xl p-8 h-full">
+    <div className="bg-white shadow-xl lg:p-8 px-6 py-8 h-full">
       <div className="space-y-2 mb-9">
-        <h3 className="text-4xl font-bold text-emerald-900">Contact Us</h3>
+        <h3 className="lg:text-4xl text-3xl font-bold text-emerald-900">Contact Us</h3>
         <p>
           Your satisfaction is our priority. Let&apos;s make sure you have the best experience with
           us.
@@ -194,7 +194,7 @@ const ContactForm: React.FC = () => {
 const MeristemContactSection = () => {
   return (
     <section className="bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-19 items-stretch">
           <div className="flex-1 space-y-8">
             <h2 className="text-3xl md:text-5xl font-bold text-primary-green leading-tight mb-6">
