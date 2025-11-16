@@ -3,7 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Preview1, Preview2, Preview3 } from "@/app/assets";
 
 const ResearchSection = () => {
@@ -41,27 +41,28 @@ const ResearchSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Header Row */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+        <div
+          // initial={{ opacity: 0, y: 50 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.6 }}
+          // viewport={{ once: true }}
           className="flex flex-col lg:flex-row justify-between gap-8 items-center mb-12">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}>
+          <div
+          // initial={{ opacity: 0, y: 50 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.6, delay: 0.2 }}
+          // viewport={{ once: true }}>
+          >
             <h2 className="text-3xl md:text-5xl font-semibold text-primary-green lg:leading-13 leading-10 max-w-xl">
               Research that guides smarter decisions
             </h2>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
+          <div
+            // initial={{ opacity: 0, y: 50 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 0.6, delay: 0.4 }}
+            // viewport={{ once: true }}
             className="flex flex-col items-start max-w-md">
             <p className="text-primary-green mb-6 max-w-lg">
               Our group of subsidiaries brings together specialized expertise across the financial
@@ -73,19 +74,19 @@ const ResearchSection = () => {
               className="border border-primary-green text-primary-green font-semibold px-6 py-2 hover:bg-primary-green hover:text-white transition">
               MERISTEM RESEARCH
             </a>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-15">
           {Array.isArray(researchData) &&
             researchData.map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
+                // initial={{ opacity: 0, y: 50 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // transition={{ duration: 0.6, delay: index * 0.2 }}
+                // viewport={{ once: true }}
                 className="bg-gray-50 border border-gray-200 flex flex-col">
                 {/* Content */}
                 <div className="p-6 flex flex-col flex-1">
@@ -120,7 +121,7 @@ const ResearchSection = () => {
                   priority
                 />
                 {/* )} */}
-              </motion.div>
+              </div>
             ))}
         </div>
       </div>

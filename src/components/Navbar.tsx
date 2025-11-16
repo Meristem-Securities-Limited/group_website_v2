@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { ChevronDown, Menu, X, User } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -260,15 +259,27 @@ const Navbar = () => {
   const [loginDropdownOpen, setLoginDropdownOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const navbarRef = useRef<HTMLDivElement | null>(null);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
-  const isScrolled = scrollY >= 20 || activeDropdown !== null;
   const navbarBg = isScrolled
     ? "bg-white backdrop-blur-md shadow-lg border-b border-emerald-100"
     : "bg-transparent";
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMobileMenu = () => {
+    if (scrollY < 20 && isMobileMenuOpen && isScrolled) {
+      setIsScrolled(false);
+    }
+
+    if (scrollY < 20 && !isMobileMenuOpen && !isScrolled) {
+      setIsScrolled(true);
+    }
+
+    setTimeout(() => {
+      setIsMobileMenuOpen(!isMobileMenuOpen);
+    }, 150);
+  };
 
   const handleDropdownToggle = (dropdown: string) =>
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
@@ -302,13 +313,14 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    setIsScrolled(() => scrollY >= 20 || activeDropdown !== null);
+  }, [scrollY, activeDropdown]);
+
   return (
-    <motion.nav
+    <nav
       ref={navbarRef}
-      className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-500 ${navbarBg}`}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}>
+      className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-500 ${navbarBg}`}>
       <div className="container mx-auto py-7 px-4">
         <div className="flex justify-between items-center">
           <Link
@@ -394,11 +406,7 @@ const Navbar = () => {
             </button>
 
             {loginDropdownOpen && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-                className="absolute right-40 top-20 max-w-88 bg-white shadow-lg rounded-xl border border-gray-200 z-[1000]">
+              <div className="absolute right-40 top-20 max-w-88 bg-white shadow-lg border border-gray-200 z-[1000]">
                 <div className="py-2 divide-y divide-gray-500">
                   {productPlatforms.map((platform, index) => (
                     <a
@@ -411,37 +419,33 @@ const Navbar = () => {
                     </a>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             )}
           </div>
 
-          <motion.button
+          <button
             onClick={toggleMobileMenu}
             className={`lg:hidden flex items-center justify-center transition-colors duration-300 ${
               isScrolled ? "text-green-900 hover:bg-emerald-50" : "text-green-900 hover:bg-white/20"
-            }`}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}>
+            }`}>
             {isMobileMenuOpen ? (
               <X
                 size={23}
+                className={isScrolled ? "text-emerald-900" : "text-white"}
                 color="currentColor"
               />
             ) : (
               <Menu
                 size={23}
+                className={isScrolled ? "text-emerald-900" : "text-white"}
                 color="currentColor"
               />
             )}
-          </motion.button>
+          </button>
         </div>
 
         {activeDropdown && (
-          <motion.div
-            className="hidden lg:block absolute w-full top-full left-0 right-0 bg-white shadow-lg z-10 border-t"
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}>
+          <div className="hidden lg:block absolute w-full top-full left-0 right-0 bg-white shadow-lg z-10 border-t">
             {activeDropdown === "subsidiaries" && (
               <div className="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
@@ -527,199 +531,185 @@ const Navbar = () => {
                 </div>
               </div>
             )}
-          </motion.div>
+          </div>
         )}
 
-        <motion.div
-          className={`lg:hidden bg-white backdrop-blur-md rounded-xl border mt-4 border-emerald-1000`}
-          initial={{ height: 0, opacity: 0 }}
-          animate={{
-            height: isMobileMenuOpen ? "auto" : 0,
-            opacity: isMobileMenuOpen ? 1 : 0,
-          }}
-          transition={{ duration: 0.3 }}>
-          <div className="p-4 space-y-3">
-            <div>
-              <motion.button
-                onClick={() => handleDropdownToggle("subsidiaries")}
-                className={`flex items-center justify-between w-full py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 text-green-800 hover:bg-emerald-50`}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.05 }}
-                whileHover={{ x: 5 }}>
-                SUBSIDIARIES
-                <ChevronDown
-                  className={`h-4 w-4 transition-transform duration-200 ${
-                    activeDropdown === "subsidiaries" ? "rotate-180" : ""
-                  }`}
-                />
-              </motion.button>
-              {activeDropdown === "subsidiaries" && (
-                <div className="mt-3 pl-4 space-y-3 border-l-2 border-gray-200">
-                  {subsidiaries.map((item, index) => (
-                    <a
-                      href={item.link}
-                      key={index}
-                      className="cursor-pointer">
-                      <h4 className="text-gray-900 font-semibold text-sm">{item.name}</h4>
-                      <p className="text-gray-500 text-xs mt-1">{item.description}</p>
-                    </a>
-                  ))}
+        {isMobileMenuOpen && (
+          <div className={`lg:hidden mt-8`}>
+            <div className="py-4 space-y-3">
+              <div>
+                <button
+                  onClick={() => handleDropdownToggle("subsidiaries")}
+                  className={`flex items-center justify-between w-full py-3 text-sm font-semibold transition-all duration-300 text-green-800 hover:bg-emerald-50`}>
+                  SUBSIDIARIES
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform duration-200 ${
+                      activeDropdown === "subsidiaries" ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                <div className="relative">
+                  {activeDropdown === "subsidiaries" && (
+                    <div className="mt-3 pl-4 space-y-3 border-l-2 border-gray-200 overflow-y-auto">
+                      {subsidiaries.map((item, index) => (
+                        <div
+                          key={index}
+                          className="cursor-pointer pb-1">
+                          <Link href={item.link}>
+                            <h4 className="text-gray-900 font-semibold text-sm">{item.name}</h4>
+                            <p className="text-gray-500 text-xs">{item.description}</p>
+                          </Link>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-            <div>
-              <motion.button
-                onClick={() => handleDropdownToggle("about")}
-                className={`flex items-center justify-between w-full py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                  isScrolled
-                    ? "text-green-800 hover:bg-emerald-50"
-                    : "text-green-800 hover:bg-white/20"
-                }`}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.1 }}
-                whileHover={{ x: 5 }}>
-                ABOUT US
-                <ChevronDown
-                  className={`h-4 w-4 transition-transform duration-200 ${
-                    activeDropdown === "about" ? "rotate-180" : ""
-                  }`}
-                />
-              </motion.button>
-              {activeDropdown === "about" && (
-                <div className="mt-3 pl-4 space-y-2 border-l-2 border-gray-200">
-                  {aboutUsItems.map((item, index) => (
-                    <Link
-                      onClick={() => {
-                        setActiveDropdown(null);
-                        setLoginDropdownOpen(false);
-                        toggleMobileMenu();
-                      }}
-                      key={index}
-                      href={item.link}
-                      className="block text-gray-700 hover:text-green-800 py-1 text-sm">
-                      {item.title}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+              </div>
+              <div>
+                <button
+                  onClick={() => handleDropdownToggle("about")}
+                  className={`flex items-center justify-between w-full py-3 text-sm font-semibold transition-all duration-300 ${
+                    isScrolled
+                      ? "text-green-800 hover:bg-emerald-50"
+                      : "text-green-800 hover:bg-white/20"
+                  }`}>
+                  ABOUT US
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform duration-200 ${
+                      activeDropdown === "about" ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {activeDropdown === "about" && (
+                  <div className="mt-3 pl-4 space-y-2 border-l-2 border-gray-200">
+                    {aboutUsItems.map((item, index) => (
+                      <Link
+                        onClick={() => {
+                          setActiveDropdown(null);
+                          setLoginDropdownOpen(false);
+                          toggleMobileMenu();
+                        }}
+                        key={index}
+                        href={item.link}
+                        className="block text-gray-700 hover:text-green-800 py-1 text-sm">
+                        {item.title}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
 
-            <div>
-              <motion.button
-                onClick={() => handleDropdownToggle("products")}
-                className={`flex items-center justify-between w-full py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
+              <div>
+                <button
+                  onClick={() => handleDropdownToggle("products")}
+                  className={`flex items-center justify-between w-full py-3 text-sm font-semibold transition-all duration-300 ${
+                    isScrolled
+                      ? "text-green-800 hover:bg-emerald-50"
+                      : "text-green-900 hover:bg-white/20"
+                  }`}>
+                  OUR PRODUCTS
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform duration-200 ${
+                      activeDropdown === "products" ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {activeDropdown === "products" && (
+                  <div className="overflow-y-auto max-h-[60vh] mt-3 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {ourProductsItems.map((item, i) => (
+                      <div
+                        key={i}
+                        className="space-y-3">
+                        <h3 className="text-sm font-bold text-emerald-900 hover:text-green-700 transition-colors duration-200">
+                          {item.title}
+                        </h3>
+
+                        <ul className="space-y-1 ml-3">
+                          {item.children.map((child, j) => (
+                            <li key={j}>
+                              <Link
+                                onClick={() => {
+                                  setActiveDropdown(null);
+                                  setLoginDropdownOpen(false);
+                                  toggleMobileMenu();
+                                }}
+                                href={child.link}
+                                className="text-gray-700 hover:text-green-800 text-sm transition-colors duration-200">
+                                {child.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <Link
+                href="https://careers.meristemng.com"
+                className={`block w-full text-left py-3 text-sm font-semibold transition-all duration-300 ${
                   isScrolled
                     ? "text-green-800 hover:bg-emerald-50"
                     : "text-green-900 hover:bg-white/20"
-                }`}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.15 }}
-                whileHover={{ x: 5 }}>
-                OUR PRODUCTS
-                <ChevronDown
-                  className={`h-4 w-4 transition-transform duration-200 ${
-                    activeDropdown === "products" ? "rotate-180" : ""
-                  }`}
-                />
-              </motion.button>
-              {activeDropdown === "products" && (
-                <div className="overflow-y-auto max-h-[60vh] mt-3 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                  {ourProductsItems.map((item, i) => (
-                    <div
-                      key={i}
-                      className="space-y-2">
-                      <h3 className="text-sm font-bold text-emerald-900 hover:text-green-700 transition-colors duration-200">
-                        {item.title}
-                      </h3>
-
-                      <ul className="space-y-1 ml-3">
-                        {item.children.map((child, j) => (
-                          <li key={j}>
-                            <Link
-                              onClick={() => {
-                                setActiveDropdown(null);
-                                setLoginDropdownOpen(false);
-                                toggleMobileMenu();
-                              }}
-                              href={child.link}
-                              className="text-gray-700 hover:text-green-800 text-sm transition-colors duration-200">
-                              {child.title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <Link
-              href="https://careers.meristemng.com"
-              className={`block w-full text-left py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                isScrolled
-                  ? "text-green-800 hover:bg-emerald-50"
-                  : "text-green-900 hover:bg-white/20"
-              }`}>
-              CAREERS
-            </Link>
-            <Link
-              href="https://blog.meristemng.com"
-              className={`block w-full text-left py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                isScrolled
-                  ? "text-green-800 hover:bg-emerald-50"
-                  : "text-green-900 hover:bg-white/20"
-              }`}>
-              BLOG
-            </Link>
-            {/* <Link
+                }`}>
+                CAREERS
+              </Link>
+              <Link
+                href="https://blog.meristemng.com"
+                className={`block w-full text-left py-3 text-sm font-semibold transition-all duration-300 ${
+                  isScrolled
+                    ? "text-green-800 hover:bg-emerald-50"
+                    : "text-green-900 hover:bg-white/20"
+                }`}>
+                BLOG
+              </Link>
+              {/* <Link
               href="#"
-              className={`block w-full text-left py-3 px-4 rounded-xl text-sm font-semibold transition-all duration-300 ${
+              className={`block w-full text-left py-3 px-4 text-sm font-semibold transition-all duration-300 ${
                 isScrolled ? "text-green-800 hover:bg-emerald-50" : "text-green-900 hover:bg-white/20"
               }`}>
               LEARN
             </Link> */}
 
-            <div className="pt-4 border-t border-gray-200 space-y-3">
-              {/* <button className="flex items-center w-full text-gray-700 hover:text-green-800 py-2 text-base font-semibold transition-colors duration-200">
+              <div className="pt-4 border-t border-gray-200 space-y-3">
+                {/* <button className="flex items-center w-full text-gray-700 hover:text-green-800 py-2 text-base font-semibold transition-colors duration-200">
                 <Search className="h-4 w-4 mr-2" />
                 SEARCH
               </button> */}
-              <button
-                onClick={() => setLoginDropdownOpen(!loginDropdownOpen)}
-                className="w-full bg-green-700 text-white px-4 py-3 text-base font-semibold hover:bg-green-800 transition-colors duration-200 flex items-center justify-center">
-                <User className="h-4 w-4 mr-2" />
-                CLIENT LOGIN
-                <ChevronDown
-                  className={`ml-2 h-3 w-3 transition-transform ${
-                    loginDropdownOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
+                <button
+                  onClick={() => setLoginDropdownOpen(!loginDropdownOpen)}
+                  className="w-full bg-green-700 text-white px-4 py-3 text-base font-semibold hover:bg-green-800 transition-colors duration-200 flex items-center justify-center">
+                  <User className="h-4 w-4 mr-2" />
+                  CLIENT LOGIN
+                  <ChevronDown
+                    className={`ml-2 h-3 w-3 transition-transform ${
+                      loginDropdownOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
 
-              {loginDropdownOpen && (
-                <div
-                  ref={dropdownRef}
-                  className="mt-2 pl-6 space-y-2 z-[1000] divide-y divide-gray-300 border-l-2 border-gray-200">
-                  {productPlatforms.map((platform, index) => (
-                    <a
-                      key={index}
-                      href={platform.link}
-                      target="_blank"
-                      className="block text-gray-700 hover:text-green-800 py-1 text-sm">
-                      {platform.name}
-                    </a>
-                  ))}
-                </div>
-              )}
+                {loginDropdownOpen && (
+                  <div
+                    ref={dropdownRef}
+                    className="mt-2 pl-6 space-y-2 z-[1000] divide-y divide-gray-300 border-l-2 border-gray-200">
+                    {productPlatforms.map((platform, index) => (
+                      <a
+                        key={index}
+                        href={platform.link}
+                        target="_blank"
+                        className="block text-gray-700 hover:text-green-800 py-1 text-sm">
+                        {platform.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
-        </motion.div>
+        )}
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 

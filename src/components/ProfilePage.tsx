@@ -54,7 +54,7 @@ export default function ProfilePage({
             {/* <h1 className="lg:text-3xl text-xl font-bold mb-1">{executive.name}</h1>
             <h2 className="text-base lg:text-lg font-medium mb-3">{executive.role}</h2> */}
             <p
-              className="text-sm lg:text-base leading-relaxed !font-medium"
+              className="text-base leading-relaxed !font-medium"
               dangerouslySetInnerHTML={{ __html: executive.description }}></p>
           </div>
         </div>

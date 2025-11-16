@@ -30,42 +30,45 @@ const MeristemTimeline = () => {
     <section className="bg-[#154D34] bg-[url(/bg-banner.png)] bg-no-repeat bg-cover bg-center bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 relative overflow-hidden">
       <div className="relative z-10 container mx-auto py-20 px-4">
         {/* Header */}
-        <motion.div
+        <div
           className="pb-6 mb-9"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}>
+          // initial={{ opacity: 0, y: 40 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8, ease: "easeOut" }}
+          // viewport={{ once: true }}>
+        >
           <h2 className="text-3xl md:text-5xl font-semibold text-white">Our History</h2>
           <p className="text-white mt-5 max-w-2xl">
             Provides premium financial services that help you grow and preserve your wealth through
             expert market analysis and personalized investment strategies.
           </p>
-        </motion.div>
+        </div>
 
         {/* Group Container */}
-        <motion.div
+        <div
           className="flex justify-between items-center gap-9"
-          initial={{ opacity: 0, x: -80 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9, ease: "easeOut" }}
-          viewport={{ once: true }}>
+          // initial={{ opacity: 0, x: -80 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 0.9, ease: "easeOut" }}
+          // viewport={{ once: true }}>
+        >
           <div className="lg:p-10 p-4 bg-[#154D34] w-auto">
-            <motion.h3
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
+            <h3
+              // initial={{ opacity: 0, y: 30 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.6, delay: 0.2 }}
+              // viewport={{ once: true }}
               className="text-white text-sm font-medium tracking-wider uppercase mb-6">
               A LEGACY OF FINANCIAL EXCELLENCE
-            </motion.h3>
+            </h3>
 
-            <motion.div
+            <div
               className="max-w-4xl"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-              viewport={{ once: true }}>
+              // initial={{ opacity: 0, y: 40 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.7, delay: 0.3 }}
+              // viewport={{ once: true }}>
+            >
               <p className="text-white text-base lg:text-lg  leading-relaxed mb-8">
                 Founded in 2003 (originally as Great Africa Securities before rebranding in 2005),
                 Meristem is a leading capital markets conglomerate in Nigeria. With seven
@@ -87,9 +90,9 @@ const MeristemTimeline = () => {
                 </div>
                 LEARN MORE ABOUT MERISTEM
               </a>
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

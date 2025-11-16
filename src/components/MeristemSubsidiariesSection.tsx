@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 export default function MeristemSubsidiaries() {
   const subsidiaries = [
@@ -64,13 +64,13 @@ export default function MeristemSubsidiaries() {
 
         <div className="space-y-0 mt-5">
           {subsidiaries.map((subsidiary, index) => (
-            <motion.a
+            <a
               href={subsidiary.link}
               key={index}
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }} // slide in when visible
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              viewport={{ once: true }}
+              // initial={{ opacity: 0, x: 100 }}
+              // whileInView={{ opacity: 1, x: 0 }} // slide in when visible
+              // transition={{ duration: 0.6, delay: index * 0.15 }}
+              // viewport={{ once: true }}
               className="flex items-center justify-between py-8 border-b border-gray-300 group hover:bg-emerald-50 transition-colors duration-200 cursor-pointer">
               <div className="flex items-start lg:gap-17 gap-6">
                 <div>
@@ -87,7 +87,7 @@ export default function MeristemSubsidiaries() {
               </div>
 
               <ArrowRight className="w-5 h-5 text-emerald-800 group-hover:text-emerald-600 transition-colors duration-200 flex-shrink-0" />
-            </motion.a>
+            </a>
           ))}
         </div>
       </div>

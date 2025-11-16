@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { HouseDisplay, MeritradeMockUp, MORE, SimpleWill, WealthBuddyMockup } from "../app/assets";
 import Image from "next/image";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const products = [
   {
@@ -52,10 +52,11 @@ const products = [
 export default function ProductsSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const scroll = (direction: string) => {
+  const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
+      const distance = scrollRef.current.offsetWidth * 0.4;
       scrollRef.current.scrollBy({
-        left: direction === "left" ? -300 : 300,
+        left: direction === "left" ? -distance : distance,
         behavior: "smooth",
       });
     }
@@ -67,25 +68,27 @@ export default function ProductsSection() {
       className="bg-white py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-12">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6 }}>
+          <div
+          // initial={{ opacity: 0, y: 40 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // viewport={{ once: true, amount: 0.2 }}
+          // transition={{ duration: 0.6 }}>
+          >
             <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">Our Platforms</h2>
             <p className="text-gray-600 mt-3 max-w-2xl text-lg md:text-base">
               Explore Meristem’s innovative platforms designed to simplify how you invest, trade,
               and manage assets. From real estate to financial learning, we make it effortless to
               grow and sustain wealth on your own terms.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
+          <div
             className="flex gap-3 mt-6 md:mt-0"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, delay: 0.2 }}>
+            // initial={{ opacity: 0, y: 40 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ once: true, amount: 0.2 }}
+            // transition={{ duration: 0.6, delay: 0.2 }}>
+          >
             <button
               onClick={() => scroll("left")}
               className="p-3 bg-green-900 text-white hover:bg-primary-green">
@@ -96,19 +99,19 @@ export default function ProductsSection() {
               className="p-3 bg-green-900 text-white hover:bg-primary-green">
               <ArrowRight size={20} />
             </button>
-          </motion.div>
+          </div>
         </div>
 
         <div
           ref={scrollRef}
           className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth">
           {products.map((product, index) => (
-            <motion.div
+            <div
               key={product.id}
-              initial={{ opacity: 0, x: 80 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+              // initial={{ opacity: 0, x: 80 }}
+              // whileInView={{ opacity: 1, x: 0 }}
+              // viewport={{ once: true, amount: 0.2 }}
+              // transition={{ duration: 0.6, delay: index * 0.2 }}
               className="flex-shrink-0 md:w-[360px] w-full lg:w-[398px] relative flex flex-col">
               <div className="w-full bg-[#154D3433] min-h-[200px] flex items-center justify-center overflow-hidden">
                 <Image
@@ -142,7 +145,7 @@ export default function ProductsSection() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

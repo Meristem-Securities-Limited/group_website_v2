@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Script from "next/script";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://meristemgroupweb.netlify.app"),
@@ -76,17 +77,7 @@ const roobert = localFont({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <noscript
-        dangerouslySetInnerHTML={{
-          __html: `
-              <iframe 
-                src="https://www.googletagmanager.com/ns.html?id=GTM-5BP7JR4M"
-                height="0" width="0" 
-                style="display:none;visibility:hidden">
-              </iframe>
-            `,
-        }}
-      />
+      <GoogleTagManager gtmId="GTM-5BP7JR4M" />
       <Script
         id="tawk-script"
         strategy="afterInteractive">
