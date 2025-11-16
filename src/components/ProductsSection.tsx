@@ -2,14 +2,7 @@
 
 import React, { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import {
-  HappyFamily,
-  HouseDisplay,
-  MeritradeMockUp,
-  MORE,
-  SimpleWill,
-  WealthBuddyMockup,
-} from "../app/assets";
+import { HouseDisplay, MeritradeMockUp, MORE, SimpleWill, WealthBuddyMockup } from "../app/assets";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -74,7 +67,6 @@ export default function ProductsSection() {
       className="bg-white py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-12">
-          {/* Header Text */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -88,7 +80,6 @@ export default function ProductsSection() {
             </p>
           </motion.div>
 
-          {/* Buttons */}
           <motion.div
             className="flex gap-3 mt-6 md:mt-0"
             initial={{ opacity: 0, y: 40 }}

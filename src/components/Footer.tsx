@@ -8,17 +8,129 @@ import { BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { Facebook, Instagram } from "iconsax-react";
 
 export default function Footer() {
+  const socialLinks = [
+    {
+      href: "https://x.com/MeristemNigeria",
+      icon: (
+        <BsTwitterX
+          size={22}
+          color="white"
+        />
+      ),
+      title: "X (Formerly Twitter)",
+    },
+    {
+      href: "https://www.instagram.com/meristemng/",
+      icon: (
+        <Instagram
+          size={26}
+          color="white"
+        />
+      ),
+      title: "Instagram",
+    },
+    {
+      href: "https://web.facebook.com/MeristemNigeria/",
+      icon: (
+        <Facebook
+          size={26}
+          color="white"
+          variant="Bold"
+        />
+      ),
+      title: "Facebook",
+    },
+    {
+      href: "https://www.linkedin.com/company/meristem-securities-limited/?originalSubdomain=ngx",
+      icon: (
+        <BsLinkedin
+          size={24}
+          color="white"
+        />
+      ),
+      title: "LinkedIn",
+    },
+  ];
+
+  const footerSections = [
+    {
+      title: "Meristem Subsidiaries",
+      items: [
+        { title: "Meristem Wealth Management", url: "https://meristemwealth.com/" },
+        { title: "Meristem Stockbrokers", url: "https://stockbroking.meristemng.com" },
+        {
+          title: "Meristem Registrar & Probate Services",
+          url: "https://registrars.meristemng.com",
+        },
+        { title: "Meristem Trustees", url: "https://trustees.meristemng.com" },
+        { title: "Meristem Family Office", url: "https://familyoffice.meristemng.com" },
+        { title: "Meristem Finance", url: "https://finance.meristemng.com" },
+        { title: "Meristem Capital", url: "https://capital.meristemng.com" },
+      ],
+    },
+    {
+      title: "Our Policies",
+      items: [
+        {
+          title: "Complaint Management Framework",
+          url: "https://meristemng.com/documents/complaint-management-framework.pdf",
+        },
+        { title: "Data Privacy Policy", url: "https://meristemng.com/privacy-policy" },
+      ],
+    },
+    {
+      title: "Company",
+      items: [
+        { title: "About Us", url: "/about-us" },
+        { title: "Our Platforms", url: "/#products" },
+        { title: "Our Capabilities", url: "/#capabilities" },
+      ],
+    },
+    {
+      title: "Quick Links",
+      items: [
+        { title: "Simple Will Form", url: "http://meristemtrustees.com/simple-will/" },
+        { title: "Blog", url: "https://blog.meristemng.com" },
+        { title: "Careers", url: "https://careers.meristemng.com" },
+      ],
+    },
+  ];
+
+  const branches = [
+    {
+      title: "Head Office Address",
+      address: "20A Gerrard Road, Ikoyi 106104, Lagos, Nigeria.",
+    },
+    {
+      title: "Lagos Branch",
+      address: "213 Herbert Macaulay Way, Yaba, Lagos 101245, Lagos.",
+    },
+    {
+      title: "Port Harcourt Branch",
+      address:
+        "1 Opobo Crescent, Opposite Aladumo Schools, GRA Junction, Port Harcourt, Rivers State, Nigeria. (07080647497)",
+    },
+    {
+      title: "Abuja Branch",
+      address:
+        "4th Floor, Elizade Towers, Plot 596 Cadastral Zone A.O, Independent Avenue, FCT, Abuja, Nigeria. (07080647498)",
+    },
+  ];
+
   return (
-    <footer className="relative w-full bg-[#154D34] text-white bg-[url(/bg-banner.png)] lg:bg-no-repeat bg-repeat bg-center bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 overflow-hidden">
-      <div className="absolute inset-0 bg-emerald-900/60 z-0"></div>
-      <div className="relative z-10 container px-6 w-full mx-auto pt-25">
-        <div className="flex lg:flex-row flex-col lg:gap-29 gap-9">
-          <div className="w-auto">
-            <div className="w-50 h-20 -mt-10 mb-4 relative">
+    <footer className="relative w-full text-white bg-[#154D34] bg-[url(/bg-banner.png)] bg-repeat bg-center lg:bg-no-repeat bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 overflow-hidden">
+      <div className="absolute inset-0 bg-emerald-900/60 z-0" />
+
+      <div className="relative z-10 container mx-auto px-5 sm:px-6 pt-20">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+          {/* LEFT SECTION */}
+          <div className="w-full lg:w-[32%] space-y-8">
+            {/* Logo */}
+            <div className="w-40 h-16">
               <Link
                 href="/"
                 aria-label="Go to Home Page"
-                className="lg:w-94 lg:h-90 w-40 h-60 cursor-pointer relative bg-red-500">
+                className="block">
                 <Image
                   src={WhiteLogo}
                   alt="Meristem Logo"
@@ -27,247 +139,77 @@ export default function Footer() {
                 />
               </Link>
             </div>
-            <div className="space-y-3">
-              <p className="text-sm font-medium text-gray-50">For complaints, you can contact on</p>
-              <div className="w-full py-2 space-y-2">
-                <span className="font-bold text-white block">WhatsApp: +234 813 405 9788</span>
-                <span className="font-bold text-white block">Telephone: 080063747836</span>
-                <span className="font-bold text-white block">Email: contact@meristemng.com</span>
+
+            {/* Complaints */}
+            <div className="space-y-2">
+              <p className="text-base text-gray-100">For complaints, contact us on</p>
+              <div className="space-y-1">
+                <p className="font-semibold text-base">WhatsApp: +234 813 405 9788</p>
+                <p className="font-semibold text-base">Telephone: 080063747836</p>
+                <p className="font-semibold text-base">Email: contact@meristemng.com</p>
               </div>
             </div>
-            <div className="flex flex-1 flex-col gap-6 mt-5">
-              <div className="space-y-3 flex-1">
-                <h4 className="font-bold text-white uppercase">Head Office Address</h4>
-                <p className="text-gray-200 text-sm font-medium">
-                  20A Gerrard Road, Ikoyi 106104, Lagos, Nigeria.
-                </p>
-              </div>
-              <div className="space-y-3 flex-1">
-                <h4 className="font-bold text-white uppercase">Lagos Branch</h4>
-                <p className="text-gray-200 text-sm font-medium">
-                  213 Herbert Macaulay Way, Yaba, Lagos 101245, Lagos
-                </p>
-              </div>
-              <div className="space-y-3 flex-1">
-                <h4 className="font-bold text-white uppercase">Port Harcourt Branch</h4>
-                <p className="text-gray-200 text-sm font-medium">
-                  1 Opobo Crescent, Opposite Aladumo Schools, GRA Junction, Port Harcourt, Rivers
-                  State, Nigeria. (07080647497)
-                </p>
-              </div>
-              <div className="space-y-3 flex-1">
-                <h4 className="font-bold text-white uppercase">Abuja Branch</h4>
-                <p className="text-gray-200 text-sm font-medium">
-                  4th Floor, Elizade Towers, Plot 596 Cadastral Zone A.O, Independent Avenue, FCT,
-                  Abuja, Nigeria. (07080647498)
-                </p>
-              </div>
+
+            {/* Branches */}
+            <div className="space-y-6">
+              {branches.map((b, idx) => (
+                <div
+                  key={idx}
+                  className="space-y-1">
+                  <h4 className="font-bold text-base uppercase">{b.title}</h4>
+                  <p className="text-gray-200 text-base leading-relaxed">{b.address}</p>
+                </div>
+              ))}
             </div>
           </div>
-          <div className="w-full lg:pt-0 grid grid-cols-1 md:grid-cols-1 xl:grid-cols-4 gap-8 lg:gap-x-10 gap-y-10">
-            {[
-              {
-                title: "Meristem Subsidiaries",
-                items: [
-                  { title: "Meristem Wealth Management", url: "https://meristemwealth.com/" },
-                  { title: "Meristem Stockbrokers", url: "https://stockbroking.meristemng.com" },
-                  {
-                    title: "Meristem Registrar and Probate Services",
-                    url: "https://registrars.meristemng.com",
-                  },
-                  { title: "Meristem Trustees", url: "https://trustees.meristemng.com" },
-                  { title: "Meristem Family Office", url: "https://familyoffice.meristemng.com" },
-                  { title: "Meristem Finance", url: "https://finance.meristemng.com" },
-                  { title: "Meristem Capital", url: "https://capital.meristemng.com" },
-                ],
-              },
-              {
-                title: "Our Policies",
-                items: [
-                  {
-                    title: "Complaint Management Framework",
-                    url: "https://meristemng.com/documents/complaint-management-framework.pdf",
-                  },
-                  { title: "Data Privacy Policy", url: "https://meristemng.com/privacy-policy" },
-                ],
-              },
-              {
-                title: "Company",
-                items: [
-                  { title: "About Us", url: "/about-us" },
-                  { title: "Our Platforms", url: "/#products" },
-                  { title: "Our Capabilities", url: "/#capabilities" },
-                ],
-              },
-              {
-                title: "Quick Links",
-                items: [
-                  { title: "Simple Will Form", url: "http://meristemtrustees.com/simple-will/" },
-                  // { title: "Events", url: "https://meristemng.com/events" },
-                  { title: "Blog", url: "https://blog.meristemng.com" },
-                  { title: "Careers", url: "https://careers.meristemng.com" },
-                  // { title: "Learn", url: "#" },
-                ],
-              },
-            ].map((section, idx) => (
+
+          {/* RIGHT SECTION */}
+          <div className="w-full lg:flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            {footerSections.map((section, idx) => (
               <div
                 key={idx}
-                className="space-y-6 w-full">
-                <h5 className="text-white font-bold uppercase">{section.title}</h5>
-                <div>
-                  <ul className="space-y-5">
-                    {section.items.map((item, i) => (
-                      <li key={i}>
-                        <Link
-                          aria-label={item?.title}
-                          href={item.url}>
-                          <span className="font-medium text-sm cursor-pointer text-gray-200">
-                            {item.title}
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                className="space-y-5">
+                <h5 className="font-bold text-base uppercase">{section.title}</h5>
+                <ul className="space-y-3">
+                  {section.items.map((item, i) => (
+                    <li key={i}>
+                      <Link
+                        href={item.url}
+                        aria-label={item.title}>
+                        <span className="text-base text-gray-200 hover:text-white transition">
+                          {item.title}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
-            <div className="w-full col-span-4 items-center">
-              <h6 className="font-bold pb-4 uppercase">Socials</h6>
-              <div className="flex flex-wrap gap-y-4 lg:space-x-9 md:space-x-4 space-x-6 text-gray-200 items-center">
-                {[
-                  {
-                    href: "https://x.com/MeristemNigeria",
-                    icon: (
-                      <BsTwitterX
-                        size={23}
-                        color="white"
-                      />
-                    ),
-                    title: "X (Formerly Twitter)",
-                  },
-                  {
-                    href: "https://www.instagram.com/meristemng/",
-                    icon: (
-                      <Instagram
-                        size={30}
-                        color="white"
-                      />
-                    ),
-                    title: "Instagram",
-                  },
-                  {
-                    href: "https://web.facebook.com/MeristemNigeria/",
-                    icon: (
-                      <Facebook
-                        size={30}
-                        color="white"
-                        variant="Bold"
-                      />
-                    ),
-                    title: "Facebook",
-                  },
-                  {
-                    href: "https://www.linkedin.com/company/meristem-securities-limited/?originalSubdomain=ngx",
-                    icon: (
-                      <BsLinkedin
-                        size={27}
-                        color="white"
-                        className="font-bold"
-                      />
-                    ),
-                    title: "LinkedIn",
-                  },
-                ].map(({ href, icon, title }, i) => (
+
+            {/* SOCIALS */}
+            <div className="col-span-1 sm:col-span-2 lg:col-span-4">
+              <h6 className="font-bold uppercase pb-3 text-base">Socials</h6>
+              <div className="flex flex-wrap gap-5 items-center">
+                {socialLinks.map(({ href, icon, title }, i) => (
                   <a
                     key={i}
                     href={href}
                     aria-label={title}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex text-xs lg:text-sm items-center font-medium gap-1">
+                    className="flex items-center">
                     {icon}
-                    {/* {title} */}
                   </a>
                 ))}
               </div>
             </div>
           </div>
         </div>
-        {/* <div className="flex lg:flex-row flex-col lg:gap-19 gap-9 w-full lg:pt-20 pt-10">
-          {/* <div className="flex space-x-9">
-            <div className="space-y-2">
-              <h4 className="font-bold text-white">CONTACT</h4>
-              <p className="text-gray-200 text-sm font-medium">+</p>
-            </div>
-            <div className="space-y-2">
-              <h4 className="font-bold text-white uppercase">Email Address</h4>
-              <p className="text-gray-200 text-sm font-medium">contact@meristemng.com</p>
-            </div>
-          </div> 
-          <div className="w-auto items-center">
-            <h6 className="font-bold pb-4 uppercase">Socials</h6>
-            <div className="flex flex-wrap gap-y-4 lg:space-x-9 md:space-x-4 space-x-6 text-gray-200 items-center">
-              {[
-                {
-                  href: "https://x.com/MeristemNigeria",
-                  icon: (
-                    <BsTwitterX
-                      size={23}
-                      color="white"
-                    />
-                  ),
-                  title: "X (Formerly Twitter)",
-                },
-                {
-                  href: "https://www.instagram.com/meristemng/",
-                  icon: (
-                    <Instagram
-                      size={30}
-                      color="white"
-                    />
-                  ),
-                  title: "Instagram",
-                },
-                {
-                  href: "https://web.facebook.com/MeristemNigeria/",
-                  icon: (
-                    <Facebook
-                      size={30}
-                      color="white"
-                      variant="Bold"
-                    />
-                  ),
-                  title: "Facebook",
-                },
-                {
-                  href: "https://www.linkedin.com/company/meristem-securities-limited/?originalSubdomain=ngx",
-                  icon: (
-                    <BsLinkedin
-                      size={27}
-                      color="white"
-                      className="font-bold"
-                    />
-                  ),
-                  title: "LinkedIn",
-                },
-              ].map(({ href, icon, title }, i) => (
-                <a
-                  key={i}
-                  href={href}
-                  aria-label={title}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex text-xs lg:text-sm items-center font-medium gap-1">
-                  {icon}
-                  {/* {title} 
-                </a>
-              ))}
-            </div>
-          </div>
-        </div> */}
-        <div className="flex lg:flex-row gap-9 flex-col justify-center items-center py-19 mt-4">
-          <p className="text-sm lg:text-base font-medium text-center">
-            &copy; {new Date().getFullYear()} Meristem Securities Limited. All Rights Reserved
+
+        {/* COPYRIGHT */}
+        <div className="flex justify-center pt-12 pb-14">
+          <p className="text-center text-base font-medium text-gray-200">
+            &copy; {new Date().getFullYear()} Meristem Securities Limited. All Rights Reserved.
           </p>
         </div>
       </div>
