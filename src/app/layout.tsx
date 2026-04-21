@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -63,15 +64,21 @@ export const metadata: Metadata = {
   },
 };
 
-const roobert = localFont({
-  src: [
-    { path: "./fonts/RoobertTRIAL-Regular-BF67243fd53fdf2.otf", weight: "500" },
-    { path: "./fonts/RoobertTRIAL-Medium-BF67243fd53e059.otf", weight: "400" },
-    { path: "./fonts/RoobertTRIAL-Bold-BF67243fd540abb.otf", weight: "700" },
-    { path: "./fonts/RoobertTRIAL-Light-BF67243fd502239.otf", weight: "300" },
-    { path: "./fonts/RoobertTRIAL-SemiBold-BF67243fd54213d.otf", weight: "600" },
-    { path: "./fonts/RoobertTRIAL-Heavy-BF67243fd53e164.otf", weight: "800" },
-  ],
+// const roobert = localFont({
+//   src: [
+//     { path: "./fonts/RoobertTRIAL-Regular-BF67243fd53fdf2.otf", weight: "500" },
+//     { path: "./fonts/RoobertTRIAL-Medium-BF67243fd53e059.otf", weight: "400" },
+//     { path: "./fonts/RoobertTRIAL-Bold-BF67243fd540abb.otf", weight: "700" },
+//     { path: "./fonts/RoobertTRIAL-Light-BF67243fd502239.otf", weight: "300" },
+//     { path: "./fonts/RoobertTRIAL-SemiBold-BF67243fd54213d.otf", weight: "600" },
+//     { path: "./fonts/RoobertTRIAL-Heavy-BF67243fd53e164.otf", weight: "800" },
+//   ],
+// });
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -94,7 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             })();
           `}
       </Script>
-      <body className={`${roobert.className} antialiased`}>
+      <body className={`${outfit.variable} antialiased`}>
         <Navbar />
         {children}
         <Footer />
