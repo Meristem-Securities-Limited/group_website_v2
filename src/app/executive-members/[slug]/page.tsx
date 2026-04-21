@@ -136,7 +136,7 @@ Beyond finance, she is a certified Family Finance Coach and Counsellor, holding 
     slug: "taiwo-yusuf",
     image: Taiwo,
     name: "Taiwo Yusuf, CFA",
-    role: "Chief Investment Officer, Meristem Securities Limited",
+    role: "Managing Director, Meristem Wealth Management Limited",
     description: `<div class="executive-info">
           <p class="my-6">
           Taiwo Yusuf is a result-driven investment leader with about 20 years of experience spanning commercial banking, investment banking, and capital markets. As the Chief Investment Officer of Meristem Wealth Management Limited, he plays a pivotal role in shaping multi-asset investment strategies and driving the firm’s  performance across Equities, Commodities, Fixed Income, and Bonds.
@@ -184,7 +184,7 @@ Under his leadership, Meristem Wealth Management has earned multiple industry re
     slug: "kemi-ojenike",
     image: Ojenike,
     name: "Kemi Ojenike",
-    role: "Chief Operating Officer, Meristem  Family Office",
+    role: "Managing Director, Meristem  Family Office",
     description: `<div class="executive-info">
           <p class="my-6">
           Kemi Ojenike is a seasoned Lawyer and Family Wealth Advisor committed to helping families preserve and grow multigenerational wealth. 
