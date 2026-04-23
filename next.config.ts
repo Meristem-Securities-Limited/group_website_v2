@@ -20,11 +20,21 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "unsplash.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "meristemng.com",
         pathname: "/**",
       },
     ],
-    domains: ["www.meritrade.com", "www.res.cloudinary.com", "www.meristemng.com"],
+    domains: [
+      "www.meritrade.com",
+      "www.res.cloudinary.com",
+      "www.meristemng.com",
+      "www.unsplash.com",
+    ],
   },
 };
 

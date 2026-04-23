@@ -2,7 +2,6 @@
 
 import { ArrowRight } from "lucide-react";
 import React from "react";
-import { motion } from "framer-motion";
 
 const MeristemTimeline = () => {
   // const timelineData = [

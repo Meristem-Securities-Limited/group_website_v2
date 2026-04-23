@@ -35,7 +35,7 @@ const validationSchema = Yup.object({
     }),
 });
 
-const ContactForm: React.FC = () => {
+export const ContactForm: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
   const [modalType, setModalType] = useState<"success" | "error">("success");
@@ -82,7 +82,7 @@ const ContactForm: React.FC = () => {
   return (
     <div className="bg-white shadow-xl lg:p-8 px-6 py-8 h-full">
       <div className="space-y-2 mb-9">
-        <h3 className="lg:text-4xl text-3xl font-bold text-emerald-900">Contact Us</h3>
+        <h3 className="lg:text-3xl text-2xl font-bold text-emerald-900">Contact Us</h3>
         <p>
           Your satisfaction is our priority. Let&apos;s make sure you have the best experience with
           us.

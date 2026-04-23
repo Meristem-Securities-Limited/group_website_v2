@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { HappyFamily, HouseDisplay, MeritradeMockUp, WealthBuddyMockup } from "../app/assets";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const products = [
   {
@@ -12,7 +13,7 @@ const products = [
     description:
       "Buy and sell equities in real time through Meristem’s online trading platform. Access market research, monitor portfolios, and execute trades seamlessly.",
     img: MeritradeMockUp,
-    link: "#stockbroking",
+    link: "stockbroking",
   },
   {
     id: 2,
@@ -20,7 +21,7 @@ const products = [
     description:
       "Invest in professionally managed mutual funds spanning equities, fixed income, and money market instruments, expertly structured to help you achieve your short and long-term financial goals.",
     img: WealthBuddyMockup,
-    link: "#mutual-funds",
+    link: "mutual-funds",
   },
   {
     id: 3,
@@ -28,7 +29,7 @@ const products = [
     description:
       "Access tailored financing solutions for personal and business needs. We offer flexible loan options and asset leasing services designed to support growth and financial stability.",
     img: WealthBuddyMockup,
-    link: "#loans",
+    link: "loans",
   },
   {
     id: 4,
@@ -36,7 +37,7 @@ const products = [
     description:
       "We deliver structured and transparent estate administration, ensuring that every process, from asset gathering to transfer, is handled efficiently, securely, and in full compliance.",
     img: HouseDisplay,
-    link: "#probate",
+    link: "probate",
   },
   {
     id: 5,
@@ -44,7 +45,7 @@ const products = [
     description:
       "Safeguard and transfer wealth seamlessly with Meristem Trustees Limited. Our services include Wills, Living Trusts, Education Trusts, and Corporate Trusts, as well as the Diaspora Trust for Nigerians living abroad.",
     img: HappyFamily,
-    link: "#trusteeship",
+    link: "trusteeship",
   },
   {
     id: 6,
@@ -52,7 +53,7 @@ const products = [
     description:
       "Provides personalised wealth management and succession planning solutions. including Legacy Planning, Investment Management, Business Advisory, Philanthropy, Family Governance, and Health & Longevity Planning.",
     img: MeritradeMockUp,
-    link: "#family-office",
+    link: "family-office",
   },
   {
     id: 7,
@@ -60,7 +61,7 @@ const products = [
     description:
       "We provide tailored financial advisory and capital-raising solutions that help businesses unlock growth opportunities. From mergers and acquisitions to debt and equity financing, we deliver strategic insights with precision, confidentiality, and excellence.",
     img: WealthBuddyMockup,
-    link: "#investment-banking",
+    link: "investment-banking",
   },
 ];
 
@@ -103,21 +104,11 @@ export default function CapabilitiesSection() {
           viewport={{ once: true }}
           className="flex flex-col md:flex-row md:items-start md:justify-between mb-10 gap-6">
           <div>
-            <h2
-              // initial={{ opacity: 0, y: 60 }}
-              // whileInView={{ opacity: 1, y: 0 }}
-              // transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-              // viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-semibold text-primary-green">
+            <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">
               Our Capabilities
             </h2>
 
-            <p
-              // initial={{ opacity: 0, y: 60 }}
-              // whileInView={{ opacity: 1, y: 0 }}
-              // transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
-              // viewport={{ once: true }}
-              className="text-gray-600 mt-3 max-w-2xl">
+            <p className="text-gray-600 mt-3 max-w-2xl">
               We provide premium financial services designed to help you grow, manage, and preserve
               your wealth through expert market insights and personalised investment strategies.
             </p>
@@ -145,9 +136,9 @@ export default function CapabilitiesSection() {
           whileInView="visible"
           viewport={{ once: true }}>
           {products.map((product) => (
-            <a
+            <Link
               key={product.id}
-              href={product.link}
+              href={`our-products/${product.link}`}
               className="flex-shrink-0 min-w-[280px] sm:min-w-[300px] md:w-[320px] lg:w-[398px] max-w-full cursor-pointer hover:bg-green-50 hover:scale-100 transition-transform duration-300 p-4 bg-white border border-green-700/30">
               <div className="flex flex-col h-full gap-4">
                 <h3 className="text-lg font-semibold text-primary-green">{product.title}</h3>
@@ -161,7 +152,7 @@ export default function CapabilitiesSection() {
                   LEARN MORE
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </motion.div>
       </div>

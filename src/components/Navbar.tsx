@@ -91,6 +91,170 @@ const aboutUsItems = [
   { title: "Executive Management", link: "/about-us#executive-management" },
 ];
 
+// const ourProductsItems = [
+//   {
+//     title: "Stockbroking",
+//     sectionId: "who-we-are",
+//     children: [
+//       {
+//         title: "Meristem Business Associate",
+//         link: "https://stockbroking.meristemng.com/meristem-stockbrokers-limited/services/business-associate",
+//       },
+//       {
+//         title: "Share/Dividend Tracking & Recovery",
+//         link: "https://stockbroking.meristemng.com/meristem-stockbrokers-limited/services/dividend-tracking",
+//       },
+//       { title: "Stock Trading", link: "https://app.meritrade.com/auth/register" },
+//     ],
+//   },
+//   {
+//     title: "Wealth Management",
+//     sectionId: "our-history",
+//     children: [
+//       {
+//         title: "Asset/Portfolio Management",
+//         link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/portfolio-management",
+//       },
+//       {
+//         title: "Bond Investments",
+//         link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/fixed-income-dealing",
+//       },
+//       { title: "Fixed Term Investment", link: "https://wealthbuddy.ng/fixed-deposits" },
+//       { title: "Meri-Dollar Investment", link: "https://wealthbuddy.ng/fixed-deposits" },
+//       { title: "Mutual Funds", link: "https://wealthbuddy.ng/mutual-funds" },
+//       { title: "Nigerian Treasury Bills", link: "https://wealthbuddy.ng/discounted-instruments" },
+//       {
+//         title: "Real Estate",
+//         link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/real-estate",
+//       },
+//       {
+//         title: "Retirement Planning",
+//         link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/retirement-planning",
+//       },
+//       {
+//         title: "Succession Planning",
+//         link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/succession-planning",
+//       },
+//     ],
+//   },
+//   {
+//     title: "Trusteeship",
+//     sectionId: "core-values",
+//     children: [
+//       {
+//         title: "Corporate Trust",
+//         link: "https://trustees.meristemng.com/meristem-trustees-limited/services/corporate-trust",
+//       },
+//       {
+//         title: "Private Trust",
+//         link: "https://trustees.meristemng.com/meristem-trustees-limited/services/private-trust",
+//       },
+//       {
+//         title: "Public Trust",
+//         link: "https://trustees.meristemng.com/meristem-trustees-limited/services/public-trust",
+//       },
+//     ],
+//   },
+//   {
+//     title: "Finance",
+//     sectionId: "culture",
+//     children: [
+//       {
+//         title: "Bridge Financing",
+//         link: "https://finance.meristemng.com/meristem-finance-limited/services/bridge-financing",
+//       },
+//       {
+//         title: "Cash Backed Facility",
+//         link: "https://finance.meristemng.com/meristem-finance-limited/services/consumer-loan/cash-backed-facility",
+//       },
+//       {
+//         title: "Equity Backed Facility",
+//         link: "https://finance.meristemng.com/meristem-finance-limited/services/consumer-loan/equity-backed-facility",
+//       },
+//       {
+//         title: "Invoice Discounting",
+//         link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/invoice-discounting",
+//       },
+//       {
+//         title: "Local Purchase Order (LPO) Financing",
+//         link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/local-purchase-order",
+//       },
+//       {
+//         title: "Meristem Finance Lease",
+//         link: "https://finance.meristemng.com/meristem-finance-limited/services/meristem-finance-lease",
+//       },
+//       {
+//         title: "Working Capital Loan",
+//         link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/working-capital-loan",
+//       },
+//     ],
+//   },
+//   {
+//     title: "Registrar and Probate",
+//     sectionId: "vision",
+//     children: [
+//       {
+//         title: "AGM/EGM Administration",
+//         link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/agm-egm-administration",
+//       },
+//       {
+//         title: "Bond Register Administration",
+//         link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited#products-and-services",
+//       },
+//       {
+//         title: "Probate Services",
+//         link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/probate-services",
+//       },
+//       {
+//         title: "Public Offer Services",
+//         link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited#products-and-services",
+//       },
+//       {
+//         title: "Right Issue Services",
+//         link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/rights-issue",
+//       },
+//       {
+//         title: "Share Registration Services",
+//         link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/share-registration",
+//       },
+//     ],
+//   },
+//   {
+//     title: "Family Office",
+//     sectionId: "mission",
+//     children: [
+//       { title: "Family Governance Advisory", link: "https://familyoffice.meristemng.com" },
+//       { title: "Health and Longevity Plan", link: "https://familyoffice.meristemng.com" },
+//       { title: "Investment Advisory", link: "https://familyoffice.meristemng.com" },
+//       { title: "Legacy Documentation Service", link: "https://familyoffice.meristemng.com" },
+//       { title: "Legacy Planning", link: "https://familyoffice.meristemng.com" },
+//       { title: "Philanthropy", link: "https://familyoffice.meristemng.com" },
+//     ],
+//   },
+//   {
+//     title: "Investment Advisory",
+//     sectionId: "philosophy",
+//     children: [
+//       {
+//         title: "Business Advisory",
+//         link: "https://capital.meristemng.com/meristem-capital-limited/business-advisory",
+//       },
+//       {
+//         title: "Debt Capital Market Services",
+//         link: "https://capital.meristemng.com/meristem-capital-limited/debt-capital-market",
+//       },
+//       {
+//         title: "Equity Capital Market Services",
+//         link: "https://capital.meristemng.com/meristem-capital-limited/equity-capital-market",
+//       },
+//       {
+//         title: "Financial Advisory",
+//         link: "https://capital.meristemng.com/meristem-capital-limited/financial-advisory",
+//       },
+//     ],
+//   },
+// ];
+
 const ourProductsItems = [
   {
     title: "Stockbroking",
@@ -98,13 +262,13 @@ const ourProductsItems = [
     children: [
       {
         title: "Meristem Business Associate",
-        link: "https://stockbroking.meristemng.com/meristem-stockbrokers-limited/services/business-associate",
+        link: "/our-products/meristem-business-associate",
       },
       {
         title: "Share/Dividend Tracking & Recovery",
-        link: "https://stockbroking.meristemng.com/meristem-stockbrokers-limited/services/dividend-tracking",
+        link: "/our-products/share-dividend-tracking-recovery",
       },
-      { title: "Stock Trading", link: "https://app.meritrade.com/auth/register" },
+      { title: "Stock Trading", link: "/our-products/stock-trading" },
     ],
   },
   {
@@ -113,27 +277,27 @@ const ourProductsItems = [
     children: [
       {
         title: "Asset/Portfolio Management",
-        link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/portfolio-management",
+        link: "/our-products/asset-portfolio-management",
       },
       {
         title: "Bond Investments",
-        link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/fixed-income-dealing",
+        link: "/our-products/bond-investments",
       },
-      { title: "Fixed Term Investment", link: "https://wealthbuddy.ng/fixed-deposits" },
-      { title: "Meri-Dollar Investment", link: "https://wealthbuddy.ng/fixed-deposits" },
-      { title: "Mutual Funds", link: "https://wealthbuddy.ng/mutual-funds" },
-      { title: "Nigerian Treasury Bills", link: "https://wealthbuddy.ng/discounted-instruments" },
+      { title: "Fixed Term Investment", link: "/our-products/fixed-term-investment" },
+      { title: "Meri-Dollar Investment", link: "/our-products/meri-dollar-investment" },
+      { title: "Mutual Funds", link: "/our-products/mutual-funds" },
+      { title: "Nigerian Treasury Bills", link: "/our-products/nigerian-treasury-bills" },
       {
         title: "Real Estate",
-        link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/real-estate",
+        link: "/our-products/real-estate-investment",
       },
       {
         title: "Retirement Planning",
-        link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/retirement-planning",
+        link: "/our-products/retirement-planning",
       },
       {
         title: "Succession Planning",
-        link: "https://wealth.meristemng.com/meristem-wealth-management-limited/services/succession-planning",
+        link: "/our-products/succession-planning",
       },
     ],
   },
@@ -143,15 +307,15 @@ const ourProductsItems = [
     children: [
       {
         title: "Corporate Trust",
-        link: "https://trustees.meristemng.com/meristem-trustees-limited/services/corporate-trust",
+        link: "/our-products/corporate-trust",
       },
       {
         title: "Private Trust",
-        link: "https://trustees.meristemng.com/meristem-trustees-limited/services/private-trust",
+        link: "/our-products/private-trust",
       },
       {
         title: "Public Trust",
-        link: "https://trustees.meristemng.com/meristem-trustees-limited/services/public-trust",
+        link: "/our-products/public-trust",
       },
     ],
   },
@@ -161,31 +325,31 @@ const ourProductsItems = [
     children: [
       {
         title: "Bridge Financing",
-        link: "https://finance.meristemng.com/meristem-finance-limited/services/bridge-financing",
+        link: "/our-products/bridge-financing",
       },
       {
         title: "Cash Backed Facility",
-        link: "https://finance.meristemng.com/meristem-finance-limited/services/consumer-loan/cash-backed-facility",
+        link: "/our-products/cash-backed-facility",
       },
       {
         title: "Equity Backed Facility",
-        link: "https://finance.meristemng.com/meristem-finance-limited/services/consumer-loan/equity-backed-facility",
+        link: "/our-products/equity-backed-facility",
       },
       {
         title: "Invoice Discounting",
-        link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/invoice-discounting",
+        link: "/our-products/invoice-discounting",
       },
       {
         title: "Local Purchase Order (LPO) Financing",
-        link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/local-purchase-order",
+        link: "/our-products/local-purchase-order",
       },
       {
         title: "Meristem Finance Lease",
-        link: "https://finance.meristemng.com/meristem-finance-limited/services/meristem-finance-lease",
+        link: "/our-products/meristem-finance-lease",
       },
       {
         title: "Working Capital Loan",
-        link: "https://finance.meristemng.com/meristem-finance-limited/services/business-loan/working-capital-loan",
+        link: "/our-products/working-capital-loan",
       },
     ],
   },
@@ -195,27 +359,27 @@ const ourProductsItems = [
     children: [
       {
         title: "AGM/EGM Administration",
-        link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/agm-egm-administration",
+        link: "/our-products/agm-egm-administration",
       },
       {
         title: "Bond Register Administration",
-        link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited#products-and-services",
+        link: "/our-products/bond-register-administration",
       },
       {
         title: "Probate Services",
-        link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/probate-services",
+        link: "/our-products/probate-services",
       },
       {
         title: "Public Offer Services",
-        link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited#products-and-services",
+        link: "/our-products/public-offer-services",
       },
       {
         title: "Right Issue Services",
-        link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/rights-issue",
+        link: "/our-products/right-issue-services",
       },
       {
         title: "Share Registration Services",
-        link: "https://registrars.meristemng.com/meristem-registrars-and-probate-limited/services/share-registration",
+        link: "/our-products/share-registration-services",
       },
     ],
   },
@@ -223,12 +387,12 @@ const ourProductsItems = [
     title: "Family Office",
     sectionId: "mission",
     children: [
-      { title: "Family Governance Advisory", link: "https://familyoffice.meristemng.com" },
-      { title: "Health and Longevity Plan", link: "https://familyoffice.meristemng.com" },
-      { title: "Investment Advisory", link: "https://familyoffice.meristemng.com" },
-      { title: "Legacy Documentation Service", link: "https://familyoffice.meristemng.com" },
-      { title: "Legacy Planning", link: "https://familyoffice.meristemng.com" },
-      { title: "Philanthropy", link: "https://familyoffice.meristemng.com" },
+      { title: "Family Governance Advisory", link: "/our-products/family-governance-advisory" },
+      { title: "Health and Longevity Plan", link: "/our-products/health-longevity-plan" },
+      { title: "Investment Advisory", link: "/our-products/investment-advisory-family-office" },
+      { title: "Legacy Documentation Service", link: "/our-products/legacy-documentation-service" },
+      { title: "Legacy Planning", link: "/our-products/legacy-planning" },
+      { title: "Philanthropy", link: "/our-products/philanthropy-advisory" },
     ],
   },
   {
@@ -237,19 +401,19 @@ const ourProductsItems = [
     children: [
       {
         title: "Business Advisory",
-        link: "https://capital.meristemng.com/meristem-capital-limited/business-advisory",
+        link: "/our-products/business-advisory",
       },
       {
         title: "Debt Capital Market Services",
-        link: "https://capital.meristemng.com/meristem-capital-limited/debt-capital-market",
+        link: "/our-products/debt-capital-market-services",
       },
       {
         title: "Equity Capital Market Services",
-        link: "https://capital.meristemng.com/meristem-capital-limited/equity-capital-market",
+        link: "/our-products/equity-capital-market-services",
       },
       {
         title: "Financial Advisory",
-        link: "https://capital.meristemng.com/meristem-capital-limited/financial-advisory",
+        link: "/our-products/financial-advisory",
       },
     ],
   },
@@ -263,8 +427,9 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const navbarRef = useRef<HTMLDivElement | null>(null);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
-  const navbarBg = isScrolled
-    ? "bg-white backdrop-blur-md shadow-lg border-b border-emerald-100"
+  const navbarBg =
+    isScrolled ?
+      "bg-white backdrop-blur-md shadow-lg border-b border-emerald-100"
     : "bg-transparent";
 
   const toggleMobileMenu = () => {
@@ -340,9 +505,9 @@ const Navbar = () => {
             <Link
               href="/"
               className={`px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
-                isScrolled
-                  ? "text-green-900 hover:text-emerald-700"
-                  : "text-white hover:text-green-200"
+                isScrolled ?
+                  "text-green-900 hover:text-emerald-700"
+                : "text-white hover:text-green-200"
               }`}>
               HOME
             </Link>
@@ -353,9 +518,9 @@ const Navbar = () => {
                 <button
                   onClick={() => handleDropdownToggle(menu)}
                   className={`flex items-center px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
-                    isScrolled
-                      ? "text-green-900 hover:text-emerald-700"
-                      : "text-white hover:text-green-200"
+                    isScrolled ?
+                      "text-green-900 hover:text-emerald-700"
+                    : "text-white hover:text-green-200"
                   }`}>
                   {menu.toUpperCase()}
                   <ChevronDown
@@ -370,18 +535,18 @@ const Navbar = () => {
             <Link
               href="https://careers.meristemng.com"
               className={`px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
-                isScrolled
-                  ? "text-green-900 hover:text-emerald-700"
-                  : "text-white hover:text-green-200"
+                isScrolled ?
+                  "text-green-900 hover:text-emerald-700"
+                : "text-white hover:text-green-200"
               }`}>
               CAREERS
             </Link>
             <Link
               href="https://blog.meristemng.com"
               className={`px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
-                isScrolled
-                  ? "text-green-900 hover:text-emerald-700"
-                  : "text-white hover:text-green-200"
+                isScrolled ?
+                  "text-green-900 hover:text-emerald-700"
+                : "text-white hover:text-green-200"
               }`}>
               BLOG
             </Link>
@@ -428,19 +593,18 @@ const Navbar = () => {
             className={`lg:hidden flex items-center justify-center transition-colors duration-300 ${
               isScrolled ? "text-green-900 hover:bg-emerald-50" : "text-green-900 hover:bg-white/20"
             }`}>
-            {isMobileMenuOpen ? (
+            {isMobileMenuOpen ?
               <X
                 size={23}
                 className={isScrolled ? "text-emerald-900" : "text-white"}
                 color="currentColor"
               />
-            ) : (
-              <Menu
+            : <Menu
                 size={23}
                 className={isScrolled ? "text-emerald-900" : "text-white"}
                 color="currentColor"
               />
-            )}
+            }
           </button>
         </div>
 
@@ -569,9 +733,9 @@ const Navbar = () => {
                 <button
                   onClick={() => handleDropdownToggle("about")}
                   className={`flex items-center justify-between w-full py-3 text-sm font-semibold transition-all duration-300 ${
-                    isScrolled
-                      ? "text-green-800 hover:bg-emerald-50"
-                      : "text-green-800 hover:bg-white/20"
+                    isScrolled ?
+                      "text-green-800 hover:bg-emerald-50"
+                    : "text-green-800 hover:bg-white/20"
                   }`}>
                   ABOUT US
                   <ChevronDown
@@ -603,9 +767,9 @@ const Navbar = () => {
                 <button
                   onClick={() => handleDropdownToggle("products")}
                   className={`flex items-center justify-between w-full py-3 text-sm font-semibold transition-all duration-300 ${
-                    isScrolled
-                      ? "text-green-800 hover:bg-emerald-50"
-                      : "text-green-900 hover:bg-white/20"
+                    isScrolled ?
+                      "text-green-800 hover:bg-emerald-50"
+                    : "text-green-900 hover:bg-white/20"
                   }`}>
                   OUR PRODUCTS
                   <ChevronDown
@@ -649,18 +813,18 @@ const Navbar = () => {
               <Link
                 href="https://careers.meristemng.com"
                 className={`block w-full text-left py-3 text-sm font-semibold transition-all duration-300 ${
-                  isScrolled
-                    ? "text-green-800 hover:bg-emerald-50"
-                    : "text-green-900 hover:bg-white/20"
+                  isScrolled ?
+                    "text-green-800 hover:bg-emerald-50"
+                  : "text-green-900 hover:bg-white/20"
                 }`}>
                 CAREERS
               </Link>
               <Link
                 href="https://blog.meristemng.com"
                 className={`block w-full text-left py-3 text-sm font-semibold transition-all duration-300 ${
-                  isScrolled
-                    ? "text-green-800 hover:bg-emerald-50"
-                    : "text-green-900 hover:bg-white/20"
+                  isScrolled ?
+                    "text-green-800 hover:bg-emerald-50"
+                  : "text-green-900 hover:bg-white/20"
                 }`}>
                 BLOG
               </Link>
