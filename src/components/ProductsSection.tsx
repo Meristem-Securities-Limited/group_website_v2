@@ -67,73 +67,80 @@ export default function ProductsSection() {
       id="products"
       className="bg-white py-20">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-12">
-          <div
-          // initial={{ opacity: 0, y: 40 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // viewport={{ once: true, amount: 0.2 }}
-          // transition={{ duration: 0.6 }}>
-          >
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-6">
+          <div>
             <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">Our Platforms</h2>
             <p className="text-gray-600 mt-3 max-w-2xl text-lg md:text-base">
-              Explore Meristem’s innovative platforms designed to simplify how you invest, trade,
+              Explore Meristem's innovative platforms designed to simplify how you invest, trade,
               and manage assets. From real estate to financial learning, we make it effortless to
               grow and sustain wealth on your own terms.
             </p>
           </div>
 
-          <div
-            className="flex gap-3 mt-6 md:mt-0"
-            // initial={{ opacity: 0, y: 40 }}
-            // whileInView={{ opacity: 1, y: 0 }}
-            // viewport={{ once: true, amount: 0.2 }}
-            // transition={{ duration: 0.6, delay: 0.2 }}>
-          >
+          <div className="flex gap-3 mt-6 md:mt-0 flex-shrink-0">
             <button
               onClick={() => scroll("left")}
-              className="p-3 bg-green-900 text-white hover:bg-primary-green">
+              className="p-3 bg-green-900 text-white hover:bg-primary-green transition-colors">
               <ArrowLeft size={20} />
             </button>
             <button
               onClick={() => scroll("right")}
-              className="p-3 bg-green-900 text-white hover:bg-primary-green">
+              className="p-3 bg-green-900 text-white hover:bg-primary-green transition-colors">
               <ArrowRight size={20} />
             </button>
           </div>
         </div>
 
-        <div
-          ref={scrollRef}
-          className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth">
-          {products.map((product, index) => (
-            <div
-              key={product.id}
-              // initial={{ opacity: 0, x: 80 }}
-              // whileInView={{ opacity: 1, x: 0 }}
-              // viewport={{ once: true, amount: 0.2 }}
-              // transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="flex-shrink-0 md:w-[360px] w-full lg:w-[398px] relative flex flex-col">
-              <div className="w-full bg-[#154D3433] min-h-[200px] flex items-center justify-center overflow-hidden">
-                <Image
-                  src={product.img}
-                  alt={product.title}
-                  className="w-full max-h-[400px] min-h-[400px] h-full object-cover"
-                />
-              </div>
+        {/* Outer wrapper clips overflow so the peek card doesn't break layout */}
+        <div className="relative">
+          {/* Right fade — signals more cards to scroll into */}
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-white to-transparent z-10" />
 
-              <div className="flex flex-col flex-1 py-5 gap-9">
-                <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-primary-green">{product.title}</h3>
-                  <p className="text-gray-600 text-base leading-relaxed font-normal">
-                    {product.description}
-                  </p>
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth
+                   pb-4 -mb-4">
+            {" "}
+            {/* pb/mb trick keeps shadows visible */}
+            {products.map((product, index) => (
+              <div
+                key={product.id}
+                className="
+              flex-shrink-0 flex flex-col relative
+
+              /* Mobile: 80vw so the next card peeks in by ~10vw */
+              w-[80vw]
+
+              /* Small tablet: a bit wider, still peeks */
+              sm:w-[60vw]
+
+              /* Medium: show ~2.2 cards */
+              md:w-[42vw]
+
+              /* Large: back to fixed width, show ~3 cards */
+              lg:w-[360px]
+              xl:w-[398px]
+            ">
+                <div className="w-full bg-[#154D3433] flex items-center justify-center overflow-hidden">
+                  <Image
+                    src={product.img}
+                    alt={product.title}
+                    className="w-full max-h-[400px] min-h-[280px] sm:min-h-[340px] md:min-h-[380px] lg:min-h-[400px] h-full object-cover"
+                  />
                 </div>
 
-                <div className="mt-auto">
-                  <div className="w-auto">
+                <div className="flex flex-col flex-1 py-5 gap-9">
+                  <div className="space-y-3">
+                    <h3 className="text-lg font-semibold text-primary-green">{product.title}</h3>
+                    <p className="text-gray-600 text-base leading-relaxed font-normal">
+                      {product.description}
+                    </p>
+                  </div>
+
+                  <div className="mt-auto">
                     <a
                       href={product.link}
-                      className="flex items-center gap-2 text-primary-green font-semibold">
+                      className="inline-flex items-center gap-2 text-primary-green font-semibold">
                       <div className="p-2 bg-primary-green text-white">
                         <ArrowRight
                           size={16}
@@ -145,10 +152,97 @@ export default function ProductsSection() {
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
+    // <section
+    //   id="products"
+    //   className="bg-white py-20">
+    //   <div className="container mx-auto px-4">
+    //     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-12">
+    //       <div
+    //       // initial={{ opacity: 0, y: 40 }}
+    //       // whileInView={{ opacity: 1, y: 0 }}
+    //       // viewport={{ once: true, amount: 0.2 }}
+    //       // transition={{ duration: 0.6 }}>
+    //       >
+    //         <h2 className="text-3xl md:text-5xl font-semibold text-primary-green">Our Platforms</h2>
+    //         <p className="text-gray-600 mt-3 max-w-2xl text-lg md:text-base">
+    //           Explore Meristem’s innovative platforms designed to simplify how you invest, trade,
+    //           and manage assets. From real estate to financial learning, we make it effortless to
+    //           grow and sustain wealth on your own terms.
+    //         </p>
+    //       </div>
+
+    //       <div
+    //         className="flex gap-3 mt-6 md:mt-0"
+    //         // initial={{ opacity: 0, y: 40 }}
+    //         // whileInView={{ opacity: 1, y: 0 }}
+    //         // viewport={{ once: true, amount: 0.2 }}
+    //         // transition={{ duration: 0.6, delay: 0.2 }}>
+    //       >
+    //         <button
+    //           onClick={() => scroll("left")}
+    //           className="p-3 bg-green-900 text-white hover:bg-primary-green">
+    //           <ArrowLeft size={20} />
+    //         </button>
+    //         <button
+    //           onClick={() => scroll("right")}
+    //           className="p-3 bg-green-900 text-white hover:bg-primary-green">
+    //           <ArrowRight size={20} />
+    //         </button>
+    //       </div>
+    //     </div>
+
+    //     <div
+    //       ref={scrollRef}
+    //       className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth">
+    //       {products.map((product, index) => (
+    //         <div
+    //           key={product.id}
+    //           // initial={{ opacity: 0, x: 80 }}
+    //           // whileInView={{ opacity: 1, x: 0 }}
+    //           // viewport={{ once: true, amount: 0.2 }}
+    //           // transition={{ duration: 0.6, delay: index * 0.2 }}
+    //           className="flex-shrink-0 md:w-[360px] w-full lg:w-[398px] relative flex flex-col">
+    //           <div className="w-full bg-[#154D3433] min-h-[200px] flex items-center justify-center overflow-hidden">
+    //             <Image
+    //               src={product.img}
+    //               alt={product.title}
+    //               className="w-full max-h-[400px] min-h-[400px] h-full object-cover"
+    //             />
+    //           </div>
+
+    //           <div className="flex flex-col flex-1 py-5 gap-9">
+    //             <div className="space-y-3">
+    //               <h3 className="text-lg font-semibold text-primary-green">{product.title}</h3>
+    //               <p className="text-gray-600 text-base leading-relaxed font-normal">
+    //                 {product.description}
+    //               </p>
+    //             </div>
+
+    //             <div className="mt-auto">
+    //               <div className="w-auto">
+    //                 <a
+    //                   href={product.link}
+    //                   className="flex items-center gap-2 text-primary-green font-semibold">
+    //                   <div className="p-2 bg-primary-green text-white">
+    //                     <ArrowRight
+    //                       size={16}
+    //                       color="currentColor"
+    //                     />
+    //                   </div>
+    //                   LEARN MORE
+    //                 </a>
+    //               </div>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
   );
 }
