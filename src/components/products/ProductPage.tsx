@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { AppleStore, GooglePlay } from "@/app/assets";
 import { ContactForm } from "../ContactSection";
 
@@ -121,7 +120,9 @@ export default function ProductPage({ product }: { product: any }) {
             </p>
             {/* Download buttons */}
             {(
-              ["Meristem Wealth Management Limited", "Meristem Stoxk"].includes(product?.subsidiary)
+              ["Meristem Wealth Management Limited", "Meristem Stockbrokers Limited"].includes(
+                product?.subsidiary,
+              )
             ) ?
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 {/* Play Store */}
