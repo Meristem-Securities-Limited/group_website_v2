@@ -49,11 +49,13 @@ export default function OurCoreValuesSection() {
       id="core-values"
       className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-semibold text-emerald-900 mb-12">
-          Our Core Values
-        </h2>
+        <div className="mb-12">
+          <h2 className="text-3xl md:text-5xl font-semibold text-emerald-900">Our Core Values</h2>
+          <p className="text-emerald-900 mt-2 text-base md:text-lg">
+            The <strong>CEPOEM</strong> ideology defines our very existence
+          </p>
+        </div>
 
-        {/* Desktop layout (flex with hover) */}
         <div className="hidden md:flex group h-[500px]">
           {values.map((value, index) => (
             <div
@@ -61,11 +63,9 @@ export default function OurCoreValuesSection() {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               className={`relative overflow-hidden cursor-pointer transition-all duration-500 ease-in-out ${
-                hoveredIndex === null
-                  ? "flex-1"
-                  : hoveredIndex === index
-                  ? "flex-[2]"
-                  : "flex-[0.5]"
+                hoveredIndex === null ? "flex-1"
+                : hoveredIndex === index ? "flex-[2]"
+                : "flex-[0.5]"
               }`}
               style={{
                 backgroundImage: `url(${value.image})`,
@@ -75,11 +75,10 @@ export default function OurCoreValuesSection() {
               }}>
               <div
                 className={`absolute inset-0 transition-all duration-500 ${
-                  hoveredIndex === index ? "bg-black/40" : "bg-black/60"
+                  hoveredIndex === index ? "bg-black/60" : "bg-black/80"
                 }`}></div>
 
               <div className="relative h-full flex flex-col justify-end p-8">
-                {/* Vertical title (default) */}
                 <div
                   className={`absolute left-1/2 bottom-9 transition-all duration-300 ${
                     hoveredIndex === index ? "opacity-0" : "opacity-100"
@@ -91,7 +90,6 @@ export default function OurCoreValuesSection() {
                   </h3>
                 </div>
 
-                {/* Expanded content */}
                 <div
                   className={`transition-all duration-500 delay-100 transform ${
                     hoveredIndex === index ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
@@ -106,7 +104,6 @@ export default function OurCoreValuesSection() {
           ))}
         </div>
 
-        {/* Mobile layout (stacked cards) */}
         <div className="flex flex-col gap-8 md:hidden">
           {values.map((value, index) => (
             <div

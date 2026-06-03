@@ -28,12 +28,18 @@ const nextConfig: NextConfig = {
         hostname: "meristemng.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+        pathname: "/**",
+      },
     ],
     domains: [
       "www.meritrade.com",
       "www.res.cloudinary.com",
       "www.meristemng.com",
       "www.unsplash.com",
+      "www.placehold.co",
     ],
   },
 };

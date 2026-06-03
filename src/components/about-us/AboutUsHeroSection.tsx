@@ -3,13 +3,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function AboutUsHeroSection() {
+export default function AboutUsHeroSection({
+  title,
+  description,
+  backgroundImage = "/meristem-building.webp",
+}: {
+  title?: React.ReactNode;
+  description?: string;
+  backgroundImage?: string;
+}) {
   return (
     <div className="relative">
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: "url('/meristem-building.webp')",
+          backgroundImage: `url('${backgroundImage}')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}></div>
@@ -23,10 +31,24 @@ export default function AboutUsHeroSection() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="text-4xl md:text-6xl font-medium text-white leading-tight">
-            Two decades of building
-            <br />
-            wealth, trust and innovation
+            {title || (
+              <>
+                Two decades of building
+                <br />
+                wealth, trust and innovation
+              </>
+            )}
           </motion.h1>
+
+          {description ?
+            <motion.p
+              initial={{ x: 200, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="text-base md:text-lg font-normal text-white leading-relaxed lg:max-w-3xl">
+              {description}
+            </motion.p>
+          : null}
         </div>
       </div>
     </div>

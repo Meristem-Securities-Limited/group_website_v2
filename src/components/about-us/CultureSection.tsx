@@ -4,7 +4,7 @@ import React from "react";
 import { Users, TrendingUp, Sparkles } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 
-const cardVariants: Variants = {
+export const cardVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: (custom: number) => ({
     opacity: 1,

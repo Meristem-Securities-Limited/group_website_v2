@@ -46,13 +46,13 @@ export default function ProfilePage({
             <Image
               src={executive.image}
               alt={executive.name}
+              width={200}
+              height={800}
               className="w-full h-full object-cover object-top"
             />
           </div>
 
           <div className="flex-1 flex flex-col">
-            {/* <h1 className="lg:text-3xl text-xl font-bold mb-1">{executive.name}</h1>
-            <h2 className="text-base lg:text-lg font-medium mb-3">{executive.role}</h2> */}
             <p
               className="text-base leading-relaxed !font-medium"
               dangerouslySetInnerHTML={{ __html: executive.description }}></p>

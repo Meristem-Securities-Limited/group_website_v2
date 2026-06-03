@@ -50,7 +50,7 @@ const subsidiaries = [
     number: "03",
     name: "Meristem Wealth Management Limited",
     description: "Tailored strategies for wealth creation and preservation",
-    link: "https://meristemwealth.com/",
+    link: "wealth-management-limited",
   },
   {
     number: "04",

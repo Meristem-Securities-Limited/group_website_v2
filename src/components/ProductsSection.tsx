@@ -117,7 +117,6 @@ export default function ProductsSection() {
               /* Medium: show ~2.2 cards */
               md:w-[42vw]
 
-              /* Large: back to fixed width, show ~3 cards */
               lg:w-[360px]
               xl:w-[398px]
             ">
