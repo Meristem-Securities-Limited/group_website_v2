@@ -38,7 +38,7 @@ export default function WhoWeAreSection({
             {descriptions.map((description, index) => (
               <motion.p
                 key={index}
-                className="text-lg text-emerald-900 mb-9 leading-relaxed"
+                className="lg:text-lg text-base text-emerald-900 mb-9 leading-relaxed"
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 + index * 0.3 }}>

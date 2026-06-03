@@ -28,7 +28,7 @@ const itemVariantsUp = {
 export default function WealthBoardExecutiveSection() {
   return (
     <div className="bg-gray-50 py-24">
-      <div className="container mx-auto px-6 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8">
         <motion.section
           id="board-members"
           initial="hidden"

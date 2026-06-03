@@ -45,7 +45,7 @@ export default function BenefitsSection() {
   return (
     <section
       id="mission"
-      className="py-24 px-8 overflow-hidden">
+      className="py-24 lg:px-8 overflow-hidden">
       <div className="container mx-auto px-4">
         <p className="text-sm lg:text-base text-gray-700 mb-1">Why choose us</p>
         <h2 className="text-3xl lg:text-5xl font-semibold text-emerald-900 mb-10 capitalize">
