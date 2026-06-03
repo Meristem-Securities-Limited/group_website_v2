@@ -56,16 +56,16 @@ export default function Footer() {
     {
       title: "Meristem Subsidiaries",
       items: [
-        { title: "Meristem Wealth Management", url: "https://meristemwealth.com/" },
-        { title: "Meristem Stockbrokers", url: "https://stockbroking.meristemng.com" },
+        { title: "Wealth Management", url: "https://meristemwealth.com/" },
+        { title: "Stockbrokers", url: "https://stockbroking.meristemng.com" },
         {
-          title: "Meristem Registrar & Probate Services",
+          title: "Registrar & Probate Services",
           url: "https://registrars.meristemng.com",
         },
-        { title: "Meristem Trustees", url: "https://trustees.meristemng.com" },
-        { title: "Meristem Family Office", url: "https://familyoffice.meristemng.com" },
-        { title: "Meristem Finance", url: "https://finance.meristemng.com" },
-        { title: "Meristem Capital", url: "https://capital.meristemng.com" },
+        { title: "Trustees", url: "https://trustees.meristemng.com" },
+        { title: "Family Office", url: "https://familyoffice.meristemng.com" },
+        { title: "Finance", url: "https://finance.meristemng.com" },
+        { title: "Capital", url: "https://capital.meristemng.com" },
       ],
     },
     {
