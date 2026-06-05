@@ -44,7 +44,7 @@ const products = [
     description:
       "Real Estate Investments basically refers to investment in Landed Properties either physically (Direct Holding) or through investment in Real Estate Funds (Indirect Holding). The services...",
     img: "",
-    link: "real-estate-services",
+    link: "https://realestate.meristemng.com/",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",
@@ -60,7 +60,7 @@ const products = [
     description:
       "We offer clients the choice of either money market or equity market funds depending on their investment objectives and risk profile, bearing in mind that the level of risk you take, and ...",
     img: "",
-    link: "mutual-funds",
+    link: "https://wealthbuddy.ng/mutual-funds",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",
@@ -76,7 +76,7 @@ const products = [
     description:
       "Under our fixed term investment portfolio, we provide a platform for execution, offering clients access to a broad range of instruments. Based on our client's objectives and return ...",
     img: "",
-    link: "fixed-income-dealing",
+    link: "https://wealthbuddy.ng/mutual-funds",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",
@@ -201,8 +201,13 @@ export default function WealthServiceSection() {
           viewport={{ once: true }}>
           {products.map((product) => (
             <Link
+              target={product.link.includes("https://") ? "_blank" : "_self"}
               key={product.id}
-              href={`wealth-management/${product.link}`}
+              href={
+                product.link.includes("https://") ?
+                  product?.link
+                : `wealth-management/${product.link}`
+              }
               className="cursor-pointer hover:bg-emerald-800 group hover:scale-100 transition-transform duration-300 p-4 bg-white border border-emerald-700/30">
               <div className="flex flex-col justify-between gap-4 py-4">
                 <h3 className="text-lg font-semibold group-hover:text-white text-black">
