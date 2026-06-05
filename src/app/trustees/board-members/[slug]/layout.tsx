@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     openGraph: {
       type: "profile",
-      url: `https://www.meristemng.com/wealth-management/board-members/${slug}`,
+      url: `https://www.meristemng.com/trustees/board-members/${slug}`,
       title: `${executive.name} - ${executive.role} | Meristem Trustee Limited`,
       description: `${executive.name} is part of the leadership team at Meristem Trustee Limited, driving innovation in wealth management, securities trading, and financial advisory services.`,
       siteName: "Meristem Trustee Limited",
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [typeof executive.image === "string" ? executive.image : executive.image],
     },
     alternates: {
-      canonical: `https://www.meristemng.com/wealth-management/board-members/${slug}`,
+      canonical: `https://www.meristemng.com/trustees/board-members/${slug}`,
     },
   };
 }

@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     openGraph: {
       type: "profile",
-      url: `https://www.meristemng.com/wealth-management/board-members/${slug}`,
+      url: `https://www.meristemng.com/registrars-and-probates/board-members/${slug}`,
       title: `${executive.name} - ${executive.role} | Meristem Registrars and Probates Services Limited`,
       description: `${executive.name} is part of the leadership team at Meristem Registrars and Probates Services Limited, driving innovation in wealth management, securities trading, and financial advisory services.`,
       siteName: "Meristem Registrars and Probates Services Limited",
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [typeof executive.image === "string" ? executive.image : executive.image],
     },
     alternates: {
-      canonical: `https://www.meristemng.com/wealth-management/board-members/${slug}`,
+      canonical: `https://www.meristemng.com/registrars-and-probates/board-members/${slug}`,
     },
   };
 }
