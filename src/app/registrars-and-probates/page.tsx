@@ -5,6 +5,7 @@ import WealthServiceSection from "@/components/wealth-management/ServicesSection
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/wealth-management/BoardExcutives";
 import FAQSection from "@/components/wealth-management/FAQSection";
+import MeristemContactSection from "@/components/ContactSection";
 
 const WealthManagementPage = () => {
   return (
@@ -41,6 +42,7 @@ const WealthManagementPage = () => {
       <BenefitsSection />
       <WealthBoardExecutiveSection />
       <FAQSection />
+      <MeristemContactSection />
     </div>
   );
 };

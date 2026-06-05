@@ -5,12 +5,13 @@ import WealthServiceSection from "@/components/stockbrokers/ServicesSection";
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/stockbrokers/BoardExcutives";
 import FAQSection from "@/components/stockbrokers/FAQSection";
+import MeristemContactSection from "@/components/ContactSection";
 
 const WealthManagementPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <AboutUsHeroSection
-        backgroundImage="/wealth-management.png"
+        backgroundImage="/stockbroker.png"
         title={
           <span className="text-3xl md:text-5xl font-semibold text-white leading-tight capitalize">
             Access the best of <br />
@@ -31,6 +32,7 @@ const WealthManagementPage = () => {
       <BenefitsSection />
       <WealthBoardExecutiveSection />
       <FAQSection />
+      <MeristemContactSection />
     </div>
   );
 };

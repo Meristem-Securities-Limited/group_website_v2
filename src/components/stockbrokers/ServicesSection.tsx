@@ -18,8 +18,7 @@ const products = [
     id: 2,
     title: "Share/Dividend Tracking & Recovery",
     description:
-      "If you got stocks years ago, it is likely they have appreciated and all you need is to track and start building on them.  With millions of shares traded over a period time, it is often expected that investors lose track of their true investments. As experts in the financial market, we offer specialized services that assist in tracking down lost equity investments and ensuring that you get prompt access to value/stocks.",
-    img: "",
+      "If you got stocks years ago, it is likely they have appreciated and all you need is to track and start building on them.  With millions of shares traded over a period time...",
     link: "share-dividend",
   },
   {
@@ -120,7 +119,7 @@ export default function WealthServiceSection() {
 
         <motion.div
           ref={scrollRef}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 items-start"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

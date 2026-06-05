@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -12,26 +12,41 @@ const products = [
     description:
       "Bridge financing, also known as bridge loans, is short-term financing designed to provide companies with funds until they to real estate development firms working on projects with off-takers. It helps these firms meet deadlines, hedge against inflation, and cover expenses before receiving full off-take payments.",
     img: "",
-    link: "https://meritrade.com/",
+    link: "#",
     items: [
-      "Debt Capital Market Issuances (Bonds, Commercial Papers, etc.)",
-      "Debt Refinancing",
+      "Company Profile",
+      "Corporate Current Bank Account Statements",
       "Regulatory Filings",
-      "Have 6-month current accounts",
+      "2 Passport Photographs",
+      "Bank Statements (6 month most recent)",
+      "Audited financial statement/Management",
+      "Utility Bill",
+      "Letter of Intent",
+      "Proforma Invoice",
     ],
   },
   {
     id: 2,
     title: "Meristem Finance Lease",
     description:
-      "This interest-rate-friendly option helps you access the capital to acquire the equipment needed to boost your growth. We finance a significant portion of the cost, with flexible repayment plans.",
+      "This interest-rate-friendly option helps you access the capital to acquire the equipment needed to boost your growth. We finance a significant portion of the cost, with flexible repayment plans. All you must do is pay an affordable and convenient monthly or annual rental.",
     img: "",
     link: "share-dividend",
-    items: ["Rights Issuance", "Private Placement", "Regulatory Filings"],
+    items: [
+      "Company Profile",
+      "Corporate Current Bank Account Statements",
+      "Regulatory Filings",
+      "2 Passport Photographs",
+      "Bank Statements (6 month most recent)",
+      "Audited financial statement/Management",
+      "Utility Bill",
+      "Letter of Intent",
+      "Proforma Invoice",
+    ],
   },
   {
     id: 3,
-    title: "Financial Advisory",
+    title: "Working Capital Loan",
     description:
       "We offer a robust suite of Financial advisory services ranging from our expert guidance on corporate and share capital restructuring to optimize your operational efficiency, accurate business valuations of your company's worth to help make informed decisions, mergers and acquisitions (M&A) support and advisory and for businesses hoping to sell some assets or divest entire entities, we offer expertise in divestments and buyouts.",
     img: "",
@@ -47,7 +62,16 @@ const products = [
   },
   {
     id: 4,
-    title: "Business Advisory",
+    title: "Local Purchase Order (LPO) Financing",
+    description:
+      "We offer solid business plans that outline our client's goals, strategies, and financial projections and ensure their business idea has strong potential with thorough feasibility studies.",
+    img: "",
+    link: "mutual-funds",
+    items: ["Business Plans", "Feasibility Studies", "License Acquisitions"],
+  },
+  {
+    id: 5,
+    title: "Local Purchase Order (LPO) Financing",
     description:
       "We offer solid business plans that outline our client's goals, strategies, and financial projections and ensure their business idea has strong potential with thorough feasibility studies.",
     img: "",

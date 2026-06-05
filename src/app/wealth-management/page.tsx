@@ -5,6 +5,7 @@ import WealthServiceSection from "@/components/wealth-management/ServicesSection
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/wealth-management/BoardExcutives";
 import FAQSection from "@/components/wealth-management/FAQSection";
+import MeristemContactSection from "@/components/ContactSection";
 
 const WealthManagementPage = () => {
   return (
@@ -12,7 +13,7 @@ const WealthManagementPage = () => {
       <AboutUsHeroSection
         backgroundImage="/wealth-management.png"
         title={
-          <span className="text-4xl md:text-6xl font-semibold text-white leading-tight capitalize">
+          <span className="text-3xl md:text-5xl font-semibold text-white -leading-10 capitalize">
             Grow your Wealth <br /> for generations
           </span>
         }
@@ -47,6 +48,7 @@ const WealthManagementPage = () => {
       <BenefitsSection />
       <WealthBoardExecutiveSection />
       <FAQSection />
+      <MeristemContactSection />
     </div>
   );
 };
