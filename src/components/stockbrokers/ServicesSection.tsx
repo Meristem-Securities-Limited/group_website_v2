@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -19,7 +19,7 @@ const products = [
     title: "Share/Dividend Tracking & Recovery",
     description:
       "If you got stocks years ago, it is likely they have appreciated and all you need is to track and start building on them.  With millions of shares traded over a period time...",
-    link: "share-dividend",
+    link: "#",
   },
   {
     id: 3,

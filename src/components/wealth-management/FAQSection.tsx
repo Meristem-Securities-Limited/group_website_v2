@@ -107,7 +107,7 @@ export default function FAQSection() {
                   <motion.span
                     layoutId="active-tab"
                     className="absolute inset-0 rounded-full"
-                    style={{ backgroundColor: "green" }}
+                    style={{ backgroundColor: "#154D34" }}
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   />
                 )}
@@ -138,7 +138,7 @@ export default function FAQSection() {
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                   className="cursor-pointer rounded-xl border transition-colors duration-200"
                   style={{
-                    borderColor: isOpen ? "green" : "#e5e7eb",
+                    borderColor: isOpen ? "#154D34" : "#e5e7eb",
                     backgroundColor: "#fff",
                   }}>
                   <div className="flex items-center justify-between px-5 py-4">
@@ -153,14 +153,14 @@ export default function FAQSection() {
                       transition={{ type: "spring", stiffness: 300, damping: 25 }}
                       className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ml-4"
                       style={{
-                        backgroundColor: isOpen ? "green" : "#f3f4f6",
+                        backgroundColor: isOpen ? "#154D34" : "#f3f4f6",
                       }}>
                       <svg
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
                         fill="none"
-                        stroke={isOpen ? "#fff" : "green"}
+                        stroke={isOpen ? "#fff" : "#154D34"}
                         strokeWidth="2.5"
                         strokeLinecap="round"
                         strokeLinejoin="round">
