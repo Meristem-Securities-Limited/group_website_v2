@@ -2,7 +2,6 @@ import React from "react";
 import AboutUsHeroSection from "@/components/about-us/AboutUsHeroSection";
 import BenefitsSection from "@/components/wealth-management/BenefitSection";
 import WealthServiceSection from "@/components/wealth-management/ServicesSection";
-import OurCoreValuesSection from "@/components/OurCoreValuesSection";
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/wealth-management/BoardExcutives";
 import FAQSection from "@/components/wealth-management/FAQSection";
@@ -27,12 +26,12 @@ const WealthManagementPage = () => {
               advisory unit of MSL into a fully-fledged Asset/Wealth Management Company, licensed by
               the Securities and Exchange Commission (SEC) as a Funds & Portfolio Manager.
             `,
-          `MWML is a client-centric company with an integrated approach to Wealth and Portfolio
-              Management. Its Assets/Wealth Management Service is designed to grow, preserve and
-              eventually transfer assets to subsequent generations by addressing all investment
-              concerns with a view to optimizing the value potentials of existing wealth and fully
-              actualize clients' financial/investment goals
-           `,
+          // `MWML is a client-centric company with an integrated approach to Wealth and Portfolio
+          //     Management. Its Assets/Wealth Management Service is designed to grow, preserve and
+          //     eventually transfer assets to subsequent generations by addressing all investment
+          //     concerns with a view to optimizing the value potentials of existing wealth and fully
+          //     actualize clients' financial/investment goals
+          //  `,
           `The company having fulfilled all the requirements of the Global Investment Performance
               Standards (GIPS) through its Asset Management Division emerged the first indigenous
               Nigerian Asset Manager to claim compliance with GIPS. GIPS, a standard set by the CFA
@@ -44,11 +43,10 @@ const WealthManagementPage = () => {
            `,
         ]}
       />
-      <OurCoreValuesSection />
-      <BenefitsSection />
       <WealthServiceSection />
-      <FAQSection />
+      <BenefitsSection />
       <WealthBoardExecutiveSection />
+      <FAQSection />
     </div>
   );
 };

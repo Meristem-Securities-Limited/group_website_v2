@@ -38,19 +38,19 @@ const subsidiaries = [
     number: "01",
     name: "Stockbrokers",
     description: "Equities trading and brokerage services with a difference",
-    link: "https://stockbroking.meristemng.com",
+    link: "stockbrokers",
   },
   {
     number: "02",
     name: "Registrars and Probate Services",
     description: "Redefining Shareholder Management and Probate Services",
-    link: "https://registrars.meristemng.com",
+    link: "registrars-and-probate",
   },
   {
     number: "03",
     name: "Wealth Management",
     description: "Tailored strategies for wealth creation and preservation",
-    link: "wealth-management-limited",
+    link: "wealth-management",
   },
   {
     number: "04",
@@ -62,19 +62,19 @@ const subsidiaries = [
     number: "05",
     name: "Capital",
     description: "Raising capital. Realising potential. Reshaping businesses.",
-    link: "https://capital.meristemng.com",
+    link: "capital",
   },
   {
     number: "06",
     name: "Finance",
     description: "Financing solutions tailored to you.",
-    link: "https://finance.meristemng.com",
+    link: "finance",
   },
   {
     number: "07",
     name: "Trustees",
     description: "Leave the things you love for those you love.",
-    link: "https://trustees.meristemng.com",
+    link: "trustees",
   },
 ];
 
@@ -719,10 +719,19 @@ const Navbar = () => {
                         <div
                           key={index}
                           className="cursor-pointer pb-1">
-                          <Link href={item.link}>
-                            <h4 className="text-gray-900 font-semibold text-sm">{item.name}</h4>
-                            <p className="text-gray-500 text-xs">{item.description}</p>
-                          </Link>
+                          {item.link.includes("https://") ?
+                            <a
+                              rel="no-referrer"
+                              href={item.link}
+                              target="_blank">
+                              <h4 className="text-gray-900 font-semibold text-sm">{item.name}</h4>
+                              <p className="text-gray-500 text-xs">{item.description}</p>
+                            </a>
+                          : <Link href={item.link}>
+                              <h4 className="text-gray-900 font-semibold text-sm">{item.name}</h4>
+                              <p className="text-gray-500 text-xs">{item.description}</p>
+                            </Link>
+                          }
                         </div>
                       ))}
                     </div>

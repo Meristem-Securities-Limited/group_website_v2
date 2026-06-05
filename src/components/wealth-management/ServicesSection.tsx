@@ -8,11 +8,19 @@ import Link from "next/link";
 const products = [
   {
     id: 1,
-    title: "Asset/Portfolio Management",
+    title: "Bridge Financing",
     description:
       "Meristem Wealth Management Limited harnesses its specialized investment management expertise together with the vast resources of the Meristem Group to provide customized solutions.",
     img: "",
     link: "asset-portfolio-management",
+    items: [
+      "Disciplined investment management process",
+      "Insightful support from our research team",
+      "Diversified approach towards portfolio construction",
+      "Excellent service delivery platform and systems",
+      "Extensive risk management framework",
+      "Commitment to maintaining client confidentiality",
+    ],
   },
   {
     id: 2,
@@ -21,6 +29,14 @@ const products = [
       "Meristem Wealth Succession Planning service is our service that provides founders with ability to plan for who succeeds them and carries on their legacy. It is a process of identifying and developing the succession plans that ensure legacy lives on.",
     img: "",
     link: "succession-planning",
+    items: [
+      "Disciplined investment management process",
+      "Insightful support from our research team",
+      "Diversified approach towards portfolio construction",
+      "Excellent service delivery platform and systems",
+      "Extensive risk management framework",
+      "Commitment to maintaining client confidentiality",
+    ],
   },
   {
     id: 3,
@@ -29,6 +45,14 @@ const products = [
       "Real Estate Investments basically refers to investment in Landed Properties either physically (Direct Holding) or through investment in Real Estate Funds (Indirect Holding). The services...",
     img: "",
     link: "real-estate-services",
+    items: [
+      "Disciplined investment management process",
+      "Insightful support from our research team",
+      "Diversified approach towards portfolio construction",
+      "Excellent service delivery platform and systems",
+      "Extensive risk management framework",
+      "Commitment to maintaining client confidentiality",
+    ],
   },
   {
     id: 4,
@@ -37,6 +61,14 @@ const products = [
       "We offer clients the choice of either money market or equity market funds depending on their investment objectives and risk profile, bearing in mind that the level of risk you take, and ...",
     img: "",
     link: "mutual-funds",
+    items: [
+      "Disciplined investment management process",
+      "Insightful support from our research team",
+      "Diversified approach towards portfolio construction",
+      "Excellent service delivery platform and systems",
+      "Extensive risk management framework",
+      "Commitment to maintaining client confidentiality",
+    ],
   },
   {
     id: 5,
@@ -45,6 +77,14 @@ const products = [
       "Under our fixed term investment portfolio, we provide a platform for execution, offering clients access to a broad range of instruments. Based on our client's objectives and return ...",
     img: "",
     link: "fixed-income-dealing",
+    items: [
+      "Disciplined investment management process",
+      "Insightful support from our research team",
+      "Diversified approach towards portfolio construction",
+      "Excellent service delivery platform and systems",
+      "Extensive risk management framework",
+      "Commitment to maintaining client confidentiality",
+    ],
   },
   {
     id: 6,
@@ -53,6 +93,14 @@ const products = [
       "At Meristem Wealth, we offer our clients a range of structured products that meet with varying client needs and objectives.",
     img: "",
     link: "structured-products",
+    items: [
+      "Disciplined investment management process",
+      "Insightful support from our research team",
+      "Diversified approach towards portfolio construction",
+      "Excellent service delivery platform and systems",
+      "Extensive risk management framework",
+      "Commitment to maintaining client confidentiality",
+    ],
   },
   {
     id: 7,
@@ -61,6 +109,14 @@ const products = [
       "At Meristem Wealth, we understand that retirement planning is not just about having savings in the bank or investments in shares, real estate, and other assets; it is about making the ...",
     img: "",
     link: "evergreen",
+    items: [
+      "Disciplined investment management process",
+      "Insightful support from our research team",
+      "Diversified approach towards portfolio construction",
+      "Excellent service delivery platform and systems",
+      "Extensive risk management framework",
+      "Commitment to maintaining client confidentiality",
+    ],
   },
   {
     id: 8,
@@ -69,6 +125,14 @@ const products = [
       "At Meristem Wealth, we offer our clients a range of Exchange Traded Funds products that meet with varying client needs and objectives.",
     img: "",
     link: "investment-banking",
+    items: [
+      "Disciplined investment management process",
+      "Insightful support from our research team",
+      "Diversified approach towards portfolio construction",
+      "Excellent service delivery platform and systems",
+      "Extensive risk management framework",
+      "Commitment to maintaining client confidentiality",
+    ],
   },
 ];
 

@@ -28,7 +28,7 @@ export default function WhoWeAreSection({
           {/* Text Content */}
           <div>
             <motion.h2
-              className="text-3xl md:text-5xl font-semibold text-emerald-900 mb-6"
+              className="text-3xl md:text-5xl font-semibold text-emerald-900 mb-6 capitalize"
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}>
