@@ -8,9 +8,9 @@ import Link from "next/link";
 const products = [
   {
     id: 1,
-    title: "Debt Capital Market Services",
+    title: "Bridge Financing",
     description:
-      "We offer Debt Capital market services to a wide range of businesses and give clients an array of debt financing options to guide you through unlocking capital opportunities and help your company raise funds through debt capital market issuances such as bonds, and commercial papers and suggest the best deal for your business. We also connect businesses in securing debt financing from lenders tailored to your specific needs and take care of debt financing regulatory filings.",
+      "Bridge financing, also known as bridge loans, is short-term financing designed to provide companies with funds until they to real estate development firms working on projects with off-takers. It helps these firms meet deadlines, hedge against inflation, and cover expenses before receiving full off-take payments.",
     img: "",
     link: "https://meritrade.com/",
     items: [
@@ -22,9 +22,9 @@ const products = [
   },
   {
     id: 2,
-    title: "Equity Capital Market Services",
+    title: "Meristem Finance Lease",
     description:
-      "We offer exceptional Equity Capital market services for businesses who need rights issuance, Initial Public Offerings or private placements to raise capital and connect with potential investors. We also ensure businesses' capital raising activities comply with all regulations with our expertise in regulatory filings.",
+      "This interest-rate-friendly option helps you access the capital to acquire the equipment needed to boost your growth. We finance a significant portion of the cost, with flexible repayment plans.",
     img: "",
     link: "share-dividend",
     items: ["Rights Issuance", "Private Placement", "Regulatory Filings"],

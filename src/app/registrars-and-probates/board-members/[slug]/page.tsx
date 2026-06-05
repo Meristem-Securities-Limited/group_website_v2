@@ -6,7 +6,7 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
-export const wealthManagementBoardMembers = [
+export const registrarAndProbateBoardMembers = [
   {
     slug: "chief-michael-ade-ojo",
     image: "https://placehold.co/600x400",
@@ -71,7 +71,7 @@ export const wealthManagementBoardMembers = [
 
 export default function ExecutiveProfile({ params }: Props) {
   const { slug } = React.use(params);
-  const executive = wealthManagementBoardMembers.find((exec) => exec.slug === slug);
+  const executive = registrarAndProbateBoardMembers.find((exec) => exec.slug === slug);
 
   if (!executive) {
     return notFound();

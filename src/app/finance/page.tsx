@@ -1,9 +1,9 @@
 import React from "react";
 import AboutUsHeroSection from "@/components/about-us/AboutUsHeroSection";
-import WealthServiceSection from "@/components/wealth-management/ServicesSection";
+import WealthServiceSection from "@/components/finance/ServicesSection";
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
-import WealthBoardExecutiveSection from "@/components/wealth-management/BoardExcutives";
-import FAQSection from "@/components/wealth-management/FAQSection";
+import WealthBoardExecutiveSection from "@/components/finance/BoardExcutives";
+import FAQSection from "@/components/finance/FAQSection";
 
 const WealthManagementPage = () => {
   return (
