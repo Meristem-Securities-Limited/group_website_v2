@@ -10,7 +10,7 @@ const WealthManagementPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <AboutUsHeroSection
-        backgroundImage="/capital.png"
+        backgroundImage="/wealth-management.png"
         title={
           <span className="text-3xl md:text-5xl font-semibold text-white leading-tight capitalize">
             Bespoke financial advisory <br /> services to accelerate your success
