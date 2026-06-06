@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export default function WhoWeAreSection({
   showMeetings = true,
+  sectionImage = GroupPicture,
   descriptions = [
     `With a legacy spanning over two decades, we&apos;ve established ourselves as the trusted
         financial services partner for individuals and corporations in Nigeria and globally.`,
@@ -18,6 +19,7 @@ export default function WhoWeAreSection({
 }: {
   showMeetings?: boolean;
   descriptions?: Array<string>;
+  sectionImage?: any;
 }) {
   return (
     <section
@@ -69,7 +71,9 @@ export default function WhoWeAreSection({
             transition={{ duration: 0.8, delay: 0.8 }}>
             <div className="h-full">
               <Image
-                src={GroupPicture}
+                src={sectionImage}
+                width={"900"}
+                height={"400"}
                 alt="Business meeting"
                 priority
                 className="w-full h-full object-cover"

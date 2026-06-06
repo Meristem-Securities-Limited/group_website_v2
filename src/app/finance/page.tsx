@@ -12,7 +12,7 @@ const WealthManagementPage = () => {
       <AboutUsHeroSection
         backgroundImage="/wealth-management.png"
         title={
-          <span className="text-4xl md:text-6xl font-semibold text-white leading-tight capitalize">
+          <span className="text-3xl md:text-5xl font-semibold text-white leading-tight capitalize">
             Expand your <br /> fleet on our tab
           </span>
         }

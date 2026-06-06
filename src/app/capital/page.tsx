@@ -13,7 +13,7 @@ const WealthManagementPage = () => {
       <AboutUsHeroSection
         backgroundImage="/wealth-management.png"
         title={
-          <span className="text-3xl md:text-5xl font-semibold text-white leading-tight capitalize">
+          <span className="text-3xl md:text-5xl font-semibold text-white leading-1.5 capitalize">
             Bespoke financial advisory <br /> services to accelerate your success
           </span>
         }

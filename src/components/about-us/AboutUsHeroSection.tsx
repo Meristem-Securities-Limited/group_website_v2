@@ -45,7 +45,7 @@ export default function AboutUsHeroSection({
               initial={{ x: 200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="text-base md:text-lg font-normal text-white leading-relaxed lg:max-w-3xl">
+              className="text-base md:text-lg font-normal text-white leading-relaxed lg:max-w-xl">
               {description}
             </motion.p>
           : null}
