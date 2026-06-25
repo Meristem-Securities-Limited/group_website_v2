@@ -208,7 +208,7 @@ export default function WealthServiceSection() {
               </a>
             : <Link
                 key={product.id}
-                href={`wealth-management/${product.link}`}
+                href={`our-products/${product.link}`}
                 className="cursor-pointer hover:bg-emerald-800 group hover:scale-100 transition-transform duration-300 p-4 bg-white border border-emerald-700/30">
                 <div className="flex flex-col justify-between gap-4 py-4">
                   <h3 className="text-lg font-semibold group-hover:text-white text-black">

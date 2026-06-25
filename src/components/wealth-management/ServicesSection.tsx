@@ -204,16 +204,14 @@ export default function WealthServiceSection() {
               target={product.link.includes("https://") ? "_blank" : "_self"}
               key={product.id}
               href={
-                product.link.includes("https://") ?
-                  product?.link
-                : `wealth-management/${product.link}`
+                product.link.includes("https://") ? product?.link : `our-products/${product.link}`
               }
               className="cursor-pointer hover:bg-emerald-800 group hover:scale-100 transition-transform duration-300 p-4 bg-white border border-emerald-700/30">
               <div className="flex flex-col justify-between gap-4 py-4">
                 <h3 className="text-lg font-semibold group-hover:text-white text-black">
                   {product.title}
                 </h3>
-                <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed">
+                <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed line-clamp-2">
                   {product.description}
                 </p>
                 <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">

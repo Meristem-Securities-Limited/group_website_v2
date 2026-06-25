@@ -323,23 +323,26 @@ With a deep understanding of wealth structuring, estate planning, and family gov
     slug: "stanley-jacob",
     image: Stanley,
     name: "Stanley Jacob",
-    role: "Group Chief Technology Officer, Meristem Security Limited",
+    role: "Group Chief Innovation & Technology Officer, Meristem Security Limited",
     description: `<div class="executive-info">
           <p class="my-6">
-          Stanley Jacob is the Group Chief Technology Officer (GCTO) of Meristem Securities Limited, bringing over 15 years of expertise in business operations, customer experience management, and strategic leadership. She spearheads operational optimization, service excellence, and customer satisfaction, ensuring seamless alignment between business objectives and efficiency.
-               </p>
+          Stanley Jacob is the Group Chief Innovation & Technology Officer (GCITO) of Meristem Securities Limited, a seasoned technology and financial services executive with over two decades of driving platform orchestration, driving technology innovation, digitisation, nurturing fintechs, strategic
+partnerships and inclusive finance across Africa.  </p>
          
-          <p class="my-6">Throughout her career, Nkechi has held key leadership roles, successfully implementing data-driven strategies that have enhanced customer retention, and revenue growth. Her proficiency in managing cross-functional teams, process innovation, and service delivery has been instrumental in Meristem’s continued success.</p>
-         
-          <p class="my-6">A strong advocate for continuous improvement and operational excellence, Nkechi is passionate about delivering exceptional customer experiences and fostering long-term client relationships.</p>
-            
-          
-          
+          <p class="my-6">As a recognized thought leader in the African fintech ecosystem, Stanley currently serves as the President of the Fintech Association of Nigeria (FintechNGR), representing over 600 member organizations, and as Vice President for Western Africa at the Africa Fintech Network (AFN). His industry contributions have earned him prestigious recognitions, including Payment Innovator of the Year 2023 (West Africa), the flagship African Technology award - Titan of Tech Merit Award in
+2023, Payment CEO of the Year 2024 (West Africa) and the MSME Digital Finance CEO of the Year
+2025 awarded by the Nigeria Economic Forum Series and the Office of the Vice President of Nigeria</p>  
+          <p class="my-6">His global experience spans senior leadership roles at Mastercard International, Ecobank Transnational, Standard Chartered Bank and within the Standard Bank Group, where he drove enterprise-wide digital transformation, technology innovation, revenue growth and platform
+expansion across multiple African markets.</p>
           <p class="my-6">
-          Beyond her professional role, she is an avid reader and a blogger, sharing personal insights and thought leadership on business, life, and customer-centric strategies.
-          
+          Academically, Stanley holds a Doctor of Business Administration with research focused on Green Banking in Africa, MBA in Technology Management, complemented by advanced executive and post graduate training in digital business, strategy, cybersecurity, venture capital and private equity from leading global institutions including Imperial College London, INSEAD, University of
+Oxford, Harvard Business School, MIT, Columbia Business School and Tuft School of Law &
+Diplomacy.   
         </p>
-        
+        <p class="my-6">
+          He is a trusted industry leader and policy advisor supporting regulators and other industry stakeholder in shaping Nigeria's digital finance, payment system vision and financial inclusion
+initiatives.
+        </p>
          
         </div>`,
   },

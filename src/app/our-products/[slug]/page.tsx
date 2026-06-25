@@ -2,6 +2,7 @@ import ProductPage from "@/components/products/ProductPage";
 // import { HappyFamily, HouseDisplay, MeritradeMockUp, WealthBuddyMockup } from "@/app/assets";
 import React from "react";
 import { notFound } from "next/navigation";
+import MeristemContactSection from "@/components/ContactSection";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -373,5 +374,10 @@ export default function ProductDetail({ params }: Props) {
     return notFound();
   }
 
-  return <ProductPage product={product} />;
+  return (
+    <>
+      <ProductPage product={product} />
+      <MeristemContactSection />
+    </>
+  );
 }

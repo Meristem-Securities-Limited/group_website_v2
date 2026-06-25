@@ -38,19 +38,19 @@ const subsidiaries = [
     number: "01",
     name: "Stockbrokers",
     description: "Equities trading and brokerage services with a difference",
-    link: "stockbrokers",
+    link: "/stockbrokers",
   },
   {
     number: "02",
     name: "Registrars and Probate Services",
     description: "Redefining Shareholder Management and Probate Services",
-    link: "registrars-and-probate",
+    link: "/registrars-and-probate",
   },
   {
     number: "03",
     name: "Wealth Management",
     description: "Tailored strategies for wealth creation and preservation",
-    link: "wealth-management",
+    link: "/wealth-management",
   },
   {
     number: "04",
@@ -62,19 +62,19 @@ const subsidiaries = [
     number: "05",
     name: "Capital",
     description: "Raising capital. Realising potential. Reshaping businesses.",
-    link: "capital",
+    link: "/capital",
   },
   {
     number: "06",
     name: "Finance",
     description: "Financing solutions tailored to you.",
-    link: "finance",
+    link: "/finance",
   },
   {
     number: "07",
     name: "Trustees",
     description: "Leave the things you love for those you love.",
-    link: "trustees",
+    link: "/trustees",
   },
 ];
 
