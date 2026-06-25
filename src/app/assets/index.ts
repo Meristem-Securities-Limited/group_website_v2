@@ -46,8 +46,10 @@ import WealthbuddyApp from "./wealthbuddy-app.png";
 import MeritradeApp from "./meritrade-app.png";
 import AdeOjo from "./ADE_OJO.jpg";
 import Amina from "./Amina.jpg";
+import Stanley from "./stanley-jacob.jpeg";
 
 export {
+  Stanley,
   Mubo2,
   MeritradeApp,
   WealthbuddyApp,

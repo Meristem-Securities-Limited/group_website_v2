@@ -580,7 +580,7 @@ const Navbar = () => {
                       href={platform.link}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-emerald-800 hover:text-white transition-colors duration-200">
                       <span className="block font-bold text-base">{platform.name}</span>
-                      <span>{platform.subText}</span>
+                      <span className="line-clamp-2">{platform.subText}</span>
                     </a>
                   ))}
                 </div>
@@ -625,7 +625,9 @@ const Navbar = () => {
                         <h4 className="text-gray-900 font-semibold group-hover:text-green-800 transition-colors duration-200">
                           {item.name}
                         </h4>
-                        <p className="text-gray-500 text-sm mt-1">{item.description}</p>
+                        <p className="text-gray-500 text-sm mt-1 line-clamp-1">
+                          {item.description}
+                        </p>
                       </a>
                     ))}
                   </div>

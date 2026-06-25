@@ -202,10 +202,8 @@ const MeristemContactSection = () => {
             </h2>
             <p className="text-sm lg:text-lg text-primary-green leading-relaxed max-w-xl">
               We’re here to answer your questions, provide expert guidance, and help you navigate
-              your financial journey with confidence. Whether you’re looking to invest, seeking
-              advice, or want to learn more about our services, our dedicated team at Meristem
-              Securities Limited is ready to connect with you and support your goals. Reach out
-              today and let’s start a meaningful conversation about your financial future.
+              your financial journey with confidence. Reach out today and let’s start a meaningful
+              conversation about your financial future.
             </p>
 
             {/* Google Map Goes Here */}

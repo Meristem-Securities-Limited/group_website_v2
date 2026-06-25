@@ -96,7 +96,9 @@ const WhyChooseMeristem = () => {
               <h3 className="lg:text-2xl text-xl font-semibold text-emerald-900">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-gray-600 text-base leading-relaxed">{feature.description}</p>
+              <p className="mt-2 text-gray-600 text-base leading-relaxed line-clamp-2">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

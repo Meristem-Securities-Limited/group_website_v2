@@ -13,7 +13,7 @@ const products = [
     description:
       "Buy and sell equities in real time through Meristem’s online trading platform. Access market research, monitor portfolios, and execute trades seamlessly.",
     img: MeritradeMockUp,
-    link: "stockbroking",
+    link: "https://meritrade.com/",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const products = [
     description:
       "Invest in professionally managed mutual funds spanning equities, fixed income, and money market instruments, expertly structured to help you achieve your short and long-term financial goals.",
     img: WealthBuddyMockup,
-    link: "mutual-funds",
+    link: "https://wealthbuddy.ng/mutual-funds",
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ const products = [
     description:
       "Provides personalised wealth management and succession planning solutions. including Legacy Planning, Investment Management, Business Advisory, Philanthropy, Family Governance, and Health & Longevity Planning.",
     img: MeritradeMockUp,
-    link: "family-office",
+    link: "https://familyoffice.meristemng.com",
   },
   {
     id: 7,
@@ -135,25 +135,44 @@ export default function CapabilitiesSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>
-          {products.map((product) => (
-            <Link
-              key={product.id}
-              href={`our-products/${product.link}`}
-              className="flex-shrink-0 min-w-[280px] sm:min-w-[300px] md:w-[320px] lg:w-[398px] max-w-full cursor-pointer hover:bg-green-50 hover:scale-100 transition-transform duration-300 p-4 bg-white border border-green-700/30">
-              <div className="flex flex-col h-full gap-4">
-                <h3 className="text-lg font-semibold text-primary-green">{product.title}</h3>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                  {product.description}
-                </p>
-                <div className="mt-auto text-sm lg:text-base flex items-center gap-2 text-primary-green font-semibold">
-                  <div className="p-2 bg-primary-green text-white">
-                    <ArrowRight size={14} />
+          {products.map((product) =>
+            product.link.startsWith("http") ?
+              <a
+                target="_blank"
+                key={product.id}
+                href={`${product.link}`}
+                className="flex-shrink-0 min-w-[280px] sm:min-w-[300px] md:w-[320px] lg:w-[398px] max-w-full cursor-pointer hover:bg-green-50 hover:scale-100 transition-transform duration-300 p-4 bg-white border border-green-700/30">
+                <div className="flex flex-col h-full gap-4">
+                  <h3 className="text-lg font-semibold text-primary-green">{product.title}</h3>
+                  <p className="text-gray-600 text-sm md:text-base leading-relaxed line-clamp-3 mb-3">
+                    {product.description}
+                  </p>
+                  <div className="mt-auto text-sm lg:text-base flex items-center gap-2 text-primary-green font-semibold">
+                    <div className="p-2 bg-primary-green text-white">
+                      <ArrowRight size={14} />
+                    </div>
+                    LEARN MORE
                   </div>
-                  LEARN MORE
                 </div>
-              </div>
-            </Link>
-          ))}
+              </a>
+            : <Link
+                key={product.id}
+                href={`our-products/${product.link}`}
+                className="flex-shrink-0 min-w-[280px] sm:min-w-[300px] md:w-[320px] lg:w-[398px] max-w-full cursor-pointer hover:bg-green-50 hover:scale-100 transition-transform duration-300 p-4 bg-white border border-green-700/30">
+                <div className="flex flex-col h-full gap-4">
+                  <h3 className="text-lg font-semibold text-primary-green">{product.title}</h3>
+                  <p className="text-gray-600 text-sm md:text-base leading-relaxed line-clamp-3 mb-3">
+                    {product.description}
+                  </p>
+                  <div className="mt-auto text-sm lg:text-base flex items-center gap-2 text-primary-green font-semibold">
+                    <div className="p-2 bg-primary-green text-white">
+                      <ArrowRight size={14} />
+                    </div>
+                    LEARN MORE
+                  </div>
+                </div>
+              </Link>,
+          )}
         </motion.div>
       </div>
     </section>

@@ -11,6 +11,7 @@ import {
   Salawu,
   Sulaiman,
   Taiwo,
+  Stanley,
 } from "@/app/assets";
 interface Props {
   params: Promise<{ slug: string }>;
@@ -298,10 +299,34 @@ With a deep understanding of wealth structuring, estate planning, and family gov
     slug: "nkechinyelu-okoye",
     image: Nkechinyelu,
     name: "Nkechinyelu Okoye",
-    role: "Chief Operating Officer, Meristem Registrar and Probate Services Limited",
+    role: "Managing Director, Meristem Registrar and Probate Services Limited",
     description: `<div class="executive-info">
           <p class="my-6">
-          Nkechinyelu Okoye is the Chief Operating Officer (COO) of Meristem Registrars and Probate Services Limited, bringing over 15 years of expertise in business operations, customer experience management, and strategic leadership. She spearheads operational optimization, service excellence, and customer satisfaction, ensuring seamless alignment between business objectives and efficiency.
+          Nkechinyelu Okoye is the Managing Director of Meristem Registrars and Probate Services Limited, bringing over 15 years of expertise in business operations, customer experience management, and strategic leadership. She spearheads operational optimization, service excellence, and customer satisfaction, ensuring seamless alignment between business objectives and efficiency.
+               </p>
+         
+          <p class="my-6">Throughout her career, Nkechi has held key leadership roles, successfully implementing data-driven strategies that have enhanced customer retention, and revenue growth. Her proficiency in managing cross-functional teams, process innovation, and service delivery has been instrumental in Meristem’s continued success.</p>
+         
+          <p class="my-6">A strong advocate for continuous improvement and operational excellence, Nkechi is passionate about delivering exceptional customer experiences and fostering long-term client relationships.</p>
+            
+          
+          
+          <p class="my-6">
+          Beyond her professional role, she is an avid reader and a blogger, sharing personal insights and thought leadership on business, life, and customer-centric strategies.
+          
+        </p>
+        
+         
+        </div>`,
+  },
+  {
+    slug: "stanley-jacob",
+    image: Stanley,
+    name: "Stanley Jacob",
+    role: "Group Chief Technology Officer, Meristem Security Limited",
+    description: `<div class="executive-info">
+          <p class="my-6">
+          Stanley Jacob is the Group Chief Technology Officer (GCTO) of Meristem Securities Limited, bringing over 15 years of expertise in business operations, customer experience management, and strategic leadership. She spearheads operational optimization, service excellence, and customer satisfaction, ensuring seamless alignment between business objectives and efficiency.
                </p>
          
           <p class="my-6">Throughout her career, Nkechi has held key leadership roles, successfully implementing data-driven strategies that have enhanced customer retention, and revenue growth. Her proficiency in managing cross-functional teams, process innovation, and service delivery has been instrumental in Meristem’s continued success.</p>
