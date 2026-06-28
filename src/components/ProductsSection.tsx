@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { HouseDisplay, MeritradeMockUp, MORE, SimpleWill, WealthBuddyMockup } from "../app/assets";
+import { HouseDisplay, MeritradeMockUp, MORE, WealthBuddyMockup } from "../app/assets";
 import Image from "next/image";
 // import { motion } from "framer-motion";
 
@@ -31,14 +31,14 @@ const products = [
     img: HouseDisplay,
     link: "https://realestate.meristemng.com",
   },
-  {
-    id: 5,
-    title: "Simple Will",
-    description:
-      "Create a Simple Will to clearly state how your assets should be managed even when you are not here. It’s quick, secure, and gives you confidence that your wishes will be respected.",
-    img: SimpleWill,
-    link: "http://meristemtrustees.com/simple-will/",
-  },
+  // {
+  //   id: 5,
+  //   title: "Simple Will",
+  //   description:
+  //     "Create a Simple Will to clearly state how your assets should be managed even when you are not here. It’s quick, secure, and gives you confidence that your wishes will be respected.",
+  //   img: SimpleWill,
+  //   link: "http://meristemtrustees.com/simple-will/",
+  // },
   {
     id: 4,
     title: "MORE (Meristem Orientation for Rising Entrepreneurs)",

@@ -1,0 +1,43 @@
+import React from "react";
+import AboutUsHeroSection from "@/components/about-us/AboutUsHeroSection";
+import BenefitsSection from "@/components/registrar/BenefitSection";
+import WealthServiceSection from "@/components/registrar/ServicesSection";
+import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
+import WealthBoardExecutiveSection from "@/components/registrar/BoardExcutives";
+import FAQSection from "@/components/registrar/FAQSection";
+import MeristemContactSection from "@/components/ContactSection";
+import { Nkechinyelu } from "../assets";
+
+const WealthManagementPage = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      <AboutUsHeroSection
+        backgroundImage="/wealth-management.png"
+        title={
+          <span className="text-3xl md:text-5xl font-bold text-white leading-1 capitalize">
+            Redefining <br /> Shareholders <br /> Management and <br /> Probate Services
+          </span>
+        }
+        description="Unlock the full potential of probate and share registration. We're redefining the landscape with innovative solutions that simplify processes, increase transparency, and go beyond your expectations. Join us on a journey to revolutionize the way you manage your assets and navigate probate."
+      />
+      <WhoWeAreSection
+        sectionImage={Nkechinyelu}
+        showMeetings={false}
+        descriptions={[
+          `Meristem Registrars and Probate Services Limited (MRPSL) is a subsidiary of Meristem Securities Limited, registered with the Securities and Exchange Commission (SEC)..
+                  `,
+          `MRPSL offers a combination of two key service offerings: Registrar and Probate Services. It operates an automated Share registration system with state-of-the -art technologies that offer efficient, accurate and reliable services to meet tailored client needs based on confidentiality policies while operating within industry requirements and regulatory guidelines.
+                 `,
+          `As Probate Service provides, MRPSL identified the need to fill the gap experienced in the estate administration space, and this served as the birthplace of Probate Management Service.  `,
+        ]}
+      />
+      <WealthServiceSection />
+      <BenefitsSection />
+      <WealthBoardExecutiveSection />
+      <FAQSection />
+      <MeristemContactSection />
+    </div>
+  );
+};
+
+export default WealthManagementPage;

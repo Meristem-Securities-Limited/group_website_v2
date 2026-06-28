@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useRef } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const products = [
   {
-    id: 1,
-    title: "Bridge Financing",
+    id: 110,
+    title: "Asset/Portfolio Management",
     description:
       "Meristem Wealth Management Limited harnesses its specialized investment management expertise together with the vast resources of the Meristem Group to provide customized solutions.",
     img: "",
@@ -22,13 +22,29 @@ const products = [
       "Commitment to maintaining client confidentiality",
     ],
   },
+  // {
+  //   id: 1,
+  //   title: "Bridge Financing",
+  //   description:
+  //     "Meristem Wealth Management Limited harnesses its specialized investment management expertise together with the vast resources of the Meristem Group to provide customized solutions.",
+  //   img: "",
+  //   link: "asset-portfolio-management",
+  //   items: [
+  //     "Disciplined investment management process",
+  //     "Insightful support from our research team",
+  //     "Diversified approach towards portfolio construction",
+  //     "Excellent service delivery platform and systems",
+  //     "Extensive risk management framework",
+  //     "Commitment to maintaining client confidentiality",
+  //   ],
+  // },
   {
-    id: 2,
-    title: "Succession Planning",
+    id: 7,
+    title: "Evergreen / Retirement Planning",
     description:
-      "Meristem Wealth Succession Planning service is our service that provides founders with ability to plan for who succeeds them and carries on their legacy. It is a process of identifying and developing the succession plans that ensure legacy lives on.",
+      "Evergreen by Meristem exists to help you design a customized retirement and estate plan that brings you happiness and peace of mind ...",
     img: "",
-    link: "succession-planning",
+    link: "retirement-planning",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",
@@ -39,28 +55,12 @@ const products = [
     ],
   },
   {
-    id: 3,
-    title: "Real Estate Services",
+    id: 8,
+    title: "Exchange Traded Funds",
     description:
-      "Real Estate Investments basically refers to investment in Landed Properties either physically (Direct Holding) or through investment in Real Estate Funds (Indirect Holding). The services...",
+      "At Meristem Wealth, we offer our clients a range of Exchange Traded Funds products that meet with varying client needs and objectives.",
     img: "",
-    link: "https://realestate.meristemng.com/",
-    items: [
-      "Disciplined investment management process",
-      "Insightful support from our research team",
-      "Diversified approach towards portfolio construction",
-      "Excellent service delivery platform and systems",
-      "Extensive risk management framework",
-      "Commitment to maintaining client confidentiality",
-    ],
-  },
-  {
-    id: 4,
-    title: "Mutual Funds",
-    description:
-      "We offer clients the choice of either money market or equity market funds depending on their investment objectives and risk profile, bearing in mind that the level of risk you take, and ...",
-    img: "",
-    link: "https://wealthbuddy.ng/mutual-funds",
+    link: "investment-banking",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",
@@ -87,6 +87,38 @@ const products = [
     ],
   },
   {
+    id: 4,
+    title: "Mutual Funds",
+    description:
+      "We offer clients the choice of either money market or equity market funds depending on their investment objectives and risk profile, bearing in mind that the level of risk you take, and ...",
+    img: "",
+    link: "https://wealthbuddy.ng/mutual-funds",
+    items: [
+      "Disciplined investment management process",
+      "Insightful support from our research team",
+      "Diversified approach towards portfolio construction",
+      "Excellent service delivery platform and systems",
+      "Extensive risk management framework",
+      "Commitment to maintaining client confidentiality",
+    ],
+  },
+  {
+    id: 3,
+    title: "Real Estate Services",
+    description:
+      "Real Estate Investments basically refers to investment in Landed Properties either physically (Direct Holding) or through investment in Real Estate Funds (Indirect Holding). The services...",
+    img: "",
+    link: "https://realestate.meristemng.com/",
+    items: [
+      "Disciplined investment management process",
+      "Insightful support from our research team",
+      "Diversified approach towards portfolio construction",
+      "Excellent service delivery platform and systems",
+      "Extensive risk management framework",
+      "Commitment to maintaining client confidentiality",
+    ],
+  },
+  {
     id: 6,
     title: "Structured Products",
     description:
@@ -103,28 +135,12 @@ const products = [
     ],
   },
   {
-    id: 7,
-    title: "Evergreen",
+    id: 2,
+    title: "Succession Planning",
     description:
-      "At Meristem Wealth, we understand that retirement planning is not just about having savings in the bank or investments in shares, real estate, and other assets; it is about making the ...",
+      "Meristem Wealth Succession Planning service is our service that provides founders with ability to plan for who succeeds them and carries on their legacy. It is a process of identifying and developing the succession plans that ensure legacy lives on.",
     img: "",
-    link: "evergreen",
-    items: [
-      "Disciplined investment management process",
-      "Insightful support from our research team",
-      "Diversified approach towards portfolio construction",
-      "Excellent service delivery platform and systems",
-      "Extensive risk management framework",
-      "Commitment to maintaining client confidentiality",
-    ],
-  },
-  {
-    id: 8,
-    title: "Exchange Traded Funds",
-    description:
-      "At Meristem Wealth, we offer our clients a range of Exchange Traded Funds products that meet with varying client needs and objectives.",
-    img: "",
-    link: "investment-banking",
+    link: "succession-planning",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",

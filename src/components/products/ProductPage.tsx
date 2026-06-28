@@ -33,6 +33,7 @@ const faqs = [
 ];
 
 export default function ProductPage({ product }: { product: any }) {
+  console.log(product);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [showModal, setShowModal] = useState<boolean>(false);
 
@@ -49,6 +50,16 @@ export default function ProductPage({ product }: { product: any }) {
     "https://play.google.com/store/apps/details?id=com.meristem.meritradeapp";
 
   const meritradeAppStorUrl = "https://apps.apple.com/ng/app/meritrade/id977562417";
+
+  // {
+  //   product.slug === "exchange-traded-funds" && <ETFFeatures />;
+  // }
+
+  // // If you don't have a slug, match on the title instead:
+  // {
+  //   product.title?.toLowerCase().includes("exchange-traded") && <ETFFeatures />;
+  //   }
+  //   if(product)
 
   return (
     <section className="bg-white">
@@ -96,7 +107,7 @@ export default function ProductPage({ product }: { product: any }) {
 
           <div className="flex-1 flex flex-col">
             <p
-              className="text-base leading-relaxed !font-medium"
+              className="text-base leading-9 !font-medium"
               dangerouslySetInnerHTML={{ __html: product.description }}></p>
           </div>
         </div>

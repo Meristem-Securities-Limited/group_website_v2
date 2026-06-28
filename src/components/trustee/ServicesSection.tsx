@@ -8,24 +8,24 @@ import Link from "next/link";
 const products = [
   {
     id: 3,
-    title: "Meristem Business Associate",
+    title: "Private Trust",
     description:
-      "Are you a licensed Broker, Sub-Broker, Fund Manager, Corporate/Individual Advisor or any other capital market operator?",
+      "We partner with you to ensure your wishes are executed with professionalism and efficiency. Thus, making sure your legacy lives on in the manner you have decided.",
     img: "",
     link: "/meristem-business-associate",
   },
   {
     id: 2,
-    title: "Share/Dividend Tracking & Recovery",
+    title: "Public Trust",
     description:
-      "If you got stocks years ago, it is likely they have appreciated and all you need is to track and start building on them.  With millions of shares traded over a period time...",
+      "Public trust is the degree to which the public believes that business will act in a particular manner because the business has included the public’s interest into its own.",
     link: "share-dividend-tracking-recovery",
   },
   {
     id: 1,
-    title: "Stock Trading",
+    title: "Corporate Trust",
     description:
-      "Will you like to buy or sell stocks? Be your own broker and do it yourself via MERITRADE, our online stockbroking platform. Will you like better management of your shares and access to the",
+      "Do you run a corporate entity? Do you have asset which you will like better managed to earn you profits? Will you like these profits to form funds for syndicated lending or part of the employee benefit",
     img: "",
     link: "stock-trading",
   },
@@ -155,7 +155,7 @@ export default function WealthServiceSection() {
                   <h3 className="text-lg font-semibold group-hover:text-white text-black">
                     {product.title}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed">
+                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed line-clamp-3">
                     {product.description}
                   </p>
                   <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">

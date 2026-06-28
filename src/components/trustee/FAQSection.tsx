@@ -4,66 +4,102 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqs: Record<string, { question: string; answer: string }[]> = {
-  "Loans and Leases": [
+  "Trust": [
     {
-      question: "What is the difference between a lease and a loan?",
+      question: "When should I establish a Trust?",
       answer:
-        "A lease is an agreement between the lessee(client) and the lessor(company) where the lessor purchases and retains ownership of an asset. In contrast, the lessee uses the asset, takes the responsibility of maintaining the asset and makes periodic repayments. At the loan's maturity, the lessee gets the first right of purchase. A loan is a sum of money borrowed that you repay with interest over a set term.",
+        "When you have amassed wealth to an extent, intending to transfer it to your beneficiaries.",
+    },
+    {
+      question: "Who owns the property in a Trust?",
+      answer:
+        "By law the assets in a trust are owned by the Trustee, however such ownership is restricted by the terms of the trust and legal constraints.",
+    },
+    {
+      question: "What kind of assets are important to establish a Trust?",
+      answer:
+        "Everything of value can be put in a Trust E.g. Real Estate, Stocks, Investments etc.",
+    },
+    {
+      question: "Can a beneficiary withdraw money from a Trust?",
+      answer:
+        "A beneficiary can only access the Trust fund in accordance with the provision of the Trust deed.",
+    },
+    {
+      question: "What are the advantages of a Trust?",
+      answer:
+        "Yes, however the extent of control is as provided by applicable law and the Trust deed.",
+    },
+    {
+      question: "I have a living trust already; do I also need a will?",
+      answer:
+        "This is largely dependent on your estate planning objective and the kind of assets owned, some assets may be suitably planned by writing a will.",
+    },
+    {
+      question: "Can I have multiple Trusts?",
+      answer: "Yes, as long as those trust do not touch on the same subject matter.",
+    },
+  ],
+  "Estate Planning": [
+    {
+      question: "What is the process of transferring assets to beneficiaries?",
+      answer: "Through a will, a deed of gift or a trust",
+    },
+    {
+      question: "Who can be my beneficiaries?",
+      answer:
+        "Anyone you choose to give part of your assets to e.g., children, spouse, siblings, friends.",
+    },
+    {
+      question: "How do I revise my will?",
+      answer: "To amend your will, kindly send an email to trustees@meristemng.com",
+    },
+  ],
+  "MAPP": [
+    {
+      question: "What kind of assets are important to track on MAPP?",
+      answer: "Everything of value can be monitored and tracked using MAPP by Meristem.",
+    },
+    {
+      question: "Why should I use MAPP By Meristem when I already have an Estate Plan?",
+      answer:
+        "MAPP by Meristem gives you the opportunity to view all your assets, no matter the type and wherever they are. It also gives your beneficiary an idea of what your assets are, and where they may be found. This is relevant for the purpose of processing Letters of Administration for example.",
+    },
+  ],
+  "SIMPLE WILL": [
+    {
+      question:
+        "Is it possible to meet virtually with an in-house solicitor while writing a simple Will?",
+      answer:
+        "No. there is no option to meet with an in-house solicitor. The Simple Will process is fully automated.",
     },
     {
       question:
-        "What are the interest rates and terms for Meristem Finance Limited's loans and leases?",
+        "Is there a benchmark for how much assets you need to have before you can create a Simple Will?",
       answer:
-        "Our rates are competitively priced however it varies in line with market realities. Repayment tenor starts from 1 to 36 months for loans and up to 48 months for leases.",
+        "There is no benchmark for the assets. Any bank account, Retirement Savings Account (RSA), and CSCS account is acceptable regardless of the amount in it.",
     },
     {
-      question: "What is the turnaround time for loan and lease applications at Meristem Finance?",
+      question: "Wills writing usually require a third-party witness, who can be my witness?",
       answer:
-        "The approval process typically takes 2-5 business days, but it can vary depending on the completeness of your application and the specific product.",
+        "The Witness will should be with you to fill their details on the form before submission. Please note that the beneficiaries or executors cannot be a witness.",
     },
     {
-      question: "Who are Meristem Finance Limited's loan and lease products ideal for?",
-      answer: "Our products are ideal for both individuals and corporate bodies.",
+      question: "Who can be my Will executor?",
+      answer: "Any Trusted person above the age of 18.",
     },
     {
-      question: "What loan and lease products do Meristem Finance Limited offer?",
+      question: "Can I include real estate & tangible properties in the Simple Will?",
       answer:
-        "Currently, we offer cash and equity-backed loans, working capital, invoice discounting, local purchase orders, bridge financing for loans and finance leases.",
+        "The Simple Will does not accommodate those, but you can send an email to Trustees@meristemng.com to draft a more comprehensive Will.",
     },
     {
-      question: "What is the minimum and maximum lease/loan amount I can apply for?",
-      answer: "The minimum lease or loan amount is One million naira (N1,000,000)",
+      question: "Would anyone find out what I have documented in my Will?",
+      answer: "No, A Will is a confidential document.",
     },
     {
-      question: "What happens if I miss a payment?",
-      answer:
-        "If you miss a payment, you might be required to pay default fees on the outstanding payments. Consistently missed payments could result in repossession of the leased asset or other legal actions.",
-    },
-    {
-      question: "Can I pay off my lease/loan early? Are there any penalties?",
-      answer:
-        "Yes, you can pay off your lease/loan early and there are no penalties for that, you can pay off your lease/loan early and there are no penalties for that.",
-    },
-    {
-      question: "How can I contact Meristem Finance Limited?",
-      answer:
-        "You can contact customer support via phone - (09034267600). Email: (info@meristemfinance.com), or through our online contact us form.",
-    },
-  ],
-  "Regulations": [
-    {
-      question: "Who regulates Meristem Finance Limited?",
-      answer:
-        "MFL is regulated by the Central Bank of Nigeria (CBN). We are also a member of the Equipment Leasing Association of Nigeria (ELAN)",
-    },
-    {
-      question: "What documents do I need to apply for a loan or lease from Meristem Finance?",
-      answer:
-        "Generally, you need to provide proof of income (pay slips or bank statements), Means of identification (International passport, Permanent Voter’s card, NIN or driver’s license), proof of residence (utility bill), passport photograph and the asset details if applicable and other documents depending on your application. For corporate loan applications, registration documents are also required.",
-    },
-    {
-      question: "Do I need to have a collateral?",
-      answer: "Yes, you do. It can be cash, equity, invoice, or real estate.",
+      question: "Can a beneficiary also be an executor?",
+      answer: "Yes",
     },
   ],
 };
@@ -71,16 +107,16 @@ const faqs: Record<string, { question: string; answer: string }[]> = {
 const tabs = Object.keys(faqs);
 
 export default function FAQSection() {
-  const [activeTab, setActiveTab] = useState("Loans and Leases");
+  const [activeTab, setActiveTab] = useState("Trust");
   const [openIndex, setOpenIndex] = useState<number | null>(3);
 
   return (
     <section
       id="faq"
-      className="py-16 lg:px-6 max-w-3xl mx-auto">
-      <div className="py-16 px-6 mx-auto">
+      className="py-16 lg:px-6 max-w-5xl mx-auto">
+      <div className="py-16 px-6 max-w-5xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl lg:text-3xl font-semibold text-gray-900 leading-tight capitalize">
+          <h2 className="text-3xl lg:text-5xl font-semibold text-gray-900 leading-tight capitalize">
             Frequently asked questions
           </h2>
         </div>
@@ -94,7 +130,7 @@ export default function FAQSection() {
                   setActiveTab(tab);
                   setOpenIndex(null);
                 }}
-                className="relative lg:flex-1 lg:px-10 lg:py-3 py-2 w-full min-w-[140px] lg:min-w-auto rounded-full lg:text-base text-sm font-medium transition-colors duration-200 focus:outline-none"
+                className="relative lg:flex-1 lg:px-10 lg:py-3 py-2 w-full min-w-[140px] lg:min-w-auto rounded-full lg:text-sm text-xs font-medium transition-colors duration-200 focus:outline-none"
                 style={{
                   color: activeTab === tab ? "#fff" : "#000",
                 }}>
@@ -112,6 +148,7 @@ export default function FAQSection() {
           </div>
         </div>
 
+        {/* FAQ List */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
@@ -137,7 +174,7 @@ export default function FAQSection() {
                   }}>
                   <div className="flex items-center justify-between px-5 py-4">
                     <span
-                      className="lg:text-lg text-base font-medium"
+                      className="lg:text-base text-sm font-medium"
                       style={{ color: "#111827" }}>
                       {faq.question}
                     </span>
@@ -173,7 +210,7 @@ export default function FAQSection() {
                         transition={{ duration: 0.25, ease: "easeInOut" }}
                         style={{ overflow: "hidden" }}>
                         <p
-                          className="px-4 pb-5 lg:text-base text-sm leading-relaxed"
+                          className="px-4 pb-5 lg:text-sm text-xs leading-relaxed"
                           style={{ color: "#6b7280" }}>
                           {faq.answer}
                         </p>

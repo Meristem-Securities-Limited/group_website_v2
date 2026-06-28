@@ -6,6 +6,7 @@ import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/wealth-management/BoardExcutives";
 import FAQSection from "@/components/wealth-management/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
+import { Taiwo } from "../assets";
 
 const WealthManagementPage = () => {
   return (
@@ -20,6 +21,7 @@ const WealthManagementPage = () => {
         description="We are a client-centric company with an integrated approach to Wealth and Portfolio Management. Our Asset/Wealth Management Service is designed to grow, preserve, and eventually transfer assets to the next generations by optimizing and ensuring we fully actualize our client’s financial and investment goals."
       />
       <WhoWeAreSection
+        sectionImage={Taiwo}
         showMeetings={false}
         descriptions={[
           `Meristem Wealth Management Limited (MWML) is an independent subsidiary of Meristem

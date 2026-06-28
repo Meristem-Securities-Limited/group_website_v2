@@ -1,5 +1,5 @@
 import HeroSection from "@/components/IndexHeroSection";
-import CapabilitiesSection from "../components/CapabilitiesSection";
+// import CapabilitiesSection from "../components/CapabilitiesSection";
 import MeristemContactSection from "../components/ContactSection";
 import MeristemTimeline from "../components/MeristemHistoryTimeline";
 import MeristemSubsidiaries from "../components/MeristemSubsidiariesSection";
@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <CapabilitiesSection />
-      <ProductsSection />
       <MeristemTimeline />
+      {/* <CapabilitiesSection /> */}
+      <ProductsSection />
       <MeristemSubsidiaries />
       <WhyChooseMeristem />
       <ResearchSection />

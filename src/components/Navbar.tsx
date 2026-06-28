@@ -42,9 +42,9 @@ const subsidiaries = [
   },
   {
     number: "02",
-    name: "Registrars and Probate Services",
+    name: "Registrar and Probate Services",
     description: "Redefining Shareholder Management and Probate Services",
-    link: "/registrars-and-probate",
+    link: "/registrar-and-probate",
   },
   {
     number: "03",
@@ -88,7 +88,7 @@ const aboutUsItems = [
   { title: "Our Philosophy", link: "/about-us#philosophy" },
   { title: "Our Promise", link: "/about-us#promise" },
   { title: "Board of Directors", link: "/about-us#board-of-directors" },
-  { title: "Executive Management", link: "/about-us#executive-management" },
+  { title: "Group Executive Management", link: "/about-us#group-executive-management" },
 ];
 
 // const ourProductsItems = [

@@ -2,41 +2,41 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Wealth Management Limited - Meristem Securities Limited",
-    template: "%s | Wealth Management Limited - Meristem Securities",
+    default: "Meristem Capital Limited - Meristem Securities Limited",
+    template: "%s | Meristem Capital Limited - Meristem Securities",
   },
-  description: "Grow your Wealth for generations to come with Meristem Wealth Management Limited",
+  description: "Grow your Wealth for generations to come with Meristem Meristem Capital Limited",
   keywords: [
     "Meristem Securities Limited",
-    "Wealth Management Limited",
+    "Meristem Capital Limited",
     "financial services Nigeria",
     "investment company",
     "wealth management",
     "financial advisory",
     "Savings and Investment",
     "Treasury Bill and Bond Trading",
-    "Asset & Wealth Management Service",
+    "Asset & Meristem Capital Service",
     "Asset & Wealth",
   ],
   openGraph: {
     type: "website",
     url: "https://www.meristemng.com/wealth-management-limited",
-    title: "Wealth Management Limited - Meristem Securities Limited",
-    description: "Grow your Wealth for generations to come with Meristem Wealth Management Limited",
+    title: "Meristem Capital Limited - Meristem Securities Limited",
+    description: "Grow your Wealth for generations to come with Meristem Meristem Capital Limited",
     siteName: "Meristem Securities Limited",
     images: [
       {
         url: "/images/meristem-about-us-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Meristem Securities Limited - Wealth Management Limited",
+        alt: "Meristem Securities Limited - Meristem Capital Limited",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wealth Management Limited - Meristem Securities Limited",
-    description: "Grow your Wealth for generations to come with Meristem Wealth Management Limited",
+    title: "Meristem Capital Limited - Meristem Securities Limited",
+    description: "Grow your Wealth for generations to come with Meristem Meristem Capital Limited",
     images: ["/images/meristem-about-us-og.jpg"],
   },
   alternates: {

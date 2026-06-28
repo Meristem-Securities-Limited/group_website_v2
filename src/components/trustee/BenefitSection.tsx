@@ -7,7 +7,7 @@ const benefits = [
   {
     icon: "ti-award",
     color: "#D85A30",
-    title: "Corporate Benefits Management",
+    title: "Private Trust",
     description:
       "Our products and services are unique and distinctive solutions geared specifically towards our client's investment objectives.",
     listLabel: "Some of our key success factors",
@@ -23,7 +23,7 @@ const benefits = [
   {
     icon: "ti-shield-check",
     color: "#1D9E75",
-    title: "Data-Driven Investment Insights",
+    title: "Public Trust",
     description:
       "Tracking and retrieving of corporate benefits, leveraging on relationship with the registrars.",
     listLabel: null,
@@ -41,7 +41,7 @@ const benefits = [
   {
     icon: "ti-award",
     color: "#D85A30",
-    title: "Margin Loan For Security Trading",
+    title: "Corporate Trust",
     description: "Provide loans to investor as a leverage for opportunities in the market.",
     listLabel: "Some of our key success factors",
     items: [

@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import MemberCard from "@/components/MemberCard";
 import Link from "next/link";
-import { financeBoardMembers } from "@/app/finance/board-members/[slug]/page";
+import { capitalBoardMembers } from "@/app/capital/board-members/[slug]/page";
 
 const containerVariants = {
   hidden: {},
@@ -49,11 +49,11 @@ export default function WealthBoardExecutiveSection() {
           <motion.div
             variants={containerVariants}
             className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-auto">
-            {financeBoardMembers.map((member, index) => (
+            {capitalBoardMembers.map((member, index) => (
               <motion.div
                 key={index}
                 variants={itemVariantsUp}>
-                <Link href={`finance/board-members/${member.slug}`}>
+                <Link href={`capital/board-members/${member.slug}`}>
                   <MemberCard member={member} />
                 </Link>
               </motion.div>

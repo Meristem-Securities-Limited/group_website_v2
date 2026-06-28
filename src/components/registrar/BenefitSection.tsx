@@ -5,20 +5,13 @@ import { cardVariants } from "../about-us/CultureSection";
 
 const benefits = [
   {
-    icon: "ti-award",
-    color: "#D85A30",
-    title: "Corporate Benefits Management",
+    icon: "ti-trending-up",
+    color: "#7F77DD",
+    title: "Digitalized Equity Trading Platform",
     description:
-      "Our products and services are unique and distinctive solutions geared specifically towards our client's investment objectives.",
-    listLabel: "Some of our key success factors",
-    items: [
-      "Disciplined investment management process",
-      "Insightful support from our research team",
-      "Diversified approach towards portfolio construction",
-      "Excellent service delivery platform and systems",
-      "Extensive risk management framework",
-      "Commitment to maintaining client confidentiality",
-    ],
+      "Seamless trade execution with the latest technology support by the NGX (FIX) and vis NASDOTC Platform.",
+    listLabel: null,
+    items: ["Planning", "Execution", "Monitoring", "Feedback"],
   },
   {
     icon: "ti-shield-check",
@@ -30,13 +23,13 @@ const benefits = [
     items: [],
   },
   {
-    icon: "ti-trending-up",
-    color: "#7F77DD",
-    title: "Digitalized Equity Trading Platform",
+    icon: "ti-award",
+    color: "#D85A30",
+    title: "Corporate Benefits Management",
     description:
-      "Seamless trade execution with the latest technology support by the NGX (FIX) and vis NASDOTC Platform.",
-    listLabel: null,
-    items: ["Planning", "Execution", "Monitoring", "Feedback"],
+      "Our products and services are unique and distinctive solutions geared specifically towards our client's investment objectives.",
+    listLabel: "Some of our key success factors",
+    items: [],
   },
   {
     icon: "ti-award",
@@ -66,7 +59,7 @@ export default function BenefitsSection() {
           Benefits of Investing with us
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
             <motion.div
               initial="hidden"
@@ -87,6 +80,31 @@ export default function BenefitsSection() {
               <p className="text-sm lg:text-base text-gray-700 leading-relaxed">
                 {benefit.description}
               </p>
+
+              {/* {benefit.items.length > 0 && (
+                <div className="flex flex-col gap-2">
+                  {benefit.listLabel && (
+                    <p className="text-sm lg:text-base font-medium text-gray-800">
+                      {benefit.listLabel}
+                    </p>
+                  )}
+                  <ul className="flex flex-col gap-2">
+                    {benefit.items.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-center gap-2 text-sm lg:text-base text-gray-700">
+                        <span className="text-emerald-800">
+                          <CheckCircle2
+                            color="currentColor"
+                            size={22}
+                          />
+                        </span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )} */}
             </motion.div>
           ))}
         </div>

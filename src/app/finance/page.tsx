@@ -5,6 +5,7 @@ import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/finance/BoardExcutives";
 import FAQSection from "@/components/finance/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
+import { Mubo } from "../assets";
 
 const WealthManagementPage = () => {
   return (
@@ -20,6 +21,7 @@ const WealthManagementPage = () => {
       />
       <WhoWeAreSection
         showMeetings={false}
+        sectionImage={Mubo}
         descriptions={[
           `Meristem Finance Limited, the financial arm of Meristem Securities Limited, is equipped to provide financing solutions tailored to propel your business forward.
           We're a licensed non-banking financial institution and equipment leasing firm, backed by the Central Bank of Nigeria and the Equipment Leasing Association of

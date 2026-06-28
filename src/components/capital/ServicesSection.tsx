@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -152,7 +152,7 @@ export default function WealthServiceSection() {
                   <h3 className="text-lg font-semibold group-hover:text-white text-black">
                     {product.title}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed">
+                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed line-clamp-3">
                     {product.description}
                   </p>
                   {/* <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
@@ -161,7 +161,7 @@ export default function WealthServiceSection() {
                     </div>
                     LEARN MORE
                   </div> */}
-                  {product.items.length > 0 && (
+                  {/* {product.items.length > 0 && (
                     <div className="flex flex-col gap-2 mt-5">
                       <ul className="flex flex-col gap-2 pt-3">
                         {product.items.map((item) => (
@@ -179,7 +179,13 @@ export default function WealthServiceSection() {
                         ))}
                       </ul>
                     </div>
-                  )}
+                  )} */}
+                  <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
+                    <div className="p-2 bg-emerald-800 group-hover:bg-white group-hover:text-green-900 text-white">
+                      <ArrowRight size={14} />
+                    </div>
+                    LEARN MORE
+                  </div>
                 </div>
               </a>
             : <Link
@@ -190,7 +196,7 @@ export default function WealthServiceSection() {
                   <h3 className="text-lg font-semibold group-hover:text-white text-black">
                     {product.title}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed">
+                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed line-clamp-3">
                     {product.description}
                   </p>
                   {/* <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
@@ -199,7 +205,7 @@ export default function WealthServiceSection() {
                     </div>
                     LEARN MORE
                   </div> */}
-                  {product.items.length > 0 && (
+                  {/* {product.items.length > 0 && (
                     <div className="flex flex-col gap-2">
                       <ul className="flex flex-col gap-2">
                         {product.items.map((item) => (
@@ -217,7 +223,13 @@ export default function WealthServiceSection() {
                         ))}
                       </ul>
                     </div>
-                  )}
+                  )} */}
+                  <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
+                    <div className="p-2 bg-emerald-800 group-hover:bg-white group-hover:text-green-900 text-white">
+                      <ArrowRight size={14} />
+                    </div>
+                    LEARN MORE
+                  </div>
                 </div>
               </Link>,
           )}

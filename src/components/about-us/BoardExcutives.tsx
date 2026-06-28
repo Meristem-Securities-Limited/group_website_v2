@@ -65,14 +65,14 @@ export default function BoardExecutiveSection() {
 
         {/* Board of Directors */}
         <motion.section
-          id="executive-management"
+          id="group-executive-management"
           initial="hidden"
           animate="show"
           variants={containerVariants}>
           <motion.div
             variants={itemVariantsRight}
             className="text-left mb-12 pt-24">
-            <h2 className="text-4xl font-bold text-emerald-900 mb-4">Executive Management</h2>
+            <h2 className="text-4xl font-bold text-emerald-900 mb-4">Group Executive Management</h2>
             <p className="text-left text-lg mx-auto">
               Our executive leadership team driving strategic vision and operational excellence
             </p>

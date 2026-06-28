@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -78,30 +78,31 @@ const products = [
     link: "mutual-funds",
     items: ["Business Plans", "Feasibility Studies", "License Acquisitions"],
   },
-  // {
-  //   id: 5,
-  //   title: "Fixed Income Dealing",
-  //   description:
-  //     "Under our fixed term investment portfolio, we provide a platform for execution, offering clients access to a broad range of instruments. Based on our client's objectives and return ...",
-  //   img: "",
-  //   link: "fixed-income-dealing",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Structured Products",
-  //   description:
-  //     "At Meristem Wealth, we offer our clients a range of structured products that meet with varying client needs and objectives.",
-  //   img: "",
-  //   link: "structured-products",
-  // },
-  // {
-  //   id: 7,
-  //   title: "Evergreen",
-  //   description:
-  //     "At Meristem Wealth, we understand that retirement planning is not just about having savings in the bank or investments in shares, real estate, and other assets; it is about making the ...",
-  //   img: "",
-  //   link: "evergreen",
-  // },
+
+  {
+    id: 55,
+    title: "Invoice Discounting",
+    description:
+      "Get access to working capital quickly by leveraging your unpaid invoices. We offer competitive interest rates and flexible repayment plans.",
+    img: "",
+    link: "fixed-income-dealing",
+  },
+  {
+    id: 68,
+    title: "Cash Backed Facility",
+    description:
+      "Need a quick cash injection? Use your existing cash reserves to secure short-term, cash-backed loans for immediate liquidity.",
+    img: "",
+    link: "structured-products",
+  },
+  {
+    id: 70,
+    title: "Equity Backed Facility",
+    description:
+      "Unlock the potential of your existing investments. Access loans secured by your equities without the need to sell them.",
+    img: "",
+    link: "evergreen",
+  },
   // {
   //   id: 8,
   //   title: "Exchange Traded Funds",
@@ -176,7 +177,7 @@ export default function WealthServiceSection() {
                   <h3 className="text-lg font-semibold group-hover:text-white text-black">
                     {product.title}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed">
+                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed line-clamp-2">
                     {product.description}
                   </p>
                   {/* <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
@@ -185,7 +186,7 @@ export default function WealthServiceSection() {
                     </div>
                     LEARN MORE
                   </div> */}
-                  {product.items.length > 0 && (
+                  {/* {product.items.length > 0 && (
                     <div className="flex flex-col gap-2 mt-5">
                       <ul className="flex flex-col gap-2 pt-3">
                         {product.items.map((item) => (
@@ -203,7 +204,13 @@ export default function WealthServiceSection() {
                         ))}
                       </ul>
                     </div>
-                  )}
+                  )} */}
+                  <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
+                    <div className="p-2 bg-emerald-800 group-hover:bg-white group-hover:text-green-900 text-white">
+                      <ArrowRight size={14} />
+                    </div>
+                    LEARN MORE
+                  </div>
                 </div>
               </a>
             : <Link
@@ -214,7 +221,7 @@ export default function WealthServiceSection() {
                   <h3 className="text-lg font-semibold group-hover:text-white text-black">
                     {product.title}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed">
+                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed line-clamp-2">
                     {product.description}
                   </p>
                   {/* <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
@@ -223,7 +230,7 @@ export default function WealthServiceSection() {
                     </div>
                     LEARN MORE
                   </div> */}
-                  {product.items.length > 0 && (
+                  {/* {product.items.length > 0 && (
                     <div className="flex flex-col gap-2">
                       <ul className="flex flex-col gap-2">
                         {product.items.map((item) => (
@@ -241,7 +248,16 @@ export default function WealthServiceSection() {
                         ))}
                       </ul>
                     </div>
-                  )}
+                  )} */}
+                  <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
+                    <div className="p-2 bg-emerald-800 group-hover:bg-white group-hover:text-green-900 text-white">
+                      <ArrowRight
+                        size={14}
+                        color="currentColor"
+                      />
+                    </div>
+                    LEARN MORE
+                  </div>
                 </div>
               </Link>,
           )}

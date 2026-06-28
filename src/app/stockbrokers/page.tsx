@@ -6,6 +6,7 @@ import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/stockbrokers/BoardExcutives";
 import FAQSection from "@/components/stockbrokers/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
+import { Bashir } from "../assets";
 
 const WealthManagementPage = () => {
   return (
@@ -21,7 +22,7 @@ const WealthManagementPage = () => {
         description="Imagine a one-stop shop, where you can buy and sell stocks, get research information on what the best performing stocks are, work with experts to manage your portfolio, portfolio of your clients and even reconstruct a non-performing portfolio."
       />
       <WhoWeAreSection
-        sectionImage={"/stockbroker.jpg"}
+        sectionImage={Bashir}
         showMeetings={false}
         descriptions={[
           `Meristem Stockbrokers Limited (MSBL) is a wholly owned subsidiary of Meristem Securities Limited (MSL). Meristem Stockbrokers Limited It is a Trading License Holder (TLH) of the Nigerian Exchange (NC) and is licensed by the Securities and Exchange Commission (SEC) in Nigeria.`,

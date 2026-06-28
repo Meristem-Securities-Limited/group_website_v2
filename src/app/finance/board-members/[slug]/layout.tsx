@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "Meristem Finance Management Limited",
       images: [
         {
-          url: typeof executive.image === "string" ? executive.image : executive.image,
+          url: executive.image as string,
           width: 800,
           height: 800,
           alt: `${executive.name} - ${executive.role}`,
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: `${executive.name} - ${executive.role} | Meristem Finance Management Limited`,
       description: `${executive.name}, ${executive.role} at Meristem Finance Management Limited. Discover their expertise and leadership role in Nigeria’s financial industry.`,
-      images: [typeof executive.image === "string" ? executive.image : executive.image],
+      images: [typeof executive.image],
     },
     alternates: {
       canonical: `https://www.meristemng.com/finance/board-members/${slug}`,

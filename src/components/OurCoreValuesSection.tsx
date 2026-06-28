@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 export default function OurCoreValuesSection() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(0);
 
   const values = [
     {

@@ -26,7 +26,7 @@ export default function WhoWeAreSection({
       id="who-we-are"
       className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-28 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-28 items-start">
           {/* Text Content */}
           <div>
             <motion.h2
@@ -58,7 +58,7 @@ export default function WhoWeAreSection({
                   src={GroupMeetings}
                   alt="Business meeting"
                   priority
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-auto max-h-100 object-cover object-center"
                 />
               </motion.div>
             )}
@@ -69,16 +69,14 @@ export default function WhoWeAreSection({
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}>
-            <div className="h-full">
-              <Image
-                src={sectionImage}
-                width={"900"}
-                height={"400"}
-                alt="Business meeting"
-                priority
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <Image
+              src={sectionImage}
+              width={"900"}
+              height={"400"}
+              alt="Business meeting"
+              priority
+              className="w-auto h-auto sm:max-h-100 lg:max-h-180 object-contain object-center"
+            />
           </motion.div>
         </div>
       </div>

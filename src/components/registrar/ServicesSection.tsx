@@ -7,53 +7,69 @@ import Link from "next/link";
 
 const products = [
   {
-    id: 3,
-    title: "Meristem Business Associate",
+    id: 1,
+    title: "Share Registration Services",
     description:
-      "Are you a licensed Broker, Sub-Broker, Fund Manager, Corporate/Individual Advisor or any other capital market operator?",
+      "We block the leaks in your shareholder management. A risk is likely to occur when your business is running without a Registrar or the right Registrar partner. Your shareholders are an important part of your company and echoing that is what we do best at Meristem Registrars. We put ease into shareholder management and ensure your shareholders have a great experience investing in your company.",
     img: "",
-    link: "/meristem-business-associate",
+    link: "https://meritrade.com/",
+    items: [
+      "Debt Capital Market Issuances (Bonds, Commercial Papers, etc.)",
+      "Debt Refinancing",
+      "Regulatory Filings",
+      "Have 6-month current accounts",
+    ],
   },
   {
     id: 2,
-    title: "Share/Dividend Tracking & Recovery",
+    title: "Public Offer Services",
     description:
-      "If you got stocks years ago, it is likely they have appreciated and all you need is to track and start building on them.  With millions of shares traded over a period time...",
-    link: "share-dividend-tracking-recovery",
+      "At Meristem, we understand the need to access a wider pool of investors and raise significant funds for optimal business growth. This is why we make it our duty to walk you through the process, from planning to listing, ensuring compliance and connecting you with investors.",
+    img: "",
+    link: "share-dividend",
+    items: ["Rights Issuance", "Private Placement", "Regulatory Filings"],
   },
   {
-    id: 1,
-    title: "Stock Trading",
+    id: 3,
+    title: "Right Issue Services",
     description:
-      "Will you like to buy or sell stocks? Be your own broker and do it yourself via MERITRADE, our online stockbroking platform. Will you like better management of your shares and access to the",
+      "Will you like to raise capital without increasing the number of shareholders you have? Then this service is for you. As a business, the need for growth is paramount, but at what cost?",
     img: "",
-    link: "stock-trading",
+    link: "https://meriboss.com/",
+    items: [
+      "Corporate Restructuring",
+      "Share Capital Restructuring",
+      "Business Valuation",
+      "M&A Advisory",
+      "Divestments",
+      "Buyouts",
+    ],
   },
-
-  // {
-  //   id: 4,
-  //   title: "Mutual Funds",
-  //   description:
-  //     "We offer clients the choice of either money market or equity market funds depending on their investment objectives and risk profile, bearing in mind that the level of risk you take, and ...",
-  //   img: "",
-  //   link: "mutual-funds",
-  // },
-  // {
-  //   id: 5,
-  //   title: "Fixed Income Dealing",
-  //   description:
-  //     "Under our fixed term investment portfolio, we provide a platform for execution, offering clients access to a broad range of instruments. Based on our client's objectives and return ...",
-  //   img: "",
-  //   link: "fixed-income-dealing",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Structured Products",
-  //   description:
-  //     "At Meristem Wealth, we offer our clients a range of structured products that meet with varying client needs and objectives.",
-  //   img: "",
-  //   link: "structured-products",
-  // },
+  {
+    id: 4,
+    title: "Bond Register Administration",
+    description:
+      "The operational requirements of raising capital from the public tends to cause companies to fall short of regulatory expectations. Companies have been fined and worse for not complying with regulations.",
+    img: "",
+    link: "mutual-funds",
+    items: ["Business Plans", "Feasibility Studies", "License Acquisitions"],
+  },
+  {
+    id: 5,
+    title: "AGM/EGM Administration",
+    description:
+      "Officiating at Annual General Meetings (AGM) & Extraordinary General Meetings (EGM); handling proxies and polling activities at these meetings.",
+    img: "",
+    link: "fixed-income-dealing",
+  },
+  {
+    id: 6,
+    title: "Probate Services",
+    description:
+      "At Meristem, we recognize the pain of losing a loved one, thus we make it our business to ensure that the transfer of their asset is seamless, prompt and stress-free.",
+    img: "",
+    link: "structured-products",
+  },
   // {
   //   id: 7,
   //   title: "Evergreen",
@@ -120,7 +136,7 @@ export default function WealthServiceSection() {
 
         <motion.div
           ref={scrollRef}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 items-start"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -136,9 +152,34 @@ export default function WealthServiceSection() {
                   <h3 className="text-lg font-semibold group-hover:text-white text-black">
                     {product.title}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed">
+                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed line-clamp-3">
                     {product.description}
                   </p>
+                  {/* <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
+                    <div className="p-2 bg-emerald-800 group-hover:bg-white group-hover:text-green-900 text-white">
+                      <ArrowRight size={14} />
+                    </div>
+                    LEARN MORE
+                  </div> */}
+                  {/* {product.items.length > 0 && (
+                    <div className="flex flex-col gap-2 mt-5">
+                      <ul className="flex flex-col gap-2 pt-3">
+                        {product.items.map((item) => (
+                          <li
+                            key={item}
+                            className="flex items-center gap-2 py-1 text-sm lg:text-base text-gray-700 group-hover:text-white">
+                            <span className="group-hover:text-white text-emerald-800">
+                              <CheckCircle2
+                                color="currentColor"
+                                size={22}
+                              />
+                            </span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )} */}
                   <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
                     <div className="p-2 bg-emerald-800 group-hover:bg-white group-hover:text-green-900 text-white">
                       <ArrowRight size={14} />
@@ -155,9 +196,34 @@ export default function WealthServiceSection() {
                   <h3 className="text-lg font-semibold group-hover:text-white text-black">
                     {product.title}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed">
+                  <p className="text-gray-600 text-sm md:text-base group-hover:text-white leading-relaxed line-clamp-3">
                     {product.description}
                   </p>
+                  {/* <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
+                    <div className="p-2 bg-emerald-800 group-hover:bg-white group-hover:text-green-900 text-white">
+                      <ArrowRight size={14} />
+                    </div>
+                    LEARN MORE
+                  </div> */}
+                  {/* {product.items.length > 0 && (
+                    <div className="flex flex-col gap-2">
+                      <ul className="flex flex-col gap-2">
+                        {product.items.map((item) => (
+                          <li
+                            key={item}
+                            className="flex items-center gap-2 text-sm lg:text-base text-gray-700 group-hover:text-white">
+                            <span className="group-hover:text-white text-emerald-800">
+                              <CheckCircle2
+                                color="currentColor"
+                                size={22}
+                              />
+                            </span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )} */}
                   <div className=" mt-9 text-sm lg:text-base flex items-center gap-2 text-black group-hover:text-white font-semibold">
                     <div className="p-2 bg-emerald-800 group-hover:bg-white group-hover:text-green-900 text-white">
                       <ArrowRight size={14} />
