@@ -32,7 +32,7 @@ const WealthManagementPage = () => {
         ]}
       />
       <WealthServiceSection />
-      <BenefitsSection />
+      {/* <BenefitsSection /> */}
       <WealthBoardExecutiveSection />
       <FAQSection />
       <MeristemContactSection />

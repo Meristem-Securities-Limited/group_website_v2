@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqs: Record<string, { question: string; answer: string }[]> = {
-  "Services": [
+  "Shares": [
     {
       question: "What services does Capital Limited offer?",
       answer:
@@ -26,14 +26,14 @@ const faqs: Record<string, { question: string; answer: string }[]> = {
         "Meristem Capital Limited offers a range of business and financial advisory including strategic planning, valuation analysis, corporate and share capital restructuring, and financial modelling, feasibility studies to help our clients make informed decisions and achieve their business goals.",
     },
   ],
-  "Track Records": [
+  "Dividends": [
     {
       question: "What industries does Meristem Capital Limited specialize in?",
       answer:
         "Meristem Capital Limited is a sector-agnostic financial advisory company, operating across a wide range of industries including oil and gas, healthcare, manufacturing, energy, finance, and consumer goods, to mention a few.",
     },
   ],
-  "Transactions and Fees": [
+  "Right Issues": [
     {
       question:
         "What is the typical timeline for completing transactions with Meristem Capital Limited?",
@@ -50,32 +50,21 @@ const faqs: Record<string, { question: string; answer: string }[]> = {
         "This depends on what services is being performed. Meristem Capital Limited's services, could entail various fees such as retainer fees, success fees, and transaction-based fees etc all depending on the specific transaction.",
     },
   ],
-  "Onboarding": [
-    {
-      question: "How can I become a client of Meristem Capital Limited?",
-      answer: "Send us an email at capital@meristemng.com.",
-    },
-    {
-      question: "How does Meristem Capital Limited ensure confidentiality and privacy?",
-      answer:
-        "Meristem Capital Limited has a strict adherence to the confidentiality and privacy standards of our clients, by making use of secure communication channels in handling client information, non-disclosure agreements with employees and staff, and compliance with our regulatory requirements.",
-    },
-  ],
 };
 
 const tabs = Object.keys(faqs);
 
 export default function FAQSection() {
-  const [activeTab, setActiveTab] = useState("Services");
+  const [activeTab, setActiveTab] = useState("Shares");
   const [openIndex, setOpenIndex] = useState<number | null>(3);
 
   return (
     <section
       id="faq"
-      className="py-16 lg:px-6 max-w-5xl mx-auto">
+      className="py-16 lg:px-6 max-w-4xl mx-auto">
       <div className="py-16 px-6 mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl lg:text-5xl font-semibold text-gray-900 leading-tight capitalize">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 leading-tight capitalize">
             Frequently asked questions
           </h2>
         </div>
