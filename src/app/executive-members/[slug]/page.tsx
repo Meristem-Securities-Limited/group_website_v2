@@ -88,30 +88,31 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
 
             </div>`,
   },
-  {
-    slug: "damilola-hassan",
-    image: Damilola,
-    name: "Damilola Hassan",
-    role: "Managing Director, Meristem Trustees Limited",
+    {
+    slug: "stanley-jacob",
+    image: Stanley,
+    name: "Dr. Stanley Jacob FCIB",
+    role: "Group Chief Innovation & Technology Officer",
     description: `<div class="executive-info">
-          <p class="mb-6">
-          Damilola Hassan is a seasoned financial planner and wealth management expert with over 18 years of experience in the financial services industry. She has a strong track record in investment advisory, estate planning, and wealth preservation, working closely with individuals, families, and institutions to secure financial legacies across generations.
-          <br><br>
-          Before transitioning into investment banking, Damilola served as an Executive Secretary at the Manufacturers Association of Nigeria (MAN) for over 3 years, where she gained extensive experience in stakeholder management, policy advocacy, and negotiations within the manufacturing sector.
-          </p>
           <p class="my-6">
-          Currently, as the Managing Director of Meristem Trustees Limited, Damilola leads the firm in providing strategic estate planning and trust solutions tailored to high-net-worth individuals and businesses. She holds an MBA from Lagos Business School (Pan-Atlantic University) and an MSc from the University of Lagos. She is also a member of the Nigerian Institute of Management (NIM) and has completed executive education programs at The Wharton School of Business, University of Pennsylvania, and the University of Chicago Booth School of Business.
-          </p>
-
-          
+          Stanley Jacob is the Group Chief Innovation & Technology Officer (GCITO) of Meristem Securities Limited, a seasoned technology and financial services executive with over two decades of driving platform orchestration, driving technology innovation, digitisation, nurturing fintechs, strategic
+partnerships and inclusive finance across Africa.  </p>
+         
+          <p class="my-6">As a recognized thought leader in the African fintech ecosystem, Stanley currently serves as the President of the Fintech Association of Nigeria (FintechNGR), representing over 600 member organizations, and as Vice President for Western Africa at the Africa Fintech Network (AFN). His industry contributions have earned him prestigious recognitions, including Payment Innovator of the Year 2023 (West Africa), the flagship African Technology award - Titan of Tech Merit Award in
+2023, Payment CEO of the Year 2024 (West Africa) and the MSME Digital Finance CEO of the Year
+2025 awarded by the Nigeria Economic Forum Series and the Office of the Vice President of Nigeria</p>  
+          <p class="my-6">His global experience spans senior leadership roles at Mastercard International, Ecobank Transnational, Standard Chartered Bank and within the Standard Bank Group, where he drove enterprise-wide digital transformation, technology innovation, revenue growth and platform
+expansion across multiple African markets.</p>
           <p class="my-6">
-          Damilola is a Fellow of the Chartered Institute of Stockbrokers (FCS), an Authorized Dealing Clerk of the Nigerian Exchange (NGX), and currently serves as the President of the Association of Corporate and Individual Investment Advisers (CIIA).</p>
-          <p class="my-6">
-Beyond finance, she is a certified Family Finance Coach and Counsellor, holding an Associate Practitioner certification in Family Systems Engineering from the Institute of Family Engineering &amp; Development (IFED) West Africa. Her thought leadership in finance and wealth management earned her a feature in the BusinessDay Leading Women Series and recognition as one of Nigeria’s 50 Inspiring Women Leaders in 2022.</p>
-<p class="executive-bio">Damilola is a strong advocate for work-life integration and female mentorship, serving as a mentor on the WIMBOARD platform. She enjoys reading, teaching, traveling, and writing fiction.</p>
-
-
-          <p></p>
+          Academically, Stanley holds a Doctor of Business Administration with research focused on Green Banking in Africa, MBA in Technology Management, complemented by advanced executive and post graduate training in digital business, strategy, cybersecurity, venture capital and private equity from leading global institutions including Imperial College London, INSEAD, University of
+Oxford, Harvard Business School, MIT, Columbia Business School and Tuft School of Law &
+Diplomacy.   
+        </p>
+        <p class="my-6">
+          He is a trusted industry leader and policy advisor supporting regulators and other industry stakeholder in shaping Nigeria's digital finance, payment system vision and financial inclusion
+initiatives.
+        </p>
+         
         </div>`,
   },
   {
@@ -160,28 +161,32 @@ Under his leadership, Meristem Wealth Management has earned multiple industry re
         </div>`,
   },
   {
-    slug: "rasaki-salawu",
-    image: Salawu,
-    name: "Rasaki Salawu, CFA",
-    role: "Managing Director, Meristem  Capital Limited",
+    slug: "damilola-hassan",
+    image: Damilola,
+    name: "Damilola Hassan",
+    role: "Managing Director, Meristem Trustees Limited",
     description: `<div class="executive-info">
-          <p class="my-6">
-          Rasaki Salawu, CFA, is a seasoned investment banking professional with over a decade of experience in the financial services industry, specializing in financial advisory, capital raising, and corporate finance. As the Head of Investment Banking at Meristem Capital Limited, he plays a key role in structuring and executing high-value transactions across multiple sectors.
-<br><br>Rasaki began his career as a Research Analyst at Meristem Securities Limited, where he provided in-depth coverage of the agriculture and mining sectors while contributing to macroeconomic research. In October 2014, he transitioned to Investment Banking, where he has successfully led numerous capital market transactions, including:
+          <p class="mb-6">
+          Damilola Hassan is a seasoned financial planner and wealth management expert with over 18 years of experience in the financial services industry. She has a strong track record in investment advisory, estate planning, and wealth preservation, working closely with individuals, families, and institutions to secure financial legacies across generations.
+          <br><br>
+          Before transitioning into investment banking, Damilola served as an Executive Secretary at the Manufacturers Association of Nigeria (MAN) for over 3 years, where she gained extensive experience in stakeholder management, policy advocacy, and negotiations within the manufacturing sector.
           </p>
-          <ul class="my-6 list-disc list-inside">
-            <li>Debt and equity capital raising,</li>
-            <li>Mergers and acquisitions (M&amp;A) advisory,</li>
-            <li>Private placements and valuation mandates.</li>
-          </ul>
           <p class="my-6">
-          A high-achieving scholar, Rasaki graduated with first-class honors in Agricultural Economics, earning both his B.Sc. and M.Sc from the University of Ibadan. He is also a Chartered Financial Analyst (CFA) charterholder, an Associate Member of the Chartered Institute of Stockbrokers (CIS, Nigeria), and an Authorized Dealing Clerk of the Nigerian Exchange (NGX).<br><br>
-          With his deep expertise in corporate finance, investment structuring, and strategic advisory, Rasaki continues to drive Meristem Capital’s leadership in investment banking and capital markets.<br><br>
-          Outside of work, he enjoys playing chess and swimming as part of his recreational activities.
+          Currently, as the Managing Director of Meristem Trustees Limited, Damilola leads the firm in providing strategic estate planning and trust solutions tailored to high-net-worth individuals and businesses. She holds an MBA from Lagos Business School (Pan-Atlantic University) and an MSc from the University of Lagos. She is also a member of the Nigerian Institute of Management (NIM) and has completed executive education programs at The Wharton School of Business, University of Pennsylvania, and the University of Chicago Booth School of Business.
           </p>
+
+          
+          <p class="my-6">
+          Damilola is a Fellow of the Chartered Institute of Stockbrokers (FCS), an Authorized Dealing Clerk of the Nigerian Exchange (NGX), and currently serves as the President of the Association of Corporate and Individual Investment Advisers (CIIA).</p>
+          <p class="my-6">
+Beyond finance, she is a certified Family Finance Coach and Counsellor, holding an Associate Practitioner certification in Family Systems Engineering from the Institute of Family Engineering &amp; Development (IFED) West Africa. Her thought leadership in finance and wealth management earned her a feature in the BusinessDay Leading Women Series and recognition as one of Nigeria’s 50 Inspiring Women Leaders in 2022.</p>
+<p class="executive-bio">Damilola is a strong advocate for work-life integration and female mentorship, serving as a mentor on the WIMBOARD platform. She enjoys reading, teaching, traveling, and writing fiction.</p>
+
+
+          <p></p>
         </div>`,
   },
-  {
+   {
     slug: "kemi-ojenike",
     image: Ojenike,
     name: "Kemi Ojenike",
@@ -206,6 +211,29 @@ With a deep understanding of wealth structuring, estate planning, and family gov
           </p>
         </div>`,
   },
+  {
+    slug: "rasaki-salawu",
+    image: Salawu,
+    name: "Rasaki Salawu, CFA",
+    role: "Managing Director, Meristem  Capital Limited",
+    description: `<div class="executive-info">
+          <p class="my-6">
+          Rasaki Salawu, CFA, is a seasoned investment banking professional with over a decade of experience in the financial services industry, specializing in financial advisory, capital raising, and corporate finance. As the Head of Investment Banking at Meristem Capital Limited, he plays a key role in structuring and executing high-value transactions across multiple sectors.
+<br><br>Rasaki began his career as a Research Analyst at Meristem Securities Limited, where he provided in-depth coverage of the agriculture and mining sectors while contributing to macroeconomic research. In October 2014, he transitioned to Investment Banking, where he has successfully led numerous capital market transactions, including:
+          </p>
+          <ul class="my-6 list-disc list-inside">
+            <li>Debt and equity capital raising,</li>
+            <li>Mergers and acquisitions (M&amp;A) advisory,</li>
+            <li>Private placements and valuation mandates.</li>
+          </ul>
+          <p class="my-6">
+          A high-achieving scholar, Rasaki graduated with first-class honors in Agricultural Economics, earning both his B.Sc. and M.Sc from the University of Ibadan. He is also a Chartered Financial Analyst (CFA) charterholder, an Associate Member of the Chartered Institute of Stockbrokers (CIS, Nigeria), and an Authorized Dealing Clerk of the Nigerian Exchange (NGX).<br><br>
+          With his deep expertise in corporate finance, investment structuring, and strategic advisory, Rasaki continues to drive Meristem Capital’s leadership in investment banking and capital markets.<br><br>
+          Outside of work, he enjoys playing chess and swimming as part of his recreational activities.
+          </p>
+        </div>`,
+  },
+ 
   // {
   //   slug: "funmilola-adekola-daramola",
   //   image: Funmilola,
@@ -319,33 +347,7 @@ With a deep understanding of wealth structuring, estate planning, and family gov
          
         </div>`,
   },
-  {
-    slug: "stanley-jacob",
-    image: Stanley,
-    name: "Stanley Jacob",
-    role: "Group Chief Innovation & Technology Officer, Meristem Security Limited",
-    description: `<div class="executive-info">
-          <p class="my-6">
-          Stanley Jacob is the Group Chief Innovation & Technology Officer (GCITO) of Meristem Securities Limited, a seasoned technology and financial services executive with over two decades of driving platform orchestration, driving technology innovation, digitisation, nurturing fintechs, strategic
-partnerships and inclusive finance across Africa.  </p>
-         
-          <p class="my-6">As a recognized thought leader in the African fintech ecosystem, Stanley currently serves as the President of the Fintech Association of Nigeria (FintechNGR), representing over 600 member organizations, and as Vice President for Western Africa at the Africa Fintech Network (AFN). His industry contributions have earned him prestigious recognitions, including Payment Innovator of the Year 2023 (West Africa), the flagship African Technology award - Titan of Tech Merit Award in
-2023, Payment CEO of the Year 2024 (West Africa) and the MSME Digital Finance CEO of the Year
-2025 awarded by the Nigeria Economic Forum Series and the Office of the Vice President of Nigeria</p>  
-          <p class="my-6">His global experience spans senior leadership roles at Mastercard International, Ecobank Transnational, Standard Chartered Bank and within the Standard Bank Group, where he drove enterprise-wide digital transformation, technology innovation, revenue growth and platform
-expansion across multiple African markets.</p>
-          <p class="my-6">
-          Academically, Stanley holds a Doctor of Business Administration with research focused on Green Banking in Africa, MBA in Technology Management, complemented by advanced executive and post graduate training in digital business, strategy, cybersecurity, venture capital and private equity from leading global institutions including Imperial College London, INSEAD, University of
-Oxford, Harvard Business School, MIT, Columbia Business School and Tuft School of Law &
-Diplomacy.   
-        </p>
-        <p class="my-6">
-          He is a trusted industry leader and policy advisor supporting regulators and other industry stakeholder in shaping Nigeria's digital finance, payment system vision and financial inclusion
-initiatives.
-        </p>
-         
-        </div>`,
-  },
+
 ];
 
 export default function ExecutiveProfile({ params }: Props) {
