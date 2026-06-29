@@ -24,7 +24,7 @@ export const boardMembers = [
     name: "Sulaiman Adedokun, CFA",
     role: "Group Managing Director",
     description: `<p>
-          Sulaiman Adedokun, CFA, is a highly accomplished financial expert with over 20 years of experience in investment banking, asset management, and capital markets. He is the Group Managing Director (GMD) of Meristem Securities Limited, a leading investment firm in Nigeria, a position he assumed in January 2025. 
+          Sulaiman Adedokun, CFA, is a highly accomplished financial expert with over 25 years of experience in investment banking, asset management, and capital markets. He is the Group Managing Director (GMD) of Meristem Securities Limited, a leading investment firm in Nigeria, a position he assumed in January 2025. 
           Prior to this, he served as Deputy Group Managing Director for over a decade and has been the Managing Director of Meristem Wealth Management Limited since August 2008.
 
           <br><br>Sulaiman holds a Bachelor of Science in Banking and Finance from Olabisi Onabanjo University, where he graduated with a Second-Class Upper. His academic foundation in accounting was established at Ondo State Polytechnic, earning a Higher National Diploma (HND) with Distinction.
