@@ -70,7 +70,7 @@ export default function HeroCarousel() {
                 src={MeritradeApp}
                 priority
                 alt="meritrade-mockup.png"
-                className="w-full h-full object-cover"
+                className="w-full h-full max-h-86 object-cover object-top mt-9"
               />
             </div>
           </div>

@@ -1,12 +1,13 @@
 import React from "react";
 import AboutUsHeroSection from "@/components/about-us/AboutUsHeroSection";
-import BenefitsSection from "@/components/registrar/BenefitSection";
+// import BenefitsSection from "@/components/registrar/BenefitSection";
 import WealthServiceSection from "@/components/registrar/ServicesSection";
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/registrar/BoardExcutives";
 import FAQSection from "@/components/registrar/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
 import { Nkechinyelu } from "../assets";
+import TrackRecordSection from "@/components/registrar/TrackRecord";
 
 const WealthManagementPage = () => {
   return (
@@ -15,7 +16,8 @@ const WealthManagementPage = () => {
         backgroundImage="/wealth-management.png"
         title={
           <span className="text-3xl md:text-5xl font-bold text-white leading-1 capitalize">
-            Redefining <br /> Shareholders <br /> Management and <br /> Probate Services
+            {/* Redefining <br /> Shareholders <br /> Management and <br /> Probate Services */}
+            Modern Shareholder & <br /> Probate Solutions
           </span>
         }
         description="Unlock the full potential of probate and share registration. We're redefining the landscape with innovative solutions that simplify processes, increase transparency, and go beyond your expectations. Join us on a journey to revolutionize the way you manage your assets and navigate probate."
@@ -32,6 +34,7 @@ const WealthManagementPage = () => {
         ]}
       />
       <WealthServiceSection />
+      <TrackRecordSection />
       {/* <BenefitsSection /> */}
       <WealthBoardExecutiveSection />
       <FAQSection />

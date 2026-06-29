@@ -88,31 +88,52 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
 
             </div>`,
   },
-    {
+  {
     slug: "stanley-jacob",
     image: Stanley,
     name: "Dr. Stanley Jacob FCIB",
     role: "Group Chief Innovation & Technology Officer",
     description: `<div class="executive-info">
           <p class="my-6">
-          Stanley Jacob is the Group Chief Innovation & Technology Officer (GCITO) of Meristem Securities Limited, a seasoned technology and financial services executive with over two decades of driving platform orchestration, driving technology innovation, digitisation, nurturing fintechs, strategic
-partnerships and inclusive finance across Africa.  </p>
+         Stanley is a Fintech Executive and Business Leader with a strong drive for Platform
+Orchestration, Nurturing Start-up, Driving Innovation, Partnerships and Financial
+Inclusion. He is the Group Chief Innovation & Technology Officer (GCITO) at Meristem
+Securities Group and currently serves as the President of the Fintech Association of
+Nigeria (FintechNGR) and Vice President (Western Africa) for the Africa Fintech Network
+(AFN).</p>
          
-          <p class="my-6">As a recognized thought leader in the African fintech ecosystem, Stanley currently serves as the President of the Fintech Association of Nigeria (FintechNGR), representing over 600 member organizations, and as Vice President for Western Africa at the Africa Fintech Network (AFN). His industry contributions have earned him prestigious recognitions, including Payment Innovator of the Year 2023 (West Africa), the flagship African Technology award - Titan of Tech Merit Award in
-2023, Payment CEO of the Year 2024 (West Africa) and the MSME Digital Finance CEO of the Year
-2025 awarded by the Nigeria Economic Forum Series and the Office of the Vice President of Nigeria</p>  
-          <p class="my-6">His global experience spans senior leadership roles at Mastercard International, Ecobank Transnational, Standard Chartered Bank and within the Standard Bank Group, where he drove enterprise-wide digital transformation, technology innovation, revenue growth and platform
-expansion across multiple African markets.</p>
+          <p class="my-6">He was the Past Chairman of the Committee of e-Business Industry Heads of Nigeria
+(CeBIH) and is a Member of the Advisory Council of CeBIH. Stanley is also a Member of
+the Governing Council of the Chartered Institute of Bankers of Nigeria (CIBN) and sits on
+the Fintech & Innovation, and Capacity Building Committees of the Council.</p>
           <p class="my-6">
-          Academically, Stanley holds a Doctor of Business Administration with research focused on Green Banking in Africa, MBA in Technology Management, complemented by advanced executive and post graduate training in digital business, strategy, cybersecurity, venture capital and private equity from leading global institutions including Imperial College London, INSEAD, University of
-Oxford, Harvard Business School, MIT, Columbia Business School and Tuft School of Law &
-Diplomacy.   
+          As the Founding CEO of Zest Payments (a subsidiary of Stanbic IBTC), Stanley led the
+setup of the fintech subsidiary for the group driving payments orchestration, global e-
+Commerce and delivery of value-added services. Prior to joining Stanbic IBTC, he was the
+Head of Financial Institutions (West Africa), and Country Business Director (Nigeria) at
+Mastercard, he served at Ecobank Transnational as the Group Head of Consumer
+Payments supporting 33 countries across Africa, and at Standard Chartered Bank where
+he was the Regional Head of Digital Bank supporting retail markets across Africa. Stanley
+was the pioneer Chief Operating Officer (COO) for Fortis Mobile Money (one of the first
+16 Licensees of Mobile Money in Nigeria). 
         </p>
         <p class="my-6">
-          He is a trusted industry leader and policy advisor supporting regulators and other industry stakeholder in shaping Nigeria's digital finance, payment system vision and financial inclusion
-initiatives.
+         Passionate about supporting the global climate and sustainability objectives, Stanley holds
+a Doctoral Degree with specialization in Green Finance from Universidad Católica San
+Antonio de Murcia (UCAM) Spain, an MBA in Technology Management from ADBU India,
+Post-Graduate Diploma in Digital Business (PGDDB) from Emeritus Singapore, Post-
+Graduate in Public Policy & Administration, and has completed executive management
+courses on strategy, cybersecurity, digital finance from INSEAD, Imperial College London,
+University of Oxford, Harvard Business School, Columbia Business School, Massachusetts
+Institute of Technology (MIT), Fletcher School of Law & Diplomacy (Tufts University), Terry
+College of Business (University of Georgia), amongst others.
         </p>
-         
+         <p class="my-6">
+         He is a Fellow of the Chartered Institute of Bankers of Nigeria (FCIB), Member of the
+Institute of Directors (MIoD), Certified Cards & Payments Professional (CCPP), Fellow of
+the Institute of Credit Administration (FICA) and a licensed Project Management
+Professional (PMP & CBPP).
+         </p>
         </div>`,
   },
   {
@@ -186,7 +207,7 @@ Beyond finance, she is a certified Family Finance Coach and Counsellor, holding 
           <p></p>
         </div>`,
   },
-   {
+  {
     slug: "kemi-ojenike",
     image: Ojenike,
     name: "Kemi Ojenike",
@@ -233,7 +254,7 @@ With a deep understanding of wealth structuring, estate planning, and family gov
           </p>
         </div>`,
   },
- 
+
   // {
   //   slug: "funmilola-adekola-daramola",
   //   image: Funmilola,
@@ -347,7 +368,6 @@ With a deep understanding of wealth structuring, estate planning, and family gov
          
         </div>`,
   },
-
 ];
 
 export default function ExecutiveProfile({ params }: Props) {

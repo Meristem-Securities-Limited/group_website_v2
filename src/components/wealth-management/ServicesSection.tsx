@@ -60,7 +60,7 @@ const products = [
     description:
       "At Meristem Wealth, we offer our clients a range of Exchange Traded Funds products that meet with varying client needs and objectives.",
     img: "",
-    link: "investment-banking",
+    link: "exchange-trade-funds",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",
@@ -76,7 +76,7 @@ const products = [
     description:
       "Under our fixed term investment portfolio, we provide a platform for execution, offering clients access to a broad range of instruments. Based on our client's objectives and return ...",
     img: "",
-    link: "https://wealthbuddy.ng/mutual-funds",
+    link: "fixed-income-dealing",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",
@@ -92,7 +92,7 @@ const products = [
     description:
       "We offer clients the choice of either money market or equity market funds depending on their investment objectives and risk profile, bearing in mind that the level of risk you take, and ...",
     img: "",
-    link: "https://wealthbuddy.ng/mutual-funds",
+    link: "mutual-funds",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",
@@ -108,7 +108,7 @@ const products = [
     description:
       "Real Estate Investments basically refers to investment in Landed Properties either physically (Direct Holding) or through investment in Real Estate Funds (Indirect Holding). The services...",
     img: "",
-    link: "https://realestate.meristemng.com/",
+    link: "real-estate-investment",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",

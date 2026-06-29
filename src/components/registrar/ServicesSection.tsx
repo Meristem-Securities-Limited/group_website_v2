@@ -12,7 +12,7 @@ const products = [
     description:
       "We block the leaks in your shareholder management. A risk is likely to occur when your business is running without a Registrar or the right Registrar partner. Your shareholders are an important part of your company and echoing that is what we do best at Meristem Registrars. We put ease into shareholder management and ensure your shareholders have a great experience investing in your company.",
     img: "",
-    link: "https://meritrade.com/",
+    link: "share-registration-services",
     items: [
       "Debt Capital Market Issuances (Bonds, Commercial Papers, etc.)",
       "Debt Refinancing",
@@ -26,7 +26,7 @@ const products = [
     description:
       "At Meristem, we understand the need to access a wider pool of investors and raise significant funds for optimal business growth. This is why we make it our duty to walk you through the process, from planning to listing, ensuring compliance and connecting you with investors.",
     img: "",
-    link: "share-dividend",
+    link: "public-offer-services",
     items: ["Rights Issuance", "Private Placement", "Regulatory Filings"],
   },
   {
@@ -35,7 +35,7 @@ const products = [
     description:
       "Will you like to raise capital without increasing the number of shareholders you have? Then this service is for you. As a business, the need for growth is paramount, but at what cost?",
     img: "",
-    link: "https://meriboss.com/",
+    link: "right-issue-services",
     items: [
       "Corporate Restructuring",
       "Share Capital Restructuring",
@@ -51,7 +51,7 @@ const products = [
     description:
       "The operational requirements of raising capital from the public tends to cause companies to fall short of regulatory expectations. Companies have been fined and worse for not complying with regulations.",
     img: "",
-    link: "mutual-funds",
+    link: "bond-register-administration",
     items: ["Business Plans", "Feasibility Studies", "License Acquisitions"],
   },
   {
@@ -60,7 +60,7 @@ const products = [
     description:
       "Officiating at Annual General Meetings (AGM) & Extraordinary General Meetings (EGM); handling proxies and polling activities at these meetings.",
     img: "",
-    link: "fixed-income-dealing",
+    link: "agm-egm-administration",
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ const products = [
     description:
       "At Meristem, we recognize the pain of losing a loved one, thus we make it our business to ensure that the transfer of their asset is seamless, prompt and stress-free.",
     img: "",
-    link: "structured-products",
+    link: "probate-services",
   },
   // {
   //   id: 7,

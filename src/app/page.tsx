@@ -12,9 +12,9 @@ export default function Home() {
     <>
       <HeroSection />
       <MeristemTimeline />
+      <MeristemSubsidiaries />
       {/* <CapabilitiesSection /> */}
       <ProductsSection />
-      <MeristemSubsidiaries />
       <WhyChooseMeristem />
       <ResearchSection />
       <MeristemContactSection />

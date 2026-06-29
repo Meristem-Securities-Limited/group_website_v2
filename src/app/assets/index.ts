@@ -1,5 +1,6 @@
 import Logo from "./meristem logo 1.png";
 import WhiteLogo from "./meristem logos 2.png";
+import WealthBuddyBlackLogo from "./green-logo.svg";
 import VideoThumbnail from "./video-thumbnail.png";
 import WhatsappLogo from "./whatsapp-logo.svg";
 import MailIcon from "./mail-icon.svg";
@@ -43,14 +44,23 @@ import SimpleWill from "./legal-document-signing.jpg";
 import GooglePlay from "./google-play.png";
 import AppleStore from "./apple-store.png";
 import WealthbuddyApp from "./wealthbuddy-app.png";
-import MeritradeApp from "./meritrade-app.png";
+import MeritradeApp from "./Artboard.png";
+import MeritradeApp2 from "./meritrade-app.jpg";
 import AdeOjo from "./ADE_OJO.jpg";
 import Amina from "./Amina.jpg";
-import Stanley from "./stanley-jacob.jpeg";
+import Stanley from "./SJ Picture.jpeg";
+import corporateTrust from "./corporate-trust.png";
+import publicTrust from "./public-trust.png";
+import privateTrust from "./private-trust.png";
 
 export {
+  WealthBuddyBlackLogo,
+  publicTrust,
+  privateTrust,
+  corporateTrust,
   Stanley,
   Mubo2,
+  MeritradeApp2,
   MeritradeApp,
   WealthbuddyApp,
   AppleStore,

@@ -20,7 +20,9 @@ const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
   height,
   className,
 }) => {
-  const [imageSrc, setImageSrc] = useState<string | StaticImageData>(src);
+  const [imageSrc, setImageSrc] = useState<string | StaticImageData>(
+    src ?? "https://placehold.co/600x400",
+  );
 
   return (
     <Image

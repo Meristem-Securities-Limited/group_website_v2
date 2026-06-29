@@ -29,7 +29,6 @@ const products = [
     img: "",
     link: "stock-trading",
   },
-
   // {
   //   id: 4,
   //   title: "Mutual Funds",

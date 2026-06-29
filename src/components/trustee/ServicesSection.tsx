@@ -12,14 +12,14 @@ const products = [
     description:
       "We partner with you to ensure your wishes are executed with professionalism and efficiency. Thus, making sure your legacy lives on in the manner you have decided.",
     img: "",
-    link: "/meristem-business-associate",
+    link: "private-trust",
   },
   {
     id: 2,
     title: "Public Trust",
     description:
       "Public trust is the degree to which the public believes that business will act in a particular manner because the business has included the public’s interest into its own.",
-    link: "share-dividend-tracking-recovery",
+    link: "public-trust",
   },
   {
     id: 1,
@@ -27,7 +27,7 @@ const products = [
     description:
       "Do you run a corporate entity? Do you have asset which you will like better managed to earn you profits? Will you like these profits to form funds for syndicated lending or part of the employee benefit",
     img: "",
-    link: "stock-trading",
+    link: "corporate-trust",
   },
 
   // {

@@ -130,7 +130,7 @@ export default function FAQSection() {
                   setActiveTab(tab);
                   setOpenIndex(null);
                 }}
-                className="relative lg:flex-1 lg:px-10 lg:py-3 py-2 w-full min-w-[140px] lg:min-w-auto rounded-full lg:text-sm text-xs font-medium transition-colors duration-200 focus:outline-none"
+                className="relative lg:flex-1 lg:px-10 lg:py-3 py-2 w-full min-w-[140px] lg:min-w-auto rounded-full lg:text-base text-sm font-medium transition-colors duration-200 focus:outline-none"
                 style={{
                   color: activeTab === tab ? "#fff" : "#000",
                 }}>
@@ -174,7 +174,7 @@ export default function FAQSection() {
                   }}>
                   <div className="flex items-center justify-between px-5 py-4">
                     <span
-                      className="lg:text-base text-sm font-medium"
+                      className="lg:text-lg text-base font-medium"
                       style={{ color: "#111827" }}>
                       {faq.question}
                     </span>
@@ -210,7 +210,7 @@ export default function FAQSection() {
                         transition={{ duration: 0.25, ease: "easeInOut" }}
                         style={{ overflow: "hidden" }}>
                         <p
-                          className="px-4 pb-5 lg:text-sm text-xs leading-relaxed"
+                          className="px-4 pb-5 lg:text-base text-sm leading-relaxed"
                           style={{ color: "#6b7280" }}>
                           {faq.answer}
                         </p>

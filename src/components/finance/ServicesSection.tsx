@@ -12,7 +12,7 @@ const products = [
     description:
       "Bridge financing, also known as bridge loans, is short-term financing designed to provide companies with funds until they to real estate development firms working on projects with off-takers. It helps these firms meet deadlines, hedge against inflation, and cover expenses before receiving full off-take payments.",
     img: "",
-    link: "#",
+    link: "bridge-financing",
     items: [
       "Company Profile",
       "Corporate Current Bank Account Statements",
@@ -31,7 +31,7 @@ const products = [
     description:
       "This interest-rate-friendly option helps you access the capital to acquire the equipment needed to boost your growth. We finance a significant portion of the cost, with flexible repayment plans. All you must do is pay an affordable and convenient monthly or annual rental.",
     img: "",
-    link: "share-dividend",
+    link: "meristem-finance-lease",
     items: [
       "Company Profile",
       "Corporate Current Bank Account Statements",
@@ -50,14 +50,14 @@ const products = [
     description:
       "We offer a robust suite of Financial advisory services ranging from our expert guidance on corporate and share capital restructuring to optimize your operational efficiency, accurate business valuations of your company's worth to help make informed decisions, mergers and acquisitions (M&A) support and advisory and for businesses hoping to sell some assets or divest entire entities, we offer expertise in divestments and buyouts.",
     img: "",
-    link: "https://meriboss.com/",
+    link: "working-capital-loan",
     items: [
-      "Corporate Restructuring",
-      "Share Capital Restructuring",
-      "Business Valuation",
-      "M&A Advisory",
-      "Divestments",
-      "Buyouts",
+      "Covers expenditure gaps",
+      "Access to short-term loan",
+      "Flexible repayment terms",
+      "Helps businesses stay afloat by financing their payment gaps and fulfilling their working capital requirements",
+      "Assists businesses fulfil their short-term goals or urgent cash flow shortfalls.",
+      "Secures businesses during unexpected circumstances.",
     ],
   },
   {
@@ -65,43 +65,43 @@ const products = [
     title: "Local Purchase Order (LPO) Financing",
     description:
       "We offer solid business plans that outline our client's goals, strategies, and financial projections and ensure their business idea has strong potential with thorough feasibility studies.",
-    img: "",
-    link: "mutual-funds",
+    img: "local-purchase-order",
+    link: "local-purchase-order",
     items: ["Business Plans", "Feasibility Studies", "License Acquisitions"],
   },
-  {
-    id: 5,
-    title: "Local Purchase Order (LPO) Financing",
-    description:
-      "We offer solid business plans that outline our client's goals, strategies, and financial projections and ensure their business idea has strong potential with thorough feasibility studies.",
-    img: "",
-    link: "mutual-funds",
-    items: ["Business Plans", "Feasibility Studies", "License Acquisitions"],
-  },
+  // {
+  //   id: 5,
+  //   title: "Local Purchase Order (LPO) Financing",
+  //   description:
+  //     "We offer solid business plans that outline our client's goals, strategies, and financial projections and ensure their business idea has strong potential with thorough feasibility studies.",
+  //   img: "",
+  //   link: "mutual-funds",
+  //   items: ["Business Plans", "Feasibility Studies", "License Acquisitions"],
+  // },
 
   {
     id: 55,
     title: "Invoice Discounting",
     description:
       "Get access to working capital quickly by leveraging your unpaid invoices. We offer competitive interest rates and flexible repayment plans.",
-    img: "",
-    link: "fixed-income-dealing",
+    img: "invoice-discounting",
+    link: "invoice-discounting",
   },
   {
     id: 68,
     title: "Cash Backed Facility",
     description:
       "Need a quick cash injection? Use your existing cash reserves to secure short-term, cash-backed loans for immediate liquidity.",
-    img: "",
-    link: "structured-products",
+    img: "cash-backed-facility",
+    link: "cash-backed-facility",
   },
   {
     id: 70,
     title: "Equity Backed Facility",
     description:
       "Unlock the potential of your existing investments. Access loans secured by your equities without the need to sell them.",
-    img: "",
-    link: "evergreen",
+    img: "equity-backed-facility",
+    link: "equity-backed-facility",
   },
   // {
   //   id: 8,

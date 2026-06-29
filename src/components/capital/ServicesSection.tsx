@@ -12,7 +12,7 @@ const products = [
     description:
       "We offer Debt Capital market services to a wide range of businesses and give clients an array of debt financing options to guide you through unlocking capital opportunities and help your company raise funds through debt capital market issuances such as bonds, and commercial papers and suggest the best deal for your business. We also connect businesses in securing debt financing from lenders tailored to your specific needs and take care of debt financing regulatory filings.",
     img: "",
-    link: "https://meritrade.com/",
+    link: "debt-captial-market",
     items: [
       "Debt Capital Market Issuances (Bonds, Commercial Papers, etc.)",
       "Debt Refinancing",
@@ -26,7 +26,7 @@ const products = [
     description:
       "We offer exceptional Equity Capital market services for businesses who need rights issuance, Initial Public Offerings or private placements to raise capital and connect with potential investors. We also ensure businesses' capital raising activities comply with all regulations with our expertise in regulatory filings.",
     img: "",
-    link: "share-dividend",
+    link: "equity-captial-market",
     items: ["Rights Issuance", "Private Placement", "Regulatory Filings"],
   },
   {
@@ -35,7 +35,7 @@ const products = [
     description:
       "We offer a robust suite of Financial advisory services ranging from our expert guidance on corporate and share capital restructuring to optimize your operational efficiency, accurate business valuations of your company's worth to help make informed decisions, mergers and acquisitions (M&A) support and advisory and for businesses hoping to sell some assets or divest entire entities, we offer expertise in divestments and buyouts.",
     img: "",
-    link: "https://meriboss.com/",
+    link: "capital-financial-advisory",
     items: [
       "Corporate Restructuring",
       "Share Capital Restructuring",
@@ -51,7 +51,7 @@ const products = [
     description:
       "We offer solid business plans that outline our client's goals, strategies, and financial projections and ensure their business idea has strong potential with thorough feasibility studies.",
     img: "",
-    link: "mutual-funds",
+    link: "capital-business-advisory",
     items: ["Business Plans", "Feasibility Studies", "License Acquisitions"],
   },
   // {
