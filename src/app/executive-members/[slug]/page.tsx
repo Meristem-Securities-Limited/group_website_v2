@@ -91,7 +91,7 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
   {
     slug: "stanley-jacob",
     image: Stanley,
-    name: "Dr. Stanley Jacob FCIB",
+    name: "Dr. Stanley Jacob, FCIB",
     role: "Group Chief Innovation & Technology Officer",
     description: `<div class="executive-info">
           <p class="my-6">
