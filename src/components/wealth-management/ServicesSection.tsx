@@ -108,7 +108,7 @@ const products = [
     description:
       "Real Estate Investments basically refers to investment in Landed Properties either physically (Direct Holding) or through investment in Real Estate Funds (Indirect Holding). The services...",
     img: "",
-    link: "real-estate-investment",
+    link: "https://realestate.meristemng.com/",
     items: [
       "Disciplined investment management process",
       "Insightful support from our research team",

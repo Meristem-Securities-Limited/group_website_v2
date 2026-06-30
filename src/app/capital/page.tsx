@@ -24,7 +24,9 @@ const WealthManagementPage = () => {
         sectionImage={Salawu}
         showMeetings={false}
         descriptions={[
-          `Meristem Capital Limited (MCL) is the investment banking subsidiary of Meristem Securities Limited. It is a fast-growing Investment Bank that offers bespoke services/strategies, to meet our client's corporate finance and advisory needs, with special emphasis placed on achieving their objectives while optimizing capital structure and minimizing cost of capital.`,
+          `Meristem Capital Limited (MCL) is the investment banking subsidiary of Meristem Securities Limited, one of Nigeria's leading financial services providers. We partner with corporates, financial institutions, governments, and entrepreneurs to provide tailored capital raising, financial advisory, and corporate finance solutions that support sustainable growth and long-term value creation.`,
+          `As a registered Issuing House, we have successfully structured and executed a wide range of capital market transactions, combining deep market expertise with disciplined execution to deliver optimal outcomes for our clients. From transaction origination and structuring to valuation, regulatory guidance, and execution, we work closely with clients to navigate complex financial decisions with confidence.`,
+          `At Meristem Capital, our focus is simple: delivering innovative, client-centric solutions that optimize capital structures, unlock growth opportunities, and help our clients achieve their strategic objectives.`,
         ]}
       />
       {/* <BenefitsSection /> */}

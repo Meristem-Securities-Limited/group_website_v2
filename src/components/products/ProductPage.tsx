@@ -48,7 +48,7 @@ export default function ProductPage({
   product: any;
   backgroundURL?: string;
 }) {
-  console.log(product);
+  // console.log(product);
   const [showModal, setShowModal] = useState<boolean>(false);
 
   const wealthbuddyPlayStorUrl =

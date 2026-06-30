@@ -15,8 +15,7 @@ const WealthManagementPage = () => {
         backgroundImage="/stockbroker.png"
         title={
           <span className="text-3xl md:text-5xl font-semibold text-white leading-tight capitalize">
-            Access the best of <br />
-            the stock market
+            Your Best Market Moments, <br /> Powered by Meristem
           </span>
         }
         description="Imagine a one-stop shop, where you can buy and sell stocks, get research information on what the best performing stocks are, work with experts to manage your portfolio, portfolio of your clients and even reconstruct a non-performing portfolio."

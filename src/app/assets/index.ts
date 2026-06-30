@@ -52,10 +52,12 @@ import Stanley from "./SJ Picture.jpeg";
 import corporateTrust from "./corporate-trust.png";
 import publicTrust from "./public-trust.png";
 import privateTrust from "./private-trust.png";
+import Onyema from "./ONO Headshot.jpeg";
 
 export {
   WealthBuddyBlackLogo,
   publicTrust,
+  Onyema,
   privateTrust,
   corporateTrust,
   Stanley,

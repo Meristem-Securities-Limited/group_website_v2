@@ -13,7 +13,7 @@ export default function WhoWeAreSection({
 
     `Our success is built on exceptional customer service, unparalleled financial expertise, and
         a distinctive workplace culture fostering a team of high-achieving professionals. Remaining
-        true to our founding promise, "let&apos;s grow wealth for you", we continue to deliver on
+        true to our founding promise, "let's grow wealth for you", we continue to deliver on
         our commitment to helping our clients thrive financially.`,
   ],
 }: {

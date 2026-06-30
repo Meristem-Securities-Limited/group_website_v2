@@ -84,8 +84,7 @@ export const ContactForm: React.FC = () => {
       <div className="space-y-2 mb-9">
         <h3 className="lg:text-3xl text-2xl font-bold text-emerald-900">Contact Us</h3>
         <p>
-          Your satisfaction is our priority. Let&apos;s make sure you have the best experience with
-          us.
+          Your satisfaction is our priority. Let's make sure you have the best experience with us.
         </p>
       </div>
       <Toaster

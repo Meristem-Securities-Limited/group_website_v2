@@ -204,7 +204,7 @@ function IntroSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-5">
           <p
-            className="text-gray-700 text-base leading-8"
+            className="text-gray-900 text-base leading-8"
             // variants={fadeIn}
             // initial="hidden"
             // animate={inView ? "show" : "hidden"}
@@ -216,7 +216,7 @@ function IntroSection() {
             Advisory and Consultancy.
           </p>
           <p
-            className="text-gray-700 text-base leading-8"
+            className="text-gray-900 text-base leading-8"
             // variants={fadeIn}
             // initial="hidden"
             // animate={inView ? "show" : "hidden"}
@@ -229,7 +229,7 @@ function IntroSection() {
         </div>
 
         <RevealImg
-          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+          src="https://images.unsplash.com/photo-1739298061707-cefee19941b7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Financial advisors collaborating"
           className="h-72 md:h-80 shadow-lg"
           delay={0.15}

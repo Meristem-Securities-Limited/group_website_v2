@@ -15,7 +15,7 @@ export const products = [
     title: "Meristem Business Associate",
     description:
       "Become a Meristem Business Associate and expand your financial services portfolio with our trusted stockbroking infrastructure. This program empowers entrepreneurs, consultants, and existing financial advisors to offer world‑class investment solutions under the Meristem brand. You gain access to real‑time trading platforms, research reports, and client management tools without building your own back‑office systems. Associates earn competitive commissions on every trade executed by their referred clients while receiving dedicated training and marketing support. The program is ideal for individuals looking to monetize their professional networks in the financial services industry. With Meristem’s regulatory license and compliance oversight, you can focus on client relationships while we handle execution and settlement seamlessly.",
-    img: "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://images.unsplash.com/photo-1573496130488-f3bd89d03653?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Stockbrokers Limited",
     productBannerImgUrl: "/stockbroker.png",
     sectionImgURL: "",
@@ -54,16 +54,21 @@ export const products = [
     slug: "asset-portfolio-management",
     id: 4,
     title: "Asset & Portfolio Management",
+    productBannerImgUrl:
+      "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
     description:
       "Let Meristem’s professional investment managers build and oversee a diversified portfolio tailored to your financial goals and risk tolerance. We start with a deep discovery process to understand your income needs, time horizon, and any ethical or liquidity preferences. Your portfolio is then constructed using a mix of equities, bonds, treasury bills, mutual funds, and alternative assets to optimize returns while managing volatility. We continuously monitor market conditions, rebalancing your holdings as needed to lock in gains or reduce exposure to emerging risks. Quarterly performance reports and annual review meetings keep you fully informed of progress toward your goals. With fiduciary duty at our core, your interests always come first—we are compensated only when your portfolio grows.",
-    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
     subsidiary: "Meristem Wealth Management Limited",
-    productBAnnerImgUrl: "https://images.unsplash.com/photo-1560472355-536de3962603?w=1600&q=80",
   },
   {
     slug: "bond-investments",
     id: 5,
     title: "Bond Investments",
+    productBannerImgUrl:
+      "https://images.unsplash.com/photo-1573164574511-73c773193279?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "Earn predictable, fixed income by investing in Nigerian government and corporate bonds through Meristem’s bond desk. Bonds offer regular coupon payments (typically semi‑annual) and return of principal at maturity, making them ideal for conservative investors or those nearing retirement. We provide access to FGN bonds, state government bonds, and high‑quality corporate bonds from blue‑chip Nigerian companies. Our team analyzes credit ratings, yield curves, and interest rate trends to recommend bonds that match your income needs and risk appetite. You can invest directly via primary market auctions or purchase existing bonds on the secondary market through our trading platform. With low minimum investment amounts compared to buying directly, Meristem makes bond investing accessible to everyday Nigerians seeking stable, dollar‑like returns in naira.",
     img: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&auto=format",
@@ -73,6 +78,7 @@ export const products = [
     slug: "fixed-income-investment",
     id: 6,
     title: "Fixed Term Investment",
+    productBannerImgUrl: "/stockbroker.png",
     description:
       "Lock in guaranteed returns for a specific period with Meristem’s Fixed Term Investment product, similar to a fixed deposit but often with higher yields. Choose your investment tenor from 30 days to 365 days, and receive a fixed interest rate that does not change regardless of market fluctuations. Your principal is fully protected, and returns are paid at maturity or periodically as you prefer. This product is ideal for short‑to‑medium term savings goals such as school fees, home renovation, or a business capital reserve. We offer competitive rates that typically exceed standard bank fixed deposits because we invest in high‑quality money market instruments and commercial paper. At maturity, you can roll over automatically or withdraw your full principal plus accrued interest within 24 hours.",
     img: "https://images.unsplash.com/photo-1462206092226-f46025ffe607?w=800&auto=format",
@@ -82,9 +88,11 @@ export const products = [
     slug: "meri-dollar-investment",
     id: 7,
     title: "Meri-Dollar Investment",
+    productBannerImgUrl:
+      "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "Protect your savings from naira devaluation and earn returns in US dollars with Meristem’s Meri‑Dollar Investment product. This offering allows you to invest legitimate foreign currency (or naira converted at official rates) into dollar‑denominated instruments such as Eurobonds, foreign treasury bills, or dollar mutual funds. Your investment grows in dollar terms, shielding your purchasing power from local currency volatility. We handle all regulatory requirements, including Form A and offshore remittances, so you don’t need a foreign bank account. Returns are paid directly into your designated dollar account or reinvested to compound your wealth. With a minimum investment of just $1,000, Meri‑Dollar is accessible to professionals, business owners, and the diaspora community looking to preserve cross‑border wealth.",
-    img: "https://images.unsplash.com/photo-1580519542036-c47de4956bd3?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Wealth Management Limited",
   },
   {
@@ -93,7 +101,7 @@ export const products = [
     title: "Exchange Trade Funds",
     description:
       "Grow your wealth with confidence through Meristem’s professionally managed mutual funds, designed for every type of investor. Choose from a diverse range of funds spanning Nigerian equities, fixed‑income securities, and money market instruments—each expertly structured to match your specific risk appetite and financial timeline. Whether you’re saving for retirement, funding a child’s university education, or building an emergency fund, we have a solution tailored to your goals. Our funds feature low entry barriers, making professional investment management accessible to everyone regardless of their starting capital. Enjoy daily liquidity that allows you to access your money whenever you need it without lengthy withdrawal processes. With transparent monthly reporting and dedicated customer support, you’ll always know exactly how your investments are performing and why.",
-    img: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1573164574511-73c773193279?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Wealth Management Limited",
   },
   {
@@ -102,7 +110,7 @@ export const products = [
     title: "Mutual Funds",
     description:
       "Grow your wealth with confidence through Meristem’s professionally managed mutual funds, designed for every type of investor. Choose from a diverse range of funds spanning Nigerian equities, fixed‑income securities, and money market instruments—each expertly structured to match your specific risk appetite and financial timeline. Whether you’re saving for retirement, funding a child’s university education, or building an emergency fund, we have a solution tailored to your goals. Our funds feature low entry barriers, making professional investment management accessible to everyone regardless of their starting capital. Enjoy daily liquidity that allows you to access your money whenever you need it without lengthy withdrawal processes. With transparent monthly reporting and dedicated customer support, you’ll always know exactly how your investments are performing and why.",
-    img: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Wealth Management Limited",
   },
   {
@@ -111,7 +119,8 @@ export const products = [
     title: "Fixed Income Dealing",
     description:
       "Invest in short‑term Nigerian government securities with Meristem’s Treasury Bills service, offering risk‑free returns backed by the full faith of the Federal Government. Treasury bills are issued at a discount to face value and mature in 91, 182, or 364 days, with the difference representing your interest income. We facilitate participation in primary market auctions through the Central Bank of Nigeria, ensuring you get the most competitive rates available. You can also buy and sell existing treasury bills on the secondary market through our trading platform for added flexibility. With zero default risk and exemption from tax on interest income, treasury bills are a favorite for conservative investors and corporate treasury managers. Meristem handles all bidding, settlement, and custody so you can earn predictable returns without administrative hassle.",
-    img: "https://unsplash.com/photos/a-persons-hand-reaching-for-a-piece-of-paper-money-C8N-j4ZmZBUt",
+    img: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
     subsidiary: "Meristem Wealth Management Limited",
   },
   {
@@ -130,7 +139,7 @@ export const products = [
     description:
       "Evergreen by Meristem exists to help you design a customized retirement and estate plan that brings you happiness and peace of mind. This is done by incorporating all assets and liabilities that you may have accumulated before retirement to design a personalized combo plan that helps you achieve your personal goals ranging from financial obligations, social life, hobbies and living conditions after retirement, as well as help grow, preserve and transfer your wealth.",
     // "Build a secure, inflation‑proof retirement income with Meristem’s personalized retirement planning service. We analyze your current age, savings, expected lifestyle, and health factors to determine exactly how much you need to accumulate before retirement. Our team then designs a disciplined investment strategy using a mix of growth assets (equities, real estate) and income assets (bonds, treasury bills) tailored to your time horizon. We also help you optimize contributions to your employer’s pension scheme, RSA, or voluntary retirement accounts to maximize tax benefits. As you near retirement, we gradually shift your portfolio toward capital preservation so market downturns don’t derail your plans. With annual reviews and scenario modeling, you’ll always know whether you’re on track—and what adjustments to make if life throws a curveball.",
-    img: "https://images.unsplash.com/photo-1556742049-0cfed2f4b33b?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1611646890761-494738a85c96?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dt",
     subsidiary: "Meristem Wealth Management Limited",
   },
   {
@@ -139,7 +148,7 @@ export const products = [
     title: "Succession Planning",
     description:
       "Ensure your wealth passes smoothly to the next generation without legal battles or tax erosion through Meristem’s succession planning advisory. We work with you to map out exactly who gets what, when, and under what conditions—whether through wills, trusts, or beneficiary designations. For business owners, we help design buy‑sell agreements, family council structures, and management succession roadmaps that keep the enterprise thriving after you step down. Our team coordinates with your lawyers and accountants to ensure all documents are legally sound and tax‑efficient across multiple jurisdictions. We also conduct family education sessions to prepare heirs for their future responsibilities, reducing the risk of conflict or squandered wealth. With Meristem, your legacy becomes a source of family unity rather than dispute.",
-    img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1587822766378-e47b139c56ad?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Wealth Management Limited",
   },
   {
@@ -148,7 +157,7 @@ export const products = [
     title: "Structured Products",
     description:
       "Ensure your wealth passes smoothly to the next generation without legal battles or tax erosion through Meristem’s succession planning advisory. We work with you to map out exactly who gets what, when, and under what conditions—whether through wills, trusts, or beneficiary designations. For business owners, we help design buy‑sell agreements, family council structures, and management succession roadmaps that keep the enterprise thriving after you step down. Our team coordinates with your lawyers and accountants to ensure all documents are legally sound and tax‑efficient across multiple jurisdictions. We also conduct family education sessions to prepare heirs for their future responsibilities, reducing the risk of conflict or squandered wealth. With Meristem, your legacy becomes a source of family unity rather than dispute.",
-    img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1587822766378-e47b139c56ad?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Wealth Management Limited",
   },
 
@@ -161,6 +170,8 @@ export const products = [
       "Let Meristem act as an independent trustee for your corporate obligations, ensuring bondholders, employees, or other stakeholders are protected. We serve as trustee for debenture trusts, bond issuance, employee share ownership plans (ESOPs), and pension fund asset holding. Our role includes monitoring compliance with trust deeds, enforcing covenants, distributing interest payments, and representing beneficiary interests in restructuring scenarios. Companies benefit from our impartial oversight, which enhances investor confidence and can lower borrowing costs. We handle all administrative duties including registers, reporting, and regulatory filings with the SEC and FRC. With decades of collective experience in corporate fiduciary services, Meristem provides the professionalism and financial strength that stakeholders demand.",
     img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format",
     subsidiary: "Meristem Trustees Limited",
+    productBannerImgUrl:
+      "https://plus.unsplash.com/premium_photo-1733317239304-a6bf462a2596?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     slug: "private-trust",
@@ -430,7 +441,7 @@ export const products = [
     title: "Legacy Documentation Service",
     description:
       "Ensure every legal document that governs your wealth is properly drafted, executed, and securely stored with Meristem’s Legacy Documentation Service. We work with your lawyers to prepare or update your will, living trust, power of attorney, healthcare directive, and any family limited partnership agreements. Our team then stores the original documents in a fireproof, access‑controlled vault, with digital copies encrypted in the cloud. We also maintain a “legacy letter” that captures your personal wishes, values, and instructions that are not legally binding but guide your family after you’re gone. Authorized family members and advisors can access documents instantly via our secure portal when needed (e.g., upon incapacity or death). With Meristem, you eliminate the risk of lost, outdated, or contested documents that can unravel years of careful planning.",
-    img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1587822766378-e47b139c56ad?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Family Office Limited",
   },
   {
