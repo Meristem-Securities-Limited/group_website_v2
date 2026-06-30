@@ -50,7 +50,7 @@ export const financeBoardMembers = [
   },
   {
     slug: "sulaiman-adedokun",
-    image: "https://placehold.co/600x400",
+    image: Sulaiman,
     name: "SULAIMON ADEDOKUN, CFA",
     role: "Board Member",
     description: `<p class="text-gray-700 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit ut blandit nunc finibus malesuada mollis leo nisi inceptos. Condimentum sapien urna urna ultricies nullam vulputate phasellus.</p>
@@ -59,8 +59,8 @@ export const financeBoardMembers = [
 <p class="text-gray-700 py-3">Primis sodales mauris nec adipiscing nam ultricies mauris. Cursus tortor posuere scelerisque eu litora sed porttitor tempor tellus sollicitudin mi porttitor. Ultricies netus morbi justo netus enim a leo ullamcorper blandit. Facilisis elit suscipit ad varius nulla arcu lectus dolor gravida maecenas ornare. Id lobortis placerat fermentum orci aliquam pharetra magna mollis lacinia vehicula ultrices est aliquam in.</p>`,
   },
   {
-    slug: "sulaiman-adedokun",
-    image: Sulaiman,
+    slug: "tunde-bajela",
+    image: "https://placehold.co/600x400",
     name: "TUNDE BAJELA",
     role: "Board Member",
     description: `<p class="text-gray-700 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit ut blandit nunc finibus malesuada mollis leo nisi inceptos. Condimentum sapien urna urna ultricies nullam vulputate phasellus.</p>

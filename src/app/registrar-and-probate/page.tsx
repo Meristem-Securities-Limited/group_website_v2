@@ -13,7 +13,7 @@ const WealthManagementPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <AboutUsHeroSection
-        backgroundImage="/wealth-management.png"
+        backgroundImage="https://images.unsplash.com/photo-1528746901924-d886b501e255?q=80&w=3133&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         title={
           <span className="text-3xl md:text-5xl font-bold text-white leading-1 capitalize">
             {/* Redefining <br /> Shareholders <br /> Management and <br /> Probate Services */}

@@ -283,13 +283,13 @@ const ourProductsItems = [
         title: "Bond Investments",
         link: "/our-products/bond-investments",
       },
-      { title: "Fixed Term Investment", link: "/our-products/fixed-term-investment" },
-      { title: "Meri-Dollar Investment", link: "/our-products/meri-dollar-investment" },
+      { title: "Exchange Trade Fund", link: "/our-products/exchange-trade-funds" },
+      { title: "Structured Products", link: "/our-products/structured-produxts" },
       { title: "Mutual Funds", link: "/our-products/mutual-funds" },
-      { title: "Nigerian Treasury Bills", link: "/our-products/nigerian-treasury-bills" },
+      // { title: "Nigerian Treasury Bills", link: "/our-products/nigerian-treasury-bills" },
       {
         title: "Real Estate",
-        link: "/our-products/real-estate-investment",
+        link: "https://realestate.meristemng.com/",
       },
       {
         title: "Retirement Planning",
@@ -298,6 +298,22 @@ const ourProductsItems = [
       {
         title: "Succession Planning",
         link: "/our-products/succession-planning",
+      },
+      {
+        title: "Business Advisory",
+        link: "/our-products/business-advisory",
+      },
+      {
+        title: "Debt Capital Market Services",
+        link: "/our-products/debt-capital-market-services",
+      },
+      {
+        title: "Equity Capital Market Services",
+        link: "/our-products/equity-capital-market-services",
+      },
+      {
+        title: "Financial Advisory",
+        link: "/our-products/financial-advisory",
       },
     ],
   },
@@ -395,28 +411,28 @@ const ourProductsItems = [
       { title: "Philanthropy", link: "/our-products/philanthropy-advisory" },
     ],
   },
-  {
-    title: "Investment Advisory",
-    sectionId: "philosophy",
-    children: [
-      {
-        title: "Business Advisory",
-        link: "/our-products/business-advisory",
-      },
-      {
-        title: "Debt Capital Market Services",
-        link: "/our-products/debt-capital-market-services",
-      },
-      {
-        title: "Equity Capital Market Services",
-        link: "/our-products/equity-capital-market-services",
-      },
-      {
-        title: "Financial Advisory",
-        link: "/our-products/financial-advisory",
-      },
-    ],
-  },
+  // {
+  //   title: "Investment Advisory",
+  //   sectionId: "philosophy",
+  //   children: [
+  //     {
+  //       title: "Business Advisory",
+  //       link: "/our-products/business-advisory",
+  //     },
+  //     {
+  //       title: "Debt Capital Market Services",
+  //       link: "/our-products/debt-capital-market-services",
+  //     },
+  //     {
+  //       title: "Equity Capital Market Services",
+  //       link: "/our-products/equity-capital-market-services",
+  //     },
+  //     {
+  //       title: "Financial Advisory",
+  //       link: "/our-products/financial-advisory",
+  //     },
+  //   ],
+  // },
 ];
 
 const Navbar = () => {
@@ -666,7 +682,7 @@ const Navbar = () => {
                   Our Products
                 </h3>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
                   {ourProductsItems.map((item, i) => (
                     <div
                       key={i}

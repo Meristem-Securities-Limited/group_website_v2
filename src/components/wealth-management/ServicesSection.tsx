@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { title } from "process";
 
 const products = [
   {
@@ -22,22 +23,30 @@ const products = [
       "Commitment to maintaining client confidentiality",
     ],
   },
-  // {
-  //   id: 1,
-  //   title: "Bridge Financing",
-  //   description:
-  //     "Meristem Wealth Management Limited harnesses its specialized investment management expertise together with the vast resources of the Meristem Group to provide customized solutions.",
-  //   img: "",
-  //   link: "asset-portfolio-management",
-  //   items: [
-  //     "Disciplined investment management process",
-  //     "Insightful support from our research team",
-  //     "Diversified approach towards portfolio construction",
-  //     "Excellent service delivery platform and systems",
-  //     "Extensive risk management framework",
-  //     "Commitment to maintaining client confidentiality",
-  //   ],
-  // },
+  {
+    id: 122,
+    title: "Debt Capital Market Services",
+    description:
+      "Accelerate your company’s growth and profitability with Meristem’s Business Advisory service, tailored for small‑to‑medium enterprises. We conduct a deep diagnostic of your operations, finances, and market positioning to identify bottlenecks and opportunities. ",
+
+    // "Meristem Wealth Management Limited harnesses its specialized investment management expertise together with the vast resources of the Meristem Group to provide customized solutions.",
+    img: "",
+    link: "debt-capital-market-services",
+    // items: [
+    //   "Disciplined investment management process",
+    //   "Insightful support from our research team",
+    //   "Diversified approach towards portfolio construction",
+    //   "Excellent service delivery platform and systems",
+    //   "Extensive risk management framework",
+    //   "Commitment to maintaining client confidentiality",
+    // ],
+  },
+  {
+    link: "equity-capital-market-services",
+    title: "Equity Capital Market Services",
+    description:
+      "Unlock your company’s value and raise growth capital through Meristem’s Equity Capital Market (ECM) Services. We advise on the right strategy: an Initial Public Offering (IPO) to list on the Nigerian Exchange, a rights issue to existing shareholders, or a private placement to select institutional investors.",
+  },
   {
     id: 7,
     title: "Evergreen / Retirement Planning",
@@ -149,6 +158,30 @@ const products = [
       "Extensive risk management framework",
       "Commitment to maintaining client confidentiality",
     ],
+  },
+  {
+    id: 29,
+    title: "Business Advisory",
+    description:
+      " We also assist with turnaround situations, including restructuring debt, renegotiating supplier terms, and improving cash flow forecasting. Unlike consultants who deliver a report and leave, Meristem stays as an ongoing advisor, helping you implement changes and track results.",
+    img: "",
+    link: "business-advisory",
+    // items: [
+    //   "Disciplined investment management process",
+    //   "Insightful support from our research team",
+    //   "Diversified approach towards portfolio construction",
+    //   "Excellent service delivery platform and systems",
+    //   "Extensive risk management framework",
+    //   "Commitment to maintaining client confidentiality",
+    // ],
+  },
+  {
+    id: 45,
+    title: "Financial Advisory",
+    link: "financial-advisory",
+    description:
+      "Navigate complex financial transactions with confidence using Meristem’s comprehensive Financial Advisory service. We provide independent advice on mergers and acquisitions (M&A), including target search, valuation, negotiation, due diligence, and post‑merger integration. ",
+    // Unlock your company’s value and raise growth capital through Meristem’s Equity Capital Market (ECM) Services. We advise on the right strategy: an Initial Public Offering (IPO) to list on the Nigerian Exchange, a rights issue to existing shareholders, or a private placement to select institutional investors",
   },
 ];
 

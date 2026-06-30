@@ -247,7 +247,7 @@ export const products = [
     title: "Invoice Discounting",
     description:
       "Improve your business’s cash flow by selling unpaid customer invoices to Meristem at a discount, receiving immediate funds instead of waiting 30‑120 days. We advance up to 85% of the invoice value within 24 hours of verification, with the balance (minus our fee) paid when your customer settles. The service is confidential—your customers never know you’re using invoice discounting, as they pay directly into a controlled bank account. This is perfect for B2B businesses with credit sales, from logistics companies to manufacturers and service providers. Unlike a traditional loan, the facility grows with your sales: more invoices mean more available funding. Our online portal allows you to upload invoices, track advances, and monitor customer payment status in real time.",
-    img: "https://images.unsplash.com/photo-1556742049-0cfed2f4b33b?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?q=80&w=2626&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Finance Limited",
     list: [
       "Easy and fast access to working capital.",
@@ -331,7 +331,7 @@ export const products = [
     title: "AGM/EGM Administration",
     description:
       "Run flawless shareholder meetings with Meristem’s end‑to‑end AGM and EGM administration services. We handle every detail: from printing and dispatching notices, proxies, and annual reports to managing attendee registration and voting. Our team ensures full compliance with the Companies and Allied Matters Act (CAMA) and SEC regulations, including filing of resolutions with the Corporate Affairs Commission. We provide electronic voting systems that allow remote shareholders to participate, boosting turnout and satisfaction. After the meeting, we prepare minutes, update the register of members, and process any share allotments or changes. With Meristem, you reduce the administrative burden on your board and legal team while enhancing the shareholder experience.",
-    img: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format",
+    img: "https://plus.unsplash.com/premium_photo-1742932625664-12b3f5519de6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Registrar and Probate Services Limited",
   },
   {
@@ -340,7 +340,7 @@ export const products = [
     title: "Bond Register Administration",
     description:
       "Maintain accurate, compliant bondholder records with Meristem’s Bond Register Administration service. We act as the official registrar for your bond issuance, tracking all ownership changes, interest payments, and maturity redemptions. Our system handles electronic transfers, physical certificate issuance, and replacement of lost instruments according to capital market rules. We also manage the payment of coupons (interest) directly to bondholders’ bank accounts, with full tax deduction at source as required. For listed bonds, we reconcile with the Nigerian Exchange and CSCS daily to ensure accurate settlement of secondary market trades. Issuers benefit from our detailed reporting, including bondholder analysis by geography, holding size, and investor type—invaluable for investor relations and future fundraising.",
-    img: "https://images.unsplash.com/photo-1554224155-4b4f3ff3ef1c?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1740645581653-068ad8fa2765?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Registrar and Probate Services Limited",
   },
   {
@@ -349,7 +349,7 @@ export const products = [
     title: "Probate Services",
     description:
       "The loss of a loved one is never an experience to relive. A loss of this nature can be difficult and oftentimes without information for the transfer of their asset. Not knowing what asset (cash, shares, pension, insurance, land, buildings etc.) At Meristem, we recognize the pain of losing a loved one, thus we make it our business to ensure that the transfer of their asset is seamless, prompt and stress-free. We deliver prompt asset transfer services by helping you procure;",
-    img: "https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?w=800&auto=format",
+    img: "https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=2716&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Registrar and Probate Services Limited",
     list: [
       "Letters of Administration",
