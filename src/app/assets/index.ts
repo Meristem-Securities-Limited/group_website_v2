@@ -20,7 +20,7 @@ import GroupPicture from "./group-of-people-talking.webp";
 import GroupMeetings from "./group-meetings.webp";
 import Damilola from "./Damilola Hassan.jpg";
 import Sulaiman from "./Sulaiman Adedokun.jpg";
-import Bashir from "./Bashir Saheed.jpg";
+import Bashir from "./bashir.jpg";
 import Salawu from "./Rasaki Salawu.jpg";
 import Funmilola from "./Funmilola Adekola-Daramola.jpg";
 import Ojenike from "./Kemi Ojenike.jpg";

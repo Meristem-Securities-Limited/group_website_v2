@@ -269,6 +269,7 @@ const ourProductsItems = [
         link: "/our-products/share-dividend-tracking-recovery",
       },
       { title: "Stock Trading", link: "/our-products/stock-trading" },
+      { title: "Margin Lending", link: "/our-products/margin-lending" },
     ],
   },
   {

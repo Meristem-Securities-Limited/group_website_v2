@@ -10,6 +10,16 @@ interface Props {
 export const products = [
   // MERISTEM STOCKBROKERS LIMITED
   {
+    slug: "margin-lending",
+    id: 445,
+    productBannerImgUrl: "/stockbroker.png",
+    subsidiary: "Meristem Stockbrokers Limited",
+    title: "Margin Lending",
+    img: "https://images.unsplash.com/photo-1573496130488-f3bd89d03653?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "Margin Lending gives you access to additional funds to purchase more stocks than your available cash would normally allow. By increasing your buying power, you can take advantage of promising market opportunities as they arise, diversify your portfolio more effectively, and position yourself for potentially greater returns without having to wait until you've accumulated more capital. Designed for active and experienced investors, our Margin Lending solution combines flexibility with robust risk management. Every facility operates within a secure, transparent, and NGX-compliant framework, giving you the confidence to execute your investment strategy while benefiting from competitive financing and professional support.",
+  },
+  {
     slug: "meristem-business-associate",
     id: 1,
     title: "Meristem Business Associate",
