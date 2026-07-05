@@ -702,6 +702,7 @@ const Navbar = () => {
                             }}
                             key={j}>
                             <Link
+                              target={child?.link.includes("https://") ? "_blank" : "_self"}
                               href={child.link}
                               className="block text-gray-700 hover:text-blue-800 text-sm transition-colors duration-200">
                               {child.title}
@@ -889,7 +890,8 @@ const Navbar = () => {
                       <a
                         key={index}
                         href={platform.link}
-                        target="_blank"
+                        target={platform?.link.includes("https://") ? "_blank" : "_self"}
+                        // target="_blank"
                         className="block text-gray-700 hover:text-green-800 py-1 text-sm">
                         {platform.name}
                       </a>

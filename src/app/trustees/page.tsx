@@ -2,10 +2,10 @@ import React from "react";
 import AboutUsHeroSection from "@/components/about-us/AboutUsHeroSection";
 import WealthServiceSection from "@/components/trustee/ServicesSection";
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
-import WealthBoardExecutiveSection from "@/components/trustee/BoardExcutives";
+// import WealthBoardExecutiveSection from "@/components/trustee/BoardExcutives";
 import FAQSection from "@/components/trustee/FAQSection";
 // import BenefitsSection from "@/components/trustee/BenefitSection";
-import { Damilola, Trusteesllustration } from "../assets";
+import { Trusteesllustration } from "../assets";
 import MeristemContactSection from "@/components/ContactSection";
 
 const WealthManagementPage = () => {
@@ -33,7 +33,7 @@ const WealthManagementPage = () => {
       />
       <WealthServiceSection />
       {/* <BenefitsSection /> */}
-      <WealthBoardExecutiveSection />
+      {/* <WealthBoardExecutiveSection /> */}
       <FAQSection />
       <MeristemContactSection />
     </div>

@@ -3,7 +3,7 @@ import AboutUsHeroSection from "@/components/about-us/AboutUsHeroSection";
 import BenefitsSection from "@/components/stockbrokers/BenefitSection";
 import WealthServiceSection from "@/components/stockbrokers/ServicesSection";
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
-import WealthBoardExecutiveSection from "@/components/stockbrokers/BoardExcutives";
+// import WealthBoardExecutiveSection from "@/components/stockbrokers/BoardExcutives";
 import FAQSection from "@/components/stockbrokers/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
 import { AppleStore, GooglePlay, StockbrokersIllustration } from "../assets";
@@ -79,7 +79,7 @@ const WealthManagementPage = () => {
         </div>
       </section>
       <BenefitsSection />
-      <WealthBoardExecutiveSection />
+      {/* <WealthBoardExecutiveSection /> */}
       <FAQSection />
       <MeristemContactSection />
     </div>

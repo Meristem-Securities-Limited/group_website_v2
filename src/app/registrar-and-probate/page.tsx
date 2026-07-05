@@ -3,7 +3,7 @@ import AboutUsHeroSection from "@/components/about-us/AboutUsHeroSection";
 // import BenefitsSection from "@/components/registrar/BenefitSection";
 import WealthServiceSection from "@/components/registrar/ServicesSection";
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
-import WealthBoardExecutiveSection from "@/components/registrar/BoardExcutives";
+// import WealthBoardExecutiveSection from "@/components/registrar/BoardExcutives";
 import FAQSection from "@/components/registrar/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
 import { RegistrarsIllustration } from "../assets";
@@ -42,7 +42,7 @@ const WealthManagementPage = () => {
       <WealthServiceSection />
       <TrackRecordSection />
       {/* <BenefitsSection /> */}
-      <WealthBoardExecutiveSection />
+      {/* <WealthBoardExecutiveSection /> */}
       <FAQSection />
       <MeristemContactSection />
     </div>

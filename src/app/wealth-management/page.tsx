@@ -3,7 +3,7 @@ import AboutUsHeroSection from "@/components/about-us/AboutUsHeroSection";
 import BenefitsSection from "@/components/wealth-management/BenefitSection";
 import WealthServiceSection from "@/components/wealth-management/ServicesSection";
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
-import WealthBoardExecutiveSection from "@/components/wealth-management/BoardExcutives";
+// import WealthBoardExecutiveSection from "@/components/wealth-management/BoardExcutives";
 import FAQSection from "@/components/wealth-management/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
 import { AppleStore, GooglePlay, Taiwo, WealthManagementllustration } from "../assets";
@@ -102,7 +102,7 @@ const WealthManagementPage = () => {
         </div>
       </section>
       <BenefitsSection />
-      <WealthBoardExecutiveSection />
+      {/* <WealthBoardExecutiveSection /> */}
       <FAQSection />
       <MeristemContactSection />
     </div>

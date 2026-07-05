@@ -2,7 +2,7 @@ import React from "react";
 import AboutUsHeroSection from "@/components/about-us/AboutUsHeroSection";
 import WealthServiceSection from "@/components/finance/ServicesSection";
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
-import WealthBoardExecutiveSection from "@/components/finance/BoardExcutives";
+// import WealthBoardExecutiveSection from "@/components/finance/BoardExcutives";
 import FAQSection from "@/components/finance/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
 import { FinanceIllustration, Mubo } from "../assets";
@@ -33,7 +33,7 @@ const WealthManagementPage = () => {
         ]}
       />
       <WealthServiceSection />
-      <WealthBoardExecutiveSection />
+      {/* <WealthBoardExecutiveSection /> */}
       <FAQSection />
       <MeristemContactSection />
     </div>

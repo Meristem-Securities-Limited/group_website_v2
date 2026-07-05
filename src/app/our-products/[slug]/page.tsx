@@ -8,7 +8,6 @@ import {
   BondregistrarIllustration,
   BridgeFinancingIllustration,
   BusinessAdvisoryIllustration,
-  CapitalIllustration,
   CashbackendIllustration,
   CorporateTrustIllustration,
   DebtCapital,
@@ -652,7 +651,7 @@ export default function ProductDetail({ params }: Props) {
     <>
       <ProductPage
         product={product}
-        backgroundURL={product?.productBannerImgUrl}
+        // backgroundURL={"/meristem-building.jpg"}
       />
       <MeristemContactSection />
     </>
