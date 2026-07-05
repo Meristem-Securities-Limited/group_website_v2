@@ -24,9 +24,7 @@ const WealthManagementPage = () => {
         sectionImage={Trusteesllustration}
         showMeetings={false}
         descriptions={[
-          `Meristem Trustees Limited (MTL) is a subsidiary of Meristem Wealth Management Limited. 
-          It was incorporated by the Corporate Affairs Commission (CAC) as a Private Limited Liability Company in April 2012 and
-          licensed by the Securities & Exchange Commission (SEC) to carry out the roles and functions of Trustees in the Capital market in June 2012.`,
+          `Meristem Trustees Limited is the Trustee subsidiary of Meristem Securities Limited. We are licensed by the Securities and Exchange Commission (SEC) to provide Trust services in the Nigerian capital market and are an active member of the Association of Corporate Trustees Nigeria. As a trusted fiduciary, we hold and administer assets on behalf of individuals, corporates, and institutions with professionalism, efficiency, and integrity. Our mandate is to preserve wealth, protect assets, and ensure the enduring legacy of our clients in accordance with their wishes. `,
           `MTL is also an active Member of Association of Corporate Trustees, Nigeria (umbrella body of licensed Trust Companies in Nigeria).`,
           `In 2015, MTL launched Meristem Diaspora Trust, a product designed for Nigerians abroad with interests in having investments back home. Investment responsibilities are thus transferred to Meristem Trustee who represents and protect the interests of the owner with a view to ensuring that those objectives are achieved.`,
         ]}
