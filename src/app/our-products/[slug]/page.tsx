@@ -164,10 +164,10 @@ export const products = [
     slug: "fixed-income-dealing",
     id: 9,
     title: "Fixed Income Dealing",
+    img: WealthManagementllustration,
     description:
       "Invest in short‑term Nigerian government securities with Meristem’s Treasury Bills service, offering risk‑free returns backed by the full faith of the Federal Government. Treasury bills are issued at a discount to face value and mature in 91, 182, or 364 days, with the difference representing your interest income. We facilitate participation in primary market auctions through the Central Bank of Nigeria, ensuring you get the most competitive rates available. You can also buy and sell existing treasury bills on the secondary market through our trading platform for added flexibility. With zero default risk and exemption from tax on interest income, treasury bills are a favorite for conservative investors and corporate treasury managers. Meristem handles all bidding, settlement, and custody so you can earn predictable returns without administrative hassle.",
-    img: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
+    // img: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     subsidiary: "Meristem Wealth Management Limited",
   },
   {
@@ -176,8 +176,9 @@ export const products = [
     title: "Real Estate",
     description:
       "Own a piece of prime Nigerian real estate without the burden of property management through Meristem’s structured real estate investment offerings. We identify high‑potential residential and commercial projects in Lagos, Abuja, and other growth corridors, then pool investor capital to acquire or develop them. Your investment generates returns from rental income and capital appreciation upon sale, distributed pro‑rata to all investors. Unlike direct property ownership, there are no headaches with tenants, repairs, or legal documentation—we handle everything. Minimum investments are affordable, allowing you to diversify across multiple properties rather than putting all your capital into one house. With rigorous due diligence on every project and transparent quarterly valuations, Meristem makes real estate a liquid, accessible asset class for the everyday Nigerian investor.",
-    img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format",
+    // img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format",
     subsidiary: "Meristem Wealth Management Limited",
+    img: WealthManagementllustration,
   },
   {
     slug: "retirement-planning",
@@ -253,7 +254,7 @@ export const products = [
     title: "Bridge Financing",
     img: BridgeFinancingIllustration,
     description:
-      "Cover short‑term cash flow gaps with Meristem’s Bridge Financing, designed for businesses awaiting a confirmed inflow of funds. Whether you’re expecting payment from a large contract, a government grant, or an equity injection, we advance a portion of that amount immediately. Repayment is structured to coincide with your expected inflow, often within 30 to 180 days, so you don’t carry debt longer than necessary. Use the funds to meet payroll, purchase inventory, or take advantage of a time‑sensitive opportunity without depleting working capital. Interest is calculated only for the period you actually use the funds, with no prepayment penalties. Approval is fast—often within 48 hours—based on the strength of your receivable rather than traditional collateral. The benfits includes the following: ",
+      "Cover short‑term cash flow gaps with Meristem’s Bridge Financing, designed for businesses awaiting a confirmed inflow of funds. Whether you’re expecting payment from a large contract, a government grant, or an equity injection, we advance a portion of that amount immediately. Repayment is structured to coincide with your expected inflow, often within 30 to 180 days, so you don’t carry debt longer than necessary. Use the funds to meet payroll, purchase inventory, or take advantage of a time‑sensitive opportunity without depleting working capital. Interest is calculated only for the period you actually use the funds, with no prepayment penalties. Approval is fast—often within 48 hours—based on the strength of your receivable rather than traditional collateral. The benfits includes the followimg: ",
     // img: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&auto=format",
     subsidiary: "Meristem Finance Limited",
     list: [
@@ -480,18 +481,21 @@ export const products = [
     slug: "family-governance-advisory",
     id: 29,
     title: "Family Governance Advisory",
+    img: WealthManagementllustration,
     description:
       "Build structures that keep your family united and wealthy across generations with Meristem’s Family Governance Advisory. We help you create a family constitution that articulates shared values, decision‑making processes, and expectations for family members who work in the business. Our team facilitates regular family council meetings, where all members (including in‑laws and future spouses) have a voice without destabilizing management. We also design policies for family employment, loans to members, and conflict resolution mechanisms that prevent disputes from escalating to court. For larger families, we establish branch representation and voting rights that balance influence with accountability. With Meristem, you transform your family from a potential source of conflict into a enduring competitive advantage.",
-    img: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&auto=format",
+    // img: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&auto=format",
     subsidiary: "Meristem Family Office Limited",
   },
   {
     slug: "health-longevity-plan",
     id: 30,
     title: "Health and Longevity Plan",
+    img: WealthManagementllustration,
+
     description:
       "Protect your most valuable asset—your health—alongside your financial wealth with Meristem’s Health and Longevity Plan. We coordinate with top medical advisors to conduct comprehensive health assessments, identifying risks and creating preventive care roadmaps. For affluent families, we arrange access to executive health programs, concierge medicine, and medical evacuation services across Nigeria and abroad. Our longevity planning includes lifestyle optimization, nutrition guidance, and regular health monitoring to extend both lifespan and healthspan. We also help structure health insurance and critical illness coverage that protects your family from catastrophic medical expenses. With Meristem, you enjoy peace of mind knowing that your wealth won’t be wiped out by a health crisis, and that you’ll live well enough to enjoy the legacy you’re building.",
-    img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format",
+    // img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format",
     subsidiary: "Meristem Family Office Limited",
   },
   {
@@ -594,7 +598,7 @@ export const products = [
   {
     slug: "equity-captial-market",
     title: "Equity Capital Market Service",
-    ing: EquityCapital,
+    img: EquityCapital,
     description:
       "We offer exceptional Equity Capital market services for businesses who need rights issuance, Initial Public Offerings or private placements to raise capital and connect with potential investors. We also ensure businesses' capital raising activities comply with all regulations with our expertise in regulatory filings.",
     // img: "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

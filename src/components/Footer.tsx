@@ -144,8 +144,8 @@ export default function Footer() {
             <div className="space-y-2">
               <p className="text-base text-gray-100">For complaints, contact us on</p>
               <div className="space-y-1">
-                <p className="font-semibold text-base">WhatsApp: +234 813 405 9788</p>
-                <p className="font-semibold text-base">Telephone: 080063747836</p>
+                <p className="font-semibold text-base">WhatsApp: +2348134059788</p>
+                <p className="font-semibold text-base">Telephone: 080063747836, 070063747836</p>
                 <p className="font-semibold text-base">Email: contact@meristemng.com</p>
               </div>
             </div>

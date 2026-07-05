@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: `${executive.title} - ${executive.title} | Meristem Securities Limited`,
       description: `${executive.title}, ${executive.title} at Meristem Securities Limited. Discover their expertise and leadership title in Nigeria’s financial industry.`,
-      images: [typeof executive.img === "string" ? executive.img : executive.img.src],
+      images: [typeof executive.img === "string" ? executive.img : executive.img?.src],
     },
     alternates: {
       canonical: `https://www.meristemng.com/our-products/${slug}`,
