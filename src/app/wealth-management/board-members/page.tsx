@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
 export default function Page() {
-  redirect("/wealth-management-limited#board-members");
+  redirect("/wealth-management#board-members");
 }

@@ -39,7 +39,7 @@ import Ohis from "./OHIWEREI.jpg";
 import Ahmed from "./AHMED.jpg";
 import Mubo2 from "./Mubo.jpg";
 import Oyebamiji from "./OYEBAMIJI.jpg";
-import MORE from "./more.jpg";
+import MORE from "./more-new.jpg";
 import SimpleWill from "./legal-document-signing.jpg";
 import GooglePlay from "./google-play.png";
 import AppleStore from "./apple-store.png";
@@ -53,8 +53,74 @@ import corporateTrust from "./corporate-trust.png";
 import publicTrust from "./public-trust.png";
 import privateTrust from "./private-trust.png";
 import Onyema from "./ONO Headshot.jpeg";
+import StockbrokersIllustration from "./meristem-stockbrokers.png";
+import CapitalIllustration from "./meristem-capital.png";
+import Trusteesllustration from "./meristem-trustees.png";
+import WealthManagementllustration from "./meristem-wealth-management.png";
+import FinanceIllustration from "./meristem-finance.png";
+import RegistrarsIllustration from "./meristem-registrars.png";
+import BusinessAdvisoryIllustration from "./meristem-business-advisory.png";
+import MarginLendingIllustration from "./meristem-margin-lending.png";
+import AGMIllustration from "./meristem-agm-egm.png";
+import BondInvestmentIllustration from "./meristem-bond-investments.png";
+import BondregistrarIllustration from "./meristem-bond-register.png";
+import BridgeFinancingIllustration from "./meristem-bridge-financing.png";
+import CashbackendIllustration from "./meristem-cash-backed.png";
+import CorporateTrustIllustration from "./meristem-corporate-trust.png";
+import DebtCapital from "./meristem-debt-capital.png";
+import DividendTracking from "./meristem-dividend-tracking.png";
+import EquityBacked from "./meristem-equity-backed.png";
+import EquityCapital from "./meristem-equity-capital.png";
+import ETFFixed from "./meristem-etf-fixed.png";
+import FinanceLease from "./meristem-finance-lease.png";
+import FinancalAdvisory from "./meristem-financial-advisory.png";
+import InvoiceDiscounting from "./meristem-invoice-discounting.png";
+import LPOFianncing from "./meristem-lpo-financing.png";
+import Mutualfunds from "./meristem-mutual-funds.png";
+import PortfolioManagement from "./meristem-portfolio-management.png";
+import PrivateTrust from "./meristem-private-trust.png";
+import PublicOffer from "./meristem-public-offer.png";
+import PublicTrust from "./meristem-public-trust.png";
+import Retirement from "./meristem-retirement.png";
+import RightsIssue from "./meristem-rights-issue.png";
+import ShareRegistration from "./meristem-share-registration.png";
+import Succession from "./meristem-succession.png";
+import WorkingCapital from "./meristem-working-capital.png";
 
 export {
+  AGMIllustration,
+  BridgeFinancingIllustration,
+  CashbackendIllustration,
+  CorporateTrustIllustration,
+  DebtCapital,
+  DividendTracking,
+  EquityBacked,
+  EquityCapital,
+  ETFFixed,
+  FinancalAdvisory,
+  FinanceLease,
+  InvoiceDiscounting,
+  LPOFianncing,
+  Mutualfunds,
+  PortfolioManagement,
+  PrivateTrust,
+  PublicTrust,
+  PublicOffer,
+  Retirement,
+  RightsIssue,
+  ShareRegistration,
+  Succession,
+  WorkingCapital,
+  BondregistrarIllustration,
+  BondInvestmentIllustration,
+  MarginLendingIllustration,
+  StockbrokersIllustration,
+  BusinessAdvisoryIllustration,
+  CapitalIllustration,
+  WealthManagementllustration,
+  Trusteesllustration,
+  FinanceIllustration,
+  RegistrarsIllustration,
   WealthBuddyBlackLogo,
   publicTrust,
   Onyema,

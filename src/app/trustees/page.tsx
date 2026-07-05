@@ -5,7 +5,7 @@ import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/trustee/BoardExcutives";
 import FAQSection from "@/components/trustee/FAQSection";
 // import BenefitsSection from "@/components/trustee/BenefitSection";
-import { Damilola } from "../assets";
+import { Damilola, Trusteesllustration } from "../assets";
 import MeristemContactSection from "@/components/ContactSection";
 
 const WealthManagementPage = () => {
@@ -21,7 +21,7 @@ const WealthManagementPage = () => {
         description="Our trust services are designed not just for individuals, but for corporations and institutions. Our clients value the separation between the legal ownership and management of assets."
       />
       <WhoWeAreSection
-        sectionImage={Damilola}
+        sectionImage={Trusteesllustration}
         showMeetings={false}
         descriptions={[
           `Meristem Trustees Limited (MTL) is a subsidiary of Meristem Wealth Management Limited. 

@@ -285,7 +285,7 @@ const ourProductsItems = [
         link: "/our-products/bond-investments",
       },
       { title: "Exchange Trade Fund", link: "/our-products/exchange-trade-funds" },
-      { title: "Structured Products", link: "/our-products/structured-produxts" },
+      { title: "Structured Products", link: "/our-products/structured-products" },
       { title: "Mutual Funds", link: "/our-products/mutual-funds" },
       // { title: "Nigerian Treasury Bills", link: "/our-products/nigerian-treasury-bills" },
       {

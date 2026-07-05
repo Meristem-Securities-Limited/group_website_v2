@@ -6,7 +6,9 @@ import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/wealth-management/BoardExcutives";
 import FAQSection from "@/components/wealth-management/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
-import { Taiwo } from "../assets";
+import { AppleStore, GooglePlay, Taiwo, WealthManagementllustration } from "../assets";
+import { wealthbuddyAppStorUrl, wealthbuddyPlayStorUrl } from "@/components/products/ProductPage";
+import Image from "next/image";
 
 const WealthManagementPage = () => {
   return (
@@ -21,7 +23,7 @@ const WealthManagementPage = () => {
         description="We are a client-centric company with an integrated approach to Wealth and Portfolio Management. Our Asset/Wealth Management Service is designed to grow, preserve, and eventually transfer assets to the next generations by optimizing and ensuring we fully actualize our client’s financial and investment goals."
       />
       <WhoWeAreSection
-        sectionImage={Taiwo}
+        sectionImage={WealthManagementllustration}
         showMeetings={false}
         descriptions={[
           // `Meristem Wealth Management Limited (MWML) is an independent subsidiary of Meristem
@@ -53,6 +55,52 @@ const WealthManagementPage = () => {
         ]}
       />
       <WealthServiceSection />
+      <section className="bg-[#154D34] bg-[url(/bg-banner.png)] bg-no-repeat bg-cover bg-center bg-gradient-to-br from-emerald-800 via-[#154D34] to-emerald-900 relative overflow-hidden">
+        <div className="relative z-10 container mx-auto py-20 px-4 flex flex-col items-center justify-center text-center">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
+              Download Wealthbuddy
+            </h2>
+
+            <p className="text-white text-base md:text-lg leading-relaxed mb-8">
+              {/* Wealthbuddy helps you plan, save, and invest seamlessly with expert guidance from
+              Meristem Wealth Management Limited. */}
+              Start growing your wealth today. Savings plans, treasury bills, money market funds —
+              all in one app.
+            </p>
+
+            {/* Download buttons */}
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* Play Store */}
+              <a
+                href={wealthbuddyPlayStorUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-black px-5 py-2 rounded-lg hover:opacity-90 transition">
+                <Image
+                  src={GooglePlay}
+                  alt="Get it on Google Play"
+                  className="h-10 w-full"
+                />
+              </a>
+
+              {/* App Store */}
+              <a
+                href={wealthbuddyAppStorUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-black px-5 py-2 rounded-lg hover:opacity-90 transition">
+                <Image
+                  src={AppleStore}
+                  alt="Download on the App Store"
+                  className="h-10 w-full"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <BenefitsSection />
       <WealthBoardExecutiveSection />
       <FAQSection />

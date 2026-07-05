@@ -441,7 +441,7 @@ function IntroSection() {
 export default function MutualFundPage() {
   return (
     <div className="pt-16">
-      <IntroSection />
+      {/* <IntroSection /> */}
       <OfferingsSection />
     </div>
   );

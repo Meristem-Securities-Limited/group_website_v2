@@ -7,12 +7,12 @@ import Link from "next/link";
 
 const products = [
   {
-    id: 3,
-    title: "Meristem Business Associate",
+    id: 1,
+    title: "Stock Trading",
     description:
-      "Are you a licensed Broker, Sub-Broker, Fund Manager, Corporate/Individual Advisor or any other capital market operator?",
+      "Will you like to buy or sell stocks? Be your own broker and do it yourself via MERITRADE, our online stockbroking platform. Will you like better management of your shares and access to the",
     img: "",
-    link: "/meristem-business-associate",
+    link: "stock-trading",
   },
   {
     id: 2,
@@ -22,13 +22,14 @@ const products = [
     link: "share-dividend-tracking-recovery",
   },
   {
-    id: 1,
-    title: "Stock Trading",
+    id: 3,
+    title: "Margin Lending",
     description:
-      "Will you like to buy or sell stocks? Be your own broker and do it yourself via MERITRADE, our online stockbroking platform. Will you like better management of your shares and access to the",
+      "Margin Lending lets you borrow against the value of your existing stock holdings to increase your buying power in the market.",
     img: "",
-    link: "stock-trading",
+    link: "/margin-lending",
   },
+
   // {
   //   id: 4,
   //   title: "Mutual Funds",

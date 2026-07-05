@@ -5,7 +5,7 @@ import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import WealthBoardExecutiveSection from "@/components/finance/BoardExcutives";
 import FAQSection from "@/components/finance/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
-import { Mubo } from "../assets";
+import { FinanceIllustration, Mubo } from "../assets";
 
 const WealthManagementPage = () => {
   return (
@@ -21,7 +21,7 @@ const WealthManagementPage = () => {
       />
       <WhoWeAreSection
         showMeetings={false}
-        sectionImage={Mubo}
+        sectionImage={FinanceIllustration}
         descriptions={[
           `Meristem Finance Limited is a customer-centric financial institution providing innovative, flexible, and timely financing solutions that empower businesses and individuals to achieve their growth ambitions. We specialize in structured lending, asset-backed finance, lease finance, bridge finance, LPO finance, and working capital solutions tailored to our clients' unique needs.`,
           `At Meristem Finance, we combine deep market expertise, disciplined risk management, and exceptional service to deliver responsive, value-driven financing solutions. Our relationship-led approach enables us to understand our clients' objectives and provide bespoke financial support that enhances cash flow, unlocks opportunities, and drives sustainable growth.`,

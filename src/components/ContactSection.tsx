@@ -26,7 +26,7 @@ const validationSchema = Yup.object({
     .test("min-words", "Message must be at least 10 words", (value) => {
       if (!value) return false;
       const words = value.trim().split(/\s+/);
-      return words.length >= 10;
+      return words.length >= 1;
     })
     .test("max-words", "Message must not exceed 100 words", (value) => {
       if (!value) return true;

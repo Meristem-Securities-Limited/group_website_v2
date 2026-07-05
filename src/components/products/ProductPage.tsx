@@ -41,6 +41,16 @@ import ETFPage from "../wealth-management/ETF";
 //   },
 // ];
 
+export const wealthbuddyPlayStorUrl =
+  "https://play.google.com/store/apps/details?id=com.merristem.wealthbuddy";
+
+export const wealthbuddyAppStorUrl = "https://apps.apple.com/ng/app/wealthbuddy/id1501395579";
+
+export const meritradePlayStorUrl =
+  "https://play.google.com/store/apps/details?id=com.meristem.meritradeapp";
+
+export const meritradeAppStorUrl = "https://apps.apple.com/ng/app/meritrade/id977562417";
+
 export default function ProductPage({
   product,
   backgroundURL = "/meristem-building.webp",
@@ -50,16 +60,6 @@ export default function ProductPage({
 }) {
   // console.log(product);
   const [showModal, setShowModal] = useState<boolean>(false);
-
-  const wealthbuddyPlayStorUrl =
-    "https://play.google.com/store/apps/details?id=com.merristem.wealthbuddy";
-
-  const wealthbuddyAppStorUrl = "https://apps.apple.com/ng/app/wealthbuddy/id1501395579";
-
-  const meritradePlayStorUrl =
-    "https://play.google.com/store/apps/details?id=com.meristem.meritradeapp";
-
-  const meritradeAppStorUrl = "https://apps.apple.com/ng/app/meritrade/id977562417";
 
   return (
     <section className="bg-white">

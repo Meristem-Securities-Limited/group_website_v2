@@ -2,6 +2,9 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { WealthManagementllustration } from "@/app/assets";
+import { StaticMetadata } from "next/dist/lib/metadata/types/icons";
+import Image from "next/image";
 
 // const fadeIn = {
 //   hidden: { opacity: 0, y: 32 },
@@ -58,7 +61,7 @@ export function RevealImg({
   className = "",
   delay = 0,
 }: {
-  src: string;
+  src: any;
   alt: string;
   className?: string;
   delay?: number;
@@ -74,7 +77,7 @@ export function RevealImg({
       //   animate={inView ? "show" : "hidden"}
       //   custom={delay}
     >
-      <img
+      <Image
         src={src}
         alt={alt}
         className="w-full h-full object-cover"
@@ -229,7 +232,7 @@ function IntroSection() {
         </div>
 
         <RevealImg
-          src="https://images.unsplash.com/photo-1739298061707-cefee19941b7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={WealthManagementllustration}
           alt="Financial advisors collaborating"
           className="h-72 md:h-80 shadow-lg"
           delay={0.15}

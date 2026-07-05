@@ -20,7 +20,7 @@ export default function Footer() {
       title: "X (Formerly Twitter)",
     },
     {
-      href: "https://www.instagram.com/meristemng/",
+      href: "https://www.instagram.com/Meristemng/",
       icon: (
         <Instagram
           size={26}
@@ -56,16 +56,16 @@ export default function Footer() {
     {
       title: "Meristem Subsidiaries",
       items: [
-        { title: "Wealth Management", url: "https://meristemwealth.com/" },
-        { title: "Stockbrokers", url: "https://stockbroking.meristemng.com" },
+        { title: "Wealth Management", url: "/wealth-management" },
+        { title: "Stockbrokers", url: "/stockbrokers" },
         {
           title: "Registrar & Probate Services",
-          url: "https://registrars.meristemng.com",
+          url: "registrar-and-probate",
         },
-        { title: "Trustees", url: "https://trustees.meristemng.com" },
+        { title: "Trustees", url: "/trustees" },
         { title: "Family Office", url: "https://familyoffice.meristemng.com" },
-        { title: "Finance", url: "https://finance.meristemng.com" },
-        { title: "Capital", url: "https://capital.meristemng.com" },
+        { title: "Finance", url: "/finance" },
+        { title: "Capital", url: "/capital" },
       ],
     },
     {
@@ -83,7 +83,7 @@ export default function Footer() {
       items: [
         { title: "About Us", url: "/about-us" },
         { title: "Our Platforms", url: "/#products" },
-        { title: "Our Capabilities", url: "/#capabilities" },
+        // { title: "Our Capabilities", url: "/#capabilities" },
       ],
     },
     {

@@ -53,7 +53,7 @@ export default function WealthBoardExecutiveSection() {
               <motion.div
                 key={index}
                 variants={itemVariantsUp}>
-                <Link href={`wealth-management/board-members/${member.slug}`}>
+                <Link href={`#`}>
                   <MemberCard member={member} />
                 </Link>
               </motion.div>

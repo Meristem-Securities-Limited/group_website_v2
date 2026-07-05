@@ -286,7 +286,7 @@ function OfferingsSection() {
 export default function StructuredProductsPage() {
   return (
     <div className="pt-16">
-      <IntroSection />
+      {/* <IntroSection /> */}
       <OfferingsSection />
     </div>
   );
