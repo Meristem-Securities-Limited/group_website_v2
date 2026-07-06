@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [0, 1, 2]; // total slides
+  const slides = [0, 1]; // total slides
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -124,7 +124,7 @@ export default function HeroCarousel() {
           </div>
         </div>
 
-        <div className="min-w-full relative h-full bg-[url('/cp-bg-banner.png')] bg-cover bg-no-repeat">
+        {/* <div className="min-w-full relative h-full bg-[url('/cp-bg-banner.png')] bg-cover bg-no-repeat">
           <div className="bg-[url('/overlay-bg.png')] bg-cover bg-no-repeat bg-transparent h-full p-10 flex flex-col justify-center">
             <h3 className="text-white text-3xl font-bold mb-4 leading-tight">
               Dangote Sugar Refinery
@@ -147,7 +147,7 @@ export default function HeroCarousel() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="absolute bottom-7 p-4 ml-8 left-15 transform -translate-x-1/2 flex gap-2">

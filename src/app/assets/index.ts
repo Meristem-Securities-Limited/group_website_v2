@@ -86,9 +86,47 @@ import RightsIssue from "./meristem-rights-issue.png";
 import ShareRegistration from "./meristem-share-registration.png";
 import Succession from "./meristem-succession.png";
 import WorkingCapital from "./meristem-working-capital.png";
+import Pcmn from "./pcmn.jpeg";
+import internationalBreweries from "./international.jpeg";
+import FirstBank from "./first-bank.jpeg";
+import Evans from "./Evans.jpeg";
+import Conoil from "./conoil.jpeg";
+import Dangote from "./dangote.jpeg";
+import NMRC from "./NMRC.jpeg";
+import Zenith from "./zenith-logo.png";
+import VitaForm from "./vitaform.jpeg";
+import Custodian from "./custodian-logo.png";
+import DBN from "./dbn-logo.png";
+import Consolidated from "./consolidate-insurnace-logo.png";
+import Berger from "./berger.jpeg";
+import ETranzact from "./product56.jpeg";
+import EternalOil from "./product3.jpeg";
+import CapitalHotels from "./captial-hotels.png";
+import Encoin from "./encoin.jpeg";
+import Stac from "./stac.jpeg";
+import Neimeth from "./neimeth.jpeg";
 
 export {
+  Neimeth,
+  Encoin,
+  Stac,
+  CapitalHotels,
+  EternalOil,
+  ETranzact,
+  Berger,
+  Consolidated,
+  DBN,
+  Custodian,
+  Zenith,
+  VitaForm,
+  NMRC,
+  Dangote,
+  Conoil,
+  FirstBank,
+  Evans,
   AGMIllustration,
+  internationalBreweries,
+  Pcmn,
   BridgeFinancingIllustration,
   CashbackendIllustration,
   CorporateTrustIllustration,

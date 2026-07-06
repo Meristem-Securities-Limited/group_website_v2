@@ -24,10 +24,23 @@ const WealthManagementPage = () => {
         sectionImage={Trusteesllustration}
         showMeetings={false}
         descriptions={[
-          `Meristem Trustees Limited is the Trustee subsidiary of Meristem Securities Limited. We are licensed by the Securities and Exchange Commission (SEC) to provide Trust services in the Nigerian capital market and are an active member of the Association of Corporate Trustees Nigeria. As a trusted fiduciary, we hold and administer assets on behalf of individuals, corporates, and institutions with professionalism, efficiency, and integrity. Our mandate is to preserve wealth, protect assets, and ensure the enduring legacy of our clients in accordance with their wishes. `,
-          `MTL is also an active Member of Association of Corporate Trustees, Nigeria (umbrella body of licensed Trust Companies in Nigeria).`,
-          `In 2015, MTL launched Meristem Diaspora Trust, a product designed for Nigerians abroad with interests in having investments back home. Investment responsibilities are thus transferred to Meristem Trustee who represents and protect the interests of the owner with a view to ensuring that those objectives are achieved.`,
+          `Meristem Trustees Limited is the Trustee subsidiary of Meristem Securities Limited. We are licensed by the Securities and Exchange Commission (SEC) to provide Trust services in the Nigerian capital market and are an active member of the Association of Corporate Trustees Nigeria. As a trusted fiduciary, we hold and administer assets on behalf of individuals, corporates, and institutions with professionalism, efficiency, and integrity. Our mandate is to preserve wealth, protect assets, and ensure the enduring legacy of our clients in accordance with their wishes. `,
+          // `MTL is also an active Member of Association of Corporate Trustees, Nigeria (umbrella body of licensed Trust Companies in Nigeria).`,
+          // `In 2015, MTL launched Meristem Diaspora Trust, a product designed for Nigerians abroad with interests in having investments back home. Investment responsibilities are thus transferred to Meristem Trustee who represents and protect the interests of the owner with a view to ensuring that those objectives are achieved.`,
         ]}
+        htmldescription={`
+        <div>
+          <h5 class="font-bold mb-3">Value We Bring</h5>
+          <ul class="lg:text-lg text-base leading-8">
+            <li><strong>Experience:</strong> Seasoned professionals proficient in public, corporate, and private trusts, security arrangements in bilateral and syndicated lending, collective investment schemes, and escrow agencies.</li>
+            <li><strong>Impartiality:</strong> Professional objectivity in line with the Trust Deed or definitive agreement.</li>
+            <li><strong>Robust Systems:</strong> SEC-compliant processes for efficiency and risk mitigation.</li>
+            <li><strong>Dedicated Focus:</strong> Fiduciary services are our core mandate.</li>
+            <li><strong>Transparency and Confidentiality:</strong> Regular reporting with strict discretion.</li>
+          </ul>
+        </div>
+
+      `}
       />
       <WealthServiceSection />
       {/* <BenefitsSection /> */}

@@ -1,5 +1,18 @@
 "use client";
 
+import {
+  Berger,
+  CapitalHotels,
+  Dangote,
+  Encoin,
+  EternalOil,
+  ETranzact,
+  Evans,
+  internationalBreweries,
+  Neimeth,
+  Pcmn,
+  Stac,
+} from "@/app/assets";
 import Image from "next/image";
 
 const trackRecords = [
@@ -7,73 +20,115 @@ const trackRecords = [
     company: "Capital Hotels",
     amount: "₦11.28bn",
     type: "Private Placement",
-    logo: "/images/track-records/capital-hotels.png",
+    logo: CapitalHotels,
   },
   {
     company: "Dangote Industries Ltd",
     amount: "₦187.6bn",
     type: "Bond Issue",
-    logo: "/images/track-records/dangote.png",
+    logo: Dangote,
   },
   {
     company: "Dangote Cement",
     amount: "₦116.0bn",
     type: "Bond Issue",
-    logo: "/images/track-records/dangote.png",
+    logo: Dangote,
   },
   {
     company: "e-Tranzact",
     amount: "₦5.77bn",
     type: "Rights Issue",
-    logo: "/images/track-records/etranzact.png",
+    logo: ETranzact,
   },
   {
     company: "Dangote Cement",
     amount: "₦50.0bn",
     type: "Bond Issue",
-    logo: "/images/track-records/dangote.png",
+    logo: Dangote,
   },
   {
     company: "Dangote Cement",
     amount: "₦50.0bn",
     type: "Commercial Paper",
-    logo: "/images/track-records/dangote.png",
+    logo: Dangote,
   },
   {
     company: "International Energy Insurance Plc",
     amount: "Undisclosed",
     type: "Acquisition of 50.61% by NAPL",
-    logo: "/images/track-records/iei.png",
+    logo: internationalBreweries,
   },
   {
     company: "Eternal Oil",
     amount: "₦8.6bn",
     type: "Equity Issue",
-    logo: "/images/track-records/eternal-oil.png",
+    logo: EternalOil,
   },
   {
     company: "e-Tranzact",
     amount: "₦2.3bn",
     type: "Rights Issue",
-    logo: "/images/track-records/etranzact.png",
+    logo: ETranzact,
   },
   {
     company: "Law Union and Rock",
     amount: "₦601.0mn",
     type: "Private Placement",
-    logo: "/images/track-records/law-union.png",
+    logo: Pcmn,
   },
   {
     company: "Berger Paints",
     amount: "₦544.0mn",
     type: "Rights Issue",
-    logo: "/images/track-records/berger.png",
+    logo: Berger,
   },
   {
     company: "Energy Company Nigeria",
     amount: "₦60.0bn",
     type: "Private Placement",
-    logo: "/images/track-records/encon.png",
+    logo: Encoin,
+  },
+  {
+    company: "PCMN",
+    amount: "₦2.6bn",
+    type: "Private Placement",
+    logo: Pcmn,
+  },
+  {
+    company: "Crusader Group",
+    amount: "₦2.6bn",
+    type: "Bond Issue",
+    logo: internationalBreweries,
+  },
+  {
+    company: "Staco Insurance",
+    amount: "₦2.0bn",
+    type: "Private Placement",
+    logo: Stac,
+  },
+  {
+    company: "Evans Medical",
+    amount: "₦1.2bn",
+    type: "Rights Issue",
+    logo: Neimeth,
+  },
+  {
+    company: "PMCN",
+    amount: "₦24.0mn",
+    type: "Divestment",
+    logo: Evans,
+  },
+  {
+    company: "International Breweries",
+    amount: "₦1.5bn",
+    type: "Rights Issue",
+    logo: internationalBreweries,
+  },
+  {
+    company: "Neimeth International Pharmaceuticals",
+    amount: "₦1.2bn",
+    type: "Rights Issue",
+    logo: Neimeth,
   },
 ];
 
@@ -92,11 +147,11 @@ export default function TrackRecordSection() {
               className="bg-[#ECE8E8] rounded-md p-8 flex flex-col items-center text-center min-h-[260px] hover:shadow-md transition-all">
               <div className="h-20 flex items-center justify-center mb-5">
                 <Image
-                  src="https://placehold.co/600x400"
+                  src={record?.logo}
                   alt={record.company}
                   width={120}
                   height={60}
-                  className="object-contain"
+                  className="object-contain h-14 w-full"
                 />
               </div>
 

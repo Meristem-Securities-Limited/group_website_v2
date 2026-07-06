@@ -72,7 +72,7 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="py-16 lg:px-6 max-w-5xl mx-auto">
+      className="py-16 lg:px-6 lg:max-w-6xl mx-auto">
       <div className="py-16 px-6 mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl lg:text-5xl font-semibold text-gray-900 leading-tight capitalize">

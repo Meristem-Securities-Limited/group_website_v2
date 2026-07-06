@@ -7,6 +7,7 @@ import Image from "next/image";
 export default function WhoWeAreSection({
   showMeetings = true,
   sectionImage = GroupPicture,
+  htmldescription,
   descriptions = [
     `With a legacy spanning over two decades, we&apos;ve established ourselves as the trusted
         financial services partner for individuals and corporations in Nigeria and globally.`,
@@ -18,6 +19,7 @@ export default function WhoWeAreSection({
   ],
 }: {
   showMeetings?: boolean;
+  htmldescription?: string;
   descriptions?: Array<string>;
   sectionImage?: any;
 }) {
@@ -37,16 +39,25 @@ export default function WhoWeAreSection({
               Who we are
             </motion.h2>
 
-            {descriptions.map((description, index) => (
-              <motion.p
-                key={index}
+            {descriptions.length > 0 &&
+              descriptions.map((description, index) => (
+                <motion.p
+                  key={index}
+                  className="lg:text-lg text-base text-emerald-900 mb-9 leading-relaxed"
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 + index * 0.3 }}>
+                  {description}
+                </motion.p>
+              ))}
+            {htmldescription && (
+              <motion.div
                 className="lg:text-lg text-base text-emerald-900 mb-9 leading-relaxed"
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 + index * 0.3 }}>
-                {description}
-              </motion.p>
-            ))}
+                transition={{ duration: 0.8, delay: 0.2 + 0.3 }}
+                dangerouslySetInnerHTML={{ __html: htmldescription }}></motion.div>
+            )}
 
             {showMeetings && (
               <motion.div
