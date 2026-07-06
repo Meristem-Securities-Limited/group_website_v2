@@ -6,7 +6,7 @@ import WhatsappLogo from "./whatsapp-logo.svg";
 import MailIcon from "./mail-icon.svg";
 import XIcon from "./x-icon.svg";
 import FacebookLogo from "./facebook.svg";
-import MeritradeMockUp from "./meritrade-mockup.png";
+import MeritradeMockUp from "./new-meritrade-app.png";
 import HouseDisplay from "./house-display.png";
 import WealthBuddyMockup from "./wealthbuddy-mockup.png";
 import HappyFamily from "./happy-family.png";

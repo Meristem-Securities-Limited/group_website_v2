@@ -174,6 +174,7 @@ export default function Footer() {
                   {section.items.map((item, i) => (
                     <li key={i}>
                       <Link
+                        target={item?.url?.includes("http") ? "_blank" : "_self"}
                         href={item.url}
                         aria-label={item.title}>
                         <span className="text-base text-gray-200 hover:text-white transition">

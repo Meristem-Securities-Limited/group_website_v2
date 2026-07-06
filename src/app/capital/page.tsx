@@ -14,8 +14,8 @@ const WealthManagementPage = () => {
       <AboutUsHeroSection
         backgroundImage="/wealth-management.png"
         title={
-          <span className="text-3xl md:text-5xl font-semibold text-white leading-1.5 capitalize">
-            Bespoke financial advisory <br /> services to accelerate your success
+          <span className="text-3xl md:text-5xl font-semibold text-white leading-1.5">
+            Bespoke Financial Advisory <br /> Services to Accelerate your Success
           </span>
         }
         description="Whatever, your investment banking needs are, we deliver on your objective by rendering bespoke strategies to meet your expectations."

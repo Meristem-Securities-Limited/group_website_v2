@@ -96,7 +96,7 @@ export default function CultureSection() {
               <span className="text-emerald-800">Years Experience</span>
             </div>
             <div className="bg-gray-50 backdrop-blur-sm p-7 min-w-[50px] flex flex-col justify-center items-center">
-              <span className="text-3xl font-bold text-emerald-800 mb-1"> 1.2M+</span>
+              <span className="text-3xl font-bold text-emerald-800 mb-1"> 2.0M+</span>
               <span className="text-emerald-800">Happy Clients</span>
             </div>
             <div className="bg-gray-50 backdrop-blur-sm px-10 py-7">

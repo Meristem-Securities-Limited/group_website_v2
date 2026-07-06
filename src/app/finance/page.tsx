@@ -13,8 +13,8 @@ const WealthManagementPage = () => {
       <AboutUsHeroSection
         backgroundImage="/wealth-management.png"
         title={
-          <span className="text-3xl md:text-5xl font-semibold text-white leading-tight capitalize">
-            Expand your <br /> fleet on our tab
+          <span className="text-3xl md:text-5xl font-semibold text-white leading-tight">
+            Expand your <br /> Fleet on our Tab
           </span>
         }
         description="We offer negotiable interest friendly loans, that allow businesses and individuals finally achieve their desires."

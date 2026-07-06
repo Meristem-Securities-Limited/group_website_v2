@@ -3,6 +3,8 @@
 import React from "react";
 import { TrendingUp, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { GroupMeetings } from "@/app/assets";
 
 export default function VisionSection() {
   const slideInVariant = {
@@ -80,7 +82,7 @@ export default function VisionSection() {
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             className="relative"
             variants={statsSlideIn}
             initial="hidden"
@@ -103,6 +105,19 @@ export default function VisionSection() {
                 </div>
               </div>
             </div>
+          </motion.div> */}
+          {/* {/* {showMeetings && ( */}
+          <motion.div
+            className="w-full h-58 mt-9 relative"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}>
+            <Image
+              src={GroupMeetings}
+              alt="Business meeting"
+              priority
+              className="w-full h-auto max-h-100 object-cover object-center"
+            />
           </motion.div>
         </div>
       </div>
