@@ -25,8 +25,8 @@ const itemVariants: Variants = {
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-[#154D34] bg-[url(/hero-banner.png)] bg-no-repeat bg-cover bg-center min-h-screen flex items-center overflow-x-hidden">
-      <div className="absolute inset-0 bg-black/30"></div>
+    <section className="relative bg-[#042315] bg-[url(/new-hero-banner.jpg)] bg-no-repeat bg-cover bg-center min-h-screen flex items-center overflow-x-hidden">
+      <div className="absolute inset-0 bg-black/70"></div>
 
       <div className="relative container mx-auto px-4 sm:px-4 py-32 sm:py-40 md:py-48 lg:mt-24 mt-40">
         <motion.div

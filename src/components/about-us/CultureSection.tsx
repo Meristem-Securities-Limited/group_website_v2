@@ -3,6 +3,8 @@
 import React from "react";
 import { Users, TrendingUp, Sparkles } from "lucide-react";
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
+import { SECLogo } from "@/app/assets";
 
 export const cardVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
@@ -89,16 +91,23 @@ export default function CultureSection() {
             client success becomes inevitable."
           </p>
           <div className="flex flex-wrap justify-center gap-6 mt-8">
-            <div className="bg-gray-50 backdrop-blur-sm p-7">
-              <div className="text-3xl font-bold text-emerald-800 mb-1">20+</div>
-              <div className="text-emerald-800">Years Experience</div>
+            <div className="bg-gray-50 backdrop-blur-sm p-7 flex flex-col justify-center items-center">
+              <span className="text-3xl font-bold text-emerald-800 mb-1">20+</span>
+              <span className="text-emerald-800">Years Experience</span>
             </div>
-            <div className="bg-gray-50 backdrop-blur-sm p-7">
-              <div className="text-3xl font-bold text-emerald-800 mb-1">50,000+</div>
-              <div className="text-emerald-800">Happy Clients</div>
+            <div className="bg-gray-50 backdrop-blur-sm p-7 min-w-[50px] flex flex-col justify-center items-center">
+              <span className="text-3xl font-bold text-emerald-800 mb-1"> 1.2M+</span>
+              <span className="text-emerald-800">Happy Clients</span>
             </div>
             <div className="bg-gray-50 backdrop-blur-sm px-10 py-7">
-              <div className="text-3xl font-bold text-emerald-800 mb-1">SEC</div>
+              {/* <div className="text-3xl font-bold text-emerald-800 mb-1">SEC</div> */}
+              <Image
+                alt="sec-logo"
+                src={SECLogo}
+                width={80}
+                height={80}
+                className="object-cover"
+              />
               <div className="text-emerald-800">Regulated</div>
             </div>
           </div>

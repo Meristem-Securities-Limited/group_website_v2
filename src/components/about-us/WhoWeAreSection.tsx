@@ -1,11 +1,11 @@
 "use client";
 
-import { GroupMeetings, GroupPicture } from "@/app/assets";
+import { GroupPicture } from "@/app/assets";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function WhoWeAreSection({
-  showMeetings = true,
+  // showMeetings = true,
   sectionImage = GroupPicture,
   htmldescription,
   descriptions = [
@@ -59,7 +59,7 @@ export default function WhoWeAreSection({
                 dangerouslySetInnerHTML={{ __html: htmldescription }}></motion.div>
             )}
 
-            {showMeetings && (
+            {/* {showMeetings && (
               <motion.div
                 className="w-full h-58 mt-9 relative"
                 initial={{ opacity: 0, y: 50 }}
@@ -72,7 +72,7 @@ export default function WhoWeAreSection({
                   className="w-full h-auto max-h-100 object-cover object-center"
                 />
               </motion.div>
-            )}
+            )} */}
           </div>
 
           <motion.div

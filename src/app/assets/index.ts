@@ -105,8 +105,10 @@ import CapitalHotels from "./captial-hotels.png";
 import Encoin from "./encoin.jpeg";
 import Stac from "./stac.jpeg";
 import Neimeth from "./neimeth.jpeg";
+import SECLogo from "./sec-logo.svg";
 
 export {
+  SECLogo,
   Neimeth,
   Encoin,
   Stac,
