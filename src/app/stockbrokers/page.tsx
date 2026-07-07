@@ -16,7 +16,7 @@ const WealthManagementPage = () => {
       <AboutUsHeroSection
         backgroundImage="/stockbroker.png"
         title={
-          <span className="text-3xl md:text-5xl font-semibold text-white leading-tight capitalize">
+          <span className="text-3xl md:text-5xl font-semibold text-white leading-tight">
             Your Best Market Moments, <br /> Powered by Meristem
           </span>
         }
