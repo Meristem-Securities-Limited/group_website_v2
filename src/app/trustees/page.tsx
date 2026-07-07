@@ -14,8 +14,8 @@ const WealthManagementPage = () => {
       <AboutUsHeroSection
         backgroundImage="https://images.unsplash.com/photo-1666885181590-b86279a06b28?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         title={
-          <span className="text-4xl md:text-6xl font-semibold text-white leading-tight capitalize">
-            Leave the Things <br /> You Love for <br /> Those You Love
+          <span className="text-4xl md:text-6xl font-semibold text-white leading-tight ">
+            Leave the Things <br /> You Love for <br /> Those you Love
           </span>
         }
         description="Our trust services are designed not just for individuals, but for corporations and institutions. Our clients value the separation between the legal ownership and management of assets."
