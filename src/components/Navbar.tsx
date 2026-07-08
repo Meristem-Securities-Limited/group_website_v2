@@ -841,6 +841,7 @@ const Navbar = () => {
 
               <Link
                 href="https://careers.meristemng.com"
+                target="_blank"
                 className={`block w-full text-left py-3 text-sm font-semibold transition-all duration-300 ${
                   isScrolled ?
                     "text-green-800 hover:bg-emerald-50"
@@ -850,6 +851,7 @@ const Navbar = () => {
               </Link>
               <Link
                 href="https://blog.meristemng.com"
+                target="_blank"
                 className={`block w-full text-left py-3 text-sm font-semibold transition-all duration-300 ${
                   isScrolled ?
                     "text-green-800 hover:bg-emerald-50"
