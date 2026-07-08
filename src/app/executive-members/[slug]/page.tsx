@@ -348,10 +348,10 @@ With a deep understanding of wealth structuring, estate planning, and family gov
     slug: "nkechinyelu-okoye",
     image: Nkechinyelu,
     name: "Nkechinyelu Okoye",
-    role: "Acting Managing Director, Meristem Registrar and Probate Services Limited",
+    role: "Ag. Director, Meristem Registrar and Probate Services Limited",
     description: `<div class="executive-info">
           <p class="my-6">
-          Nkechinyelu Okoye is the Managing Director of Meristem Registrars and Probate Services Limited, bringing over 15 years of expertise in business operations, customer experience management, and strategic leadership. She spearheads operational optimization, service excellence, and customer satisfaction, ensuring seamless alignment between business objectives and efficiency.
+          Nkechinyelu Okoye is the Ag. Managing Director of Meristem Registrars and Probate Services Limited, bringing over 15 years of expertise in business operations, customer experience management, and strategic leadership. She spearheads operational optimization, service excellence, and customer satisfaction, ensuring seamless alignment between business objectives and efficiency.
                </p>
          
           <p class="my-6">Throughout her career, Nkechi has held key leadership roles, successfully implementing data-driven strategies that have enhanced customer retention, and revenue growth. Her proficiency in managing cross-functional teams, process innovation, and service delivery has been instrumental in Meristem’s continued success.</p>
