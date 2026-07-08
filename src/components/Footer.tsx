@@ -210,6 +210,7 @@ export default function Footer() {
         {/* COPYRIGHT */}
         <div className="flex justify-center pt-12 pb-14">
           <p className="text-center text-base font-medium text-gray-200">
+            <p>Meristem and its subsidiaries are licensed and regulated by the Securities and Exchange Commission (SEC) of Nigeria and the Central Bank of Nigeria (CBN).</p>
             &copy; {new Date().getFullYear()} Meristem Securities Limited. All Rights Reserved.
           </p>
         </div>
