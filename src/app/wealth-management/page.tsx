@@ -39,7 +39,9 @@ const WealthManagementPage = () => {
           //  `,
           `Meristem Wealth Management Limited is a leading wealth management firm committed to helping individuals and institutions grow, preserve, and transfer wealth with confidence. Through a disciplined approach to investment management and financial advisory, we deliver solutions that are tailored to each client's objectives and evolving financial needs.`,
           `Our strength lies in combining experienced professionals, sound investment expertise, and a deep understanding of the Nigerian and global financial landscape to provide practical, long-term wealth solutions. We work closely with our clients to develop strategies that preserve capital, create sustainable growth, and support legacy planning. Guided by integrity, professionalism, and a commitment to excellence, we build enduring relationships based on trust while helping our clients achieve lasting financial success.`,
-          `In addition to attaining GIPS compliance status ( a standard set by the CFA Institute for best practice among investment management firms globally) for its asset management division.`,
+          `In addition to attaining GIPS compliance status ( a standard set by the CFA Institute for best practice among investment management firms globally) for its asset management division.
+          Meristem Wealth Management Limited is registered and regulated by the Securities and Exchange Commission, Nigeria
+          `,
           // `In addition to attaining GIPS compliance status ( a standard set by the CFA Institute for best practice among investment management firms globally ) for its asset management division ;  MWML has grown her assets under management (AUM) to N683.5B as of December 31 2025.`,
           // `The company having fulfilled all the requirements of the Global Investment Performance
           //     Standards (GIPS) through its Asset Management Division emerged the first indigenous
