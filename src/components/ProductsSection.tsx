@@ -64,7 +64,7 @@ export default function ProductsSection() {
 
   return (
     <section
-      id="products"
+      id="our-platforms"
       className="bg-white py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-6">
@@ -138,6 +138,7 @@ export default function ProductsSection() {
 
                   <div className="mt-auto">
                     <a
+                      target="_blank"
                       href={product.link}
                       className="inline-flex items-center gap-2 text-primary-green font-semibold">
                       <div className="p-2 bg-primary-green text-white">
