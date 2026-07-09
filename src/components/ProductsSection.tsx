@@ -124,11 +124,11 @@ export default function ProductsSection() {
                   <Image
                     src={product.img}
                     alt={product.title}
-                    className="w-full max-h-[400px] min-h-[280px] sm:min-h-[340px] md:min-h-[380px] lg:min-h-[400px] h-full object-cover"
+                    className="w-full max-h-[300px] min-h-[280px] sm:min-h-[340px] md:min-h-[380px] lg:min-h-[400px] h-full object-cover"
                   />
                 </div>
 
-                <div className="flex flex-col flex-1 py-5 gap-9">
+                <div className="flex flex-col flex-1 py-5 gap-5 md:gap-9">
                   <div className="space-y-3">
                     <h3 className="text-lg font-semibold text-primary-green">{product.title}</h3>
                     <p className="text-gray-600 text-base leading-relaxed font-normal line-clamp-3">
@@ -136,7 +136,7 @@ export default function ProductsSection() {
                     </p>
                   </div>
 
-                  <div className="mt-auto">
+                  <div className="md:mt-auto mt-4 sm:mt-0">
                     <a
                       target="_blank"
                       href={product.link}
