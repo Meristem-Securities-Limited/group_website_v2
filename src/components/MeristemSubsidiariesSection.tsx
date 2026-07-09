@@ -1,7 +1,6 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
-// import { motion } from "framer-motion";
 
 export default function MeristemSubsidiaries() {
   const subsidiaries = [
@@ -51,7 +50,7 @@ export default function MeristemSubsidiaries() {
       number: "07",
       name: "Trustees",
       description: "Leave the things you love for those you love.",
-      link: "/trustee",
+      link: "/trustees",
       //  link: "https://trustees.meristemng.com",
     },
   ];
@@ -72,6 +71,7 @@ export default function MeristemSubsidiaries() {
         <div className="space-y-0 mt-5">
           {subsidiaries.map((subsidiary, index) => (
             <a
+              target={subsidiary.link.startsWith("http") ? "_blank" : "_self"}
               href={subsidiary.link}
               key={index}
               // initial={{ opacity: 0, x: 100 }}

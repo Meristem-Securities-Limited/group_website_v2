@@ -404,12 +404,12 @@ const ourProductsItems = [
     title: "Family Office",
     sectionId: "mission",
     children: [
-      { title: "Family Governance Advisory", link: "/our-products/family-governance-advisory" },
-      { title: "Health and Longevity Plan", link: "/our-products/health-longevity-plan" },
-      { title: "Investment Advisory", link: "/our-products/investment-advisory-family-office" },
-      { title: "Legacy Documentation Service", link: "/our-products/legacy-documentation-service" },
-      { title: "Legacy Planning", link: "/our-products/legacy-planning" },
-      { title: "Philanthropy", link: "/our-products/philanthropy-advisory" },
+      { title: "Family Governance Advisory", link: "https://familyoffice.meristemng.com" },
+      { title: "Health and Longevity Plan", link: "https://familyoffice.meristemng.com" },
+      { title: "Investment Advisory", link: "https://familyoffice.meristemng.com" },
+      { title: "Legacy Documentation Service", link: "https://familyoffice.meristemng.com" },
+      { title: "Legacy Planning", link: "https://familyoffice.meristemng.com" },
+      { title: "Philanthropy", link: "https://familyoffice.meristemng.com" },
     ],
   },
   // {
@@ -550,6 +550,7 @@ const Navbar = () => {
             ))}
 
             <Link
+              target="_blank"
               href="https://careers.meristemng.com"
               className={`px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
                 isScrolled ?
@@ -559,6 +560,7 @@ const Navbar = () => {
               CAREERS
             </Link>
             <Link
+              target="_blank"
               href="https://blog.meristemng.com"
               className={`px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
                 isScrolled ?
@@ -637,6 +639,7 @@ const Navbar = () => {
                     {subsidiaries.map((item, i) => (
                       <a
                         key={i}
+                        target={item?.link.startsWith("http") ? "_blank" : "_self"}
                         href={item.link}
                         className="cursor-pointer group">
                         <h4 className="text-gray-900 font-semibold group-hover:text-green-800 transition-colors duration-200">
