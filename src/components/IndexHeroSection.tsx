@@ -50,7 +50,7 @@ export default function HeroSection() {
 
           <motion.div variants={itemVariants}>
             <a
-              href="#capabilities"
+              href="#our-platforms"
               className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white hover:bg-gray-100 text-sm sm:text-base font-bold text-gray-700 shadow-md transition-all duration-300">
               GET STARTED
             </a>
