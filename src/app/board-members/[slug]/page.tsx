@@ -13,6 +13,8 @@ import {
   Ohis,
   Oyebamiji,
   Reginald,
+  Onyema,
+  Olusanya,
 } from "@/app/assets";
 interface Props {
   params: Promise<{ slug: string }>;
@@ -403,6 +405,89 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
     <p>
       He is currently self-employed as the <strong>Chairman</strong> of <strong>UMSY Technologies Limited</strong>, <strong>UMSY Foods Ltd</strong>, and <strong>UMSY Agro-Allied Enterprises</strong>.
     </p> <br>
+  </div>`,
+  },
+  {
+    slug: "oscar-onyema",
+    image: Onyema,
+    name: "Oscar N. Onyema, OON",
+    role: "Director",
+    description: `<p class="text-gray-700 py-3">Oscar N. Onyema, OON, is one of Africa's foremost architects of modern financial market infrastructure and institutional capital formation. Over a distinguished career spanning nearly three decades, he has led transformational reforms that have strengthened capital markets, enhanced corporate governance, mobilised long-term investment, and advanced sustainable economic development across Africa and beyond.</p>
+   <p class="text-gray-700 py-3">As former Group Chief Executive Officer of Nigerian Exchange Group Plc and Chief Executive Officer of The Nigerian Stock Exchange, he led one of Africa's most significant exchange transformations, successfully demutualising the Exchange, modernising market infrastructure, expanding investor access, and positioning Nigeria as a leading destination for capital formation. His leadership has also extended to the World Federation of Exchanges, the African Securities Exchanges Association, the Central Securities Clearing System Plc, the National Pension Commission, and numerous private and public institutions, where he has shaped governance standards, financial market innovation, and regional integration.</p>
+   <p class="text-gray-700 py-3">Today, Mr. Onyema chairs and serves on the boards of organisations spanning financial markets, fintech, energy, and sustainable finance, where he continues to advise governments, regulators, development finance institutions, institutional investors, and corporate leaders. Widely respected for his strategic judgement, integrity, and institution-building capabilities, he is recognised for bringing together public and private stakeholders to unlock investment, strengthen governance, and build resilient institutions that create lasting economic value. His career reflects an enduring commitment to inclusive growth, responsible leadership, and the long-term prosperity of Africa.</p>`,
+  },
+  {
+    slug: "oluwatoyin-olusanya-onadele",
+    image: Olusanya,
+    name: "Oluwatoyin Olusanya-Onadele",
+    role: "Director",
+    description: `<div class="executive-info">
+    <p>
+      Mrs. Oluwatoyin Olusanya-Onadele is a dynamic and accomplished serial
+entrepreneur with over 30 years of professional experience spanning
+financial services, business development, consulting, and strategic
+leadership. She is widely recognized for her visionary approach, deep
+industry knowledge, and ability to drive transformational growth across
+multiple sectors. </p> <br>
+
+    <p>
+      Between 2006 and 2022, he held various senior management positions in <strong>Zenith Bank Plc</strong>, one of Nigeria’s most profitable and largest banks.
+    </p> <br>
+
+    <p>
+     She is currently the Chief Experience Officer and Chief Executive Officer of
+The Jewel Aeida Limited, a premier conferencing and experience center that
+she conceptualized and successfully launched in November 2021. In addition,
+she serves as the Co-Founder and Chief Executive Officer of Lusant Dell
+Limited, a consultancy and advisory firm, and is the Founder and Managing
+Director of Aeida Ventures Limited, a space and events management
+company that has consistently delivered premium services across diverse
+sectors over the past 13 years.    </p> <br>
+
+    <p>
+    A trained economist and strategic advisor, Mrs. Olusanya-Onadele brings
+extensive expertise in financial services, treasury and investment
+management, and corporate advisory. Her core competencies include
+business development, financial markets, process reengineering, customer
+experience optimization, marketing and sales strategy, and personal and
+organizational development. She has led and executed high-impact
+consulting engagements for clients in key sectors including oil & gas,
+government, financial services, and telecommunications.    </p> <br>
+
+    <p>
+     She is a highly sought-after facilitator in areas such as sales and leadership
+training, customer service transformation, financial literacy, and capacity
+building. Her reputation for excellence has earned her mandates to deliver
+bespoke training and advisory services to both corporate organizations and
+private clients.    </p> <br>
+
+    <p>
+      Her banking career spans several reputable financial institutions including
+IMB, FSDH Merchant Bank, National Bank (now Wema Bank), Broad Bank,
+and Union Bank. At various points, she held senior roles in Sales, Treasury
+and Investment Banking, Private Banking, Asset Management, and both
+Consumer and Commercial Banking.   </p> <br>
+
+    <p>
+     Mrs. Olusanya-Onadele holds an MBA from Cardiff Business School,
+University of Wales, UK, and a Bachelor’s degree in Economics from the
+University of Lagos. She is an Associate Member of the Chartered Institute of
+Stockbrokers and the Chartered Institute of Arbitrators. She has also
+completed several executive programs, including the Wharton University
+Competitive Marketing Strategy Course and the BlackRock Investment
+Banking Program, which included a two-week placement at BlackRock,
+London.   </p> <br>
+
+    <p class="mt-3">
+               She currently serves on the boards of several organizations as a
+Independent/Non-Executive Director, including:  </p><ul class="list-disc list-inside">
+                <li> Tangerine APT Pensions</li>
+                <li>Tripple GEE & Co. PLC</li>
+                <li>Greenwich Asset Mangement Ltd</li>
+                <li>Robert and John Limited</li>
+                <li>Greenwich Alpha Exchange Traded Fund</li>
+                <li>Greenwich Plus Money Market Fund</li>
+               </ul>
   </div>`,
   },
 ];

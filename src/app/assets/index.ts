@@ -106,8 +106,10 @@ import Encoin from "./encoin.jpeg";
 import Stac from "./stac.jpeg";
 import Neimeth from "./neimeth.jpeg";
 import SECLogo from "./sec-logo.svg";
+import Olusanya from "./Olusanya.jpg";
 
 export {
+  Olusanya,
   SECLogo,
   Neimeth,
   Encoin,
