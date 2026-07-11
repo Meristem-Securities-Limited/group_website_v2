@@ -138,46 +138,6 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
             </div>`,
   },
   {
-    slug: "adejumoke-awolumate",
-    image: Adejumoke,
-    name: "Adejumoke Awolumate",
-    role: "Director",
-    description: `<div class="executive-info">
-    <p>
-      Jumoke is a highly motivated and technically competent individual with strong leadership and excellent people skills. 
-      She is ambitious, goal-oriented, and visionary.
-    </p> <br>
-
-    <p>
-      She has over 25 years of cross-functional experience spanning finance, investments, strategy, audit, and administration. 
-      She is a <strong>Fellow of the Institute of Chartered Accountants of Nigeria (ICAN)</strong>, an <strong>Associate Stockbroker</strong>, and an <strong>Authorized Dealing Clerk</strong> of the Nigerian Stock Exchange.
-    </p> <br>
-
-    <p>
-      Jumoke began her professional career in 1995 as an Auditor, and seven years later, she joined <strong>Meristem Securities Group</strong> in January 2007.
-    </p> <br>
-
-    <p>
-      Over a period of 12 years, she served in various capacities, including <strong>Head, Asset Management</strong> at Meristem Wealth Management Limited and <strong>Head, Group Strategy and Shared Services</strong>. 
-      She left Meristem Group in 2018 as the <strong>Managing Director of Meristem Capital Limited</strong>, a wholly owned subsidiary of Meristem Securities Limited.
-    </p> <br>
-
-    <p>
-      After leaving Meristem, she joined <strong>Integrated Dairies Limited</strong> as the <strong>Chief Operating Officer (COO)</strong>, a role she continues to hold. 
-      Her primary mandate includes driving change management, corporate transformation, and institutionalization.
-    </p> <br>
-
-    <p>
-      Jumoke sits on the boards of several organizations in a non-executive capacity across various industries, including finance, investment, capital markets, and agro-allied businesses.
-    </p> <br>
-
-    <p>
-      She enjoys travelling, dancing, listening to music, and reading. 
-      Jumoke is an ardent team player with a strong sense of collective responsibility.
-    </p> <br>
-  </div>`,
-  },
-  {
     slug: "amina-maina",
     image: Amina,
     name: "Amina Maina",
@@ -213,6 +173,46 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
 
     <p>
       A Fellow of the Institute of Management Consultants, she is also a Member of the Institute of Directors and the Society of Petroleum Engineers. Additionally, she serves as Vice Chairman of the Depot and Petroleum Products Marketers Association of Nigeria (DAPPMAN) and 3rd Vice Chairman of the Nigerian Economic Summit Group.
+    </p> <br>
+  </div>`,
+  },
+  {
+    slug: "adejumoke-awolumate",
+    image: Adejumoke,
+    name: "Dr. Adejumoke Awolumate",
+    role: "Director",
+    description: `<div class="executive-info">
+    <p>
+      Jumoke is a highly motivated and technically competent individual with strong leadership and excellent people skills. 
+      She is ambitious, goal-oriented, and visionary.
+    </p> <br>
+
+    <p>
+      She has over 25 years of cross-functional experience spanning finance, investments, strategy, audit, and administration. 
+      She is a <strong>Fellow of the Institute of Chartered Accountants of Nigeria (ICAN)</strong>, an <strong>Associate Stockbroker</strong>, and an <strong>Authorized Dealing Clerk</strong> of the Nigerian Stock Exchange.
+    </p> <br>
+
+    <p>
+      Jumoke began her professional career in 1995 as an Auditor, and seven years later, she joined <strong>Meristem Securities Group</strong> in January 2007.
+    </p> <br>
+
+    <p>
+      Over a period of 12 years, she served in various capacities, including <strong>Head, Asset Management</strong> at Meristem Wealth Management Limited and <strong>Head, Group Strategy and Shared Services</strong>. 
+      She left Meristem Group in 2018 as the <strong>Managing Director of Meristem Capital Limited</strong>, a wholly owned subsidiary of Meristem Securities Limited.
+    </p> <br>
+
+    <p>
+      After leaving Meristem, she joined <strong>Integrated Dairies Limited</strong> as the <strong>Chief Operating Officer (COO)</strong>, a role she continues to hold. 
+      Her primary mandate includes driving change management, corporate transformation, and institutionalization.
+    </p> <br>
+
+    <p>
+      Jumoke sits on the boards of several organizations in a non-executive capacity across various industries, including finance, investment, capital markets, and agro-allied businesses.
+    </p> <br>
+
+    <p>
+      She enjoys travelling, dancing, listening to music, and reading. 
+      Jumoke is an ardent team player with a strong sense of collective responsibility.
     </p> <br>
   </div>`,
   },
@@ -348,75 +348,6 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
   </div>`,
   },
   {
-    slug: "ade-ojotaiwo",
-    image: AdeOjo,
-    name: "Taiwo Ade-Ojo",
-    role: "Director",
-    description: `<p>
-    Since June 2021, Mrs. Ade-Ojo has been the Managing Director of Elizade Nigeria Limited, where she develops and executes the organization’s business strategies to attain set goals and objectives while providing strategic advice to the Board of Directors.</p>
-    <br>
-    <p>She also oversees the organization’s financial performance and investments. A result-oriented team player, committed to excellence, focused goal-getter with vast experience in procurement.</p>
-    <br>
-    <p>Prior to 2021, she was the Executive Director (Operations) of Elizade from March 2019 – May 2021. As the Executive Director, Operations, she was responsible for business strategy planning and execution and also drove the daily operations of the organization strategically from both operational and financial perspectives.</p>
-    <br>
-    <p>Between 2007 and 2019, she was Head of Procurement for Elizade Nigeria Limited, during which she managed procurement budgets and market surveys to enable Management make informed decisions.</p>
-    <br>
-    <p>Prior to joining Elizade in 2007, she worked in the Local Government and Chieftaincy Affairs Office of the Deputy Governor as an Account Officer.</p>
-  </p><br>`,
-  },
-  {
-    slug: "umar-ahmed",
-    image: Ahmed,
-    name: "Umar Shuaib Ahmed",
-    role: "Director",
-    description: `<div class="executive-info">
-    <p>
-      Umar Shuaib Ahmed is an accomplished banker with over 29 years of cognate experience spanning business development, operations, customer service, and public sector banking.
-    </p> <br>
-
-    <p>
-      Between 2006 and 2022, he held various senior management positions in <strong>Zenith Bank Plc</strong>, one of Nigeria’s most profitable and largest banks.
-    </p> <br>
-
-    <p>
-      He served as an Executive Director at Zenith Bank from <strong>October 1st, 2016, to December 31st, 2022</strong>. In this capacity, he was directly responsible for the bank’s business in the Northern region, coordinating and directing market penetration and business development in alignment with Zenith’s corporate objectives.
-    </p> <br>
-
-    <p>
-      He also provided executive-level support to the Deputy Managing Director for operations in the Southeast region.
-    </p> <br>
-
-    <p>
-      During his tenure at Zenith Bank, Umar served on several strategic committees of the bank, including the <strong>Board Credit Committee</strong>, <strong>Finance and General-Purpose Committee</strong>, <strong>Risk Management Committee</strong>, and as a <strong>Non-Executive Director (NED)</strong> of Zenith Pensions Custodian.
-    </p> <br>
-
-    <p>
-      He played active roles in public and private sector banking in Abuja, serving as <strong>General Manager/Zonal Head, Abuja II</strong> between June 1st, 2013, and September 30th, 2016, and later as <strong>Group Head, Abuja Private Sector Businesses</strong>.
-    </p> <br>
-
-    <p>
-      Prior to joining Zenith Bank, Umar worked with <strong>Broad Bank of Nigeria Limited</strong> as Senior Manager/Assistant General Manager in charge of the Federal Capital Territory (January 2004 – May 2006), and previously held positions in <strong>Liberty Bank Plc</strong> and <strong>Citibank Nigeria</strong>.
-    </p> <br>
-
-    <p>
-      Umar is a <strong>Fellow of the Nigerian Institute of Management</strong>, an <strong>Honorary Senior Member of the Chartered Institute of Bankers</strong>, a <strong>Fellow of the Chartered Institute of Loan & Risk Management</strong>, a <strong>Member of the Certified National Accountants</strong>, and a <strong>Member of the Institute of Directors</strong>.
-    </p> <br>
-
-    <p>
-      He is currently self-employed as the <strong>Chairman</strong> of <strong>UMSY Technologies Limited</strong>, <strong>UMSY Foods Ltd</strong>, and <strong>UMSY Agro-Allied Enterprises</strong>.
-    </p> <br>
-  </div>`,
-  },
-  {
-    slug: "oscar-onyema",
-    image: Onyema,
-    name: "Oscar N. Onyema, OON",
-    role: "Director",
-    description: `<p class="text-gray-700 py-3">Oscar N. Onyema, OON, is one of Africa's foremost architects of modern financial market infrastructure and institutional capital formation. Over a distinguished career spanning nearly three decades, he has led transformational reforms that have strengthened capital markets, enhanced corporate governance, mobilised long-term investment, and advanced sustainable economic development across Africa and beyond.</p>
-   <p class="text-gray-700 py-3">As former Group Chief Executive Officer of Nigerian Exchange Group Plc and Chief Executive Officer of The Nigerian Stock Exchange, he led one of Africa's most significant exchange transformations, successfully demutualising the Exchange, modernising market infrastructure, expanding investor access, and positioning Nigeria as a leading destination for capital formation. His leadership has also extended to the World Federation of Exchanges, the African Securities Exchanges Association, the Central Securities Clearing System Plc, the National Pension Commission, and numerous private and public institutions, where he has shaped governance standards, financial market innovation, and regional integration.</p>
-   <p class="text-gray-700 py-3">Today, Mr. Onyema chairs and serves on the boards of organisations spanning financial markets, fintech, energy, and sustainable finance, where he continues to advise governments, regulators, development finance institutions, institutional investors, and corporate leaders. Widely respected for his strategic judgement, integrity, and institution-building capabilities, he is recognised for bringing together public and private stakeholders to unlock investment, strengthen governance, and build resilient institutions that create lasting economic value. His career reflects an enduring commitment to inclusive growth, responsible leadership, and the long-term prosperity of Africa.</p>`,
-  },
-  {
     slug: "oluwatoyin-olusanya-onadele",
     image: Olusanya,
     name: "Oluwatoyin Olusanya-Onadele",
@@ -488,6 +419,75 @@ Independent/Non-Executive Director, including:  </p><ul class="list-disc list-in
                 <li>Greenwich Alpha Exchange Traded Fund</li>
                 <li>Greenwich Plus Money Market Fund</li>
                </ul>
+  </div>`,
+  },
+  {
+    slug: "oscar-onyema",
+    image: Onyema,
+    name: "Oscar N. Onyema, OON",
+    role: "Director",
+    description: `<p class="text-gray-700 py-3">Oscar N. Onyema, OON, is one of Africa's foremost architects of modern financial market infrastructure and institutional capital formation. Over a distinguished career spanning nearly three decades, he has led transformational reforms that have strengthened capital markets, enhanced corporate governance, mobilised long-term investment, and advanced sustainable economic development across Africa and beyond.</p>
+   <p class="text-gray-700 py-3">As former Group Chief Executive Officer of Nigerian Exchange Group Plc and Chief Executive Officer of The Nigerian Stock Exchange, he led one of Africa's most significant exchange transformations, successfully demutualising the Exchange, modernising market infrastructure, expanding investor access, and positioning Nigeria as a leading destination for capital formation. His leadership has also extended to the World Federation of Exchanges, the African Securities Exchanges Association, the Central Securities Clearing System Plc, the National Pension Commission, and numerous private and public institutions, where he has shaped governance standards, financial market innovation, and regional integration.</p>
+   <p class="text-gray-700 py-3">Today, Mr. Onyema chairs and serves on the boards of organisations spanning financial markets, fintech, energy, and sustainable finance, where he continues to advise governments, regulators, development finance institutions, institutional investors, and corporate leaders. Widely respected for his strategic judgement, integrity, and institution-building capabilities, he is recognised for bringing together public and private stakeholders to unlock investment, strengthen governance, and build resilient institutions that create lasting economic value. His career reflects an enduring commitment to inclusive growth, responsible leadership, and the long-term prosperity of Africa.</p>`,
+  },
+  {
+    slug: "ade-ojotaiwo",
+    image: AdeOjo,
+    name: "Taiwo Ade-Ojo",
+    role: "Director",
+    description: `<p>
+    Since June 2021, Mrs. Ade-Ojo has been the Managing Director of Elizade Nigeria Limited, where she develops and executes the organization’s business strategies to attain set goals and objectives while providing strategic advice to the Board of Directors.</p>
+    <br>
+    <p>She also oversees the organization’s financial performance and investments. A result-oriented team player, committed to excellence, focused goal-getter with vast experience in procurement.</p>
+    <br>
+    <p>Prior to 2021, she was the Executive Director (Operations) of Elizade from March 2019 – May 2021. As the Executive Director, Operations, she was responsible for business strategy planning and execution and also drove the daily operations of the organization strategically from both operational and financial perspectives.</p>
+    <br>
+    <p>Between 2007 and 2019, she was Head of Procurement for Elizade Nigeria Limited, during which she managed procurement budgets and market surveys to enable Management make informed decisions.</p>
+    <br>
+    <p>Prior to joining Elizade in 2007, she worked in the Local Government and Chieftaincy Affairs Office of the Deputy Governor as an Account Officer.</p>
+  </p><br>`,
+  },
+  {
+    slug: "umar-ahmed",
+    image: Ahmed,
+    name: "Umar Shuaib Ahmed",
+    role: "Director",
+    description: `<div class="executive-info">
+    <p>
+      Umar Shuaib Ahmed is an accomplished banker with over 29 years of cognate experience spanning business development, operations, customer service, and public sector banking.
+    </p> <br>
+
+    <p>
+      Between 2006 and 2022, he held various senior management positions in <strong>Zenith Bank Plc</strong>, one of Nigeria’s most profitable and largest banks.
+    </p> <br>
+
+    <p>
+      He served as an Executive Director at Zenith Bank from <strong>October 1st, 2016, to December 31st, 2022</strong>. In this capacity, he was directly responsible for the bank’s business in the Northern region, coordinating and directing market penetration and business development in alignment with Zenith’s corporate objectives.
+    </p> <br>
+
+    <p>
+      He also provided executive-level support to the Deputy Managing Director for operations in the Southeast region.
+    </p> <br>
+
+    <p>
+      During his tenure at Zenith Bank, Umar served on several strategic committees of the bank, including the <strong>Board Credit Committee</strong>, <strong>Finance and General-Purpose Committee</strong>, <strong>Risk Management Committee</strong>, and as a <strong>Non-Executive Director (NED)</strong> of Zenith Pensions Custodian.
+    </p> <br>
+
+    <p>
+      He played active roles in public and private sector banking in Abuja, serving as <strong>General Manager/Zonal Head, Abuja II</strong> between June 1st, 2013, and September 30th, 2016, and later as <strong>Group Head, Abuja Private Sector Businesses</strong>.
+    </p> <br>
+
+    <p>
+      Prior to joining Zenith Bank, Umar worked with <strong>Broad Bank of Nigeria Limited</strong> as Senior Manager/Assistant General Manager in charge of the Federal Capital Territory (January 2004 – May 2006), and previously held positions in <strong>Liberty Bank Plc</strong> and <strong>Citibank Nigeria</strong>.
+    </p> <br>
+
+    <p>
+      Umar is a <strong>Fellow of the Nigerian Institute of Management</strong>, an <strong>Honorary Senior Member of the Chartered Institute of Bankers</strong>, a <strong>Fellow of the Chartered Institute of Loan & Risk Management</strong>, a <strong>Member of the Certified National Accountants</strong>, and a <strong>Member of the Institute of Directors</strong>.
+    </p> <br>
+
+    <p>
+      He is currently self-employed as the <strong>Chairman</strong> of <strong>UMSY Technologies Limited</strong>, <strong>UMSY Foods Ltd</strong>, and <strong>UMSY Agro-Allied Enterprises</strong>.
+    </p> <br>
   </div>`,
   },
 ];
