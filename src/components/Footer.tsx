@@ -108,12 +108,12 @@ export default function Footer() {
     {
       title: "Port Harcourt Branch",
       address:
-        "1 Opobo Crescent, Opposite Aladumo Schools, GRA Junction, Port Harcourt, Rivers State, Nigeria. (0700MERISTEM, 070063747836)",
+        "1 Opobo Crescent, Opposite Aladumo Schools, GRA Junction, Port Harcourt, Rivers State, Nigeria. (0700MERISTEM, 070063747836, 0800MERISTEM)",
     },
     {
       title: "Abuja Branch",
       address:
-        "4th Floor, Elizade Towers, Plot 596 Cadastral Zone A.O, Independent Avenue, FCT, Abuja, Nigeria. (0700MERISTEM, 070063747836)",
+        "4th Floor, Elizade Towers, Plot 596 Cadastral Zone A.O, Independent Avenue, FCT, Abuja, Nigeria. (0700MERISTEM, 070063747836, 0800MERISTEM)",
     },
   ];
 
@@ -145,7 +145,7 @@ export default function Footer() {
               <p className="text-base text-gray-100">For complaints, contact us on</p>
               <div className="space-y-1">
                 <p className="font-semibold text-base">WhatsApp: +2348134059788</p>
-                <p className="font-semibold text-base">Telephone: 0700MERISTEM, 070063747836</p>
+                <p className="font-semibold text-base">Telephone: 0700MERISTEM, 070063747836, 0800MERISTEM</p>
                 <p className="font-semibold text-base">Email: contact@meristemng.com</p>
               </div>
             </div>
