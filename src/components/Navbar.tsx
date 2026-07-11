@@ -15,7 +15,7 @@ const productPlatforms = [
       "Invest easily in Mutual Funds, Treasury Bills, Commercial Papers, Bonds and more—tailored to grow your money",
   },
   {
-    name: "MeriTrade",
+    name: "Meritrade",
     link: "https://app.meritrade.com/",
     subText:
       "Buy and sell Nigerian stocks seamlessly, giving you full control of your investments.",
