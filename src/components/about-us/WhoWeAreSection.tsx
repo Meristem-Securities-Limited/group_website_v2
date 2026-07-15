@@ -9,7 +9,7 @@ export default function WhoWeAreSection({
   sectionImage = GroupPicture,
   htmldescription,
   descriptions = [
-    `With a legacy spanning over two decades, we&apos;ve established ourselves as the trusted
+    `With a legacy spanning over two decades, we've established ourselves as the trusted
         financial services partner for individuals and corporations in Nigeria and globally.`,
 
     `Our success is built on exceptional customer service, unparalleled financial expertise, and
