@@ -257,7 +257,7 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
   {
     slug: "emmanuel-oyebanji",
     image: Oyebamiji,
-    name: "Emmanuel Adeyeye Oyebanji, SAN, FCIArb",
+    name: "Emmanuel Adeyeye Oyebanji, SAN",
     role: "Director",
     description: `<div class="executive-info">
     <p>
@@ -354,50 +354,47 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
     role: "Director",
     description: `<div class="executive-info">
     <p>
-      Mrs. Oluwatoyin Olusanya-Onadele is a dynamic and accomplished serial
-entrepreneur with over 30 years of professional experience spanning
-financial services, business development, consulting, and strategic
-leadership. She is widely recognized for her visionary approach, deep
-industry knowledge, and ability to drive transformational growth across
-multiple sectors. </p> <br>
+     Mrs.	 Oluwatoyin	 Olusanya-Onadele	 is	 a	 dynamic	 and	 accomplished	 serial	
+entrepreneur	 with	 over	 30	 years	 of	 professional	 experience	 spanning	
+financial	 services,	 business	 development,	 consulting,	 and	 strategic	
+leadership.	 She	 is	 widely	 recognized	 for	 her	 visionary	 approach,	 deep	
+industry	 knowledge,	 and	 ability	 to	 drive	 transformational	 growth	 across	
+multiple	sectors. </p> <br>
 
     <p>
-      Between 2006 and 2022, he held various senior management positions in <strong>Zenith Bank Plc</strong>, one of Nigeria’s most profitable and largest banks.
+     She	is	currently	 the	Chief	Experience	Officer	and	Chief	Executive	Officer	of	
+The	Jewel	Aeida	Limited,	a	premier	conferencing	and	experience	center	that	
+she	conceptualized	and	successfully	launched	in	November	2021.	In	addition,	
+she	 serves	 as	 the	 Co-Founder and	 Chief	 Executive	 Officer	 of	 Lusant	 Dell	
+Limited,	a	consultancy	and	advisory	firm,	and	is	the	Founder	and	Managing	
+Director	 of	 Aeida	 Ventures	 Limited,	 a	 space	 and	 events	 management	
+company	 that	 has	 consistently	 delivered	 premium	 services	 across	 diverse	
+sectors	over	the	past	13	years.
     </p> <br>
 
     <p>
-     She is currently the Chief Experience Officer and Chief Executive Officer of
-The Jewel Aeida Limited, a premier conferencing and experience center that
-she conceptualized and successfully launched in November 2021. In addition,
-she serves as the Co-Founder and Chief Executive Officer of Lusant Dell
-Limited, a consultancy and advisory firm, and is the Founder and Managing
-Director of Aeida Ventures Limited, a space and events management
-company that has consistently delivered premium services across diverse
-sectors over the past 13 years.    </p> <br>
+    A	 trained	 economist	 and	 strategic	 advisor,	 Mrs.	 Olusanya-Onadele	 brings	
+extensive	 expertise	 in	 financial	 services,	 treasury	 and	 investment	
+management,	 and	 corporate	 advisory.	 Her	 core	 competencies	 include	
+business	 development,	 financial	markets,	 process	 reengineering,	 customer	
+experience	 optimization,	 marketing	 and	 sales	 strategy,	 and	 personal	 and	
+organizational	 development.	 She	 has	 led	 and	 executed	 high-impact	
+consulting	 engagements	 for	 clients	 in	 key	 sectors	 including	 oil	 &	 gas,	
+government,	financial	services,	and	telecommunications.    </p> <br>
 
     <p>
-    A trained economist and strategic advisor, Mrs. Olusanya-Onadele brings
-extensive expertise in financial services, treasury and investment
-management, and corporate advisory. Her core competencies include
-business development, financial markets, process reengineering, customer
-experience optimization, marketing and sales strategy, and personal and
-organizational development. She has led and executed high-impact
-consulting engagements for clients in key sectors including oil & gas,
-government, financial services, and telecommunications.    </p> <br>
+   She	is	a	highly	sought-after	facilitator	in	areas	such	as	sales	and	leadership	
+training,	 customer	 service	 transformation,	 financial	 literacy,	 and	 capacity	
+building.	Her	reputation	 for	excellence	has	earned	her	mandates	to	deliver	
+bespoke	training	and	advisory	services	to	both	corporate	organizations	and	
+private	clients.</p> <br>
 
     <p>
-     She is a highly sought-after facilitator in areas such as sales and leadership
-training, customer service transformation, financial literacy, and capacity
-building. Her reputation for excellence has earned her mandates to deliver
-bespoke training and advisory services to both corporate organizations and
-private clients.    </p> <br>
-
-    <p>
-      Her banking career spans several reputable financial institutions including
-IMB, FSDH Merchant Bank, National Bank (now Wema Bank), Broad Bank,
-and Union Bank. At various points, she held senior roles in Sales, Treasury
-and Investment Banking, Private Banking, Asset Management, and both
-Consumer and Commercial Banking.   </p> <br>
+    Her	banking	career	spans	several	reputable	 financial	institutions	including	
+IMB,	FSDH	Merchant	Bank,	National	Bank	(now	Wema	Bank),	Broad	Bank,	
+and	Union	Bank.	At	various	points,	she	held	senior	roles	in	Sales,	Treasury	
+and	 Investment	 Banking,	 Private	 Banking,	 Asset	 Management,	 and	 both	
+Consumer	and	Commercial	Banking.</p> <br>
 
     <p>
      Mrs. Olusanya-Onadele holds an MBA from Cardiff Business School,

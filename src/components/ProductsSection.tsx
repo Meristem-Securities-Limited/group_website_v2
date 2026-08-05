@@ -45,7 +45,7 @@ const products = [
     description:
       "Learn the essentials of investing and entrepreneurship through engaging content and expert-led sessions designed to empower the next generation of wealth creators.",
     img: MORE,
-    link: "https://app.more.meristemng.com",
+    link: "https://app.more.meristemng.com/",
   },
 ];
 
