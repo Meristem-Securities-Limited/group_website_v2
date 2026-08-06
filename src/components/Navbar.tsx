@@ -22,7 +22,7 @@ const productPlatforms = [
   },
   {
     name: "MORE",
-    link: "https://app.more.meristemng.com/",
+    link: "https://more.meristemng.com/",
     subText:
       "Learn directly from industry experts and gain practical knowledge to grow as an entrepreneur and investor.",
   },
