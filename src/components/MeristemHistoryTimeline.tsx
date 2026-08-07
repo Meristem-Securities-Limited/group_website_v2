@@ -37,10 +37,10 @@ const MeristemTimeline = () => {
           // viewport={{ once: true }}>
         >
           <h2 className="text-3xl md:text-5xl font-semibold text-white">Our History</h2>
-          <p className="text-white mt-5 max-w-2xl">
+          {/* <p className="text-white mt-5 max-w-2xl">
             Provides premium financial services that help you grow and preserve your wealth through
             expert market analysis and personalized investment strategies.
-          </p>
+          </p> */}
         </div>
 
         {/* Group Container */}
