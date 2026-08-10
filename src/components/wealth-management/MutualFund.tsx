@@ -558,7 +558,7 @@ function FundCard({
                 download
                 href={etfReportUrl}
                 className="bg-primary rounded-full px-8 py-3.5 font-semibold bg-green-800 text-white inline-block text-sm hover:bg-green-700 transition-colors self-start">
-                Download ETF Montly Report
+                Download Montly Report
               </a>
             )}
           </div>
