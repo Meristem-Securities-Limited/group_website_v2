@@ -48,7 +48,7 @@ import MeritradeApp from "./Artboard.png";
 import MeritradeApp2 from "./meritrade-app.jpg";
 import AdeOjo from "./ADE_OJO.jpg";
 import Amina from "./Amina.jpg";
-import Stanley from "./IMG_9782.jpg";
+import Stanley from "./stanley-jacob.jpg";
 import corporateTrust from "./corporate-trust.png";
 import publicTrust from "./public-trust.png";
 import privateTrust from "./private-trust.png";
