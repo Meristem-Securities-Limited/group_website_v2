@@ -217,7 +217,7 @@ Beyond finance, she is a certified Family Finance Coach and Counsellor, holding 
           Kemi Ojenike is a seasoned Lawyer and Family Wealth Advisor committed to helping families preserve and grow multigenerational wealth. 
 With a deep understanding of wealth structuring, estate planning, and family governance, she provides strategic guidance to ensure that high-net-worth families secure their legacy for generations to come.
 
-          <br><br>As the Chief Operating Officer of Meristem Family Office, Kemi oversees strategic planning, operational efficiency, and client advisory services. Her expertise lies in wealth preservation, risk management, and legal structuring, ensuring that clients receive tailored solutions to safeguard their most valuable assets.
+          <br><br>As the Managing Director of Meristem Family Office, Kemi oversees strategic planning, operational efficiency, and client advisory services. Her expertise lies in wealth preservation, risk management, and legal structuring, ensuring that clients receive tailored solutions to safeguard their most valuable assets.
 <br><br>Kemi’s experience in leading the legal and compliance strategy of a top wealth management group has equipped her with a strong grasp of regulatory frameworks, governance structures, and risk mitigation strategies. Her qualifications include:
           </p>
           <ul class="my-6 list-disc list-inside">
