@@ -4,6 +4,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import CookieConsentBanner from "../components/CookieConsentBanner";
 import Script from "next/script";
 import { GoogleTagManager } from "@next/third-parties/google";
 
@@ -105,6 +106,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         {children}
         <Footer />
+        <CookieConsentBanner />
       </body>
     </html>
   );

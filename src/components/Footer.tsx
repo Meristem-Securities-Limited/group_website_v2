@@ -6,6 +6,7 @@ import Link from "next/link";
 import { WhiteLogo } from "../app/assets";
 import { BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { Facebook, Instagram } from "iconsax-react";
+import { openCookiePreferences } from "./CookieConsentBanner";
 
 export default function Footer() {
   const socialLinks = [
@@ -73,9 +74,11 @@ export default function Footer() {
       items: [
         {
           title: "Complaint Management Framework",
-          url: "https://meristemng.com/documents/complaint-management-framework.pdf",
+          url: "#",
         },
-        { title: "Data Privacy Policy", url: "https://meristemng.com/privacy-policy" },
+        { title: "Data Privacy Policy", url: "privacy-policy" },
+        { title: "Cookie Policy", url: "cookie-policy" },
+        { title: "Terms and Conditions", url: "terms-and-conditions" },
       ],
     },
     {
@@ -210,7 +213,7 @@ export default function Footer() {
         </div>
 
         {/* COPYRIGHT */}
-        <div className="flex justify-center pt-12 pb-14">
+        <div className="flex flex-col items-center gap-4 pt-12 pb-14">
           <div className="text-center text-base font-medium text-gray-200">
             <p>
               Meristem and its subsidiaries are licensed and regulated by the Securities and
@@ -218,6 +221,12 @@ export default function Footer() {
             </p>
             &copy; {new Date().getFullYear()} Meristem Securities Limited. All Rights Reserved.
           </div>
+          <button
+            type="button"
+            onClick={openCookiePreferences}
+            className="text-sm font-medium text-gray-300 underline underline-offset-2 hover:text-white transition">
+            Cookie Settings
+          </button>
         </div>
       </div>
     </footer>
