@@ -639,7 +639,7 @@ export const products = [
   },
 ];
 
-export default function ProductDetail({ params }: Props) {
+export default async function ProductDetail({ params }: Props) {
   const { slug } = React.use(params);
   const product = products.find((exec) => exec.slug === slug);
 

@@ -6,7 +6,7 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   const executive = stockbrokersBoardMembers.find((exec) => exec.slug === slug);
 
   if (!executive) {
@@ -55,6 +55,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function ExecutiveLayout({ children }: { children: React.ReactNode }) {
+export default async function ExecutiveLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }

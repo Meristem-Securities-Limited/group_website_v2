@@ -6,7 +6,7 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   const executive = boardMembers.find((exec) => exec.slug === slug);
 
   if (!executive) {

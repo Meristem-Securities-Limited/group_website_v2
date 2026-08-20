@@ -96,7 +96,7 @@ Beyond finance, she is a certified Family Finance Coach and Counsellor, holding 
   },
 ];
 
-export default function ExecutiveProfile({ params }: Props) {
+export default async function ExecutiveProfile({ params }: Props) {
   const { slug } = React.use(params);
   const executive = trusteeBoardMembers.find((exec) => exec.slug === slug);
 

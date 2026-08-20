@@ -47,6 +47,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function ExecutiveLayout({ children }: { children: React.ReactNode }) {
+export default async function ExecutiveLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
