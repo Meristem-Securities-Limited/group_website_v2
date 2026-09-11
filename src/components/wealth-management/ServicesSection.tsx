@@ -4,7 +4,6 @@ import React, { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { title } from "process";
 
 const products = [
   {

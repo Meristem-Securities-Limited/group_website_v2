@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
 
 // const fadeIn = {
 //   hidden: { opacity: 0, y: 32 },
@@ -29,7 +28,6 @@ import { motion, useInView } from "framer-motion";
 
 function Reveal({
   children,
-  delay = 0,
   className = "",
 }: {
   children: React.ReactNode;
@@ -56,7 +54,6 @@ function RevealImg({
   src,
   alt,
   className = "",
-  delay = 0,
 }: {
   src: string;
   alt: string;
@@ -64,7 +61,7 @@ function RevealImg({
   delay?: number;
 }) {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+  // const inView = useInView(ref, { once: true, margin: "-80px" });
   return (
     <div
       ref={ref}
@@ -113,38 +110,38 @@ const offerings = [
   },
 ];
 
-function IntroSection() {
-  const ref = useRef(null);
-  //   const inView = useInView(ref, { once: true, margin: "-80px" });
+// function IntroSection() {
+//   const ref = useRef(null);
+//   //   const inView = useInView(ref, { once: true, margin: "-80px" });
 
-  return (
-    <section
-      ref={ref}
-      className="bg-gray-50 py-20 px-6 container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-5">
-          <p
-            className="text-gray-700 text-base leading-8"
-            // variants={fadeIn}
-            // initial="hidden"
-            // animate={inView ? "show" : "hidden"}
-            //   custom={0}
-          >
-            At Meristem Wealth, we offer our clients a range of structured products that meet with
-            varying client needs and objectives. Some of which are:
-          </p>
-        </div>
+//   return (
+//     <section
+//       ref={ref}
+//       className="bg-gray-50 py-20 px-6 container mx-auto">
+//       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+//         <div className="space-y-5">
+//           <p
+//             className="text-gray-700 text-base leading-8"
+//             // variants={fadeIn}
+//             // initial="hidden"
+//             // animate={inView ? "show" : "hidden"}
+//             //   custom={0}
+//           >
+//             At Meristem Wealth, we offer our clients a range of structured products that meet with
+//             varying client needs and objectives. Some of which are:
+//           </p>
+//         </div>
 
-        <RevealImg
-          src="https://images.unsplash.com/photo-1739298061707-cefee19941b7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Financial advisors collaborating"
-          className="h-72 md:h-80 shadow-lg"
-          delay={0.15}
-        />
-      </div>
-    </section>
-  );
-}
+//         <RevealImg
+//           src="https://images.unsplash.com/photo-1739298061707-cefee19941b7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+//           alt="Financial advisors collaborating"
+//           className="h-72 md:h-80 shadow-lg"
+//           delay={0.15}
+//         />
+//       </div>
+//     </section>
+//   );
+// }
 
 function OfferingCard({ offering, index }: { offering: (typeof offerings)[0]; index: number }) {
   const ref = useRef(null);

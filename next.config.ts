@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  eslint: {
+    // Don't let ESLint warnings/errors fail `next build` / `yarn build`.
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       {

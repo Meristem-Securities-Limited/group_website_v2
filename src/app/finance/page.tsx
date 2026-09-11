@@ -5,7 +5,7 @@ import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 // import WealthBoardExecutiveSection from "@/components/finance/BoardExcutives";
 import FAQSection from "@/components/finance/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
-import { FinanceIllustration, Mubo } from "../assets";
+import { FinanceIllustration } from "../assets";
 
 const WealthManagementPage = () => {
   return (

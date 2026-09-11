@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 
 // const fadeIn = {
 //   hidden: { opacity: 0, y: 32 },

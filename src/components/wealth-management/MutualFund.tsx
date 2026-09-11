@@ -458,7 +458,7 @@
 // }
 import { WealthBuddyBlackLogo } from "@/app/assets";
 import VideoPlayer from "../VideoPlayer";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Link from "next/link";
 import useSWR from "swr";
 import { Reveal, RevealImg } from "./PortfolioManagement";

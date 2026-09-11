@@ -6,7 +6,7 @@ import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
 import FAQSection from "@/components/capital/FAQSection";
 import TrackRecordSection from "@/components/capital/TrackRecord";
 import MeristemContactSection from "@/components/ContactSection";
-import { CapitalIllustration, Salawu } from "../assets";
+import { CapitalIllustration } from "../assets";
 
 const WealthManagementPage = () => {
   return (
