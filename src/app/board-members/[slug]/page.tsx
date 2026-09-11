@@ -182,27 +182,14 @@ Outside of his professional endeavours, Sulaiman enjoys golf, reading, and trave
     name: "Dr. Adejumoke Awolumate",
     role: "Director",
     description: `<div class="executive-info">
-    <p>
-      Dr. Adejumoke Awolumate is a faculty member in the Department of Strategy and Entrepreneurship at Lagos Business School, Pan-Atlantic University. She brings over three decades of experience spanning finance, investment banking, corporate strategy, entrepreneurship, executive leadership, and board governance, combining extensive practitioner experience with academic scholarship and executive education.
-    </p> <br>
+   <p> Dr. Adejumoke Awolumate is a faculty member in the Department of Strategy and Entrepreneurship at Lagos Business School, Pan-Atlantic University. She brings over three decades of experience spanning finance, investment banking, corporate strategy, entrepreneurship, executive leadership, and board governance, combining extensive practitioner experience with academic scholarship and executive education. </p>
+<p>Her research, teaching, and advisory work focus on competitive strategy, strategy execution, organizational growth, digital transformation, financial inclusion, and sustainable development in emerging economies. She is particularly interested in how organizations can leverage innovation, strong governance, and strategic discipline to achieve sustainable growth while creating broader economic and social value.</p>
+<p>Prior to joining the full-time faculty at Lagos Business School, Dr. Awolumate held several senior executive positions, including Managing Director and Chief Executive Officer of Meristem Capital Limited, Chief Operating Officer of Integrated Dairies Limited, and Managing Partner and Chief Executive Officer of Sceptre Advisory Services Limited. Throughout her career, she has led business transformation initiatives, organizational restructuring programmes, growth strategies, and governance improvements across sectors including financial services, agriculture, manufacturing, technology, and energy.
+She continues to contribute to corporate leadership and governance through her service as Chairman of Meristem Trustees Limited, Board Member of Meristem Securities Limited, and other non-executive board appointments.</p>
+<p>At Lagos Business School, Dr. Awolumate is committed to developing leaders who can think strategically, execute effectively, navigate complexity, and build resilient organizations. Her teaching combines academic rigor with practical insight, enabling executives to translate strategy into measurable organizational outcomes and sustainable performance. Through her engagement with participants, she seeks to strengthen leadership capability, strategic thinking, governance effectiveness, and organizational competitiveness.
+Underlying her work is a strong commitment to responsible leadership and the belief that capable leaders, sound institutions, and effective governance are critical to Africa’s economic transformation. Through her teaching, research, advisory engagements, and board service, she contributes to the development of organizations that create long-term value for shareholders, employees, customers, and society.
+Dr. Awolumate holds a Doctor of Business Administration (DBA) and an Executive MBA from Lagos Business School, as well as Bachelor’s and Master’s degrees in Microbiology. She is a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN), a Fellow of the Chartered Institute of Stockbrokers (CIS), a member of the Beta Gamma Sigma Honour Society, and has completed executive programmes at Yale School of Management and Middlesex University.</p>
 
-    <p>
-      Her research, teaching, and advisory work focus on competitive strategy, strategy execution, organizational growth, digital transformation, financial inclusion, and sustainable development in emerging economies. She is particularly interested in how organizations can leverage innovation, strong governance, and strategic discipline to achieve sustainable growth while creating broader economic and social value. </p> <br>
-    <p>
-      Prior to joining the full-time faculty at Lagos Business School, Dr. Awolumate held several senior executive positions, including Managing Director and Chief Executive Officer of Meristem Capital Limited, Chief Operating Officer of Integrated Dairies Limited, and Managing Partner and Chief Executive Officer of Sceptre Advisory Services Limited. Throughout her career, she has led business transformation initiatives, organizational restructuring programmes, growth strategies, and governance improvements across sectors including financial services, agriculture, manufacturing, technology, and energy   </p> <br>
-
-    <p>
-      She continues to contribute to corporate leadership and governance through her service as Chairman of Meristem Trustees Limited, Board Member of Meristem Securities Limited, and other non-executive board appointments. </p> <br>
-
-    <p>
-      At Lagos Business School, Dr. Awolumate is committed to developing leaders who can think strategically, execute effectively, navigate complexity, and build resilient organizations. Her teaching combines academic rigor with practical insight, enabling executives to translate strategy into measurable organizational outcomes and sustainable performance. Through her engagement with participants, she seeks to strengthen leadership capability, strategic thinking, governance effectiveness, and organizational competitiveness.  </p> <br>
-
-    <p>
-      Underlying her work is a strong commitment to responsible leadership and the belief that capable leaders, sound institutions, and effective governance are critical to Africa’s economic transformation. Through her teaching, research, advisory engagements, and board service, she contributes to the development of organizations that create long-term value for shareholders, employees, customers, and society. </p> <br>
-
-    <p>
-      Dr. Awolumate holds a Doctor of Business Administration (DBA) and an Executive MBA from Lagos Business School, as well as Bachelor’s and Master’s degrees in Microbiology. She is a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN), a Fellow of the Chartered Institute of Stockbrokers (CIS), a member of the Beta Gamma Sigma Honour Society, and has completed executive programmes at Yale School of Management and Middlesex University
-    </p> <br>
   </div>`,
   },
 
