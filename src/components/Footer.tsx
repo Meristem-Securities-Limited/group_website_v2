@@ -147,7 +147,7 @@ export default function Footer() {
             <div className="space-y-2">
               <p className="text-base text-gray-100">For complaints, contact us on</p>
               <div className="space-y-1">
-                <p className="font-semibold text-base">WhatsApp: +2348134059788</p>
+                {/* <p className="font-semibold text-base">WhatsApp: +2348134059788</p> */}
                 <p className="font-semibold text-base">
                   Telephone: 0700MERISTEM, 070063747836, 0800MERISTEM
                 </p>
