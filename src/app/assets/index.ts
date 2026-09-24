@@ -107,7 +107,7 @@ import Stac from "./stac.jpeg";
 import Neimeth from "./neimeth.jpeg";
 import SECLogo from "./sec-logo.svg";
 import Olusanya from "./Olusanya.jpg";
-import DangoteIpoBanner from "./Now_Live jpeg.jpeg";
+import DangoteIpoBanner from "./Now live_III  peg.jpeg";
 
 export {
   Olusanya,

@@ -116,7 +116,7 @@ export default function Footer() {
     {
       title: "Abuja Branch",
       address:
-        "4th Floor, Elizade Towers, Plot 596 Cadastral Zone A.O, Independent Avenue, FCT, Abuja, Nigeria. (0700MERISTEM, 070063747836, 0800MERISTEM)",
+        "120, Ebitu Ukiwe Street, Opposite Jabi mall, Jabi, Abuja, Nigeria. (0700MERISTEM, 070063747836, 0800MERISTEM)",
     },
   ];
 
