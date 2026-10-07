@@ -1,10 +1,9 @@
 import React from "react";
 import AboutUsHeroSection from "@/components/about-us/AboutUsHeroSection";
-import BenefitsSection from "@/components/wealth-management/BenefitSection";
-import WealthServiceSection from "@/components/wealth-management/ServicesSection";
+import BenefitsSection from "@/components/wealth-management-limited/BenefitSection";
+import WealthServiceSection from "@/components/wealth-management-limited/ServicesSection";
 import WhoWeAreSection from "@/components/about-us/WhoWeAreSection";
-// import WealthBoardExecutiveSection from "@/components/wealth-management/BoardExcutives";
-import FAQSection from "@/components/wealth-management/FAQSection";
+import FAQSection from "@/components/wealth-management-limited/FAQSection";
 import MeristemContactSection from "@/components/ContactSection";
 import { AppleStore, GooglePlay, WealthManagementllustration } from "../assets";
 import { wealthbuddyAppStorUrl, wealthbuddyPlayStorUrl } from "@/components/products/ProductPage";

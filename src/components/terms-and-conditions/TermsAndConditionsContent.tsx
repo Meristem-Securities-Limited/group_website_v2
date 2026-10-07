@@ -55,7 +55,7 @@ export default function TermsAndConditionsContent() {
             </p>
             <p>
               While our subsidiaries provide regulated services including stockbroking, wealth
-              management, registrars and probate services, investment banking and capital markets
+              management, registrar services, investment banking and capital markets
               advisory, finance and lending, trusteeship, and family office services, our Platform
               currently provides access to the following categories of Services:
             </p>

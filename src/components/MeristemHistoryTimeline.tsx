@@ -73,7 +73,7 @@ const MeristemTimeline = () => {
                 Meristem is a leading capital markets conglomerate in Nigeria. With seven
                 subsidiaries, Meristem offers a comprehensive suite of financial services including
                 stockbroking, wealth & asset management, investment banking, trusteeship & estate
-                planning, registrars & probate services, lease & loan financing, and capital market
+                planning, registrar services, lease & loan financing, and capital market
                 advisory. Regulated by the Securities and Exchange Commission, we are committed to
                 creating, preserving, and transferring wealth for individuals, institutions, and
                 enterprises.

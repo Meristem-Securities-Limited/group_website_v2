@@ -7,12 +7,12 @@ import { AppleStore, GooglePlay } from "@/app/assets";
 import { ContactForm } from "../ContactSection";
 import { CheckCircle2 } from "lucide-react";
 import TrustServices from "../TrusteeTabs";
-import PortfolioManagementPage from "../wealth-management/PortfolioManagement";
-import RealEstateServicePage from "../wealth-management/RealEstateManagement";
-import StructuredProductsPage from "../wealth-management/StructuredProducts";
-import FixedIncomeServicePage from "../wealth-management/FixedIncomeManagement";
-import MutualFundPage from "../wealth-management/MutualFund";
-import ETFPage from "../wealth-management/ETF";
+import PortfolioManagementPage from "../wealth-management-limited/PortfolioManagement";
+import RealEstateServicePage from "../wealth-management-limited/RealEstateManagement";
+import StructuredProductsPage from "../wealth-management-limited/StructuredProducts";
+import FixedIncomeServicePage from "../wealth-management-limited/FixedIncomeManagement";
+import MutualFundPage from "../wealth-management-limited/MutualFund";
+import ETFPage from "../wealth-management-limited/ETF";
 
 // const faqs = [
 //   {

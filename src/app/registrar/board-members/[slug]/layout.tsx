@@ -11,18 +11,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!executive) {
     return {
-      title: "Director Not Found | Meristem Registrars and Probates Services Limited",
+      title: "Director Not Found | Meristem Registrar Services Limited",
       description: "The requested director profile could not be found.",
     };
   }
 
   return {
-    title: `${executive.name} - ${executive.role} | Meristem Registrars and Probates Services Limited`,
-    description: `${executive.name}, serving as ${executive.role} at Meristem Registrars and Probates Services Limited. Learn more about their leadership, expertise, and contribution to the growth of Nigeria’s leading investment and financial services firm.`,
+    title: `${executive.name} - ${executive.role} | Meristem Registrar Services Limited`,
+    description: `${executive.name}, serving as ${executive.role} at Meristem Registrar Services Limited. Learn more about their leadership, expertise, and contribution to the growth of Nigeria’s leading investment and financial services firm.`,
     keywords: [
       executive.name,
       executive.role,
-      "Meristem Registrars and Probates Services Limited",
+      "Meristem Registrar Services Limited",
       "board members",
       "board of directors",
       "financial services leadership",
@@ -31,9 +31,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: "profile",
       url: `https://www.meristemng.com/registrars-and-probates/board-members/${slug}`,
-      title: `${executive.name} - ${executive.role} | Meristem Registrars and Probates Services Limited`,
-      description: `${executive.name} is part of the leadership team at Meristem Registrars and Probates Services Limited, driving innovation in wealth management, securities trading, and financial advisory services.`,
-      siteName: "Meristem Registrars and Probates Services Limited",
+      title: `${executive.name} - ${executive.role} | Meristem Registrar Services Limited`,
+      description: `${executive.name} is part of the leadership team at Meristem Registrar Services Limited, driving innovation in wealth management, securities trading, and financial advisory services.`,
+      siteName: "Meristem Registrar Services Limited",
       images: [
         {
           url: typeof executive.image === "string" ? executive.image : executive.image,
@@ -45,8 +45,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${executive.name} - ${executive.role} | Meristem Registrars and Probates Services Limited`,
-      description: `${executive.name}, ${executive.role} at Meristem Registrars and Probates Services Limited. Discover their expertise and leadership role in Nigeria’s financial industry.`,
+      title: `${executive.name} - ${executive.role} | Meristem Registrar Services Limited`,
+      description: `${executive.name}, ${executive.role} at Meristem Registrar Services Limited. Discover their expertise and leadership role in Nigeria’s financial industry.`,
       images: [typeof executive.image === "string" ? executive.image : executive.image],
     },
     alternates: {

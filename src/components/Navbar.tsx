@@ -42,15 +42,15 @@ const subsidiaries = [
   },
   {
     number: "02",
-    name: "Registrar and Probate Services",
+    name: "Registrar Services",
     description: "Redefining Shareholder Management and Probate Services",
-    link: "/registrar-and-probate",
+    link: "/registrar",
   },
   {
     number: "03",
     name: "Wealth Management",
     description: "Tailored strategies for wealth creation and preservation",
-    link: "/wealth-management",
+    link: "/wealth-management-limited",
   },
   {
     number: "04",
@@ -190,7 +190,7 @@ const aboutUsItems = [
 //     ],
 //   },
 //   {
-//     title: "Registrar and Probate",
+//     title: "Registrar Services",
 //     sectionId: "vision",
 //     children: [
 //       {
@@ -371,7 +371,7 @@ const ourProductsItems = [
     ],
   },
   {
-    title: "Registrar and Probate",
+    title: "Registrar",
     sectionId: "vision",
     children: [
       {

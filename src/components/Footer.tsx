@@ -60,8 +60,8 @@ export default function Footer() {
         { title: "Wealth Management", url: "/wealth-management" },
         { title: "Stockbrokers", url: "/stockbrokers" },
         {
-          title: "Registrar & Probate Services",
-          url: "registrar-and-probate",
+          title: "Registrar Services",
+          url: "registrar",
         },
         { title: "Trustees", url: "/trustees" },
         { title: "Family Office", url: "https://familyoffice.meristemng.com" },

@@ -386,7 +386,7 @@ export const products = [
   //   ],
   // },
 
-  // MERISTEM REGISTRAR AND PROBATE SERVICES LIMITED
+  // MERISTEM REGISTRAR SERVICES LIMITED
   {
     slug: "agm-egm-administration",
     id: 23,
@@ -395,7 +395,7 @@ export const products = [
     description:
       "Run flawless shareholder meetings with Meristem’s end‑to‑end AGM and EGM administration services. We handle every detail: from printing and dispatching notices, proxies, and annual reports to managing attendee registration and voting. Our team ensures full compliance with the Companies and Allied Matters Act (CAMA) and SEC regulations, including filing of resolutions with the Corporate Affairs Commission. We provide electronic voting systems that allow remote shareholders to participate, boosting turnout and satisfaction. After the meeting, we prepare minutes, update the register of members, and process any share allotments or changes. With Meristem, you reduce the administrative burden on your board and legal team while enhancing the shareholder experience.",
     // img: "https://plus.unsplash.com/premium_photo-1742932625664-12b3f5519de6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    subsidiary: "Meristem Registrar and Probate Services Limited",
+    subsidiary: "Meristem Registrar Services Limited",
   },
   {
     slug: "bond-register-administration",
@@ -405,7 +405,7 @@ export const products = [
     description:
       "Maintain accurate, compliant bondholder records with Meristem’s Bond Register Administration service. We act as the official registrar for your bond issuance, tracking all ownership changes, interest payments, and maturity redemptions. Our system handles electronic transfers, physical certificate issuance, and replacement of lost instruments according to capital market rules. We also manage the payment of coupons (interest) directly to bondholders’ bank accounts, with full tax deduction at source as required. For listed bonds, we reconcile with the Nigerian Exchange and CSCS daily to ensure accurate settlement of secondary market trades. Issuers benefit from our detailed reporting, including bondholder analysis by geography, holding size, and investor type—invaluable for investor relations and future fundraising.",
     // img: "https://images.unsplash.com/photo-1740645581653-068ad8fa2765?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    subsidiary: "Meristem Registrar and Probate Services Limited",
+    subsidiary: "Meristem Registrar Services Limited",
   },
   {
     slug: "probate-services",
@@ -415,7 +415,7 @@ export const products = [
     description:
       "The loss of a loved one is never an experience to relive. A loss of this nature can be difficult and oftentimes without information for the transfer of their asset. Not knowing what asset (cash, shares, pension, insurance, land, buildings etc.) At Meristem, we recognize the pain of losing a loved one, thus we make it our business to ensure that the transfer of their asset is seamless, prompt and stress-free. We deliver prompt asset transfer services by helping you procure;",
     // img: "https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=2716&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    subsidiary: "Meristem Registrar and Probate Services Limited",
+    subsidiary: "Meristem Registrar Services Limited",
     list: [
       "Letters of Administration",
       "Grant of Probate",
@@ -432,7 +432,7 @@ export const products = [
     description:
       "Execute successful capital raises with Meristem’s Public Offer Services, acting as receiving registrar for rights issues, IPOs, and offers for subscription. We set up collection centers nationwide (physical and digital) where investors can submit applications and payments. Our system validates applications, rejects invalid ones, and allocates shares according to the offer terms (e.g., pro‑rata or first‑come‑first‑served). We then credit successful applicants’ CSCS accounts or issue physical share certificates, and refund unsuccessful applicants promptly. Throughout the offer period, we provide the issuer with daily reports on subscription levels, investor demographics, and any issues. Post‑offer, we update the central register of members and file all regulatory returns with the SEC and NGX. With Meristem, you get accuracy, speed, and transparency that builds investor confidence.",
     // img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format",
-    subsidiary: "Meristem Registrar and Probate Services Limited",
+    subsidiary: "Meristem Registrar Services Limited",
   },
   {
     slug: "right-issue-services",
@@ -442,7 +442,7 @@ export const products = [
     description:
       "Raise additional capital from existing shareholders efficiently with Meristem’s Right Issue Services. We manage the entire process: determining the ratio of new shares to existing holdings, setting the subscription price, and preparing the offer circular. Our team distributes provisional allotment letters to all eligible shareholders via mail, email, and SMS, with clear instructions on how to accept (or renounce) their rights. We handle collection of acceptances and payments, process renunciations and transfers of rights on the secondary market, and allocate shares accordingly. After closure, we credit new shares to shareholders’ CSCS accounts and update the register of members. We also handle all SEC filings and NGX notifications. With Meristem, you maximize participation and minimize administrative headaches during your rights issue.",
     // img: "https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?w=800&auto=format",
-    subsidiary: "Meristem Registrar and Probate Services Limited",
+    subsidiary: "Meristem Registrar Services Limited",
     list: [
       "Processing of rights rue to Shareholders and dispatch of same.",
       "Liaise with other stakeholders on the transaction to ensure a seamless process.",
@@ -461,7 +461,7 @@ export const products = [
     description:
       "Maintain a clean, compliant, and up‑to‑date register of members with Meristem’s Share Registration Services. We act as your company’s official registrar, recording all share transfers, name changes, and issuance of new shares. Our online portal allows shareholders to update their contact details, view their holdings, and request duplicate certificates directly. We process dividend payments, bonus issues, and share splits seamlessly, with automatic tax deduction and remittance to relevant authorities. For listed companies, we reconcile daily with the CSCS to capture all electronic transfers. We also respond to shareholder inquiries, provide status letters, and prepare the annual return for filing with CAC. With Meristem, you outsource a complex regulatory function to experts, reducing your internal costs and compliance risk.",
     // img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format",
-    subsidiary: "Meristem Registrar and Probate Services Limited",
+    subsidiary: "Meristem Registrar Services Limited",
     list: [
       "Verification and certification of shareholders` claims",
       "Optimal record-keeping and monitoring of shareholding movement",

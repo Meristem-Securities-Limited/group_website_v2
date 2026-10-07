@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import MemberCard from "@/components/MemberCard";
 import Link from "next/link";
-import { registrarAndProbateBoardMembers } from "@/app/registrar-and-probate/board-members/[slug]/page";
+import { registrarAndProbateBoardMembers } from "@/app/registrar/board-members/[slug]/page";
 
 const containerVariants = {
   hidden: {},

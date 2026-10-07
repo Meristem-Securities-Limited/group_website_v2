@@ -13,9 +13,9 @@ export default function MeristemSubsidiaries() {
     },
     {
       number: "02",
-      name: "Registrars and Probate Services",
+      name: "Registrar Services",
       description: "Redefining Shareholder Management and Probate Services",
-      link: "registrar-and-probate",
+      link: "registrar",
       //  link: "https://registrars.meristemng.com",
     },
     {
