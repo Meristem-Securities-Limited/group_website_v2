@@ -609,7 +609,7 @@ function OfferingsSection() {
               tag="For Stability and Easy Access"
               tagColor="green"
               title="Money Market Fund"
-              reportUrl="/reports-pdf/MMMF Monthly Report - JULY 2026.pdf"
+              reportUrl="/reports-pdf/MMMF Monthly Report - SEPTEMBER  2026.pdf"
               description="Earn competitive returns while keeping your funds relatively low risk. Ideal for emergency funds, short-term goals, and investors who want steady growth with easy access to their money. Invests in Government securities, Bank placements, Commercial papers and promissory notes."
               videoUrl="https://res.cloudinary.com/dptx3beqe/video/upload/v1749630618/wb2videos/MONEY_MARKET_FUND_wzfhcu.mp4"
               details={[
@@ -674,7 +674,7 @@ function OfferingsSection() {
               tag="For Consistent Income"
               tagColor="purple"
               title="Fixed Income Fund"
-              reportUrl="/reports-pdf/meristem-fixed-income-fund-report-july 2026.pdf"
+              reportUrl="/reports-pdf/MFIF Monthly Report - SEPTEMBER 2026.pdf"
               description="Invest primarily in bonds and other income-generating securities designed to provide predictable returns and long-term capital preservation. Provides unit holders with long-term capital growth and regular income through a diversified portfolio of fixed income instruments."
               videoUrl="https://res.cloudinary.com/dptx3beqe/video/upload/v1749630687/wb2videos/MFIF_cay6o7.mp4"
               reverse
@@ -728,7 +728,7 @@ function OfferingsSection() {
               tag="For Long-Term Growth"
               tagColor="green"
               title="Equity Market Fund"
-              reportUrl="/reports-pdf/MEMF MONTHLY REPORT - JULY (2026).pdf"
+              reportUrl="/reports-pdf/MEMF MONTHLY REPORT - SEPTEMBER (2026).pdf"
               description="Gain exposure to carefully selected stocks with the potential for higher long-term returns. Suitable for investors willing to take on more risk in pursuit of greater growth. Invests in a basket of high-quality equity securities, with a focus on Nigerian companies."
               videoUrl="https://res.cloudinary.com/dptx3beqe/video/upload/v1749630649/wb2videos/MEMF_vqijvz.mp4"
               details={[
@@ -781,7 +781,7 @@ function OfferingsSection() {
               description="Invest in dollar-denominated assets and diversify beyond the naira. Invests in Investment grade sovereign and corporate Eurobonds, and other qualifying USD instruments issued by Nigerian entities. Ideal for investors seeking global exposure and protection against currency fluctuations."
               videoUrl="https://res.cloudinary.com/dptx3beqe/video/upload/v1762509263/wb2videos/DOLLAR_FUND_n1t13t.mp4"
               reverse
-              reportUrl="/reports-pdf/MFIF MONTHLY REPORT-JULY 2026.pdf"
+              reportUrl="/reports-pdf/Meristem Dollar Fund Monthly Report - September 2026.pdf"
               cta="Get Started"
               ctaHref="https://forms.meristemng.com/meristem-dollar-fund/"
               details={[
@@ -832,7 +832,7 @@ function OfferingsSection() {
               tag="Trade a Diversified Basket on the Exchange"
               tagColor="orange"
               title="Meristem Exchange Traded Fund (ETF)"
-              etfReportUrl="/reports-pdf/MER GROWTH ETF REPORT _ JULY 2026.pdf"
+              etfReportUrl="/reports-pdf/MER GROWTH ETF REPORT _ SEPTEMBER 2026.pdf"
               description="Gain exposure to a diversified basket of securities through a single, exchange-listed instrument that combines the diversification of a mutual fund with the flexibility of trading a stock in real time. Ideal for investors who want broad market exposure with intraday liquidity."
               reverse
               details={[
@@ -860,7 +860,7 @@ function OfferingsSection() {
               tag="Trade Undervalued Opportunities on the Exchange"
               tagColor="orange"
               title="Meristem Value ETF"
-              etfReportUrl="/reports-pdf/MER-VALUE ETF REPORT JULY_ 2026.pdf"
+              etfReportUrl="/reports-pdf/MER-VALUE ETF REPORT SEPTEMBER_ 2026.pdf"
               description="Gain exposure to a diversified basket of fundamentally undervalued, high-potential listed securities through a single, exchange-traded instrument. Ideal for investors seeking long-term capital appreciation by tracking companies trading below their intrinsic value, with the added flexibility of intraday trading on the exchange."
               details={[
                 { label: "Name", value: "Meristem Value Exchange Traded Fund" },
@@ -888,7 +888,7 @@ function OfferingsSection() {
               tag="Invest Beyond Traditional Assets"
               tagColor="amber"
               title="Commodities Fund"
-              reportUrl="/reports-pdf/MMMF Monthly Report - JULY 2026.pdf"
+              reportUrl="/reports-pdf/MMMF Monthly Report - SEPTEMBER 2026.pdf"
               description="Access opportunities in commodity-linked investments that can help diversify your portfolio and provide exposure to alternative sources of growth."
               details={[
                 { label: "Name", value: "Meristem Commodities Fund" },
@@ -921,50 +921,50 @@ function OfferingsSection() {
   );
 }
 
-function IntroSection() {
-  const ref = useRef(null);
-  //   const inView = useInView(ref, { once: true, margin: "-80px" });
+// function IntroSection() {
+//   const ref = useRef(null);
+//   //   const inView = useInView(ref, { once: true, margin: "-80px" });
 
-  return (
-    <section
-      ref={ref}
-      className="bg-gray-50 py-20 px-6 container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-5">
-          <p
-            className="text-gray-700 text-base leading-8"
-            // variants={fadeIn}
-            // initial="hidden"
-            // animate={inView ? "show" : "hidden"}
-            //   custom={0}
-          >
-            A Mutual Fund is a financial intermediary that pools the savings of investors for
-            collective investment in a diversified portfolio of securities which may include bonds,
-            stocks, money market instrument, other securities, real estate, etc.
-          </p>
-          <p
-            className="text-gray-700 text-base leading-8"
-            // variants={fadeIn}
-            // initial="hidden"
-            // animate={inView ? "show" : "hidden"}
-            //   custom={0.1}
-          >
-            We offer clients the choice of various funds depending on their investment objectives
-            and risk profile, bearing in mind that the level of risk you take and potential returns
-            are directly related.
-          </p>
-        </div>
+//   return (
+//     <section
+//       ref={ref}
+//       className="bg-gray-50 py-20 px-6 container mx-auto">
+//       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+//         <div className="space-y-5">
+//           <p
+//             className="text-gray-700 text-base leading-8"
+//             // variants={fadeIn}
+//             // initial="hidden"
+//             // animate={inView ? "show" : "hidden"}
+//             //   custom={0}
+//           >
+//             A Mutual Fund is a financial intermediary that pools the savings of investors for
+//             collective investment in a diversified portfolio of securities which may include bonds,
+//             stocks, money market instrument, other securities, real estate, etc.
+//           </p>
+//           <p
+//             className="text-gray-700 text-base leading-8"
+//             // variants={fadeIn}
+//             // initial="hidden"
+//             // animate={inView ? "show" : "hidden"}
+//             //   custom={0.1}
+//           >
+//             We offer clients the choice of various funds depending on their investment objectives
+//             and risk profile, bearing in mind that the level of risk you take and potential returns
+//             are directly related.
+//           </p>
+//         </div>
 
-        <RevealImg
-          src="https://images.unsplash.com/photo-1739298061707-cefee19941b7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Financial advisors collaborating"
-          className="h-72 md:h-80 shadow-lg"
-          delay={0.15}
-        />
-      </div>
-    </section>
-  );
-}
+//         <RevealImg
+//           src="https://images.unsplash.com/photo-1739298061707-cefee19941b7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+//           alt="Financial advisors collaborating"
+//           className="h-72 md:h-80 shadow-lg"
+//           delay={0.15}
+//         />
+//       </div>
+//     </section>
+//   );
+// }
 
 export default function MutualFundPage() {
   return (

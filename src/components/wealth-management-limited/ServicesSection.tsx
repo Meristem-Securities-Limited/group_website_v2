@@ -247,10 +247,10 @@ export default function WealthServiceSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}>
-          {products.map((product) => (
+          {products.map((product, index) => (
             <Link
               target={product.link.includes("https://") ? "_blank" : "_self"}
-              key={product.id}
+              key={index}
               href={
                 product.link.includes("https://") ? product?.link : `our-products/${product.link}`
               }
